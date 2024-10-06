@@ -5,4 +5,5 @@ The members of the group are :
 - AIGOIN Emilie
 - MAMANE SIDI Samira
 - THOMAS Anne-Laure
+- ZHU Qingjian
 
