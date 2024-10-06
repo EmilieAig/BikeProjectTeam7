@@ -1,6 +1,8 @@
 # BikeProjectTeam7
-Project of the UE HAX712X. Years 2024-2025.
+This is our project of the UE HAX712X for the years 2024-2025.
 
-Members of the group:
+The members of the group are :
 - AIGOIN Emilie
 - MAMANE SIDI Samira
+- THOMAS Anne-Laure
+
