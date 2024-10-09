@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>gantt_diagram</title>
+<title>gantt_2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,19 +23,19 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="Gantt_Diagram_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Gantt_Diagram_files/libs/quarto-html/quarto.js"></script>
-<script src="Gantt_Diagram_files/libs/quarto-html/popper.min.js"></script>
-<script src="Gantt_Diagram_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="Gantt_Diagram_files/libs/quarto-html/anchor.min.js"></script>
-<link href="Gantt_Diagram_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Gantt_Diagram_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="Gantt_Diagram_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="Gantt_Diagram_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Gantt_Diagram_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="Gantt_Diagram_files/libs/quarto-diagram/mermaid.min.js"></script>
-<script src="Gantt_Diagram_files/libs/quarto-diagram/mermaid-init.js"></script>
-<link href="Gantt_Diagram_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<script src="Gantt_2_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Gantt_2_files/libs/quarto-html/quarto.js"></script>
+<script src="Gantt_2_files/libs/quarto-html/popper.min.js"></script>
+<script src="Gantt_2_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Gantt_2_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Gantt_2_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Gantt_2_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Gantt_2_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Gantt_2_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Gantt_2_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="Gantt_2_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="Gantt_2_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="Gantt_2_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -56,39 +56,40 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <pre class="mermaid mermaid-js">gantt
     dateFormat  YYYY-MM-DD
-    title       Base of a Gantt diagramm
+    title       Gantt diagram BikeProjectTeam7
 
     %% Define sections
 
     section Organization
-    Creation of Git repository and README.md  :             P1T1,     2024-10-02,     1d
-    1st reunion (organization)                 :     active, milestone, isadded, 2024-10-09, 2h
-    Update of the file README.md              :             P1T2,     after P1T1,     2024-12-03
-    Creation of a Gantt diagram               :             P1T3,     2024-10-09,     5d
-    Creation of the visuals (website, map)    :             P1T4,     2024-10-09,     5d
+    Creation of Git repository and README.md  :             GIT,        2024-10-02,     1d
+    1st reunion (organization)                :     active, milestone, isadded, 2024-10-09, 2h
+    Project description in README.md          :             README,     2024-10-09,     3d
+    Creation of a Gantt diagram               :             GANTT,      2024-10-09,     3d
+    Creation of the visuals (website, map)    :             VISUALS,    after GANTT,    5d
     2nd reunion (progress report)             :     active, milestone, isadded, 2024-10-16, 2h
 
     section Code
-    Cleaning and structuring data             :             P2T1,     2024-10-15,     6d
+    Cleaning and structuring data             :             CLEAN,     2024-10-15,      6d
     3rd reunion (progress report)             :     active, milestone, isadded, 2024-10-23, 2h
-    Creation of the video                     :             P2T2,     after P2T1,     30d
-    Creation of the interactive map           :             P2T3,     after P2T1,     30d
-    4th reunion (progress report)             :     active, milestone, isadded, 2024-11-06, 2h
-    5th reunion (progress report)             :     active, milestone, isadded, 2024-11-13, 2h
-    Creation of the model training            :             P2T3,     after P2T1,     40d
-    1st test                                  :     crit,   P2T5,     2024-11-03,     2d
-    Creation of the website                   :             P2T4,     2024-10-09,     2024-12-03
-    2nd test                                  :     crit,   P2T6,     2024-11-27,     2d
-    6th reunion (progress report)             :     active, milestone, isadded, 2024-11-20, 2h
-    7th reunion (progress report)             :     active, milestone, isadded, 2024-11-27, 2h
-    8th reunion (progress report)             :     active, milestone, isadded, 2024-12-04, 2h
+    Creation of the traffic video             :             VIDEO,     after CLEAN,     14d
+    Creation of an interactive map            :             MAP,       after CLEAN,     14d
+    4th reunion (progress report)             :     active, milestone, isadded, 2024-10-30, 2h
+    1st test                                  :     crit,   TEST1,     after VIDEO,     1d
+    5th reunion (bug rectifications)          :     active, milestone, isadded, 2024-11-06, 2h
+    Creation of the model training            :             MODEL,     after VIDEO,     14d
+    Creation and update of the website        :             WEBSITE,   after VIDEO,     14d
+    6th reunion (progress report)             :     active, milestone, isadded, 2024-11-13, 2h
+    2nd test                                  :     crit,   TEST2,     after MODEL,     1d
+    7th reunion (bug rectifications)          :     active, milestone, isadded, 2024-11-20, 2h
 
     section Restitution
-    Creation of the documentation             :             P3T1,     2024-10-20,     2024-12-03
-    Creation of the requirements              :             P3T2,     2024-10-20,     2024-12-03
-    Creation of the slides                    :             P3T3,     2024-11-25,     6d
-    Preparation of the oral presentation      :             P3T4,     2024-11-25,     2024-12-10
-    9th reunion (oral training)               :     active, milestone, isadded, 2024-12-11, 2h
+    Creation of the documentation             :             DOCU,      2024-11-21,      5d
+    Creation of the requirements              :             REQUI,     2024-11-21,      5d
+    8th reunion (progress report)             :     active, milestone, isadded, 2024-11-27, 2h
+    Creation of the slides                    :             SLIDES,    after REQUI,     6d
+    9th reunion (progress report)             :     active, milestone, isadded, 2024-12-04, 2h
+    Preparation of the oral presentation      :             ORAL,      after REQUI,     14d
+    10th reunion (oral training)              :     active, milestone, isadded, 2024-12-11, 2h
 
 </pre>
 </div>
