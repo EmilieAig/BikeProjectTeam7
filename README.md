@@ -35,7 +35,7 @@ The different files,we will use are the following:
 **Restitution/**:It contains the files about the slides and the oral for our presentation
 - Slides.qmd
 - Oral.txt
-BikeProjectTeam7/
+```BikeProjectTeam7/
     ├── Organization/
     │     ├── Gantt diagram
     │     │     ├─ Gantt Diagram_files
@@ -58,7 +58,8 @@ BikeProjectTeam7/
     │      └── Oral.txt
     ├── README.md
     ├── requirements.txt
-    └── .gitignore
+    └── .gitignore  
+```
 3. Development Pipeline
 
 The development pipeline will be divided into several stages:
