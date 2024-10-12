@@ -24,14 +24,14 @@ A prediction model based on time series analysis (using tools like Prophet, ARIM
 2. Main Files:\
 The different files,we will use are the following:  
 **Data/**: Folder containing the data files (CSV, JSON, etc.):
-- Data Bike 2023.csv 
+- Data Bike 2023.csv \
 **Scripts/**: The source code, with subfolders for:
 - data_processing.py: For cleaning and structuring the data.  
 - model_training.py: For training the prediction model.  
 - visualization maps.py: For generating charts and maps.  
 - web_app.py: The script responsible for generating the website. 
 - website.qmd
-- website.html
+- website.html \
 **Restitution/**:It contains the files about the slides and the oral for our presentation
 - Slides.qmd
 - Oral.txt
@@ -63,17 +63,17 @@ The different files,we will use are the following:
 3. Development Pipeline
 
 The development pipeline will be divided into several stages:
-- **Data Collection**: Import and clean data from various datasets (VéloMagg, bike/pedestrian counts, OpenStreetMap).\
-- **Preprocessing**: Filter the data, handle missing values, and merge the different data sources.\
-- **Visualization of Historical Data**: Create time series charts and maps showing bike traffic from April to October 2023.\
-- **Modeling and Prediction**: Train a model to forecast bike traffic for the upcoming days.\
-- **Website Development**: Integrate visualizations and the prediction model into an interactive website.\
+- **Data Collection**: Import and clean data from various datasets (VéloMagg, bike/pedestrian counts, OpenStreetMap).
+- **Preprocessing**: Filter the data, handle missing values, and merge the different data sources.
+- **Visualization of Historical Data**: Create time series charts and maps showing bike traffic from April to October 2023.
+- **Modeling and Prediction**: Train a model to forecast bike traffic for the upcoming days.
+- **Website Development**: Integrate visualizations and the prediction model into an interactive website.
 4. Technologies and Packages Used:
-- **Primary Language**: Python\
-- **Packages**:  \
-      - **For data management and analysis**: Pandas, NumPy  \
-      - **For visualization**: Matplotlib, Seaborn, Plotly (for interactive charts), Folium  or Leaflet.js (for the interactive map) \ 
-      - **For modeling and prediction**: scikit-learn, Prophet (or ARIMA)  \
-      - **For the website**: Flask or Streamlit  \
+- **Primary Language**: Python
+- **Packages**:  
+      - **For data management and analysis**: Pandas, NumPy  
+      - **For visualization**: Matplotlib, Seaborn, Plotly (for interactive charts), Folium  or Leaflet.js (for the interactive map)
+      - **For modeling and prediction**: scikit-learn, Prophet (or ARIMA)  
+      - **For the website**: Flask or Streamlit  
 5. The Gantt Diagram\
 We will also create a Gantt Diagram to illustrate the project's timeline and track its progress over time. This diagram will help visualize each phase of the project, from data collection to website development, allowing us to monitor deadlines, dependencies, and milestones clearly.
