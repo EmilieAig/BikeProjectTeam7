@@ -14,36 +14,65 @@ To conduct this study, we have chosen to analyze data on bicycle usage spanning 
 Through this analysis, we aim to provide a clear and detailed understanding of how cyclists' behaviors in Montpellier have evolved in relation to this major sporting event.  
 ## Description of our project:  
 1. Architecture  
-The project will have the following structure:
-**Front-end (website)**:
+The project will have the following structure:\
+**Front-end (website)**:\
 A website where users can browse and interact with various visualizations.
-The site will feature charts and an interactive map displaying bike traffic predictions for Montpellier.
-
-**Back-end (data processing)**:
+The site will feature charts and an interactive map displaying bike traffic predictions for Montpellier.\
+**Back-end (data processing)**:\
 Data analysis from April to October 2023, based on bike counting data, public bike-sharing trip data, and OpenStreetMap data.
 A prediction model based on time series analysis (using tools like Prophet, ARIMA, or Machine Learning methods) to forecast bike traffic for the coming days.  
-2. Main Files:
+2. Main Files:\
 The different files,we will use are the following:  
-**data/**: Folder containing the data files (CSV, JSON, etc.).  
-**src/**: The source code, with subfolders for:
+**Data/**: Folder containing the data files (CSV, JSON, etc.):
+- Data Bike 2023.csv 
+**Scripts/**: The source code, with subfolders for:
 - data_processing.py: For cleaning and structuring the data.  
 - model_training.py: For training the prediction model.  
-- visualization.py: For generating charts and maps.  
-- web_app.py: The script responsible for generating the website.  
-c. Development Pipeline
+- visualization maps.py: For generating charts and maps.  
+- web_app.py: The script responsible for generating the website. 
+- website.qmd
+- website.html
+**Restitution/**:It contains the files about the slides and the oral for our presentation
+- Slides.qmd
+- Oral.txt
+BikeProjectTeam7/
+    ├── Organization/
+    │     ├── Gantt diagram
+    │     │     ├─ Gantt Diagram_files
+    │     │     ├─ Gantt Diagram.html
+    │     │     └─ Gantt Diagram.qmd
+    │     ├── Models/
+    │     │     ├─ Map Model.png
+    │     │     └─ Website Model.png
+    ├── Code 
+    │     ├─ Data/
+    │     │      └─ Data Bike 2023.csv
+    │     ├── Scripts/
+    │     │     ├─ Data Processing.py
+    │     │     ├─ Model Training.py
+    │     │     ├─ Visualization Map.py
+    │     │     ├─ Website.qmd
+    │     │     └─ Website.html
+    ├── Restitution/
+    │      ├─ Slides.qmd
+    │      └── Oral.txt
+    ├── README.md
+    ├── requirements.txt
+    └── .gitignore
+3. Development Pipeline
 
 The development pipeline will be divided into several stages:
-- **Data Collection**: Import and clean data from various datasets (VéloMagg, bike/pedestrian counts, OpenStreetMap).
-- **Preprocessing**: Filter the data, handle missing values, and merge the different data sources.
-- **Visualization of Historical Data**: Create time series charts and maps showing bike traffic from April to October 2023.
-- **Modeling and Prediction**: Train a model to forecast bike traffic for the upcoming days.
-- **Website Development**: Integrate visualizations and the prediction model into an interactive website.
-3. Technologies and Packages Used
-- **Primary Language**: Python
-- **Packages**:  
-      **For data management and analysis**: Pandas, NumPy  
-      **For visualization**: Matplotlib, Seaborn, Plotly (for interactive charts), Folium  or Leaflet.js (for the interactive map)  
-      **For modeling and prediction**: scikit-learn, Prophet (or ARIMA)  
-      **For the website**: Flask or Streamlit  
-4.The Grantt chart
-We will also create a Gantt chart to illustrate the project's timeline and track its progress over time. This diagram will help visualize each phase of the project, from data collection to website development, allowing us to monitor deadlines, dependencies, and milestones clearly.
+- **Data Collection**: Import and clean data from various datasets (VéloMagg, bike/pedestrian counts, OpenStreetMap).\
+- **Preprocessing**: Filter the data, handle missing values, and merge the different data sources.\
+- **Visualization of Historical Data**: Create time series charts and maps showing bike traffic from April to October 2023.\
+- **Modeling and Prediction**: Train a model to forecast bike traffic for the upcoming days.\
+- **Website Development**: Integrate visualizations and the prediction model into an interactive website.\
+4. Technologies and Packages Used:
+- **Primary Language**: Python\
+- **Packages**:  \
+      - **For data management and analysis**: Pandas, NumPy  \
+      - **For visualization**: Matplotlib, Seaborn, Plotly (for interactive charts), Folium  or Leaflet.js (for the interactive map) \ 
+      - **For modeling and prediction**: scikit-learn, Prophet (or ARIMA)  \
+      - **For the website**: Flask or Streamlit  \
+5. The Gantt Diagram\
+We will also create a Gantt Diagram to illustrate the project's timeline and track its progress over time. This diagram will help visualize each phase of the project, from data collection to website development, allowing us to monitor deadlines, dependencies, and milestones clearly.
