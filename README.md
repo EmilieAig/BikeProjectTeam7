@@ -23,16 +23,16 @@ Data analysis from April to October 2023, based on bike counting data, public bi
 A prediction model based on time series analysis (using tools like Prophet, ARIMA, or Machine Learning methods) to forecast bike traffic for the coming days.  
 2. Main Files:\
 The different files,we will use are the following:  
-**Data/**: Folder containing the data files (CSV, JSON, etc.):
+**Data**: Folder containing the data files (CSV, JSON, etc.):
 - Data Bike 2023.csv \
-**Scripts/**: The source code, with subfolders for:
+**Scripts**: The source code, with subfolders for:
 - data_processing.py: For cleaning and structuring the data.  
 - model_training.py: For training the prediction model.  
 - visualization maps.py: For generating charts and maps.  
 - web_app.py: The script responsible for generating the website. 
 - website.qmd
 - website.html \
-**Restitution/**:It contains the files about the slides and the oral for our presentation
+**Restitution**:It contains the files about the slides and the oral for our presentation
 - Slides.qmd
 - Oral.txt
 ```BikeProjectTeam7/
@@ -76,7 +76,7 @@ The development pipeline will be divided into several stages:
       - **For modeling and prediction**: scikit-learn, Prophet (or ARIMA)  
       - **For the website**: Flask or Streamlit  
 5. The Gantt Diagram\
-We will also create a Gantt Diagram to illustrate the project's timeline and track its progress over time. This diagram will help visualize each phase of the project, from data collection to website development, allowing us to monitor deadlines, dependencies, and milestones clearly.\
+We will also create a Gantt Diagram to illustrate the project's timeline and track its progress over time. This diagram will help visualize each phase of the project, from data collection to website development, allowing us to monitor deadlines, dependencies, and milestones clearly.
 6. Creation of branch:\
 We have created four additional branches, aside from the main branch, allowing each team member to work independently. Gradually, we will merge our respective work into the main branch.
 7. Task Distribution for the project \
