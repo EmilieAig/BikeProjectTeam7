@@ -1,7 +1,7 @@
 # BikeProjectTeam7
-This is our project of the UE HAX712X for the year 2024-2025.
-The name of our project is BikeProjectTeam7.
-The members of the group are :
+This is our project for the HAX712X course for the academic year 2024-2025.
+Our project is titled **BikeProjectTeam7**.\
+The team members are :
 - AIGOIN Emilie
 - MAMANE SIDI Samira
 - THOMAS Anne-Laure
@@ -76,4 +76,34 @@ The development pipeline will be divided into several stages:
       - **For modeling and prediction**: scikit-learn, Prophet (or ARIMA)  
       - **For the website**: Flask or Streamlit  
 5. The Gantt Diagram\
-We will also create a Gantt Diagram to illustrate the project's timeline and track its progress over time. This diagram will help visualize each phase of the project, from data collection to website development, allowing us to monitor deadlines, dependencies, and milestones clearly.
+We will also create a Gantt Diagram to illustrate the project's timeline and track its progress over time. This diagram will help visualize each phase of the project, from data collection to website development, allowing us to monitor deadlines, dependencies, and milestones clearly.\
+6. Creation of branch:\
+We have created four additional branches, aside from the main branch, allowing each team member to work independently. Gradually, we will merge our respective work into the main branch.
+7. Task Distribution for the project \
+To organize our work efficiently, we have established the following task distribution plan:
+
+    **Planning:**
+    - Emilie handled the creation of the Gantt chart detailing the various stages of the project.
+    - Samira was responsible for writing the README.md file and creating the files that will be used later in the project.
+    - Anne-Laure created a mock-up of the future website.
+    - Qingjian designed a preliminary representation of the graphical map that we aim to achieve as the final result.
+
+    **Data Processing and Scripts:**
+    - Samira will be in charge of cleaning and structuring the data in the dataprocessing.py file.
+    - Anne-Laure will train these data using a forecasting model in the modeltraining.py file.
+    - Qingjian will handle the generation of charts and maps in the visualisation.py file.
+    - Emilie will be responsible for developing the website script in the webapp.py file.
+
+    **Multimedia Creation:**
+    - The video representing a cycling race forecast for a specific date will be made by Samira.
+    - The creation of the website will be carried out by Emilie and Anne-Laure.
+
+    **Verification and Testing:**
+    - Qingjian will perform an initial test to ensure that the project is on the right track.
+    - Anne-Laure will be responsible for the documentation, assisted by another team member depending on the workload and task complexity.
+
+    **Final Presentation Preparation:**\
+        The presentation slides, as well as the oral preparation, will be created by the entire team. This collaborative work will be done progressively as the project advances.\
+        At least one week before the project deadline, a final test will be conducted to ensure the quality of the completed project.
+
+
