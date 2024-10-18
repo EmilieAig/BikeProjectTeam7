@@ -56,7 +56,8 @@ The different files,we will use are the following:
     ├── Restitution/
     │      ├─ Slides.qmd
     │      └── Oral.txt
-    ├── README.md
+    ├── RoadMap/
+    │      └── README.md
     ├── requirements.txt
     └── .gitignore  
 ```
@@ -80,7 +81,7 @@ We will also create a Gantt Diagram to illustrate the project's timeline and tra
 6. Creation of branch:\
 We have created four additional branches, aside from the main branch, allowing each team member to work independently. Gradually, we will merge our respective work into the main branch.
 7. Task Distribution for the project \
-To organize our work efficiently, we have established the following task distribution plan:
+To organize our work efficiently, we have established the following task distribution plan,with a weekly meeting every Wednesday from 10 a.m. to 12 p.m:
 
     **Planning:**
     - Emilie handled the creation of the Gantt chart detailing the various stages of the project.
