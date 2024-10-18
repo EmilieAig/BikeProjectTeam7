@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+   <html lang="fr">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Notre Organisation - Diagramme de Gantt</title>
+       <style>
+           body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+           h1 { color: #333; }
+           #gantt-container { width: 100%; height: 500px; border: 1px solid #ddd; }
+       </style>
+   </head>
+   <body>
+       <h1>Bienvenue sur la page de notre Organisation</h1>
+       <p>Voici notre diagramme de Gantt actuel :</p>
+       <div id="gantt-container">
+           <iframe src="https://[EmilieAig].github.io/Organization/Gantt_diagram/Gantt_diagram.html" 
+                   width="100%" height="100%" frameborder="0"></iframe>
+       </div>
+       <p>Pour plus d'informations, visitez notre <a href="https://github.com/[BikeProjectTeam7]">page GitHub</a>.</p>
+   </body>
+   </html>
