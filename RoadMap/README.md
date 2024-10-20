@@ -71,7 +71,7 @@ To organize our work efficiently, we have established the following task distrib
     - Emilie will be responsible for developing the website script in the webapp.py file.
 
     **Multimedia Creation:**
-    - The video representing a cycling race forecast for a specific date will be made by Samira.
+    - The video representing a cycling race forecast for a specific date will be made by Samira and helping by one or two other team member.
     - The creation of the website will be carried out by Emilie and Anne-Laure.
 
     **Verification and Testing:**
