@@ -1,0 +1,46 @@
+---
+format:
+  html: 
+    theme: morph
+---
+
+```{mermaid}
+gantt
+    dateFormat  YYYY-MM-DD
+    title       Gantt diagram BikeProjectTeam7
+
+    %% Define sections
+
+    section Organization
+    Creation of Git repository and README.md      :             GIT,        2024-10-02,     1d
+    Deploy on GitHub and create branches          :             BRANCHES,        2024-10-05,     2d
+    1st reunion (organization)                    :     active, milestone, isadded, 2024-10-09, 3h
+    Project description in README.md              :             README,     2024-10-09,     3d
+    Creation of a Gantt diagram                   :             GANTT,      2024-10-09,     3d
+    Creation of the visuals (website, map)        :             VISUALS,    after GANTT,    5d
+    2nd reunion (progress report)                 :     active, milestone, isadded, 2024-10-16, 3h
+
+    section Coding
+    Cleaning and structuring data                 :             CLEAN,     2024-10-15,      6d
+    3rd reunion (progress report)                 :     active, milestone, isadded, 2024-10-23, 3h
+    Creation of the traffic video                 :             VIDEO,     after CLEAN,     14d
+    Creation of an interactive map                :             MAP,       after CLEAN,     14d
+    4th reunion (progress report)                 :     active, milestone, isadded, 2024-10-30, 3h
+    1st test                                      :     crit,   TEST1,     after VIDEO,     1d
+    5th reunion (bug rectifications)              :     active, milestone, isadded, 2024-11-06, 3h
+    Creation of the model training                :             MODEL,     after VIDEO,     14d
+    Creation and update of the website            :             WEBSITE,   after VIDEO,     14d
+    6th reunion (progress report)                 :     active, milestone, isadded, 2024-11-13, 3h
+    2nd test                                      :     crit,   TEST2,     after MODEL,     1d
+    7th reunion (bug rectifications)              :     active, milestone, isadded, 2024-11-20, 3h
+
+    section Restitution
+    Creation of the documentation                 :             DOCU,      2024-11-21,      5d
+    Creation of the requirements                  :             REQUI,     2024-11-21,      5d
+    8th reunion (progress report)                 :     active, milestone, isadded, 2024-11-27, 3h
+    Creation of the slides                        :             SLIDES,    after REQUI,     7d
+    9th reunion (progress report and final check) :     active, milestone, isadded, 2024-12-04, 3h
+    Preparation of the oral presentation          :             ORAL,      after REQUI,     14d
+    10th reunion (oral training)                  :     active, milestone, isadded, 2024-12-11, 3h
+
+```

@@ -35,31 +35,7 @@ The different files,we will use are the following:
 **Restitution**:It contains the files about the slides and the oral for our presentation
 - Slides.qmd
 - Oral.txt
-```BikeProjectTeam7/
-    ├── Organization/
-    │     ├── Gantt diagram
-    │     │     ├─ Gantt Diagram_files
-    │     │     ├─ Gantt Diagram.html
-    │     │     └─ Gantt Diagram.qmd
-    │     ├── Models/
-    │     │     ├─ Map Model.png
-    │     │     └─ Website Model.png
-    ├── Code 
-    │     ├─ Data/
-    │     │      └─ Data Bike 2023.csv
-    │     ├── Scripts/
-    │     │     ├─ Data Processing.py
-    │     │     ├─ Model Training.py
-    │     │     ├─ Visualization Map.py
-    │     │     ├─ Website.qmd
-    │     │     └─ Website.html
-    ├── Restitution/
-    │      ├─ Slides.qmd
-    │      └── Oral.txt
-    ├── README.md
-    ├── requirements.txt
-    └── .gitignore  
-```
+
 3. Development Pipeline
 
 The development pipeline will be divided into several stages:
@@ -80,7 +56,7 @@ We will also create a Gantt Diagram to illustrate the project's timeline and tra
 6. Creation of branch:\
 We have created four additional branches, aside from the main branch, allowing each team member to work independently. Gradually, we will merge our respective work into the main branch.
 7. Task Distribution for the project \
-To organize our work efficiently, we have established the following task distribution plan:
+To organize our work efficiently, we have established the following task distribution plan,with a weekly meeting every Wednesday from 10 a.m. to 12 p.m:
 
     **Planning:**
     - Emilie handled the creation of the Gantt chart detailing the various stages of the project.
@@ -95,7 +71,7 @@ To organize our work efficiently, we have established the following task distrib
     - Emilie will be responsible for developing the website script in the webapp.py file.
 
     **Multimedia Creation:**
-    - The video representing a cycling race forecast for a specific date will be made by Samira.
+    - The video representing a cycling race forecast for a specific date will be made by Samira and helping by one or two other team member.
     - The creation of the website will be carried out by Emilie and Anne-Laure.
 
     **Verification and Testing:**
