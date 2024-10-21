@@ -1,9 +1,0 @@
----
-title: Organization
----
-
-# Diagramme de Gantt
-
-[Voir le diagramme de Gantt](Gantt_diagram/Gantt_diagramm.html)
-
-![Maquette](Models/Maquette.png)
