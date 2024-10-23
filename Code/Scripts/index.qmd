@@ -2,24 +2,18 @@
 title: "Test_Website"
 format:
   html:
-    theme: default
+    theme: default  # Utilisation du thème par défaut
 website:
   navbar:
-    background: primary
-    search: true
+    background: primary  # Définit le fond de la barre de navigation en bleu
+    search: true  # Ajout de la barre de recherche
     left:
       - text: "Home"
         href: index.qmd
       - text: "Talks"
         href: talks.qmd
       - text: "About"
-        href: about.qmd 
-  announcement:
-    icon: info-circle
-    dismissable: true
-    content: "**Alert** - this is some information that you should pay attention to"
-    type: primary
-    position: below-navbar
+        href: about.qmd
 ---
 
 This is a Quarto website.
