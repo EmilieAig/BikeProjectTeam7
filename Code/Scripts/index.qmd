@@ -1,0 +1,29 @@
+---
+title: "Test_Website"
+format:
+  html:
+    theme: default
+website:
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Talks"
+        href: talks.qmd
+      - text: "About"
+        href: about.qmd 
+  announcement:
+    icon: info-circle
+    dismissable: true
+    content: "**Alert** - this is some information that you should pay attention to"
+    type: primary
+    position: below-navbar
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+## Titre
