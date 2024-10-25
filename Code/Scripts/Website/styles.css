@@ -1,0 +1,49 @@
+/* styles.css */
+.navbar {
+    background-color: #5dade2 !important;
+    color: white;
+  }
+  
+  .navbar-brand {
+    color: black !important;
+  }
+  
+  .nav-link {
+    color: rgba(255,255,255,0.85) !important;
+  }
+  
+  .nav-link:hover {
+    color: black !important;
+  }
+  
+  .sidebar-title {
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  
+  .sidebar-navigation {
+    font-size: 0.9em;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    font-weight: 400;
+    margin-top: 1.5em;
+  }
+  
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  
+  .breadcrumb {
+    font-size: 0.9em;
+    margin-bottom: 2em;
+  }

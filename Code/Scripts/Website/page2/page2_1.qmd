@@ -1,0 +1,7 @@
+---
+title: "Titre de la page"
+---
+
+# Section principale
+
+Contenu de la page...

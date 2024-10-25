@@ -1,0 +1,30 @@
+# _quarto.yml
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "BikeProjectTeam7"
+  navbar:
+    left:
+      - text: "Home"
+        menu:
+          - text: "Option 1"
+            href: page1/page1_1.qmd
+          - text: "Option 2"
+            href: page1/page1_2.qmd
+      - text: "Documentation"
+        menu:
+          - text: "Option 1"
+            href: page2/page2_1.qmd
+    right:
+      - icon: github
+        href: https://github.com/EmilieAig/BikeProjectTeam7
+
+format:
+  html:
+    theme:
+      light: cosmo
+    css: styles.css
+    toc: true
+    page-layout: full

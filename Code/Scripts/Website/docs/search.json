@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to our project",
+    "section": "",
+    "text": "Section principale\nContenu de la page…\nBonjour"
+  },
+  {
+    "objectID": "general-tools/option1.html",
+    "href": "general-tools/option1.html",
+    "title": "Titre de la page",
+    "section": "",
+    "text": "Section principale\nContenu de la page…"
+  },
+  {
+    "objectID": "python/basics.html",
+    "href": "python/basics.html",
+    "title": "Titre de la page",
+    "section": "",
+    "text": "Section principale\nContenu de la page…"
+  },
+  {
+    "objectID": "general-tools/option2.html",
+    "href": "general-tools/option2.html",
+    "title": "Titre de la page",
+    "section": "",
+    "text": "Section principale\nContenu de la page…"
+  }
+]
