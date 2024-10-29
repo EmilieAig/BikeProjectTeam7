@@ -7,11 +7,11 @@ website:
   title: "BikeProjectTeam7"
   navbar:
     left:
-      - text: "Home"
+      - text: "Analyses"
         menu:
-          - text: "Option 1"
+          - text: "Interactive map"
             href: page1/page1_1.qmd
-          - text: "Option 2"
+          - text: "Video"
             href: page1/page1_2.qmd
       - text: "Documentation"
         menu:
