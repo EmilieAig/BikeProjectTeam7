@@ -1,49 +1,43 @@
-/* styles.css */
+/* styles.css : to determine the graphic chart */
+
+/* Style for navigation bar */
 .navbar {
-    background-color: #5dade2 !important;
-    color: white;
+    background-color: #5dade2 !important;   /* background color */
+    color: white;                           /* text color */
   }
-  
+
+/* Style for logo or title color */
   .navbar-brand {
     color: black !important;
   }
   
+/* Style for navigation links */
   .nav-link {
-    color: rgba(255,255,255,0.85) !important;
-  }
-  
-  .nav-link:hover {
     color: black !important;
   }
   
-  .sidebar-title {
-    font-size: 1.1em;
-    font-weight: 600;
+/* Style for navigation links when computer mouse hovers over them */
+  .nav-link:hover {
+    color: white !important;
   }
   
-  .sidebar-navigation {
-    font-size: 0.9em;
-  }
-  
+/* Style for main titles */
   h1 {
     font-size: 2.5em;
     font-weight: 400;
     margin-bottom: 1em;
   }
   
+/* Style for subtitles */
   h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 400;
     margin-top: 1.5em;
   }
   
+/* Global style to the main content section */
   .content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2em;
-  }
-  
-  .breadcrumb {
-    font-size: 0.9em;
-    margin-bottom: 2em;
   }

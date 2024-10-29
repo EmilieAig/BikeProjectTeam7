@@ -4,6 +4,8 @@ title: "Welcome to our project"
 
 # Section principale
 
+## Title 2
+
 Contenu de la page...
 
 Bonjour

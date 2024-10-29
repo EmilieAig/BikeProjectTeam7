@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Welcome to our project",
     "section": "",
-    "text": "Section principale\nContenu de la page…\nBonjour"
+    "text": "Contenu de la page…\nBonjour"
   },
   {
     "objectID": "general-tools/option1.html",
@@ -26,5 +26,33 @@
     "title": "Titre de la page",
     "section": "",
     "text": "Section principale\nContenu de la page…"
+  },
+  {
+    "objectID": "page1/page1_1.html",
+    "href": "page1/page1_1.html",
+    "title": "Titre de la page",
+    "section": "",
+    "text": "Section principale\nContenu de la page…"
+  },
+  {
+    "objectID": "page2/page2_1.html",
+    "href": "page2/page2_1.html",
+    "title": "Titre de la page",
+    "section": "",
+    "text": "Section principale\nContenu de la page…"
+  },
+  {
+    "objectID": "page1/page1_2.html",
+    "href": "page1/page1_2.html",
+    "title": "Titre de la page",
+    "section": "",
+    "text": "Section principale\nContenu de la page…"
+  },
+  {
+    "objectID": "index.html#title-2",
+    "href": "index.html#title-2",
+    "title": "Welcome to our project",
+    "section": "",
+    "text": "Contenu de la page…\nBonjour"
   }
 ]
