@@ -93,9 +93,16 @@ def convert_json_to_csv(input_file, output_dir):
 
 def process_all_json_files():
     # Define folder paths
-    current_directory = os.getcwd()
-    input_dir = os.path.join(current_directory, 'data')
-    output_dir = os.path.join(current_directory, 'data_clean')
+    # current_directory = os.getcwd()
+    # input_dir = os.path.join(current_directory, 'Data', 'Data_EcoCompt')
+    # output_dir = os.path.join(current_directory, 'Data', 'Data_EcoCompt_clean')
+
+
+# Aller un niveau au-dessus du dossier Scripts
+    current_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    input_dir = os.path.join(current_directory, 'Data', 'Data_EcoCompt')
+    output_dir = os.path.join(current_directory, 'Data', 'Data_EcoCompt_clean')
+
     
     # Check if the entry file exists
     if not os.path.exists(input_dir):
@@ -141,3 +148,5 @@ if __name__ == "__main__":
     print("Start processing JSON files...")
     process_all_json_files()
     print("\nTreatment completed.")
+
+# %%
