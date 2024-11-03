@@ -58,8 +58,8 @@ monthly_data = df.groupby(['year', 'month'])['intensity'].mean().reset_index()
 
 # Statistiques de comparaison avant, pendant et après le Tour de France
 before_july = daily_data[(daily_data['date'] < '2023-07-01')]['intensity']
-during_july = daily_data[(daily_data['date'] >= '2023-07-01') & (daily_data['date'] <= '2023-07-31')]['intensity']
-after_july = daily_data[(daily_data['date'] > '2023-07-31')]['intensity']
+during_july = daily_data[(daily_data['date'] >= '2023-07-01') & (daily_data['date'] <= '2023-07-23')]['intensity']
+after_july = daily_data[(daily_data['date'] > '2023-07-23')]['intensity']
 
 # %%
 
