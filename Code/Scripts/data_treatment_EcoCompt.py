@@ -19,18 +19,24 @@ def convert_json_to_csv(input_file, output_dir):
     
     try:
         with open(input_file, 'r', encoding='utf-8') as file:
+            # Read the file line by line
             for line in file:
                 # Ignore empty lines
-                if line.strip():
+                line = line.strip()
+                if not line:
+                    continue
+                    
+                # Separate JSON objects that could be glued together
+                json_strings = line.replace('}{', '}\n{').split('\n')
+                
+                for json_str in json_strings:
                     try:
-                        # Load JSON object
-                        json_obj = json.loads(line.strip())
+                        if not json_str.strip():
+                            continue
+                        # Load JSON object   
+                        json_obj = json.loads(json_str)
                         
-                        # Extract coordinates
-                        longitude = json_obj['location']['coordinates'][0]
-                        latitude = json_obj['location']['coordinates'][1]
-                        
-                        # Extract date (first part of dateObserved)
+                        # Extract date
                         date = json_obj['dateObserved'].split('T')[0]
                         
                         # Creating a flattened dictionary
@@ -38,8 +44,9 @@ def convert_json_to_csv(input_file, output_dir):
                             'intensity': json_obj['intensity'],
                             'laneId': json_obj['laneId'],
                             'date': date,
-                            'longitude': longitude,
-                            'latitude': latitude,
+                            # Extract coordinates
+                            'longitude': json_obj['location']['coordinates'][0],
+                            'latitude': json_obj['location']['coordinates'][1],
                             'id': json_obj['id'],
                             'type': json_obj['type'],
                             'vehicleType': json_obj['vehicleType'],
@@ -47,8 +54,10 @@ def convert_json_to_csv(input_file, output_dir):
                         }
                         data_list.append(flat_data)
                     except json.JSONDecodeError as e:
-                        print(f"Error decoding a line in {input_filename}")
-                        print(f"Error : {e}")
+                        print(f"JSON decoding error: {str(e)}\nIn the object: {json_str[:50]}...")
+                        continue
+                    except KeyError as e:
+                        print(f"Key missing from object: {str(e)}")
                         continue
         
         # If no data was found, raise an exception
@@ -57,6 +66,11 @@ def convert_json_to_csv(input_file, output_dir):
         
         # Convert to DataFrame pandas
         df = pd.DataFrame(data_list)
+        
+        # If the DataFrame is empty, stop and return False
+        if df.empty:
+            print(f"No data to save for {input_filename}. The file will not be created.")
+            return False
         
         # Convert date column to datetime format
         df['date'] = pd.to_datetime(df['date'])
@@ -78,11 +92,15 @@ def convert_json_to_csv(input_file, output_dir):
                           encoding='utf-8-sig',
                           float_format='%.6f')
         
+        # Print success message before returning
         print(f"\nSuccessful conversion: {input_filename} -> {output_filename}")
-        print(f"Number of recordings: {len(df_filtered)}")
-        print(f"Period: from {df_filtered['date'].min()} to {df_filtered['date'].max()}")
+        print(f"Total number of recordings: {len(data_list)}")
+        print(f"Number of recordings in the period: {len(df_filtered)}")
+        if not df_filtered.empty:
+            print(f"Période: du {df_filtered['date'].min()} au {df_filtered['date'].max()}")
         
-        return True
+        # Indique le succès de la conversion
+        return True if not df_filtered.empty else False
         
     except Exception as e:
         print(f"\nError when processing {input_filename}")
@@ -93,12 +111,6 @@ def convert_json_to_csv(input_file, output_dir):
 
 def process_all_json_files():
     # Define folder paths
-    # current_directory = os.getcwd()
-    # input_dir = os.path.join(current_directory, 'Data', 'Data_EcoCompt')
-    # output_dir = os.path.join(current_directory, 'Data', 'Data_EcoCompt_clean')
-
-
-# Aller un niveau au-dessus du dossier Scripts
     current_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     input_dir = os.path.join(current_directory, 'Data', 'Data_EcoCompt')
     output_dir = os.path.join(current_directory, 'Data', 'Data_EcoCompt_clean')
@@ -130,15 +142,21 @@ def process_all_json_files():
     # Process each file
     for json_file in json_files:
         print(f"\nTreatment of: {os.path.basename(json_file)}")
-        if convert_json_to_csv(json_file, output_dir):
-            success_count += 1
-        else:
+        # Si la conversion échoue, supprimer le fichier CSV créé
+        if not convert_json_to_csv(json_file, output_dir):
+            output_filename = os.path.basename(json_file).replace('.json', '.csv')
+            output_file = os.path.join(output_dir, output_filename)
+            if os.path.exists(output_file):
+                os.remove(output_file)
+                print(f"{output_filename} deleted as empty.")
             error_count += 1
+        else:
+            success_count += 1
     
     # View final report
     print("\n=== Conversion report ===")
     print(f"Files successfully processed: {success_count}")
-    print(f"Files with errors: {error_count}")
+    print(f"Files without registration for the desired period: {error_count}")
     print(f"Total files: {len(json_files)}")
     print(f"\nThe CSV files have been saved in: {output_dir}")
 
