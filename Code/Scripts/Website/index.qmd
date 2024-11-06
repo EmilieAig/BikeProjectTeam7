@@ -1,10 +1,23 @@
 ---
-title: "Welcome to our project of : bike analyses in Montpellier" 
+format:
+  html:
+    include-in-header:
+      text: |
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 ---
 
-## Explications
+<div style="text-align: center;">
+<h1>Welcome to our project <i class="fas fa-bicycle"></i><br>
+bike analyses in Montpellier</h1>
+</div>
+
+## Introduction
+
+#### Problematic
 
 Our project will focus on the following question: "What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists' behaviors evolved before and after this major event?".
+
+#### Goal
 
 The goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.
 

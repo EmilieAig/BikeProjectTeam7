@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to our project of : bike analyses in Montpellier",
+    "title": "\nWelcome to our project of : bike analyses in Montpellier \n",
     "section": "",
     "text": "Our project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits."
   },
@@ -58,15 +58,29 @@
   {
     "objectID": "index.html#explications",
     "href": "index.html#explications",
-    "title": "Welcome to our project of : bike analyses in Montpellier",
-    "section": "",
-    "text": "Our project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits."
+    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
+    "section": "Explications",
+    "text": "Explications\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits."
   },
   {
     "objectID": "index.html#data",
     "href": "index.html#data",
-    "title": "Welcome to our project of : bike analyses in Montpellier",
+    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
     "section": "Data",
     "text": "Data\nTo conduct this study, we have chosen to analyze data on bicycle usage spanning from April to October 2023. This time frame allows us to examine bike traffic before, during, and after the Tour de France, providing a comprehensive view of usage patterns around this event. The selection of this period is crucial for capturing short-term trends related to the Tour and distinguishing them from seasonal or contextual factors that might also influence cycling behavior."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
+    "section": "Introduction",
+    "text": "Introduction\n\nProblematic\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\n\n\nGoal\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits."
+  },
+  {
+    "objectID": "index.html#tour-de-france",
+    "href": "index.html#tour-de-france",
+    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
+    "section": "Tour de France",
+    "text": "Tour de France"
   }
 ]

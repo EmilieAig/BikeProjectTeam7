@@ -2,43 +2,43 @@
 
 /* Style for navigation bar */
 .navbar {
-    background-color: #5dade2 !important;   /* background color */
-    color: white;                           /* text color */
-  }
+  background-color: #5dade2 !important;   /* background color */
+  color: white;                           /* text color */
+}
 
 /* Style for logo or title color */
-  .navbar-brand {
-    color: black !important;
-  }
-  
+.navbar-brand {
+  color: black !important;
+}
+
 /* Style for navigation links */
-  .nav-link {
-    color: black !important;
-  }
-  
+.nav-link {
+  color: black !important;
+}
+
 /* Style for navigation links when computer mouse hovers over them */
-  .nav-link:hover {
-    color: white !important;
-  }
-  
+.nav-link:hover {
+  color: white !important;
+}
+
 /* Style for main titles */
-  h1 {
-    font-size: 2.5em;
-    font-weight: 400;
-    margin-bottom: 1.5em;
-  }
-  
+h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-bottom: 1.5em;
+}
+
 /* Style for subtitles */
-  h2 {
-    font-size: 1.5em;
-    font-weight: 400;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-  }
-  
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
 /* Global style to the main content section */
-  .content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2em;
-  }
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
