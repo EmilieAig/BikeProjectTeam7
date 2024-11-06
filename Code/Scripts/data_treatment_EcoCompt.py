@@ -36,6 +36,14 @@ def convert_json_to_csv(input_file, output_dir):
                         # Load JSON object   
                         json_obj = json.loads(json_str)
                         
+                        # Vérifier si des valeurs importantes sont nulles
+                        if any(json_obj.get(key) is None for key in ['intensity', 'laneId', 'dateObserved', 'location', 'id', 'type', 'vehicleType', 'reversedLane']):
+                            continue
+                            
+                        # Vérifier si les coordonnées sont nulles
+                        if json_obj['location'].get('coordinates') is None or None in json_obj['location']['coordinates']:
+                            continue
+                        
                         # Extract date
                         date = json_obj['dateObserved'].split('T')[0]
                         
@@ -52,6 +60,11 @@ def convert_json_to_csv(input_file, output_dir):
                             'vehicleType': json_obj['vehicleType'],
                             'reversedLane': json_obj['reversedLane']
                         }
+                        
+                        # Vérifier si une des valeurs du dictionnaire est nulle
+                        if any(value is None for value in flat_data.values()):
+                            continue
+                        
                         data_list.append(flat_data)
                     except json.JSONDecodeError as e:
                         print(f"JSON decoding error: {str(e)}\nIn the object: {json_str[:50]}...")
@@ -71,6 +84,9 @@ def convert_json_to_csv(input_file, output_dir):
         if df.empty:
             print(f"No data to save for {input_filename}. The file will not be created.")
             return False
+        
+        # Supprimer les lignes contenant des valeurs nulles
+        df = df.dropna()
         
         # Convert date column to datetime format
         df['date'] = pd.to_datetime(df['date'])
