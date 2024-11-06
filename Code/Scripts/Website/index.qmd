@@ -1,0 +1,10 @@
+---
+title: "Welcome to our project" 
+---
+
+# Section principale
+
+Contenu de la page...
+
+Bonjour
+
