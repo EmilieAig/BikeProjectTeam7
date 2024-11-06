@@ -30,9 +30,9 @@
   {
     "objectID": "page1/page1_1.html",
     "href": "page1/page1_1.html",
-    "title": "Titre de la page",
+    "title": "\nInteractive map \n",
     "section": "",
-    "text": "Section principale\nContenu de la page…"
+    "text": "Interactive map \n\n\nIn this page we can see an interactive map of the traffic of bikes in the town of Montpellier.\nWe can choose a date and view :\n\nThe past traffic.\nThe prediction of the traffic for nexts days."
   },
   {
     "objectID": "page2/page2_1.html",
@@ -44,9 +44,9 @@
   {
     "objectID": "page1/page1_2.html",
     "href": "page1/page1_2.html",
-    "title": "Titre de la page",
+    "title": "Video",
     "section": "",
-    "text": "Section principale\nContenu de la page…"
+    "text": "In this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\nYou can choose the date and the video will be interactive."
   },
   {
     "objectID": "index.html#title-2",
@@ -82,5 +82,26 @@
     "title": "\nWelcome to our project  bike analyses in Montpellier\n",
     "section": "Tour de France",
     "text": "Tour de France"
+  },
+  {
+    "objectID": "page1/page1_2.html#test",
+    "href": "page1/page1_2.html#test",
+    "title": "Video",
+    "section": "",
+    "text": "In this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\nYou can choose the date and the video will be interactive."
+  },
+  {
+    "objectID": "page1/page1_2.html#presentation",
+    "href": "page1/page1_2.html#presentation",
+    "title": "Video",
+    "section": "",
+    "text": "In this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\nYou can choose the date and the video will be interactive."
+  },
+  {
+    "objectID": "page1/page1_2.html#video",
+    "href": "page1/page1_2.html#video",
+    "title": "Video",
+    "section": "Video",
+    "text": "Video"
   }
 ]

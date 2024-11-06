@@ -1,7 +1,20 @@
 ---
-title: "Titre de la page"
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 ---
 
-# Section principale
+<div style="text-align: center;">
+<h1>Interactive map <i class="fas fa-video"></i></h1>
+</div>
 
-Contenu de la page...
+In this page we can see an interactive map of the traffic of bikes in the town of Montpellier.
+
+We can choose a date and view :
+
+- The past traffic.
+
+- The prediction of the traffic for nexts days.
+
