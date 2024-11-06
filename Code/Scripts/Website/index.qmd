@@ -1,6 +1,7 @@
 ---
 format:
   html:
+    css: styles.css
     include-in-header:
       text: |
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -11,16 +12,24 @@ format:
 bike analyses in Montpellier</h1>
 </div>
 
+<div class="bike"> <img src="images/bike.png" alt="Image" style="width: 100%; max-width: 40px; display: block; margin: 0 auto -10px auto;">
+</div>
+
+<div class="pointilles-rectangle">
+</div>
+
+<br>
+
 ## Introduction
 
 #### Problematic
 
-Our project will focus on the following question: "What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists' behaviors evolved before and after this major event?".
+<p class = "text"> Our project will focus on the following question: "What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists' behaviors evolved before and after this major event?". </p> 
 
 #### Goal
 
-The goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.
+<p class = "text"> The goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits. </p>
 
 ## Data
 
-To conduct this study, we have chosen to analyze data on bicycle usage spanning from April to October 2023. This time frame allows us to examine bike traffic before, during, and after the Tour de France, providing a comprehensive view of usage patterns around this event. The selection of this period is crucial for capturing short-term trends related to the Tour and distinguishing them from seasonal or contextual factors that might also influence cycling behavior.
+<p class = "text"> To conduct this study, we have chosen to analyze data on bicycle usage spanning from April to October 2023. This time frame allows us to examine bike traffic before, during, and after the Tour de France, providing a comprehensive view of usage patterns around this event. The selection of this period is crucial for capturing short-term trends related to the Tour and distinguishing them from seasonal or contextual factors that might also influence cycling behavior. </p>

@@ -26,5 +26,6 @@ format:
     theme:
       light: cosmo
     css: styles.css
+    include-after-body: footer.qmd
     toc: true
     page-layout: full

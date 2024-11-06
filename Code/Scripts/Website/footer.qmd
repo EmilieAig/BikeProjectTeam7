@@ -1,0 +1,7 @@
+<div class="custom-footer">
+  <p>&copy; 2024 - All rights reserved. 
+    <a class="privacy-policy" href="#lien-legislation">Privacy policy</a> | 
+    <a href="#lien-legislation">Terms & Conditions</a> |
+    <a href="#lien-legislation">Cookies</a>
+  </p>
+</div>
