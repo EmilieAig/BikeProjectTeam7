@@ -9,6 +9,8 @@ website:
     left:
       - text: "Analyses"
         menu:
+          - text: "Statistics"
+            href: page1/page1_3.qmd
           - text: "Interactive map"
             href: page1/page1_1.qmd
           - text: "Video"

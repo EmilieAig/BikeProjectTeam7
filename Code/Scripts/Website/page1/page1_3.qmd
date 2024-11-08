@@ -7,13 +7,9 @@ format:
 ---
 
 <div style="text-align: center;">
-<h1>Video <i class="fas fa-video"></i></h1>
+<h1>Statistics <i class="fas fa-chart-line"></i></h1>
 </div>
 
-## Presentation
+## Section 
 
-In this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.
-
-You can choose the date and the video will be interactive.
-
-## Video
+In this page we can see the global statistics.

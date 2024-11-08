@@ -10,6 +10,8 @@ format:
 <h1>Interactive map <i class="fas fa-video"></i></h1>
 </div>
 
+## Section
+
 In this page we can see an interactive map of the traffic of bikes in the town of Montpellier.
 
 We can choose a date and view :

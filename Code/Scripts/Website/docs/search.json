@@ -93,14 +93,14 @@
   {
     "objectID": "page1/page1_2.html#presentation",
     "href": "page1/page1_2.html#presentation",
-    "title": "Video",
-    "section": "",
-    "text": "In this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\nYou can choose the date and the video will be interactive."
+    "title": "\nVideo \n",
+    "section": "Presentation",
+    "text": "Presentation\nIn this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\nYou can choose the date and the video will be interactive."
   },
   {
     "objectID": "page1/page1_2.html#video",
     "href": "page1/page1_2.html#video",
-    "title": "Video",
+    "title": "\nVideo \n",
     "section": "Video",
     "text": "Video"
   },
@@ -109,6 +109,20 @@
     "href": "footer.html",
     "title": "BikeProjectTeam7",
     "section": "",
-    "text": "© 2024 - All rights reserved. Privacy policy | Terms & Conditions | Cookies\n\n\npr"
+    "text": "© 2024 - All rights reserved. Privacy policy | Terms & Conditions | Cookies"
+  },
+  {
+    "objectID": "page1/page1_3.html",
+    "href": "page1/page1_3.html",
+    "title": "\nStatistics \n",
+    "section": "",
+    "text": "Statistics \n\n\nIn this page we can see the global statistics."
+  },
+  {
+    "objectID": "page1/page1_3.html#section",
+    "href": "page1/page1_3.html#section",
+    "title": "\nStatistics \n",
+    "section": "Section",
+    "text": "Section\nIn this page we can see the global statistics."
   }
 ]
