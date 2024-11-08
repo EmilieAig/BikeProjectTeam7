@@ -12,4 +12,4 @@ format:
 
 ## Section 
 
-In this page we can see the global statistics.
+<p class = "text"> In this page we can see the global statistics. </p>

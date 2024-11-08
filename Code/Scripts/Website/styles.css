@@ -1,7 +1,8 @@
 /* styles.css : to determine the graphic chart */
 
 .text {
-  color: black
+  color: black;
+  text-align: justify; 
 }
 
 /* Style for navigation bar */

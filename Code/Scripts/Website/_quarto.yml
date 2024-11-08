@@ -30,4 +30,6 @@ format:
     css: styles.css
     include-after-body: footer.qmd
     toc: true
+    toc-location: right
+    toc-depth: 4
     page-layout: full

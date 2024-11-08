@@ -12,8 +12,8 @@ format:
 
 ## Presentation
 
-In this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.
+<p class = "text"> In this page we can see a youtube video of the Velomagg bikes traffic in Montpellier. </p>
 
-You can choose the date and the video will be interactive.
+<p class = "text"> You can choose the date and the video will be interactive. </p>
 
 ## Video
