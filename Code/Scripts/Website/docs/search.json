@@ -39,7 +39,7 @@
     "href": "page2/page2_1.html",
     "title": "Titre de la page",
     "section": "",
-    "text": "Section principale\nContenu de la page…"
+    "text": "Section principale\n\nContenu de la page…"
   },
   {
     "objectID": "page1/page1_2.html",
@@ -123,7 +123,7 @@
     "href": "page1/page1_3.html#section",
     "title": "\nStatistics \n",
     "section": "Section",
-    "text": "Section\nIn this page we can see the global statistics."
+    "text": "Section\n\nIn this page we can see the global statistics."
   },
   {
     "objectID": "footer/privacy_policy.html#introduction",
@@ -137,13 +137,13 @@
     "href": "footer/terms_conditions.html#section",
     "title": "\nTerms and Conditions \n",
     "section": "Section",
-    "text": "Section\nThese Terms & Conditions govern your use of our website BikeProjectTeam7. By accessing or using our site, you agree to comply with these Terms.\n\n1. Use of the Website\nYou may use this website for personal and non-commercial purposes. You agree not to:\n\nPost any unlawful or harmful content.\nAttempt to gain unauthorized access to the website or its systems.\nUse the website for fraudulent purposes.\n\n\n\n2. Intellectual Property\nAll content on this site, including text, images, and logos, is the property of [Your Website Name]. Unauthorized use of any content is prohibited.\n\n\n3. Limitation of Liability\nWe are not responsible for any errors, interruptions, or losses that may occur while using our website. The content is provided “as is” without any warranties.\n\n\n4. Changes to Terms\nWe reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting on this page. Please review the Terms regularly.\n\n\n5. Governing Law\nThese Terms are governed by the laws of [Your Country/Region]. Any disputes arising from these Terms will be resolved in the courts of [Your Country/Region].\n\n\n6. Contact Us\nIf you have any questions about these Terms, please contact us at [your email address]."
+    "text": "Section\n\nThese Terms & Conditions govern your use of our website BikeProjectTeam7. By accessing or using our site, you agree to comply with these Terms.\n\n\n1. Use of the Website\n\nYou may use this website for personal and non-commercial purposes. You agree not to:\n\nPost any unlawful or harmful content.\nAttempt to gain unauthorized access to the website or its systems.\nUse the website for fraudulent purposes.\n\n\n\n\n2. Intellectual Property\n\nAll content on this site, including text, images, and logos, is the property of [Your Website Name]. Unauthorized use of any content is prohibited.\n\n\n\n3. Limitation of Liability\n\nWe are not responsible for any errors, interruptions, or losses that may occur while using our website. The content is provided “as is” without any warranties.\n\n\n\n4. Changes to Terms\n\nWe reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting on this page. Please review the Terms regularly.\n\n\n\n5. Governing Law\n\nThese Terms are governed by the laws of [Your Country/Region]. Any disputes arising from these Terms will be resolved in the courts of [Your Country/Region].\n\n\n\n6. Contact Us\n\nIf you have any questions about these Terms, please contact us at [your email address]."
   },
   {
     "objectID": "page1/page1_1.html#section",
     "href": "page1/page1_1.html#section",
     "title": "\nInteractive map \n",
     "section": "Section",
-    "text": "Section\nIn this page we can see an interactive map of the traffic of bikes in the town of Montpellier.\nWe can choose a date and view :\n\nThe past traffic.\nThe prediction of the traffic for nexts days."
+    "text": "Section\n\nIn this page we can see an interactive map of the traffic of bikes in the town of Montpellier.\nWe can choose a date and view :\n\nThe past traffic.\nThe prediction of the traffic for nexts days."
   }
 ]
