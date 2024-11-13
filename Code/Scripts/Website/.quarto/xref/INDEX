@@ -1,0 +1,26 @@
+{
+  "index.qmd": {
+    "index.html": "c2249ef7"
+  },
+  "footer/terms_conditions.qmd": {
+    "terms_conditions.html": "89839fb9"
+  },
+  "footer/privacy_policy.qmd": {
+    "privacy_policy.html": "2c6c3469"
+  },
+  "page2/page2_1.qmd": {
+    "page2_1.html": "8a3a0e33"
+  },
+  "page1/page1_2.qmd": {
+    "page1_2.html": "47dbffd0"
+  },
+  "page1/page1_3.qmd": {
+    "page1_3.html": "c957c233"
+  },
+  "page1/page1_1.qmd": {
+    "page1_1.html": "edf3fd17"
+  },
+  "footer.qmd": {
+    "footer.html": "c4225742"
+  }
+}
