@@ -1,0 +1,67 @@
+---
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+---
+
+<div style="text-align: center;">
+<h1>About us <i class="fas fa-eye"></i></h1>
+</div>
+
+## Global presentation
+
+<p class = "text"> Nous sommes une équipe de 4 personnes étudiants à la Faculté des Sciences de Montpellier. Nous sommes actuellemnt en première année de Master en Statistiques et Sciences des Données. Nous réalisons ce projet dans le cadre de l'unité d'enseignement 'Développement logiciel'. </p>
+
+<p class = "text"> Vous pouvez retrouver dans notre équipe :
+
+- Samira : qui a participé aux rédactions des Readme et à la création de la vidéo.
+
+- Anne-Laure : qui a participé à la création de la maquette du site web et à la création des prédictions des cartes.
+
+- Qinjian : qui a participé à la visualisation de la carte et à la création des tracés sur la carte.
+
+- Emilie : qui a participé à la réalisation du diagramme de Gantt et à la création du site web. </p>
+
+## Team members
+
+<div class="trombinoscope">
+
+<div class="member">
+   <img src="/images/member1.jpeg" alt="Member 1" width="150px">
+   <h4>Emilie AIGOIN</h4>
+   <p>Role: ??</p>
+   <p>Contributions: Gantt diagram, website creation.</p>
+</div>
+
+<div class="member">
+   <img src="images/member2.jpg" alt="Member 2" width="150px">
+   <h4>Samira MAMANE SIDI</h4>
+   <p>Role: ??</p>
+   <p>Contributions: readme redaction, video creation.</p>
+</div>
+
+<div class="member">
+   <img src="images/member2.jpg" alt="Member 2" width="150px">
+   <h4>Anne-Laure THOMAS</h4>
+   <p>Role: ??</p>
+   <p>Contributions: website mockup, map prediction.</p>
+</div>
+
+<div class="member">
+   <img src="images/member2.jpg" alt="Member 2" width="150px">
+   <h4>Qingjian ZHU</h4>
+   <p>Role: ??</p>
+   <p>Contributions: map visualization, bike layout on the map.</p>
+</div>
+
+</div>
+
+## Petit mot de la fin
+
+<p class = "text"> Nous sommes très fiers d'avoir pu réaliser ce projet et espérons que ce site web vous plapit également. </p>
+
+<p class = "text"> Si vous avez des questions n'hésitez pas à nous contacter par mail (format : prénom.nom@etu.umontpellier.fr). Nous serons ravie d'essayer d'apporter des réponses à vos questions. </p>
+
+<p class = "text"> Enjoy! </p>

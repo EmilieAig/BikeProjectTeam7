@@ -37,9 +37,9 @@
   {
     "objectID": "page2/page2_1.html",
     "href": "page2/page2_1.html",
-    "title": "Titre de la page",
+    "title": "Documentation",
     "section": "",
-    "text": "Section principale\n\nContenu de la page…"
+    "text": "Contenu de la page…\n\n\nPackages\nClasses\nFonctions"
   },
   {
     "objectID": "page1/page1_2.html",
@@ -74,7 +74,7 @@
     "href": "index.html#introduction",
     "title": "\nWelcome to our project  bike analyses in Montpellier\n",
     "section": "Introduction",
-    "text": "Introduction\n\nProblematic\n\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits."
+    "text": "Introduction\n\nProblematic\n\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.\n\n\n\nHypothesis\n\nEn nous basant sur des donnes ???, nus avons fait comme hypothèse qu’il y aurait une fréquentation plus importante de vélos à Montpellier aux alentours des périodes du Tour de France. En effet, nous pensons qu’un évènement tel que le celui-ci peut inciter les gens à prendre leur vélo, que ce soit juste avant cet évènement, pendant, ou juste après cet évènement. De plus, nous pensons que ces effets ne sont pas répercutés sur une grande période avant et après et qu’ils se dissipent rapidement."
   },
   {
     "objectID": "index.html#tour-de-france",
@@ -109,7 +109,7 @@
     "href": "footer.html",
     "title": "BikeProjectTeam7",
     "section": "",
-    "text": "© 2024 - All rights reserved. Privacy policy | Terms & Conditions | Cookies"
+    "text": "© 2024 - All rights reserved. Privacy policy | Terms & Conditions | About us"
   },
   {
     "objectID": "page1/page1_3.html",
@@ -145,5 +145,89 @@
     "title": "\nInteractive map \n",
     "section": "Section",
     "text": "Section\n\nIn this page we can see an interactive map of the traffic of bikes in the town of Montpellier.\nWe can choose a date and view :\n\nThe past traffic.\nThe prediction of the traffic for nexts days."
+  },
+  {
+    "objectID": "footer/about_us.html#introduction",
+    "href": "footer/about_us.html#introduction",
+    "title": "\nAbout us \n",
+    "section": "Introduction",
+    "text": "Introduction\n\nWelcome to BikeProjectTeam7. .\n\n\n1. The team\n\nNous sommes une équipe de 4 personnes étudiants à la Faculté des Sciences de Montpellier. Nous sommes actuellemnt en première année de Master en Statistiques et Sciences des Données. Nous réalisons ce projet dans le cadre de l’unité d’enseignement ‘Développement logiciel’.\n\n\nVous pouvez retrouver dans notre équipe :\n\nSamira : qui a participé aux rédactions des Readme et à la création de la vidéo.\nAnne-Laure : qui a participé à la création de la maquette du site web et à la création des prédictions des cartes.\nQinjian : qui a participé à la visualisation de la carte et à la création des tracés sur la carte.\nEmilie : qui a participé à la réalisation du diagramme de Gantt et à la création du site web.\n\n\n\nNous sommes très fiers d’avoir pu réaliser ce projet et espérons que ce site web vous plapit également.\n\n\nSi vous avez des questions n’hésitez pas à nous contacter par mail (adresse mail sous le format : prénom.nom@etu.umontpellier.fr). Nous serons ravie d’essayer d’apporter des réponses à vos questions.\n\n\nEnjoy!"
+  },
+  {
+    "objectID": "page1/page1_3.html#introduction",
+    "href": "page1/page1_3.html#introduction",
+    "title": "\nStatistics \n",
+    "section": "Introduction",
+    "text": "Introduction\n\nIn this page we can see the global statistics.\n\nNous cherchons à voir s’il existe des différences au niveau de la fréquentation des vélos dans la ville de Montpellier en fonction des périodes : juste avant le Tour de France, pendant le Tour de France, juste après le Tour de France et le reste de l’année.\nPour cela, à partir des données que nous avon choisi (explication dans la page d’accueil), nous avons effectué des analyses statistiques pour affirmer ou infirmer notre hypothèse de départ."
+  },
+  {
+    "objectID": "page1/page1_3.html#méthode",
+    "href": "page1/page1_3.html#méthode",
+    "title": "\nStatistics \n",
+    "section": "Méthode",
+    "text": "Méthode"
+  },
+  {
+    "objectID": "page1/page1_3.html#résultats",
+    "href": "page1/page1_3.html#résultats",
+    "title": "\nStatistics \n",
+    "section": "Résultats",
+    "text": "Résultats"
+  },
+  {
+    "objectID": "page1/page1_3.html#discussion",
+    "href": "page1/page1_3.html#discussion",
+    "title": "\nStatistics \n",
+    "section": "Discussion",
+    "text": "Discussion\n\nNous remarquons qu’il ??? n’y a pas de différence significative ???? au niveau de la fréquentation dans la ville de Montpellier entre les périodes les différentes périodes qui pourraient être attribués au Tour de France.\n\n\nEn effet, si nous regardons nos résultats plus en détails, nous voyons que les différences qui apparaissent au niveau de la fréquentation des vélos semblent se rapprocher d’un autre évènement important dans la vie de français : les vacances. Nous voyons qu’il y a une diminution de la fréquentation des vélos lors de la période de vacances estivales, c’est-à-dire de début juillet à fin août. Puis, nous voyons qu’à partir de septembre il y a a nouveau une augmentation du nombre de vélos, ce qui pourrait correspondre à la rentrée (scolaire mais aussi retour de vacances pour les employés). Ainsi, une hausse de la fréquentation des vélos pourrait être liée au période de travail des français."
+  },
+  {
+    "objectID": "page1/page1_3.html#conclusion",
+    "href": "page1/page1_3.html#conclusion",
+    "title": "\nStatistics \n",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nNotre hypothèse n’a pas été validée. Cependant, il serait intéressant d’étudier notre problématique sur d’autres année afin de voir par exemple s’il le Tour de France a plus d’influence sur les habitudes de l’utilisation du vélo à Montpellier lorsqu’il y a une étape du Tour qui passe par la ville de Montpellier."
+  },
+  {
+    "objectID": "footer/about_us.html",
+    "href": "footer/about_us.html",
+    "title": "\nAbout us \n",
+    "section": "",
+    "text": "About us \n\n\n\nThe team\n\nNous sommes une équipe de 4 personnes étudiants à la Faculté des Sciences de Montpellier. Nous sommes actuellemnt en première année de Master en Statistiques et Sciences des Données. Nous réalisons ce projet dans le cadre de l’unité d’enseignement ‘Développement logiciel’.\n\n\nVous pouvez retrouver dans notre équipe :\n\nSamira : qui a participé aux rédactions des Readme et à la création de la vidéo.\nAnne-Laure : qui a participé à la création de la maquette du site web et à la création des prédictions des cartes.\nQinjian : qui a participé à la visualisation de la carte et à la création des tracés sur la carte.\nEmilie : qui a participé à la réalisation du diagramme de Gantt et à la création du site web.\n\n\n\n\nPetit mot de la fin\n\nNous sommes très fiers d’avoir pu réaliser ce projet et espérons que ce site web vous plapit également.\n\n\nSi vous avez des questions n’hésitez pas à nous contacter par mail (adresse mail sous le format : prénom.nom@etu.umontpellier.fr). Nous serons ravie d’essayer d’apporter des réponses à vos questions.\n\n\nEnjoy!"
+  },
+  {
+    "objectID": "footer/terms_conditions.html",
+    "href": "footer/terms_conditions.html",
+    "title": "\nTerms and Conditions \n",
+    "section": "",
+    "text": "Terms and Conditions \n\n\n\nThese Terms & Conditions govern your use of our website BikeProjectTeam7. By accessing or using our site, you agree to comply with these Terms.\n\n\n1. Use of the Website\n\nYou may use this website for personal and non-commercial purposes. You agree not to:\n\nPost any unlawful or harmful content.\nAttempt to gain unauthorized access to the website or its systems.\nUse the website for fraudulent purposes.\n\n\n\n\n2. Intellectual Property\n\nAll content on this site, including text, images, and logos, is the property of [Your Website Name]. Unauthorized use of any content is prohibited.\n\n\n\n3. Limitation of Liability\n\nWe are not responsible for any errors, interruptions, or losses that may occur while using our website. The content is provided “as is” without any warranties.\n\n\n\n4. Changes to Terms\n\nWe reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting on this page. Please review the Terms regularly.\n\n\n\n5. Governing Law\n\nThese Terms are governed by the laws of [Your Country/Region]. Any disputes arising from these Terms will be resolved in the courts of [Your Country/Region].\n\n\n\n6. Contact Us\n\nIf you have any questions about these Terms, please contact us at [your email address]."
+  },
+  {
+    "objectID": "footer/about_us.html#about-us",
+    "href": "footer/about_us.html#about-us",
+    "title": "\nAbout us \n",
+    "section": "About Us",
+    "text": "About Us\n\nTeam Members\n\n\n\nJohn Doe\n\n\nRole: Project Manager\n\n\nContributions: Managed project timeline and communication with stakeholders.\n\n\n\n\n\nJane Smith\n\n\nRole: Data Analyst\n\n\nContributions: Analyzed bike rental data, provided statistical insights.\n\n\n\n\n\nPetit mot de la fin\n\nNous sommes très fiers d’avoir pu réaliser ce projet et espérons que ce site web vous plapit également.\n\n\nSi vous avez des questions n’hésitez pas à nous contacter par mail (adresse mail sous le format : prénom.nom@etu.umontpellier.fr). Nous serons ravie d’essayer d’apporter des réponses à vos questions.\n\n\nEnjoy!"
+  },
+  {
+    "objectID": "footer/about_us.html#team-members",
+    "href": "footer/about_us.html#team-members",
+    "title": "\nAbout us \n",
+    "section": "Team members",
+    "text": "Team members\n\n\n\n\nEmilie AIGOIN\n\n\nRole: ??\n\n\nContributions: Gantt diagram, website creation.\n\n\n\n\n\nSamira MAMANE SIDI\n\n\nRole: ??\n\n\nContributions: readme redaction, video creation.\n\n\n\n\n\nAnne-Laure THOMAS\n\n\nRole: ??\n\n\nContributions: website mockup, map prediction.\n\n\n\n\n\nQingjian ZHU\n\n\nRole: ??\n\n\nContributions: map visualization, bike layout on the map."
+  },
+  {
+    "objectID": "footer/about_us.html#global-presentation",
+    "href": "footer/about_us.html#global-presentation",
+    "title": "\nAbout us \n",
+    "section": "Global presentation",
+    "text": "Global presentation\n\nNous sommes une équipe de 4 personnes étudiants à la Faculté des Sciences de Montpellier. Nous sommes actuellemnt en première année de Master en Statistiques et Sciences des Données. Nous réalisons ce projet dans le cadre de l’unité d’enseignement ‘Développement logiciel’.\n\n\nVous pouvez retrouver dans notre équipe :\n\nSamira : qui a participé aux rédactions des Readme et à la création de la vidéo.\nAnne-Laure : qui a participé à la création de la maquette du site web et à la création des prédictions des cartes.\nQinjian : qui a participé à la visualisation de la carte et à la création des tracés sur la carte.\nEmilie : qui a participé à la réalisation du diagramme de Gantt et à la création du site web."
+  },
+  {
+    "objectID": "footer/about_us.html#petit-mot-de-la-fin",
+    "href": "footer/about_us.html#petit-mot-de-la-fin",
+    "title": "\nAbout us \n",
+    "section": "Petit mot de la fin",
+    "text": "Petit mot de la fin\n\nNous sommes très fiers d’avoir pu réaliser ce projet et espérons que ce site web vous plapit également.\n\n\nSi vous avez des questions n’hésitez pas à nous contacter par mail (format : prénom.nom@etu.umontpellier.fr). Nous serons ravie d’essayer d’apporter des réponses à vos questions.\n\n\nEnjoy!"
   }
 ]

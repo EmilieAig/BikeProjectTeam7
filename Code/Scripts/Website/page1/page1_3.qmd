@@ -10,8 +10,24 @@ format:
 <h1>Statistics <i class="fas fa-chart-line"></i></h1>
 </div>
 
-## Section 
+## Introduction
 
 <p class = "text"> In this page we can see the global statistics. </p>
 
 Nous cherchons à voir s'il existe des différences au niveau de la fréquentation des vélos dans la ville de Montpellier en fonction des périodes : juste avant le Tour de France, pendant le Tour de France, juste après le Tour de France et le reste de l'année.
+
+Pour cela, à partir des données que nous avon choisi (explication dans la page d'accueil), nous avons effectué des analyses statistiques pour affirmer ou infirmer notre hypothèse de départ.
+
+## Méthode
+
+## Résultats
+
+## Discussion
+
+<p class = "text"> Nous remarquons qu'il ??? n'y a pas de différence significative ???? au niveau de la fréquentation dans la ville de Montpellier entre les périodes les différentes périodes qui pourraient être attribués au Tour de France. </p>
+
+<p class = "text"> En effet, si nous regardons nos résultats plus en détails, nous voyons que les différences qui apparaissent au niveau de la fréquentation des vélos semblent se rapprocher d'un autre évènement important dans la vie de français : les vacances. Nous voyons qu'il y a une diminution de la fréquentation des vélos lors de la période de vacances estivales, c'est-à-dire de début juillet à fin août. Puis, nous voyons qu'à partir de septembre il y a a nouveau une augmentation du nombre de vélos, ce qui pourrait correspondre à la rentrée (scolaire mais aussi retour de vacances pour les employés). Ainsi, une hausse de la fréquentation des vélos pourrait être liée au période de travail des français. </p>
+
+## Conclusion
+
+<p class = "text"> Notre hypothèse n'a pas été validée. Cependant, il serait intéressant d'étudier notre problématique sur d'autres année afin de voir par exemple s'il le Tour de France a plus d'influence sur les habitudes de l'utilisation du vélo à Montpellier lorsqu'il y a une étape du Tour qui passe par la ville de Montpellier. </p>

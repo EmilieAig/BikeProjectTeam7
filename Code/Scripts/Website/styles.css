@@ -100,3 +100,17 @@ h2 {
     transform: translateX(50%);
   }
 }
+
+.trombinoscope {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.member {
+  text-align: center;
+  max-width: 180px;
+}
+.member img {
+  border-radius: 10%;
+}

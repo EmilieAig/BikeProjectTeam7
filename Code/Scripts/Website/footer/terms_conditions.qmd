@@ -10,8 +10,6 @@ format:
 <h1>Terms and Conditions <i class="fas fa-file-contract"></i></h1>
 </div>
 
-## Section
-
 <p class = "text"> These Terms & Conditions govern your use of our website BikeProjectTeam7. By accessing or using our site, you agree to comply with these Terms. </p>
 
 #### 1. Use of the Website
