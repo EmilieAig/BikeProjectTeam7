@@ -50,11 +50,11 @@ The development pipeline will be divided into several stages:
       - **For data management and analysis**: Pandas, NumPy  
       - **For visualization**: Matplotlib, Seaborn, Plotly (for interactive charts), Folium  or Leaflet.js (for the interactive map)
       - **For modeling and prediction**: scikit-learn, Prophet (or ARIMA)  
-      - **For the website**: Flask or Streamlit  
+      - **For the website and the slides**: Quarto  
 5. The Gantt Diagram\
 We will also create a Gantt Diagram to illustrate the project's timeline and track its progress over time. This diagram will help visualize each phase of the project, from data collection to website development, allowing us to monitor deadlines, dependencies, and milestones clearly.
 6. Creation of branch:\
-We have created four additional branches, aside from the main branch, allowing each team member to work independently. Gradually, we will merge our respective work into the main branch.
+We have created three additional branches:Data,Visualization and Website, aside from the main branch. Gradually, we will merge our respective work into the main branch.
 7. Task Distribution for the project \
 To organize our work efficiently, we have established the following task distribution plan,with a weekly meeting every Wednesday from 10 a.m. to 12 p.m:
 
@@ -71,7 +71,7 @@ To organize our work efficiently, we have established the following task distrib
     - Emilie will be responsible for developing the website script in the webapp.py file.
 
     **Multimedia Creation:**
-    - The video representing a cycling race forecast for a specific date will be made by Samira.
+    - The video representing a cycling race forecast for a specific date will be made by Samira and helping by one or two other team member.
     - The creation of the website will be carried out by Emilie and Anne-Laure.
 
     **Verification and Testing:**

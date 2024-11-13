@@ -1,0 +1,52 @@
+---
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+---
+
+<div style="text-align: center;">
+<h1>Privacy polity <i class="fas fa-lock"></i></h1>
+</div>
+
+## Introduction
+
+<p class = "text"> Welcome to BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information. </p>
+
+#### 1. Information We Collect
+
+<p class = "text"> We may collect the following types of information:
+Personal Information: Name, email address, phone number (when you fill out a form or subscribe to our newsletter).
+Usage Data: Information on how you use our site (e.g., pages visited, time spent on the site). </p>
+
+<p class = "text">  Cookies and Tracking Technologies: We use cookies to enhance user experience and analyze site traffic. </p>
+
+#### 2. How We Use Your Information
+
+<p class = "text">  We use your information to:
+
+- Provide and maintain our services.
+
+- Improve the user experience on our site.
+
+- Send you promotional content if you’ve opted in. </p>
+
+#### 3. Data Sharing and Disclosure
+
+<p class = "text">  We do not sell your personal data. We may share information with trusted third-party providers for analytics or marketing purposes (e.g., Google Analytics). </p>
+
+#### 4. Your Rights
+
+<p class = "text"> You have the right to:
+
+- Access your personal data.
+
+- Request correction or deletion of your data.
+
+- Opt out of data collection (e.g., disable cookies). </p>
+
+#### 5. Contact Us
+
+<p class = "text"> If you have any questions or concerns about this Privacy Policy, please contact us at [your email address]. </p>
+

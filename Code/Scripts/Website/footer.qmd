@@ -1,0 +1,7 @@
+<div class="custom-footer">
+  <p>&copy; 2024 - All rights reserved. 
+    <a class="privacy-policy" href=/footer/privacy_policy.qmd>Privacy policy</a> | 
+    <a class="terms-conditions" href=/footer/terms_conditions.qmd>Terms & Conditions</a> |
+    <a href="#lien-legislation">Cookies</a>
+  </p>
+</div>

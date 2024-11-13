@@ -1,0 +1,35 @@
+# _quarto.yml
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "BikeProjectTeam7"
+  navbar:
+    left:
+      - text: "Analyses"
+        menu:
+          - text: "Statistics"
+            href: page1/page1_3.qmd
+          - text: "Interactive map"
+            href: page1/page1_1.qmd
+          - text: "Video"
+            href: page1/page1_2.qmd
+      - text: "Documentation"
+        menu:
+          - text: "Option 1"
+            href: page2/page2_1.qmd
+    right:
+      - icon: github
+        href: https://github.com/EmilieAig/BikeProjectTeam7
+
+format:
+  html:
+    theme:
+      light: cosmo
+    css: styles.css
+    include-after-body: footer.qmd
+    toc: true
+    toc-location: right
+    toc-depth: 4
+    page-layout: full
