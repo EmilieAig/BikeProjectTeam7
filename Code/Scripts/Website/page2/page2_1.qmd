@@ -1,7 +1,9 @@
 ---
-title: "Titre de la page"
+title: "Documentation"
 ---
 
-# Section principale
-
 <p class = "text"> Contenu de la page... </p>
+
+- Packages
+- Classes
+- Fonctions
