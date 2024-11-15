@@ -14,9 +14,9 @@ format:
 
 <p class = "text"> In this page we can see the global statistics. </p>
 
-Nous cherchons à voir s'il existe des différences au niveau de la fréquentation des vélos dans la ville de Montpellier en fonction des périodes : juste avant le Tour de France, pendant le Tour de France, juste après le Tour de France et le reste de l'année.
+<p class = "text"> We wanted to see if there were any differences in the number of cyclists in Montpellier at different times of year: just before the Tour de France, during the Tour de France, just after the Tour de France and during the rest of the year. </p>
 
-Pour cela, à partir des données que nous avon choisi (explication dans la page d'accueil), nous avons effectué des analyses statistiques pour affirmer ou infirmer notre hypothèse de départ.
+<p class = "text"> To do this, we used the data we had chosen (explained on the home page) to carry out statistical analyses to confirm or refute our initial hypothesis. </p>
 
 ## Méthode
 

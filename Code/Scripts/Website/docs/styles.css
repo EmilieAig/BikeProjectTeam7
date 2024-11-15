@@ -1,11 +1,44 @@
 /* styles.css : to determine the graphic chart */
 
+/* Style for main titles */
+h1 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+
+/* Style for subtitles 2 */
+h2 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e8e5e5; /* Trait gris sous h3 */
+  padding-bottom: 5px; /* Décale la ligne vers le bas */
+}
+
+/* Style for subtitles 3 */
+h3 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e8e5e5; /* Trait gris sous h3 */
+  padding-bottom: 5px; /* Décale la ligne vers le bas */
+}
+
+/* Style for text */
 .text {
   color: black;
   text-align: justify; 
-  font-family: 'LAto', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 1em;
 }
 
 /* Style for navigation bar */
@@ -27,21 +60,6 @@
 /* Style for navigation links when computer mouse hovers over them */
 .nav-link:hover {
   color: white !important;
-}
-
-/* Style for main titles */
-h1 {
-  font-size: 2.5em;
-  font-weight: 400;
-  margin-bottom: 1.5em;
-}
-
-/* Style for subtitles */
-h2 {
-  font-size: 1.5em;
-  font-weight: 400;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
 }
 
 /* Global style to the main content section */

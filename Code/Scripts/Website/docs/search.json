@@ -158,7 +158,7 @@
     "href": "page1/page1_3.html#introduction",
     "title": "\nStatistics \n",
     "section": "Introduction",
-    "text": "Introduction\n\nIn this page we can see the global statistics.\n\nNous cherchons à voir s’il existe des différences au niveau de la fréquentation des vélos dans la ville de Montpellier en fonction des périodes : juste avant le Tour de France, pendant le Tour de France, juste après le Tour de France et le reste de l’année.\nPour cela, à partir des données que nous avon choisi (explication dans la page d’accueil), nous avons effectué des analyses statistiques pour affirmer ou infirmer notre hypothèse de départ."
+    "text": "Introduction\n\nIn this page we can see the global statistics.\n\n\nWe wanted to see if there were any differences in the number of cyclists in Montpellier at different times of year: just before the Tour de France, during the Tour de France, just after the Tour de France and during the rest of the year.\n\n\nTo do this, we used the data we had chosen (explained on the home page) to carry out statistical analyses to confirm or refute our initial hypothesis."
   },
   {
     "objectID": "page1/page1_3.html#méthode",
@@ -221,7 +221,7 @@
     "href": "footer/about_us.html#global-presentation",
     "title": "\nAbout us \n",
     "section": "Global presentation",
-    "text": "Global presentation\n\nNous sommes une équipe de 4 personnes étudiants à la Faculté des Sciences de Montpellier. Nous sommes actuellemnt en première année de Master en Statistiques et Sciences des Données. Nous réalisons ce projet dans le cadre de l’unité d’enseignement ‘Développement logiciel’."
+    "text": "Global presentation\n\nWe are a team of 4 students at the Montpellier Faculty of Science. We are currently in the first year of our Masters in Statistics and Data Science. We are carrying out this project as part of the ‘Software Development’ teaching unit."
   },
   {
     "objectID": "footer/about_us.html#petit-mot-de-la-fin",
@@ -242,7 +242,7 @@
     "href": "page2/page2_1.html#classes",
     "title": "\nDocumentation \n",
     "section": "Classes",
-    "text": "Classes\n\n“Text”\n\nIn the website, we have used the class named “text”. This class is used to organize and style all paragraphs in the website. It controls alignment (justification), font(??), color (black) and other text-related properties, all defined in the styles.css file.\n\n\n\n“Navbar”\n\n\n“Nav”\n\n\n“Content”\n\n\n“Footer”\n\n\n“Pointilles-rectangle”\n\n\n“Bike”\n\n\n“Trombinoscope”\n\nIn the website, we have used the class named “trombinoscope”. This class is used to , all defined in the styles.css file.\n\n\n\n“Member”\n\nIn the website, we have used the class named “member”. This class is used to in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other., all defined in the styles.css file."
+    "text": "Classes\n\n“Text”\n\nIn the website, we have used the class named “text”.\n\n\nThis class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls :\n\n\n\ncolor : for the choice of the text color : black.\n\n\ntext-align : for the choice of the text alignement : justify.\n\n\nfont-family : for the choice of font : Lato, sans serif.\n\n\nfont-size : for the choice of text size : 15px.\n\n\nfont-weight : for the choice of the text weight (level of bold) : 500.\n\n\nmargin-bottom : for the choice of the spacing between paragraphs : 1em.\n\n\n\nThis class is defined in the styles.css file.\n\n\n\n“Navbar”\n\nIn the website, we have used the class named “navbar”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n“Nav”\n\nIn the website, we have used the class named “nav”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n“Content”\n\nIn the website, we have used the class named “content”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n“Footer”\n\nIn the website, we have used the class named “footer”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n“Pointilles-rectangle”\n\nIn the website, we have used the class named “pointilles-rectangle”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n“Bike”\n\nIn the website, we have used the class named “bike”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n“Trombinoscope”\n\nIn the website, we have used the class named “trombinoscope”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n“Member”\n\nIn the website, we have used the class named “member”.\n\n\nThis class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other.\n\n\nThis class is defined in the styles.css file."
   },
   {
     "objectID": "page2/page2_1.html#fonctions",

@@ -12,7 +12,7 @@ format:
 
 ## Global presentation
 
-<p class = "text"> Nous sommes une équipe de 4 personnes étudiants à la Faculté des Sciences de Montpellier. Nous sommes actuellemnt en première année de Master en Statistiques et Sciences des Données. Nous réalisons ce projet dans le cadre de l'unité d'enseignement 'Développement logiciel'. </p>
+<p class = "text"> We are a team of 4 students at the Montpellier Faculty of Science. We are currently in the first year of our Masters in Statistics and Data Science. We are carrying out this project as part of the ‘Software Development’ teaching unit. </p>
 
 ## Team members
 
