@@ -1195,3 +1195,20 @@
 {"intensity":491,"laneId":253757735,"dateObserved":"2024-10-25T00:00:00/2024-10-26T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202410250000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false}{"intensity":140,"laneId":253757735,"dateObserved":"2024-10-26T00:00:00/2024-10-27T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202410260000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false} 
  
 {"intensity":789,"laneId":253757735,"dateObserved":"2024-10-27T00:00:00/2024-10-28T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202410270000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false}{"intensity":1028,"laneId":253757735,"dateObserved":"2024-10-28T00:00:00/2024-10-29T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202410280000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false} 
+ 
+{"intensity":1390,"laneId":253757735,"dateObserved":"2024-10-29T00:00:00/2024-10-30T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202410290000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false} 
+{"intensity":1521,"laneId":253757735,"dateObserved":"2024-10-30T00:00:00/2024-10-31T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202410300000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false} 
+{"intensity":1335,"laneId":253757735,"dateObserved":"2024-10-31T00:00:00/2024-11-01T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202410310000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false} 
+{"intensity":2439,"laneId":253757735,"dateObserved":"2024-11-01T00:00:00/2024-11-02T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202411010000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false}{"intensity":1906,"laneId":253757735,"dateObserved":"2024-11-02T00:00:00/2024-11-03T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202411020000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false} 
+ 
+{"intensity":2400,"laneId":253757735,"dateObserved":"2024-11-03T00:00:00/2024-11-04T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202411030000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false} 
+{"intensity":847,"laneId":253757735,"dateObserved":"2024-11-04T00:00:00/2024-11-05T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202411040000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false}{"intensity":781,"laneId":253757735,"dateObserved":"2024-11-05T00:00:00/2024-11-06T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202411050000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false} 
+ 
+{"intensity":956,"laneId":253757735,"dateObserved":"2024-11-06T00:00:00/2024-11-07T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202411060000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false} 
+{"intensity":870,"laneId":253757735,"dateObserved":"2024-11-07T00:00:00/2024-11-08T00:00:00","location":{"coordinates":[3.907998,43.584349],"type":"Point"},"id":"MMM_EcoCompt_X2H21070351_202411070000","type":"TrafficFlowObserved","vehicleType":"bicycle","reversedLane":false} 
+ 
+ 
+ 
+ 
+ 
+ 
