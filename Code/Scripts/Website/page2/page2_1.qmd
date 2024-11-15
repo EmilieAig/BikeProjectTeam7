@@ -1,9 +1,41 @@
 ---
-title: "Documentation"
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 ---
 
-<p class = "text"> Contenu de la page... </p>
+<div style="text-align: center;">
+<h1>Documentation <i class="fas fa-document"></i></h1>
+</div>
 
-- Packages
-- Classes
-- Fonctions
+## Packages
+
+## Classes
+
+#### "Text"
+
+<p class = "text"> In the website, we have used the class named "text". This class is used to organize and style all paragraphs in the website. It controls alignment (justification), font(??), color (black) and other text-related properties, all defined in the <code>styles.css</code> file. </p>
+
+#### "Navbar"
+
+#### "Nav"
+
+#### "Content"
+
+#### "Footer"
+
+#### "Pointilles-rectangle "
+
+#### "Bike"
+
+#### "Trombinoscope"
+
+<p class = "text"> In the website, we have used the class named "trombinoscope". This class is used to , all defined in the <code>styles.css</code> file. </p>
+
+#### "Member"
+
+<p class = "text"> In the website, we have used the class named "member". This class is used to  in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other., all defined in the <code>styles.css</code> file. </p>
+
+## Fonctions

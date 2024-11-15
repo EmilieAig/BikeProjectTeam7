@@ -3,6 +3,9 @@
 .text {
   color: black;
   text-align: justify; 
+  font-family: 'LAto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* Style for navigation bar */

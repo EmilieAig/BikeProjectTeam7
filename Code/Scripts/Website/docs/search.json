@@ -214,14 +214,14 @@
     "href": "footer/about_us.html#team-members",
     "title": "\nAbout us \n",
     "section": "Team members",
-    "text": "Team members\n\n\n\n\nEmilie AIGOIN\n\n\nRole: ??\n\n\nContributions: Gantt diagram, website creation.\n\n\n\n\n\nSamira MAMANE SIDI\n\n\nRole: ??\n\n\nContributions: readme redaction, video creation.\n\n\n\n\n\nAnne-Laure THOMAS\n\n\nRole: ??\n\n\nContributions: website mockup, map prediction.\n\n\n\n\n\nQingjian ZHU\n\n\nRole: ??\n\n\nContributions: map visualization, bike layout on the map."
+    "text": "Team members\n\n\n\n\nEmilie AIGOIN\n\n\nContributions:  Gantt diagram, website creation.\n\n\n\n\n\nSamira MAMANE SIDI\n\n\nContributions:  Readme redaction, video creation.\n\n\n\n\n\nAnne-Laure THOMAS\n\n\nContributions:  Website mockup, traffic prediction on the map.\n\n\n\n\n\nQingjian ZHU\n\n\nContributions:  Map visualization, bike layout on the map."
   },
   {
     "objectID": "footer/about_us.html#global-presentation",
     "href": "footer/about_us.html#global-presentation",
     "title": "\nAbout us \n",
     "section": "Global presentation",
-    "text": "Global presentation\n\nNous sommes une équipe de 4 personnes étudiants à la Faculté des Sciences de Montpellier. Nous sommes actuellemnt en première année de Master en Statistiques et Sciences des Données. Nous réalisons ce projet dans le cadre de l’unité d’enseignement ‘Développement logiciel’.\n\n\nVous pouvez retrouver dans notre équipe :\n\nSamira : qui a participé aux rédactions des Readme et à la création de la vidéo.\nAnne-Laure : qui a participé à la création de la maquette du site web et à la création des prédictions des cartes.\nQinjian : qui a participé à la visualisation de la carte et à la création des tracés sur la carte.\nEmilie : qui a participé à la réalisation du diagramme de Gantt et à la création du site web."
+    "text": "Global presentation\n\nNous sommes une équipe de 4 personnes étudiants à la Faculté des Sciences de Montpellier. Nous sommes actuellemnt en première année de Master en Statistiques et Sciences des Données. Nous réalisons ce projet dans le cadre de l’unité d’enseignement ‘Développement logiciel’."
   },
   {
     "objectID": "footer/about_us.html#petit-mot-de-la-fin",
@@ -229,5 +229,33 @@
     "title": "\nAbout us \n",
     "section": "Petit mot de la fin",
     "text": "Petit mot de la fin\n\nNous sommes très fiers d’avoir pu réaliser ce projet et espérons que ce site web vous plapit également.\n\n\nSi vous avez des questions n’hésitez pas à nous contacter par mail (format : prénom.nom@etu.umontpellier.fr). Nous serons ravie d’essayer d’apporter des réponses à vos questions.\n\n\nEnjoy!"
+  },
+  {
+    "objectID": "page2/page2_1.html#packages",
+    "href": "page2/page2_1.html#packages",
+    "title": "\nDocumentation \n",
+    "section": "Packages",
+    "text": "Packages"
+  },
+  {
+    "objectID": "page2/page2_1.html#classes",
+    "href": "page2/page2_1.html#classes",
+    "title": "\nDocumentation \n",
+    "section": "Classes",
+    "text": "Classes\n\n“Text”\n\nIn the website, we have used the class named “text”. This class is used to organize and style all paragraphs in the website. It controls alignment (justification), font(??), color (black) and other text-related properties, all defined in the styles.css file.\n\n\n\n“Navbar”\n\n\n“Nav”\n\n\n“Content”\n\n\n“Footer”\n\n\n“Pointilles-rectangle”\n\n\n“Bike”\n\n\n“Trombinoscope”\n\nIn the website, we have used the class named “trombinoscope”. This class is used to , all defined in the styles.css file.\n\n\n\n“Member”\n\nIn the website, we have used the class named “member”. This class is used to in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other., all defined in the styles.css file."
+  },
+  {
+    "objectID": "page2/page2_1.html#fonctions",
+    "href": "page2/page2_1.html#fonctions",
+    "title": "\nDocumentation \n",
+    "section": "Fonctions",
+    "text": "Fonctions"
+  },
+  {
+    "objectID": "footer/about_us.html#closing-remarks",
+    "href": "footer/about_us.html#closing-remarks",
+    "title": "\nAbout us \n",
+    "section": "Closing remarks",
+    "text": "Closing remarks\n\nWe’re very proud to have been able to complete this project and hope you enjoy this website too.\n\n\nIf you have any questions please don’t hesitate to contact us by email (format: prénom.nom@etu.umontpellier.fr). We will be delighted to try and provide answers to your questions.\n\n\nEnjoy!"
   }
 ]
