@@ -18,9 +18,9 @@ format:
 
 <p class = "text"> To do this, we used the data we had chosen (explained on the home page) to carry out statistical analyses to confirm or refute our initial hypothesis. </p>
 
-## Méthode
+## Methods
 
-## Résultats
+## Results
 
 ## Discussion
 

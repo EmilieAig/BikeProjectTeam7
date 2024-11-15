@@ -35,7 +35,7 @@ format:
 
 <p class = "text"> In the website, we have used the class named "navbar". </p>
 
-<p class = "text"> This class is used in the '' section to </p>
+<p class = "text"> This class is used in all sections of the website to style the navigation bar on the right  </p>
  
 <p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
 
