@@ -1,0 +1,102 @@
+/* styles.css : to determine the graphic chart */
+
+.text {
+  color: black;
+  text-align: justify; 
+}
+
+/* Style for navigation bar */
+.navbar {
+  background-color: #5dade2 !important;   /* background color */
+  color: white;                           /* text color */
+}
+
+/* Style for logo or title color */
+.navbar-brand {
+  color: black !important;
+}
+
+/* Style for navigation links */
+.nav-link {
+  color: black !important;
+}
+
+/* Style for navigation links when computer mouse hovers over them */
+.nav-link:hover {
+  color: white !important;
+}
+
+/* Style for main titles */
+h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-bottom: 1.5em;
+}
+
+/* Style for subtitles */
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* Global style to the main content section */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.custom-footer {
+  background-color: #f8f9fa; /* Couleur de fond */
+  color: #333; /* Couleur du texte */
+  padding: 8px;
+  text-align: center;
+  font-size: 0.9em;
+  border-top: 1px solid #ddd;
+  position: fixed; /* Fixe le footer en bas de la fenêtre */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Assure une largeur de 100% */
+  box-sizing: border-box; /* Inclus le padding dans la largeur */
+  z-index: 1000;
+}
+
+/* Enlève la couleur bleue et le soulignement par défaut des liens */
+.custom-footer a {
+  color: #333; /* Couleur du texte normale */
+  text-decoration: none; /* Supprime le soulignement */
+}
+
+/* Effet de survol des liens */
+.custom-footer a:hover {
+  color: #007bff; /* Couleur bleue lors du survol */
+  text-decoration: underline; /* Soulignement lors du survol */
+}
+
+.custom-footer .privacy-policy {
+  margin-left: 20px; /* Décale "Privacy policy" vers la droite */
+}
+
+.pointilles-rectangle {
+  border: none;
+  border-top: 5px dashed #000000; /* Bordure pointillée */
+  width: 100%;                      /* Largeur de la ligne */
+  margin: 0 auto;                  /* Centrer la ligne */
+  background: repeating-linear-gradient(90deg, #000000 0px, #000000 20px, transparent 20px, transparent 40px); /* Augmenter la taille des points */
+  background-size: 400px 100%;      /* Augmenter la taille des points et de l'espacement */
+}
+
+.bike {
+  animation: move-dashed-line 10s linear infinite; /* Animation */
+}
+
+@keyframes move-dashed-line {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}

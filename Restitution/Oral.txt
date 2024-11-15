@@ -1,0 +1,7 @@
+While processing the data: 
+
+- We noticed that there were 5 DATA_ecoCompt files that contained no data for the period we wanted to use 
+(probably because they had been installed after the fact). We therefore decided to delete these files, which would be of no use to us.
+
+- We have seen that there is missing data inside the files, with 'null'. Where this was the case, we deleted the corresponding lines because 
+we couldn't analyze them.
