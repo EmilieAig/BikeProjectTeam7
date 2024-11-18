@@ -15,7 +15,7 @@ format:
 <p class = "text"> On this page, we present a statistical analysis of bicycle traffic data in Montpellier from April to October 2023. </p>
 
 <ul class="text">
-    <li>Just before the Tour de France.</li>s
+    <li>Just before the Tour de France.</li>
     <li>During the Tour de France.</li>
     <li>Just after the Tour de France.</li>
 </ul>

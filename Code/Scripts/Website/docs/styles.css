@@ -73,6 +73,21 @@ h3 {
   color: white !important;
 }
 
+/* Couleurs des sous-menus en mode clair */
+body:not(.quarto-dark) .navbar .dropdown-menu {
+  color: black;
+  background-color: white;
+}
+
+body:not(.quarto-dark) .navbar .dropdown-item {
+  color: black;
+}
+
+body:not(.quarto-dark) .navbar .dropdown-item:hover {
+  background-color: #63d396;
+  color: black;
+}
+
 /* Global style to the main content section */
 .content {
   max-width: 1200px;
