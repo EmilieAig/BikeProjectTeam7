@@ -14,13 +14,13 @@ format:
 
 #### 1. Use of the Website
 
-<p class = "text"> You may use this website for personal and non-commercial purposes. You agree not to:
+<p class = "text"> You may use this website for personal and non-commercial purposes. You agree not to: </p>
 
-- Post any unlawful or harmful content.
-
-- Attempt to gain unauthorized access to the website or its systems.
-
-- Use the website for fraudulent purposes. </p>
+<ul class = "text"> 
+    <li>Post any unlawful or harmful content.</li>
+    <li>Attempt to gain unauthorized access to the website or its systems.</li>
+    <li>Use the website for fraudulent purposes. </li>
+</ul>
 
 #### 2. Intellectual Property
 
@@ -40,4 +40,4 @@ format:
 
 #### 6. Contact Us
 
-<p class = "text"> If you have any questions about these Terms, please contact us at [your email address]. </p>
+<p class = "text"> If you have any questions about these Terms, please contact us at <a href="about_us.html#mail">your email address</a>. </p>
