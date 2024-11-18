@@ -7,7 +7,7 @@ format:
 ---
 
 <div style="text-align: center;">
-<h1>Interactive map <i class="fas fa-video"></i></h1>
+<h1>Interactive map <i class="fas fa-map"></i></h1>
 </div>
 
 ## Section
