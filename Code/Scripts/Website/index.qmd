@@ -32,7 +32,7 @@ bike analyses in Montpellier</h1>
 
 #### Hypothesis
 
-<p class = "text"> En nous basant sur des donnes ???, nus avons fait comme hypothèse qu'il y aurait une fréquentation plus importante de vélos à Montpellier aux alentours des périodes du Tour de France. En effet, nous pensons qu'un évènement tel que le celui-ci peut inciter les gens à prendre leur vélo, que ce soit juste avant cet évènement, pendant, ou juste après cet évènement. De plus, nous pensons que ces effets ne sont pas répercutés sur une grande période avant et après et qu'ils se dissipent rapidement. </p>
+<p class = "text"> En nous basant sur des donnes ???, nous avons fait comme hypothèse qu'il y aurait une fréquentation plus importante de vélos à Montpellier aux alentours des périodes du Tour de France. En effet, nous pensons qu'un évènement tel que le celui-ci peut inciter les gens à prendre leur vélo, que ce soit juste avant cet évènement, pendant, ou juste après cet évènement. De plus, nous pensons que ces effets ne sont pas répercutés sur une grande période avant et après et qu'ils se dissipent rapidement. </p>
 
 ## Data
 
