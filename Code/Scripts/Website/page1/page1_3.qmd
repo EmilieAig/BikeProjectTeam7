@@ -15,7 +15,7 @@ format:
 <p class = "text"> On this page, we present a statistical analysis of bicycle traffic data in Montpellier from April to October 2023. </p>
 
 <ul class="text">
-    <li>Just before the Tour de France.</li>
+    <li>Just before the Tour de France.</li>s
     <li>During the Tour de France.</li>
     <li>Just after the Tour de France.</li>
 </ul>
@@ -32,13 +32,15 @@ format:
     <li>After the Tour de France : late July to October. </li>
 </ul>
 
-<p class = "text"> The data were aggregated by day and by month to compute the mean and standard deviation of the intensity of bicycle traffic. Temporal trends were visualized using line plots, and we compared descriptive statistics for each period. Additionally, we considered the potential impact of the summer vacation period, which partially overlaps with the Tour de France dates. </p>
+<p class = "text"> The data were aggregated by day to compute the mean and standard deviation of the intensity of bicycle traffic. Temporal trends were visualized using line plots, and we compared descriptive statistics for each period. </p>
+
+## Results
+
+We have made 
 
 <img src="/images/Graph_1.png" alt="Graph_1" width="1000px">
 
 <p class = "text"> This graph below shows the averag week intensity of bicycle traffic from April to October 2023, highlighting the period of the Tour de France. </p>
-
-## Results
 
 <p class = "text"> The results indicate changes in bicycle usage throughout the study period. We observed that the average daily bicycle count before July was ?X cyclist per day?, compared to ?Y cyclists par day? during the Tour de France, and ?Z cyclists per day? after de Tour de France. </p>
 

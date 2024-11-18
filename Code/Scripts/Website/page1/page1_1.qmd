@@ -12,11 +12,11 @@ format:
 
 ## Section
 
-<p class = "text"> In this page we can see an interactive map of the traffic of bikes in the town of Montpellier.
+<p class = "text"> On this page we can see an interactive map of the traffic of bikes in the town of Montpellier. We can choose a date and view: </p>
 
-We can choose a date and view :
+<ul class = "text"> 
+    <li>The past traffic.</li>
+    <li>The prediction of the traffic for nexts days.</li> 
+</ul>
 
-- The past traffic.
-
-- The prediction of the traffic for nexts days. </p>
-
+<p class = "text"> We have choose the date of ?? because it corresponds to the middle wek of the Tour de France and it's the period examined in our problematic. </p>

@@ -12,9 +12,35 @@ format:
 
 ## Packages
 
+<p class = "text"> For the code, we have used some packages to make our analyses. </p>
+
+### 'Numpy'
+
+<p class = "text"> This package was used to </p>
+
+<p class = "text"> For more details we can consult the <a href="https://numpy.org/doc/">documentation</a> of this packages. </p>
+
+### 'Pandas'
+
+<p class = "text"> This package was used to </p>
+
+<p class = "text"> For more details we can consult the <a href="https://pandas.pydata.org/docs/">documentation</a> of this packages. </p>
+
+### 'Matplotlib'
+
+<p class = "text"> This package was used to </p>
+
+<p class = "text"> For more details we can consult the <a href="https://matplotlib.org/stable/index.html">documentation</a> of this packages. </p>
+
+### 'Pooch'
+
+<p class = "text"> This package was used to </p>
+
+<p class = "text"> For more details we can consult the <a href="https://www.fatiando.org/pooch/latest/">documentation</a> of this packages. </p>
+
 ## Classes
 
-### "Text"
+### 'Text'
 
 <p class = "text"> In the website, we have used the class named "text". </p>
 
@@ -31,7 +57,7 @@ format:
 
 <p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
 
-### "Navbar"
+### 'Navbar'
 
 <p class = "text"> In the website, we have used the class named "navbar". </p>
 
@@ -39,7 +65,7 @@ format:
  
 <p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
 
-### "Nav"
+### 'Nav'
 
 <p class = "text"> In the website, we have used the class named "nav". </p>
 
@@ -47,7 +73,7 @@ format:
  
 <p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
 
-### "Content"
+### 'Content'
 
 <p class = "text"> In the website, we have used the class named "content". </p>
 
@@ -55,7 +81,7 @@ format:
  
 <p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
 
-### "Footer"
+### 'Footer'
 
 <p class = "text"> In the website, we have used the class named "footer". </p>
 
@@ -63,7 +89,7 @@ format:
  
 <p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
 
-### "Pointilles-rectangle "
+### 'Pointilles-rectangle'
 
 <p class = "text"> In the website, we have used the class named "pointilles-rectangle". </p>
 
@@ -71,7 +97,7 @@ format:
  
 <p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
 
-### "Bike"
+### 'Bike'
 
 <p class = "text"> In the website, we have used the class named "bike". </p>
 
@@ -79,7 +105,7 @@ format:
  
 <p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
 
-### "Trombinoscope"
+### 'Trombinoscope'
 
 <p class = "text"> In the website, we have used the class named "trombinoscope". </p>
 
@@ -87,7 +113,7 @@ format:
  
 <p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
 
-### "Member"
+### 'Member'
 
 <p class = "text"> In the website, we have used the class named "member". </p> 
 

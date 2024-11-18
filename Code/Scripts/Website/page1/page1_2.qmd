@@ -12,7 +12,7 @@ format:
 
 ## Presentation
 
-<p class = "text"> In this page we can see a youtube video of the Velomagg bikes traffic in Montpellier. </p>
+<p class = "text"> On this page we can see a youtube video of the Velomagg bikes traffic in Montpellier. </p>
 
 <p class = "text"> You can choose the date and the video will be interactive. </p>
 
