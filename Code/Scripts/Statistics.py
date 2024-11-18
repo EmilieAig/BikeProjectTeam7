@@ -48,21 +48,41 @@ daily_data = df.groupby('date')['intensity'].mean().reset_index()
 print("Statistiques descriptives générales :\n", df['intensity'].describe())
 
 # %%
-# 2. Distribution des intensités (Histogramme)
-plt.figure(figsize=(10, 5))
-sns.histplot(df['intensity'], kde=True, color='blue')
-plt.title("Distribution de l'intensité des passages (Avril - Octobre 2023)")
-plt.xlabel("Intensité")
-plt.ylabel("Fréquence")
-plt.show()
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
 
-# %%
-# 3. Boxplot des intensités par mois
+# Création de la colonne 'week' et calcul des dates de début de chaque semaine
+df['week'] = df['date'].dt.isocalendar().week
+df['week_start'] = df['date'] - pd.to_timedelta(df['date'].dt.weekday, unit='D')  # Date de début de la semaine
+
+# Grouper les données par semaine (en utilisant la date de début de semaine)
+weekly_data = df.groupby(['year', 'week', 'week_start'])['intensity'].mean().reset_index()
+
+# Tracer le graphique
 plt.figure(figsize=(12, 6))
-sns.boxplot(data=df, x='month', y='intensity', palette='coolwarm')
-plt.title("Distribution des intensités par mois")
-plt.xlabel("Mois")
-plt.ylabel("Intensité")
+sns.lineplot(data=weekly_data, x='week_start', y='intensity', marker='o', color='blue')
+
+# Titre et labels
+plt.title("Weekly trend in bicycle use (2023)")
+plt.xlabel("Week (Starting date)")
+plt.ylabel("Average intensity")
+
+# Ajouter un fond coloré pour surligner la période du Tour de France (du 1er juillet au 23 juillet 2023)
+# Ici nous utilisons les dates exactes pour la période du Tour de France
+tour_de_france_start = pd.to_datetime('2023-07-01')
+tour_de_france_end = pd.to_datetime('2023-07-23')
+plt.axvspan(tour_de_france_start, tour_de_france_end, color='red', alpha=0.3, label="Tour de France")
+
+# Personnalisation des dates sur l'axe des x pour afficher les dates de début de semaine
+plt.xticks(weekly_data['week_start'], labels=weekly_data['week_start'].dt.strftime('%d-%m'), rotation=45)
+
+# Ajouter une légende et la grille
+plt.legend()
+plt.grid(True)
+
+# Afficher le graphique
+plt.tight_layout()
 plt.show()
 
 # %%
@@ -83,15 +103,6 @@ stats = pd.DataFrame({
 print("Statistiques descriptives par période :\n", stats)
 
 # %%
-# 5. Visualisation des comparaisons par période (Boxplot)
-plt.figure(figsize=(10, 6))
-sns.boxplot(data=[before_july, during_july, after_july], palette="Set2")
-plt.xticks([0, 1, 2], ["Avant juillet", "Pendant juillet", "Après juillet"])
-plt.title("Comparaison des intensités avant, pendant et après le Tour de France")
-plt.ylabel("Intensité moyenne")
-plt.show()
-
-# %%
 # 6. Test ANOVA pour comparer les moyennes des trois périodes
 anova_result = f_oneway(before_july, during_july, after_july)
 print(f"Résultat du test ANOVA : F = {anova_result.statistic:.2f}, p-value = {anova_result.pvalue:.4f}")
@@ -102,14 +113,22 @@ else:
     print("Les différences entre les périodes ne sont pas statistiquement significatives (p >= 0.05).")
 
 # %%
-# 7. Analyse des tendances saisonnières
-monthly_data = df.groupby(['year', 'month'])['intensity'].mean().reset_index()
-plt.figure(figsize=(12, 6))
-sns.lineplot(data=monthly_data, x='month', y='intensity', marker='o', color='green')
-plt.title("Tendance mensuelle de l'utilisation des vélos (2023)")
-plt.xlabel("Mois")
-plt.ylabel("Intensité moyenne")
-plt.xticks(range(4, 11), ['Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre'])
+# Boxplot pour comparer les différentes périodes (avant, pendant, après le Tour de France)
+data_to_plot = [before_july, during_july, after_july]
+
+plt.figure(figsize=(10, 6))
+plt.boxplot(data_to_plot, 
+            labels=['Avant le Tour', 'Pendant le Tour', 'Après le Tour'], 
+            patch_artist=True, 
+            boxprops=dict(facecolor="#5dade2", color="#5dade2"),  # Couleur bleue plus claire
+            flierprops=dict(markerfacecolor='r', marker='o'),
+            medianprops=dict(color='red', linewidth=2))  # Changer la couleur et l'épaisseur des traits médians
+            
+# Personnalisation du graphique
+plt.title("Comparaison des fréquences d'utilisation des vélos avant, pendant et après le Tour de France")
+plt.ylabel("Nombre moyen de passages")
+plt.grid(True)
+plt.tight_layout()
 plt.show()
 
 # %%
