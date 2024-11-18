@@ -25,19 +25,19 @@ format:
 </div>
 
 <div class="member">
-   <img src="images/member2.jpg" alt="Member 2" width="150px">
+   <img src="/images/member2.jpg" alt="Member 2" width="150px">
    <h4>Samira MAMANE SIDI</h4>
    <p>Contributions: <br> Readme redaction, video creation.</p>
 </div>
 
 <div class="member">
-   <img src="images/member2.jpg" alt="Member 2" width="150px">
+   <img src="/images/member3.jpg" alt="Member 3" width="150px">
    <h4>Anne-Laure THOMAS</h4>
    <p>Contributions: <br> Website mockup, traffic prediction on the map.</p>
 </div>
 
 <div class="member">
-   <img src="images/member2.jpg" alt="Member 2" width="150px">
+   <img src="/images/member4.jpg" alt="Member 4" width="150px">
    <h4>Qingjian ZHU</h4>
    <p>Contributions: <br> Map visualization, bike layout on the map.</p>
 </div>
