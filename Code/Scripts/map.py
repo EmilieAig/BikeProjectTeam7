@@ -1,67 +1,295 @@
-import osmnx as ox
-ox.settings.use_cache=True
-ox.__version__
-
-G = ox.graph_from_place('Montpellier, France', network_type='bike')
-print(f"nb edges: {G.number_of_edges()}")
-print(f"nb nodes: {G.number_of_nodes()}")
-
-fig, ax = ox.plot_graph(G)
-
-import folium
-import matplotlib
-import mapclassify
-map_osm = folium.Map(location=[43.610769, 3.876716])
-map_osm.add_child(folium.RegularPolygonMarker(location=[43.610769, 3.876716],
-                  fill_color='#132b5e', radius=5))
-map_osm
-
-
-import sklearn
-origin = ox.geocoder.geocode('Place Eugène Bataillon, Montpellier, France')
-destination = ox.geocoder.geocode('Maison du Lez, Montpellier, France')
-
-origin_node = ox.nearest_nodes(G, origin[1], origin[0])
-destination_node = ox.nearest_nodes(G, destination[1], destination[0])
-
-print(origin)
-print(destination)
-route = ox.routing.shortest_path(G, origin_node, destination_node)
-route_back = ox.routing.shortest_path(G, destination_node, origin_node)
-
-fig, ax = ox.plot_graph_routes(G, [route, route_back], route_linewidth=6, route_colors=['red', 'blue'], node_size=0)
-
-route_edges = ox.utils_graph.route_to_gdf(G, route)
-route_back_edges = ox.utils_graph.route_to_gdf(G, route_back)
-
-m = route_edges.explore(color="red", style_kwds={"weight": 5, "opacity": 0.75})
-m = route_back_edges.explore(m=m, color="blue", style_kwds={"weight": 5, "opacity": 0.75})
-m
-
-# %%
+# %% Extraire les coordonnées des compteurs
 import pandas as pd
 import os
 
 # 文件路径设置
-data_folder = os.path.join("..", "Data", "Data_EcoCompt_Combined")  # Data 文件夹路径
+data_folder = os.path.join("..", "Data", "Data_EcoCompt_Combined")  # 数据文件夹路径
 file_path = os.path.join(data_folder, "fichier_combined.csv")  # 文件路径
 
 # 读取 CSV 文件
 df = pd.read_csv(file_path, delimiter=";")  # 使用分号作为分隔符
 
-# 提取唯一的 laneId 和其坐标 (longitude, latitude)
-unique_counters = df[['laneId', 'longitude', 'latitude']].drop_duplicates()
+# 提取计数器基础 Id
+df['counter_id'] = df['id'].str.extract(r'(MMM_EcoCompt_\w+?)_')  # 提取基础 Id
+
+# 提取唯一的计数器 Id 和坐标
+unique_counters = df[['counter_id', 'longitude', 'latitude']].drop_duplicates()
 
 # 输出提取结果的前几行查看
 print(unique_counters.head())
 
 # 保存结果到新的 CSV 文件
 output_folder = data_folder  # 保存到同一目录
-output_path = os.path.join(output_folder, "laneId_coordinates.csv")
+output_path = os.path.join(output_folder, "counter_coordinates.csv")
 unique_counters.to_csv(output_path, index=False)
 
 print(f"计数器数据已提取并保存到：{output_path}")
 
 
+# %%
+import osmnx as ox
+ox.settings.use_cache=True
+ox.__version__
+
+import osmnx as ox
+from shapely.geometry import Polygon
+
+# 定义经纬度范围
+polygon = Polygon([
+    (3.86321, 43.68513),
+    (3.80804, 43.64595),
+    (3.67027, 43.53212),
+    (3.8362, 43.4938),
+    (3.95197, 43.56945),
+    (3.94459, 43.64167),
+    (3.92177, 43.68116),
+    (3.86321, 43.68513)  # 闭合多边形
+])
+
+# 使用自定义多边形提取自行车网络
+G = ox.graph_from_polygon(polygon, network_type='bike')
+
+# 可视化网络
+print(f"nb edges: {G.number_of_edges()}")
+print(f"nb nodes: {G.number_of_nodes()}")
+
+
+fig, ax = ox.plot_graph(G)
+
+
+# %%
+import osmnx as ox
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# 1. 加载自行车网络图
+# 2. 读取计数器数据
+counter_file_path = "../Data/Data_EcoCompt_Combined/counter_coordinates.csv"
+counters = pd.read_csv(counter_file_path)
+
+# 3. 找到最近的网络节点
+counters['nearest_node'] = counters.apply(
+    lambda row: ox.nearest_nodes(G, row['longitude'], row['latitude']), axis=1
+)
+
+# 4. 获取最近节点的坐标
+nodes, edges = ox.graph_to_gdfs(G, nodes=True, edges=True)
+counters['node_longitude'] = counters['nearest_node'].map(nodes['x'])
+counters['node_latitude'] = counters['nearest_node'].map(nodes['y'])
+
+# 5. 可视化网络及标记节点
+fig, ax = ox.plot_graph(G, show=False, close=False)
+
+# 绘制最近节点的位置（以红色标记）
+nearest_positions = counters[['node_longitude', 'node_latitude']].values
+ax.scatter(nearest_positions[:, 0], nearest_positions[:, 1], c='red', s=50, label='Nearest Nodes')
+
+# 添加图例并显示
+ax.legend()
+plt.show()
+
+# %% 
+for u, v, data in G.edges(data=True):
+    print(data.get('highway'))
+
+
+# %%
+import pandas as pd
+import os
+
+# 文件路径设置
+combined_file_path = "../Data/Data_EcoCompt_Combined/fichier_combined.csv"
+
+
+# 1. 读取计数器数据和最近节点信息
+combined_data = pd.read_csv(combined_file_path, delimiter=";")
+
+# 2. 过滤出 2023-07-10 的数据
+filtered_data = combined_data[combined_data['date'] == '2023-07-10']
+
+# 3. 提取计数器基础 ID
+filtered_data['counter_id'] = filtered_data['id'].str.extract(r'(MMM_EcoCompt_\w+?)_')
+
+# 4. 将计数器与最近节点匹配
+# 合并过滤数据和最近节点数据
+merged_data = pd.merge(counters, filtered_data, on='counter_id', how='inner')
+
+# 5. 汇总每个节点的计数信息
+node_intensity = merged_data[['nearest_node', 'intensity']]
+
+# 6. 保存结果
+output_file_path = "../Data/Data_EcoCompt_Combined/node_intensity_20230710.csv"
+node_intensity.to_csv(output_file_path, index=False)
+
+print(f"节点的计数信息已保存到：{output_file_path}")
+
+
+# %%
+print(node_intensity.head())
+
+
+
+
+
+# %% 推算未知节点的intensity
+import numpy as np
+import pandas as pd
+from scipy.spatial import KDTree
+import os
+
+# 文件保存路径设置
+output_file_path = os.path.join("..", "Data", "Data_EcoCompt_Combined", "unknown_nodes_intensity.csv")
+
+# 提取已知节点信息
+known_nodes = node_intensity['nearest_node'].tolist()
+known_coords = np.array([[G.nodes[node]['x'], G.nodes[node]['y']] for node in known_nodes])
+known_intensities = node_intensity['intensity'].values
+
+# 获取所有节点
+all_nodes = list(G.nodes())
+all_coords = np.array([[G.nodes[node]['x'], G.nodes[node]['y']] for node in all_nodes])
+
+# 找到未知节点
+unknown_nodes = [node for node in all_nodes if node not in known_nodes]
+unknown_coords = np.array([[G.nodes[node]['x'], G.nodes[node]['y']] for node in unknown_nodes])
+
+# 构建 KD-Tree
+kd_tree = KDTree(known_coords)
+
+# 初始化未知节点的 intensity
+unknown_intensity = []
+
+# 遍历未知节点，计算与最近3个已知节点的加权平均值
+for coord in unknown_coords:
+    # 查询最近的3个已知节点
+    distances, indices = kd_tree.query(coord, k=3)
+    
+    # 加权计算 intensity
+    weights = 1 / distances  # 权重是距离的倒数
+    weighted_intensity = np.sum(weights * known_intensities[indices]) / np.sum(weights)
+    unknown_intensity.append(weighted_intensity)
+
+# 将估算值保存到未知节点中
+for i, node in enumerate(unknown_nodes):
+    G.nodes[node]['intensity'] = unknown_intensity[i]
+
+# 保存结果到文件
+unknown_intensity_df = pd.DataFrame({
+    'node': unknown_nodes,
+    'intensity': unknown_intensity
+})
+unknown_intensity_df.to_csv(output_file_path, index=False)
+print(f"未知节点的 intensity 已保存到：{output_file_path}")
+
+
+
+
+
+
+# %%
+import folium
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 1. 将 intensity 赋值给图 G 的节点
+for node in node_intensity['nearest_node']:
+    G.nodes[node]['intensity'] = node_intensity.set_index('nearest_node').loc[node, 'intensity']
+
+for i, node in enumerate(unknown_nodes):
+    G.nodes[node]['intensity'] = unknown_intensity[i]
+
+# 检查赋值结果
+print("节点 intensity 已赋值")
+
+# %%
+# 2. 计算每条边的 intensity
+for u, v, data in G.edges(data=True):
+    node_u_intensity = G.nodes[u].get('intensity', np.nan)
+    node_v_intensity = G.nodes[v].get('intensity', np.nan)
+    
+    # 使用 np.isnan 需要确保是标量值
+    if np.isscalar(node_u_intensity) and np.isscalar(node_v_intensity) and not (np.isnan(node_u_intensity) or np.isnan(node_v_intensity)):
+        data['intensity'] = (node_u_intensity + node_v_intensity) / 2
+    else:
+        data['intensity'] = np.nan  # 如果节点 intensity 不可用，设为 NaN
+
+print("边 intensity 已计算")
+
+
+# %%
+# 3. 可视化图 G 的边 intensity
+import folium
+
+# 创建 folium 地图
+center_coords = [43.611, 3.877]  # 替换为你的地图中心
+m = folium.Map(location=center_coords, zoom_start=13)
+
+# 定义颜色映射规则
+def get_color(intensity):
+    if intensity > 1500:
+        return '#FE4528'
+    elif intensity > 1200:
+        return '#FD6121'
+    elif intensity > 900:
+        return '#FB9234'
+    elif intensity > 600:
+        return '#FFEF3A'
+    elif intensity > 300:
+        return '#6CD932'
+    else:
+        return '#23C326'
+
+# 添加边到地图
+for u, v, data in G.edges(data=True):
+    intensity = data.get('intensity', None)
+    if intensity is not None and not np.isnan(intensity):
+        # 根据 intensity 设置颜色
+        color = get_color(intensity)
+
+        # 检查是否有 geometry
+        if 'geometry' in data:
+            # 如果有 geometry，使用实际的几何线段
+            coords = [(point[1], point[0]) for point in data['geometry'].coords]  # 反转为 (lat, lon)
+        else:
+            # 如果没有 geometry，用节点坐标连线
+            coords = [
+                (G.nodes[u]['y'], G.nodes[u]['x']),
+                (G.nodes[v]['y'], G.nodes[v]['x'])
+            ]
+
+        # 绘制平滑路径或线段
+        folium.PolyLine(
+            coords,
+            color=color,
+            weight=3,  # 固定宽度
+            opacity=0.8
+        ).add_to(m)
+
+# 保存地图
+output_map_path = "../Data/Data_EcoCompt_Combined/edge_intensity_map.html"
+m.save(output_map_path)
+print(f"地图已保存到：{output_map_path}")
+
+# %%
+from collections import Counter
+
+# 提取所有边的 highway 属性
+highway_types = []
+
+for u, v, data in G.edges(data=True):
+    highway = data.get('highway', None)  # 获取 highway 属性
+    if highway:
+        if isinstance(highway, list):  # 如果是列表，展开加入
+            highway_types.extend(highway)
+        else:
+            highway_types.append(highway)
+
+# 统计每种道路的数量
+highway_counter = Counter(highway_types)
+
+# 输出所有道路种类和数量
+print("包含的道路种类及数量：")
+for highway, count in highway_counter.items():
+    print(f"{highway}: {count}")
 
 # %%
