@@ -10,7 +10,7 @@ from scipy.stats import f_oneway
 from scipy.stats import shapiro
 from scipy.stats import kruskal
 
-# Configuration pour Seaborn
+# Configuration for Seaborn
 sns.set_theme(style="whitegrid")
 
 # %% 

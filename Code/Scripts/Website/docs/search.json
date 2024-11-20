@@ -278,5 +278,12 @@
     "title": "\nStatistics \n",
     "section": "Introductio",
     "text": "Introductio\n\nOn this page, we present a statistical analysis of bicycle traffic data in Montpellier from April to October 2023.\n\n\n\nJust before the Tour de France.\n\ns\n\nDuring the Tour de France.\n\n\nJust after the Tour de France.\n\n\n\nTo answer this question, we used the collected data (described on the homepage) to perform statisctical analyses that would confirm or refute our initial hypothesis. We expected to observe an increase in bicycle usage during the Tour de France due to the popularity of the event and its potential influence on local behaviour."
+  },
+  {
+    "objectID": "page1/page1_2.html#carrousel-des-vidéos",
+    "href": "page1/page1_2.html#carrousel-des-vidéos",
+    "title": "\nVideo \n",
+    "section": "Carrousel des vidéos",
+    "text": "Carrousel des vidéos\n\n❮\n\n&lt;video class=\"video-slide\" src=\"/images/ADM.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_mardi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_mercredi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_jeudi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_vendredi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_samedi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_dimanche.mp4\" controls&gt;&lt;/video&gt;\n\n❯"
   }
 ]
