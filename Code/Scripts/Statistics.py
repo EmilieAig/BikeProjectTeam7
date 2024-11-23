@@ -65,17 +65,17 @@ weekly_data = df.groupby(['year', 'week', 'week_start'])['intensity'].mean().res
 
 # Draw the graph
 plt.figure(figsize=(12, 6))
-sns.lineplot(data=weekly_data, x='week_start', y='intensity', marker='o', color='blue')
+sns.lineplot(data=weekly_data, x='week_start', y='intensity', marker='o', color='black')
 
 # Title and labels
-plt.title("Weekly trend in bicycle use (2023)")
+plt.title("Average number of cycles passing through eco-meters per week (2023)")
 plt.xlabel("Week (Starting date)")
-plt.ylabel("Average intensity")
+plt.ylabel("Mean of the bike passages' intensity")
 
 # Add a coloured background to highlight the period of the Tour de France
 tour_de_france_start = pd.to_datetime('2023-07-01')
 tour_de_france_end = pd.to_datetime('2023-07-23')
-plt.axvspan(tour_de_france_start, tour_de_france_end, color='red', alpha=0.3, label="Tour de France")
+plt.axvspan(tour_de_france_start, tour_de_france_end, color='green', alpha=0.3, label="Tour de France")
 
 # Customise the dates on the x axis to display the start of week dates
 plt.xticks(weekly_data['week_start'], labels=weekly_data['week_start'].dt.strftime('%d-%m'), rotation=45)
@@ -171,13 +171,13 @@ plt.figure(figsize=(10, 6))
 plt.boxplot(data_to_plot, 
             labels=['Before Tour de France', 'During Tour de France', 'After Tour de France'], 
             patch_artist=True, 
-            boxprops=dict(facecolor="#5dade2", color="#5dade2"),
+            boxprops=dict(facecolor="#209f59", color="#209f59"),
             flierprops=dict(markerfacecolor='r', marker='o'),
             medianprops=dict(color='red', linewidth=2))
             
 # Customise the graphic
-plt.title("Comparison of the frequency of bicycle use before, during and after the Tour de France")
-plt.ylabel("Average number of visits")
+plt.title("Boxplot of the number of bike rides in front of eco-counters according to periods of interest")
+plt.ylabel("Mean of the bike passages' intensity")
 plt.grid(True)
 plt.tight_layout()
 plt.show()
