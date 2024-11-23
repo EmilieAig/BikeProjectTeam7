@@ -14,7 +14,7 @@ format:
 
 <p class = "text"> On this page, we present a short preliminary statistical analysis of the data we selected (see home page for a detailed explanation of our data). </p>
 
-<p class = "text"> Our question was ‘What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?’ and we hypothesized that there would be an increase in the number of people cycling during the Tour de France period. A sporting event like this encourages people to get back into sport, and cycling in particular. </p>
+<p class = "text"> Our question was "What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?" and we hypothesized that there would be an increase in the number of people cycling during the Tour de France period. A sporting event like this encourages people to get back into sport, and cycling in particular. </p>
 
 ## Methods
 

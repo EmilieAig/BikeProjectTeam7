@@ -44,9 +44,9 @@
   {
     "objectID": "page1/page1_2.html",
     "href": "page1/page1_2.html",
-    "title": "Video",
+    "title": "Carrousel de Vidéos",
     "section": "",
-    "text": "In this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\nYou can choose the date and the video will be interactive."
+    "text": "Bienvenue au Carrousel de Vidéos\n\n\n&lt;div class=\"carousel-item active\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n\n  Previous    Next"
   },
   {
     "objectID": "index.html#title-2",
@@ -67,14 +67,14 @@
     "href": "index.html#data",
     "title": "\nWelcome to our project  bike analyses in Montpellier\n",
     "section": "Data",
-    "text": "Data\n\nTo conduct this study, we have chosen to analyze data on bicycle usage spanning from April to October 2023. This time frame allows us to examine bike traffic before, during, and after the Tour de France, providing a comprehensive view of usage patterns around this event. The selection of this period is crucial for capturing short-term trends related to the Tour and distinguishing them from seasonal or contextual factors that might also influence cycling behavior."
+    "text": "Data\n\nTo carry out this study, we selected several types of data.\n\n\nFirstly, we retrieved data on the journeys made by VéloMagg bikes between stations in the VéloMagg network in the Montpellier metropolitan area.\n\n\nSecondly, we have retrieved data for each of the bicycle counters (eco-counters) in production in the Montpellier Metropolitan Area, showing the number of bicycles (and piétions in some cases) counted. The daily data is the total of the previous day’s count. This information is divided into as many files as there are eco-counters. Each eco-counter is identified by a serial number, which we were able to find and associate with its latitude and longitude.\n\n\nAll the data we have selected was extracted between April 2023 and October 2023. This corresponds to 3 months before the Telethon and 3 months after, which we thought was a good margin for observing changes around the Tour de France and which is just over half a year (7 months)."
   },
   {
     "objectID": "index.html#introduction",
     "href": "index.html#introduction",
     "title": "\nWelcome to our project  bike analyses in Montpellier\n",
     "section": "Introduction",
-    "text": "Introduction\n\nProblematic\n\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.\n\n\n\nHypothesis\n\nBased on data from the Tour de France, we hypothesised that there would be a greater number of cyclists in Montpellier around the time of the Tour de France. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly."
+    "text": "Introduction\n\nProblematic\n\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.\n\n\n\nHypothesis\n\nBased on data from the Tour de France, we hypothesised that that there would be an increase in the number of people cycling during the Tour de France period. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly."
   },
   {
     "objectID": "index.html#tour-de-france",
@@ -158,7 +158,7 @@
     "href": "page1/page1_3.html#introduction",
     "title": "\nStatistics \n",
     "section": "Introduction",
-    "text": "Introduction\n\nOn this page, we present a short preliminary statistical analysis of the data we selected (see home page for a detailed explanation of our data).\n\n\nOur question was ‘What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?’ and we hypothesized that there would be an increase in the number of people cycling during the Tour de France period. A sporting event like this encourages people to get back into sport, and cycling in particular."
+    "text": "Introduction\n\nOn this page, we present a short preliminary statistical analysis of the data we selected (see home page for a detailed explanation of our data).\n\n\nOur question was “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?” and we hypothesized that there would be an increase in the number of people cycling during the Tour de France period. A sporting event like this encourages people to get back into sport, and cycling in particular."
   },
   {
     "objectID": "page1/page1_3.html#méthode",
@@ -285,5 +285,19 @@
     "title": "\nVideo \n",
     "section": "Carrousel des vidéos",
     "text": "Carrousel des vidéos\n\n❮\n\n&lt;video class=\"video-slide\" src=\"/images/ADM.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_mardi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_mercredi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_jeudi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_vendredi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_samedi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_dimanche.mp4\" controls&gt;&lt;/video&gt;\n\n❯"
+  },
+  {
+    "objectID": "index.html#context",
+    "href": "index.html#context",
+    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
+    "section": "Context",
+    "text": "Context\n\nProblematic\n\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.\n\n\n\nHypothesis\n\nBased on data from the Tour de France, we hypothesised that that there would be an increase in the number of people cycling during the Tour de France period. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly."
+  },
+  {
+    "objectID": "page1/page1_2.html#video-carousel",
+    "href": "page1/page1_2.html#video-carousel",
+    "title": "\nVideo \n",
+    "section": "Video Carousel",
+    "text": "Video Carousel\n\n\n\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"3\" aria-label=\"Slide 4\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"4\" aria-label=\"Slide 5\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"5\" aria-label=\"Slide 6\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"6\" aria-label=\"Slide 7\"&gt;&lt;/button&gt;\n\n\n\n&lt;div class=\"carousel-item active\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_1\" title=\"YouTube video 1\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_2\" title=\"YouTube video 2\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_3\" title=\"YouTube video 3\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_4\" title=\"YouTube video 4\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_5\" title=\"YouTube video 5\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_6\" title=\"YouTube video 6\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_7\" title=\"YouTube video 7\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n   Previous    Next"
   }
 ]

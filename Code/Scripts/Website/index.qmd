@@ -20,7 +20,7 @@ bike analyses in Montpellier</h1>
 
 <br>
 
-## Introduction
+## Context
 
 ### Problematic
 
@@ -32,8 +32,14 @@ bike analyses in Montpellier</h1>
 
 ### Hypothesis
 
-<p class = "text"> Based on data from the Tour de France, we hypothesised that there would be a greater number of cyclists in Montpellier around the time of the Tour de France. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly. </p>
+<p class = "text"> Based on data from the Tour de France, we hypothesised that that there would be an increase in the number of people cycling during the Tour de France period. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly. </p>
 
 ## Data
 
-<p class = "text"> To conduct this study, we have chosen to analyze data on bicycle usage spanning from April to October 2023. This time frame allows us to examine bike traffic before, during, and after the Tour de France, providing a comprehensive view of usage patterns around this event. The selection of this period is crucial for capturing short-term trends related to the Tour and distinguishing them from seasonal or contextual factors that might also influence cycling behavior. </p>
+<p class = "text"> To carry out this study, we selected several types of data. </p>
+
+<p class = "text"> Firstly, we retrieved data on the journeys made by VéloMagg bikes between stations in the VéloMagg network in the Montpellier metropolitan area. </p>
+
+<p class = "text"> Secondly, we have retrieved data for each of the bicycle counters (eco-counters) in production in the Montpellier Metropolitan Area, showing the number of bicycles (and piétions in some cases) counted. The daily data is the total of the previous day's count. This information is divided into as many files as there are eco-counters. Each eco-counter is identified by a serial number, which we were able to find and associate with its latitude and longitude. </p>
+
+<p class = "text"> All the data we have selected was extracted between April 2023 and October 2023. This corresponds to 3 months before the Telethon and 3 months after, which we thought was a good margin for observing changes around the Tour de France and which is just over half a year (7 months). </p>

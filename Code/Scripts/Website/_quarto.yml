@@ -33,4 +33,4 @@ format:
     toc: true
     toc-location: right
     toc-depth: 4
-    page-layout: full
+    page-layout: article
