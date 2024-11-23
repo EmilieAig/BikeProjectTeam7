@@ -88,14 +88,20 @@ main, .content {
 .navbar-brand {
   color: black !important;
   font-family: 'Lato', sans-serif;
+  font-size: 18px;
 }
 
 .nav-link {
   color: black !important;
+  font-size: 16px;
   font-family: 'Lato', sans-serif;
 }
 
 .nav-link:hover {
+  color: white !important;
+}
+
+.navbar-brand:hover {
   color: white !important;
 }
 
@@ -260,11 +266,48 @@ img {
 }
 
 
-.carousel-item {
-  height: 500px;  /* Ajuste la hauteur selon tes besoins */
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;  /* Ajoute un espace en dessous du bloc */
 }
 
-.carousel-item video {
-  height: 100%;
-  object-fit: cover;  /* Garde la vidéo proportionnée */
+.video-container {
+  flex: 2;  /* Augmente la proportion de l'espace attribuée à la vidéo */
+  margin-right: 20px;
+}
+
+.video-container video {
+  width: 100%;  /* La vidéo occupe toute la largeur du conteneur */
+  height: auto;  /* Garde les proportions de la vidéo */
+  border: 1px solid #ccc;
+}
+
+.container-r {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: row-reverse;  /* Inverse l'ordre des éléments (vidéo à droite et texte à gauche) */
+  margin-bottom: 20px;  /* Ajoute un espace en dessous du bloc */
+}
+
+.video-container-r {
+  flex: 2;  /* Prend plus de place que le texte */
+  margin-left: 20px;  /* Espacement à gauche pour la vidéo (inverse de margin-right) */
+  max-width: 70%;  /* Limite la taille de la vidéo à 70% de la largeur du conteneur */
+}
+
+.video-container-r video {
+  width: 100%;  /* La vidéo occupe toute la largeur du conteneur */
+  height: auto;  /* Garde les proportions de la vidéo */
+  border: 1px solid #ccc;
 }

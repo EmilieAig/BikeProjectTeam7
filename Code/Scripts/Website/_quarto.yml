@@ -4,7 +4,10 @@ project:
   output-dir: docs
 
 website:
-  title: "BikeProjectTeam7"
+  title: |
+    <a href="/" class="navbar-brand">
+      <i class="fas fa-home"></i>
+    </a>
   navbar:
     left:
       - text: "Analyses"
