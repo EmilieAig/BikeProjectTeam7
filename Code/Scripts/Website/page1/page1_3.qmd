@@ -10,6 +10,60 @@ format:
 <h1>Statistics <i class="fas fa-chart-line"></i></h1>
 </div>
 
-## Section 
+## Introduction
 
-<p class = "text"> In this page we can see the global statistics. </p>
+<p class = "text"> On this page, we present a statistical analysis of bicycle traffic data in Montpellier from April to October 2023. </p>
+
+<ul class="text">
+    <li>Just before the Tour de France.</li>
+    <li>During the Tour de France.</li>
+    <li>Just after the Tour de France.</li>
+</ul>
+
+<p class = "text"> To answer this question, we used the collected data (described on the homepage) to perform statisctical analyses that would confirm or refute our initial hypothesis. We expected to observe an increase in bicycle usage during the Tour de France due to the popularity of the event and its potential influence on local behaviour. </p>
+
+## Methods
+
+<p class = "text"> We used  cleaned data files that recorded the daily number of cyclists in Montpellier, and compiled them into a single dataset. The statistical analyses focused on the following periods : </p>
+
+<ul class = "text"> 
+    <li>Before the Tour de France : April to June. </li>
+    <li>During the Tour de France : July 1st to July 23rd.</li>
+    <li>After the Tour de France : late July to October. </li>
+</ul>
+
+<p class = "text"> The data were aggregated by day to compute the mean and standard deviation of the intensity of bicycle traffic. Temporal trends were visualized using line plots, and we compared descriptive statistics for each period. </p>
+
+## Results
+
+We have made 
+
+<img src="/images/Graph_1.png" alt="Graph_1" width="1000px">
+
+<p class = "text"> This graph below shows the averag week intensity of bicycle traffic from April to October 2023, highlighting the period of the Tour de France. </p>
+
+<p class = "text"> The results indicate changes in bicycle usage throughout the study period. We observed that the average daily bicycle count before July was ?X cyclist per day?, compared to ?Y cyclists par day? during the Tour de France, and ?Z cyclists per day? after de Tour de France. </p>
+
+<p class = "text"> The computed standard deviations for these periods were similar, suggesting comparable variability in bicycle usage before, during, and after the Tour de France. Howevers, no significant differences were observed between the means of the different periods, indicating that the event did not have a substantial impact on bicycle usage in Montpellier. </p>
+
+<img src="/images/Graph_2.png" alt="Graph_2" width="800px">
+
+<p class = "text"> This graph represent the distribution of average bicycle usage in Montpellier across three different periods relative to the Tour de France. </p>
+
+<ul class = "text"> 
+    <li> The box shows the interquartile range, which contains the middle 50% of the data (from the 25th to the 75th percentile). </li>
+    <li> The horizontal line inside the box représents the median (the middle value of the dataset). </li>
+    <li> The whiskerw extend to the smallest and largest values within 1.5 times the interquartile range. </li>
+</ul>
+
+<p class = "text"> By comparing the three periods, we can observe any changes in bicycle usage that might be linked to the Tour de France event. </p>
+
+## Discussion
+
+<p class = "text"> The analyses indicate that the Tour de France did not have a significant effect on bicycle traffic in Montpellier in 2023. Instead, the observed variations seems to align more closely with the summer vacation period, which generally starts at the beginning of July and lasts until the end of August. We noticed a decrease in bicycle usage during this time, foloowed by a marked increase from September onwards, likely corresponding to the return to school and work after the holidays. </p>
+
+<p class = "text"> These findings suggest that bicycle usage patterns in Montpellier are more influenced by the school calendar and typical work periods than by occasional sporting events like the Tour de France, execpt when the event directly passes through the city, which was not the case in 2023. </p>
+
+## Conclusion
+
+<p class = "text"> Our hypothesis that the Tour de France would significantly increase bicycle traffic in Montpellier was not supported by the data. Instead, the influence of the summer vacation period was much more pronounced. For further research, it would be interesting to analyze data over multiple years, especially when the Tour de France stage passes through Montpellier, to see of a stronger local effect can be observed in these circumstances. </p>
