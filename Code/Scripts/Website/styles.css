@@ -284,7 +284,7 @@ body.quarto-dark .custom-footer a:hover {
 /*       IMAGES STYLES          */
 /* ---------------------------- */
 
-img {
+img .member {
   max-width: 100%; /* Limite la largeur de l'image au conteneur */
   width: 150px; /* Spécifie la largeur en pixels (ajuste selon tes besoins) */
   height: 110px; /* Garde les proportions de l'image */
