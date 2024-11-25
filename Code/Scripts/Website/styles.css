@@ -32,6 +32,26 @@ h3 {
   padding-bottom: 5px;
 }
 
+h4 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e8e5e5;
+  padding-bottom: 5px;
+}
+
+h5 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
 /* ---------------------------- */
 /*        TEXT STYLES           */
 /* ---------------------------- */
@@ -66,7 +86,7 @@ main, .content {
 }
 
 /* Responsive adjustments */
-@media (max-width: 2500px) {
+@media (max-width: 2000px) {
   .content {
     margin-right: 0;
   }
@@ -186,18 +206,24 @@ body:not(.quarto-dark) .navbar .dropdown-item:hover {
 
 .trombinoscope {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
+  gap: 10px; /* Espacement entre les membres */
+  justify-content: space-around; /* Répartit les éléments uniformément */
+  align-items: center; /* Aligne les éléments verticalement */
 }
 
 .member {
   text-align: center;
-  max-width: 180px;
+  max-width: 180px; /* Taille maximale de chaque carte membre */
+  flex: 1; /* Permet à chaque élément de s'adapter pour rester sur une ligne */
 }
 
 .member img {
-  border-radius: 10%;
+  border-radius: 10%; /* Maintient les bordures arrondies */
+  max-width: 100%; /* Empêche les images de dépasser leur conteneur */
+  width: 140px; /* Largeur fixée pour toutes les images */
+  height: 120px; /* Hauteur fixée pour toutes les images */
+  object-fit: cover; /* Pour que l'image remplisse l'espace sans déformer son ratio */
 }
 
 /* ---------------------------- */
@@ -255,16 +281,20 @@ body.quarto-dark .custom-footer a:hover {
 }
 
 /* ---------------------------- */
-/*       IMAGE STYLES           */
+/*       IMAGES STYLES          */
 /* ---------------------------- */
 
 img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /* Limite la largeur de l'image au conteneur */
+  width: 150px; /* Spécifie la largeur en pixels (ajuste selon tes besoins) */
+  height: 110px; /* Garde les proportions de l'image */
   display: block;
-  margin: 0 auto;
+  margin: 0 auto; /* Centre l'image */
 }
 
+/* ---------------------------- */
+/*       VIDEOS STYLES          */
+/* ---------------------------- */
 
 .container {
   display: flex;

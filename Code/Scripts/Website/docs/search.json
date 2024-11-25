@@ -93,7 +93,7 @@
   {
     "objectID": "page1/page1_2.html#presentation",
     "href": "page1/page1_2.html#presentation",
-    "title": "\nVideo \n",
+    "title": "\nVideos \n",
     "section": "Presentation",
     "text": "Presentation\n\nOn this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\n\n\nYou can choose the date and the video will be interactive."
   },
@@ -299,5 +299,12 @@
     "title": "\nVideo \n",
     "section": "Video Carousel",
     "text": "Video Carousel\n\n\n\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"3\" aria-label=\"Slide 4\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"4\" aria-label=\"Slide 5\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"5\" aria-label=\"Slide 6\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"6\" aria-label=\"Slide 7\"&gt;&lt;/button&gt;\n\n\n\n&lt;div class=\"carousel-item active\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_1\" title=\"YouTube video 1\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_2\" title=\"YouTube video 2\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_3\" title=\"YouTube video 3\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_4\" title=\"YouTube video 4\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_5\" title=\"YouTube video 5\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_6\" title=\"YouTube video 6\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_7\" title=\"YouTube video 7\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n   Previous    Next"
+  },
+  {
+    "objectID": "page1/page1_2.html#videos",
+    "href": "page1/page1_2.html#videos",
+    "title": "\nVideos \n",
+    "section": "Videos",
+    "text": "Videos\n\n\n\n\n\n\nMonday 10 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 11 July 2023\n\n\n\n\n\n\n\n\n\nWednesday 12 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 13 July 2023\n\n\n\n\n\n\n\n\n\nFriday 14 July 2023\n\n\n\n\n\n\n\n\n\nSaturday 15 July 2023\n\n\n\n\n\n\n\n\n\nSunday 16 July 2023"
   }
 ]
