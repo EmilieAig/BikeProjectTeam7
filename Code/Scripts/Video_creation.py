@@ -102,18 +102,28 @@ def interpolate_route_position(route_coords, progress, covered_distance):
     # Si on arrive ici, renvoyer le dernier point
     return route_coords[-1]
 #%%
-def create_bike_animation(input_file, output_video="bike_animation.mp4", fps=30, minutes_per_second=120, sample_size=None):
+def create_bike_animation(input_file, target_date=None, output_video="bike_animation.mp4", fps=30, minutes_per_second=120, sample_size=None):
     """
-    Crée une animation des trajets de vélos en fonction de la distance réelle parcourue.
+    Crée une animation des trajets de vélos en fonction d'une date donnée et affiche les stations sous forme de points.
     """
+    # Charger les données
     df = pd.read_csv(input_file)
+    
+    # Convertir les colonnes de date/heure
     df['Departure_DateTime'] = pd.to_datetime(df['Departure_Date'] + ' ' + df['Departure_Time'])
     df['Return_DateTime'] = pd.to_datetime(df['Return_Date'] + ' ' + df['Return_Time'])
     
+    # Filtrer les trajets par date si `target_date` est spécifié
+    if target_date:
+        target_date = pd.to_datetime(target_date)
+        df = df[df['Departure_DateTime'].dt.date == target_date.date()]
+    
+    # Trier les trajets par date de départ
     df_sorted = df.sort_values(by='Departure_DateTime')
     if sample_size:
         df_sorted = df_sorted.head(sample_size)
     
+    # Préparer les routes
     routes = {}
     for _, row in df_sorted.iterrows():
         start_pos = (row['Departure_latitude'], row['Departure_longitude'])
@@ -125,6 +135,7 @@ def create_bike_animation(input_file, output_video="bike_animation.mp4", fps=30,
             routes[route_key] = route if route else [(start_pos[0], start_pos[1]), (end_pos[0], end_pos[1])]
             time.sleep(1)
     
+    # Initialisation des paramètres de l'animation
     start_time = df_sorted['Departure_DateTime'].min()
     end_time = df_sorted['Return_DateTime'].max()
     total_minutes = int((end_time - start_time).total_seconds() / 60)
@@ -146,6 +157,21 @@ def create_bike_animation(input_file, output_video="bike_animation.mp4", fps=30,
         
         map_montpellier = folium.Map(location=[43.6117, 3.8777], zoom_start=13)
         
+        # Marquer les stations de départ et d'arrivée
+        for _, row in df_sorted.iterrows():
+            folium.Marker(
+                location=(row['Departure_latitude'], row['Departure_longitude']),
+                popup="Station de départ",
+                icon=folium.Icon(color="green", icon="info-sign")
+            ).add_to(map_montpellier)
+            
+            folium.Marker(
+                location=(row['Return_latitude'], row['Return_longitude']),
+                popup="Station d'arrivée",
+                icon=folium.Icon(color="red", icon="info-sign")
+            ).add_to(map_montpellier)
+        
+        # Afficher les trajets
         for trip in completed_trips:
             folium.PolyLine(
                 trip['route'],
@@ -223,6 +249,7 @@ def create_bike_animation(input_file, output_video="bike_animation.mp4", fps=30,
     for file in os.listdir():
         if file.startswith("map_frame_") and file.endswith(".html"):
             os.remove(file)
+
 
 import os
 print(os.getcwd())  # Affiche le répertoire courant
