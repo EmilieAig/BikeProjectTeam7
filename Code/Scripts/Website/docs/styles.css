@@ -1,24 +1,71 @@
 /* styles.css : to determine the graphic chart */
 
+/* Style for main titles */
+h1 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+
+/* Style for subtitles 2 */
+h2 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e8e5e5; /* Trait gris sous h3 */
+  padding-bottom: 5px; /* Décale la ligne vers le bas */
+}
+
+/* Style for subtitles 3 */
+h3 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e8e5e5; /* Trait gris sous h3 */
+  padding-bottom: 5px; /* Décale la ligne vers le bas */
+}
+
+/* Style for text */
 .text {
   color: black;
   text-align: justify; 
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.text ul {
+  list-style-type: disc; /* Définit des puces (bullet points) */
+  padding-left: 20px;     /* Espace à gauche pour les puces */
+}
+
+.text li {
+  margin-bottom: 5px;    /* Espace entre chaque élément de la liste */
 }
 
 /* Style for navigation bar */
 .navbar {
-  background-color: #5dade2 !important;   /* background color */
-  color: white;                           /* text color */
+  background-color: #209f59 !important;   /* background color */
+  color: black;                           /* text color */
 }
 
 /* Style for logo or title color */
 .navbar-brand {
   color: black !important;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Style for navigation links */
 .nav-link {
   color: black !important;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Style for navigation links when computer mouse hovers over them */
@@ -26,19 +73,19 @@
   color: white !important;
 }
 
-/* Style for main titles */
-h1 {
-  font-size: 2.5em;
-  font-weight: 400;
-  margin-bottom: 1.5em;
+/* Couleurs des sous-menus en mode clair */
+body:not(.quarto-dark) .navbar .dropdown-menu {
+  color: black;
+  background-color: white;
 }
 
-/* Style for subtitles */
-h2 {
-  font-size: 1.5em;
-  font-weight: 400;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+body:not(.quarto-dark) .navbar .dropdown-item {
+  color: black;
+}
+
+body:not(.quarto-dark) .navbar .dropdown-item:hover {
+  background-color: #63d396;
+  color: black;
 }
 
 /* Global style to the main content section */
@@ -49,11 +96,12 @@ h2 {
 }
 
 .custom-footer {
-  background-color: #f8f9fa; /* Couleur de fond */
+  background-color: #e3e4e6; /* Couleur de fond */
+  font-family: 'Lato', sans-serif;
   color: #333; /* Couleur du texte */
-  padding: 8px;
+  padding: 5px;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.8em;
   border-top: 1px solid #ddd;
   position: fixed; /* Fixe le footer en bas de la fenêtre */
   bottom: 0;
@@ -71,7 +119,7 @@ h2 {
 
 /* Effet de survol des liens */
 .custom-footer a:hover {
-  color: #007bff; /* Couleur bleue lors du survol */
+  color: #209f59; /* Couleur bleue lors du survol */
   text-decoration: underline; /* Soulignement lors du survol */
 }
 
@@ -99,4 +147,96 @@ h2 {
   to {
     transform: translateX(50%);
   }
+}
+
+.trombinoscope {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.member {
+  text-align: center;
+  max-width: 180px;
+}
+.member img {
+  border-radius: 10%;
+}
+
+/* Styles de base */
+:root {
+  --text-color-light: black;
+  --text-color-dark: #e0e0e0;
+  --background-color-light: white;
+  --background-color-dark: #474646;
+}
+
+/* Mode sombre */
+
+/* Mode sombre */
+body.quarto-dark {
+  color: var(--text-color-dark);
+  background-color: var(--background-color-dark);
+}
+
+/* Ajustements spécifiques pour le mode sombre */
+body.quarto-dark h1,
+body.quarto-dark h2,
+body.quarto-dark h3 {
+  color: var(--text-color-dark);
+}
+
+body.quarto-dark .text {
+  color: var(--text-color-dark);
+}
+
+body.quarto-dark .navbar {
+  background-color: #187240 !important;
+  color: var(--text-color-dark);
+}
+
+body.quarto-dark .navbar-brand,
+body.quarto-dark .nav-link {
+  color: var(--text-color-dark) !important;
+}
+
+body.quarto-dark a {
+  color: #3498db; /* Couleur de lien visible en mode sombre */
+}
+
+body.quarto-dark .custom-footer {
+  background-color: #232323; /* Nouvelle couleur de fond sombre */
+  color: #e0e0e0; /* Couleur de texte claire */
+}
+
+body.quarto-dark .custom-footer a {
+  color: white; /* Couleur de liens en mode sombre */
+}
+
+body.quarto-dark .custom-footer a:hover {
+  color: #209f59; /* Couleur de survol des liens */
+}
+
+/* Couleur des liens (encres) en mode clair */
+a {
+  color: #209f59; /* Changez cette couleur selon vos préférences */
+  text-decoration: none; /* Supprime le soulignement par défaut */
+}
+
+/* Couleur des liens lors du survol (hover) en mode clair */
+a:hover {
+  color: #209f59; /* Couleur différente au survol */
+  text-decoration: underline; /* Ajoute un soulignement au survol */
+}
+
+/* Couleur des liens en mode sombre */
+body.quarto-dark a {
+  color: #209f59; /* Changez cette couleur selon vos préférences */
+  text-decoration: none; /* Supprime le soulignement par défaut */
+}
+
+/* Couleur des liens au survol en mode sombre */
+body.quarto-dark a:hover {
+  color: #209f59; /* Couleur au survol */
+  text-decoration: underline; /* Ajoute un soulignement au survol */
 }

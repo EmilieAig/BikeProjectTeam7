@@ -22,13 +22,17 @@ bike analyses in Montpellier</h1>
 
 ## Introduction
 
-#### Problematic
+### Problematic
 
 <p class = "text"> Our project will focus on the following question: "What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists' behaviors evolved before and after this major event?". </p> 
 
-#### Goal
+### Goal
 
 <p class = "text"> The goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits. </p>
+
+### Hypothesis
+
+<p class = "text"> Based on data from the Tour de France, we hypothesised that there would be a greater number of cyclists in Montpellier around the time of the Tour de France. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly. </p>
 
 ## Data
 
