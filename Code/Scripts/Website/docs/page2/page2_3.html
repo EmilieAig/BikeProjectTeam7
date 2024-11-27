@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>page2_1 – &lt;a href="/" class="navbar-brand"&gt;
+<title>page2_3 – &lt;a href="/" class="navbar-brand"&gt;
   &lt;i class="fas fa-home"&gt;&lt;/i&gt;
 &lt;/a&gt;</title>
 <style>
@@ -99,15 +99,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-analyses">    
         <li>
-    <a class="dropdown-item" href="../analyses/statistics.html">
+    <a class="dropdown-item" href="../page1/page1_3.html">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../page1/page1_1.qmd">
+    <a class="dropdown-item" href="../page1/page1_1.html">
  <span class="dropdown-text">Interactive map</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../page1/page1_2.qmd">
+    <a class="dropdown-item" href="../page1/page1_2.html">
  <span class="dropdown-text">Video</span></a>
   </li>  
     </ul>
@@ -155,10 +155,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#numpy" id="toc-numpy" class="nav-link active" data-scroll-target="#numpy">‘Numpy’</a></li>
-  <li><a href="#pandas" id="toc-pandas" class="nav-link" data-scroll-target="#pandas">‘Pandas’</a></li>
-  <li><a href="#matplotlib" id="toc-matplotlib" class="nav-link" data-scroll-target="#matplotlib">‘Matplotlib’</a></li>
-  <li><a href="#pooch" id="toc-pooch" class="nav-link" data-scroll-target="#pooch">‘Pooch’</a></li>
+  <li><a href="#website-classes" id="toc-website-classes" class="nav-link active" data-scroll-target="#website-classes">Website classes</a>
+  <ul>
+  <li><a href="#text" id="toc-text" class="nav-link" data-scroll-target="#text">‘Text’</a></li>
+  <li><a href="#navbar" id="toc-navbar" class="nav-link" data-scroll-target="#navbar">‘Navbar’</a></li>
+  <li><a href="#nav" id="toc-nav" class="nav-link" data-scroll-target="#nav">‘Nav’</a></li>
+  <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">‘Content’</a></li>
+  <li><a href="#footer" id="toc-footer" class="nav-link" data-scroll-target="#footer">‘Footer’</a></li>
+  <li><a href="#pointilles-rectangle" id="toc-pointilles-rectangle" class="nav-link" data-scroll-target="#pointilles-rectangle">‘Pointilles-rectangle’</a></li>
+  <li><a href="#bike" id="toc-bike" class="nav-link" data-scroll-target="#bike">‘Bike’</a></li>
+  <li><a href="#trombinoscope" id="toc-trombinoscope" class="nav-link" data-scroll-target="#trombinoscope">‘Trombinoscope’</a></li>
+  <li><a href="#member" id="toc-member" class="nav-link" data-scroll-target="#member">‘Member’</a></li>
+  </ul></li>
+  <li><a href="#python-classes" id="toc-python-classes" class="nav-link" data-scroll-target="#python-classes">Python classes</a></li>
   </ul>
 </nav>
     </div>
@@ -170,47 +179,142 @@ ul.task-list li input[type="checkbox"] {
 
 <div style="text-align: center;">
 <h1>
-Packages <i class="fas fa-book-open"></i>
+Classes <i class="fas fa-book-open"></i>
 </h1>
 </div>
+<section id="website-classes" class="level2">
+<h2 class="anchored" data-anchor-id="website-classes">Website classes</h2>
+<section id="text" class="level3">
+<h3 class="anchored" data-anchor-id="text">‘Text’</h3>
 <p class="text">
-For the code, we have used some packages to make our analyses.
+In the website, we have used the class named “text”.
 </p>
-<section id="numpy" class="level3">
-<h3 class="anchored" data-anchor-id="numpy">‘Numpy’</h3>
 <p class="text">
-This package was used to
+This class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls :
 </p>
+<ul class="text">
+<li>
+<strong>color :</strong> for the choice of the text color : <code>black</code>.
+</li>
+<li>
+<strong>text-align :</strong> for the choice of the text alignement : <code>justify</code>.
+</li>
+<li>
+<strong>font-family :</strong> for the choice of font : <code>Lato, sans serif</code>.
+</li>
+<li>
+<strong>font-size :</strong> for the choice of text size : <code>15px</code>.
+</li>
+<li>
+<strong>font-weight :</strong> for the choice of the text weight (level of bold) : <code>500</code>.
+</li>
+<li>
+<strong>margin-bottom :</strong> for the choice of the spacing between paragraphs : <code>1em</code>.
+</li>
+</ul>
 <p class="text">
-For more details we can consult the <a href="https://numpy.org/doc/">documentation</a> of this packages.
+This class is defined in the <code>styles.css</code> file.
 </p>
 </section>
-<section id="pandas" class="level3">
-<h3 class="anchored" data-anchor-id="pandas">‘Pandas’</h3>
+<section id="navbar" class="level3">
+<h3 class="anchored" data-anchor-id="navbar">‘Navbar’</h3>
 <p class="text">
-This package was used to
+In the website, we have used the class named “navbar”.
 </p>
 <p class="text">
-For more details we can consult the <a href="https://pandas.pydata.org/docs/">documentation</a> of this packages.
-</p>
-</section>
-<section id="matplotlib" class="level3">
-<h3 class="anchored" data-anchor-id="matplotlib">‘Matplotlib’</h3>
-<p class="text">
-This package was used to
+This class is used in all sections of the website to style the navigation bar on the right
 </p>
 <p class="text">
-For more details we can consult the <a href="https://matplotlib.org/stable/index.html">documentation</a> of this packages.
+This class is defined in the <code>styles.css</code> file.
 </p>
 </section>
-<section id="pooch" class="level3">
-<h3 class="anchored" data-anchor-id="pooch">‘Pooch’</h3>
+<section id="nav" class="level3">
+<h3 class="anchored" data-anchor-id="nav">‘Nav’</h3>
 <p class="text">
-This package was used to
+In the website, we have used the class named “nav”.
 </p>
 <p class="text">
-For more details we can consult the <a href="https://www.fatiando.org/pooch/latest/">documentation</a> of this packages.
+This class is used in the ’’ section to
 </p>
+<p class="text">
+This class is defined in the <code>styles.css</code> file.
+</p>
+</section>
+<section id="content" class="level3">
+<h3 class="anchored" data-anchor-id="content">‘Content’</h3>
+<p class="text">
+In the website, we have used the class named “content”.
+</p>
+<p class="text">
+This class is used in the ’’ section to
+</p>
+<p class="text">
+This class is defined in the <code>styles.css</code> file.
+</p>
+</section>
+<section id="footer" class="level3">
+<h3 class="anchored" data-anchor-id="footer">‘Footer’</h3>
+<p class="text">
+In the website, we have used the class named “footer”.
+</p>
+<p class="text">
+This class is used in the ’’ section to
+</p>
+<p class="text">
+This class is defined in the <code>styles.css</code> file.
+</p>
+</section>
+<section id="pointilles-rectangle" class="level3">
+<h3 class="anchored" data-anchor-id="pointilles-rectangle">‘Pointilles-rectangle’</h3>
+<p class="text">
+In the website, we have used the class named “pointilles-rectangle”.
+</p>
+<p class="text">
+This class is used in the ’’ section to
+</p>
+<p class="text">
+This class is defined in the <code>styles.css</code> file.
+</p>
+</section>
+<section id="bike" class="level3">
+<h3 class="anchored" data-anchor-id="bike">‘Bike’</h3>
+<p class="text">
+In the website, we have used the class named “bike”.
+</p>
+<p class="text">
+This class is used in the ’’ section to
+</p>
+<p class="text">
+This class is defined in the <code>styles.css</code> file.
+</p>
+</section>
+<section id="trombinoscope" class="level3">
+<h3 class="anchored" data-anchor-id="trombinoscope">‘Trombinoscope’</h3>
+<p class="text">
+In the website, we have used the class named “trombinoscope”.
+</p>
+<p class="text">
+This class is used in the ’’ section to
+</p>
+<p class="text">
+This class is defined in the <code>styles.css</code> file.
+</p>
+</section>
+<section id="member" class="level3">
+<h3 class="anchored" data-anchor-id="member">‘Member’</h3>
+<p class="text">
+In the website, we have used the class named “member”.
+</p>
+<p class="text">
+This class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other.
+</p>
+<p class="text">
+This class is defined in the <code>styles.css</code> file.
+</p>
+</section>
+</section>
+<section id="python-classes" class="level2">
+<h2 class="anchored" data-anchor-id="python-classes">Python classes</h2>
 
 
 </section>

@@ -40,5 +40,29 @@
   },
   "footer.qmd": {
     "footer.html": "89f7c64c"
+  },
+  "page2/page2_3.qmd": {
+    "page2_3.html": "73b00ed3"
+  },
+  "page2/page2_2.qmd": {
+    "page2_2.html": "83e76fdc"
+  },
+  "analyses/statistics.qmd": {
+    "statistics.html": "902af8a9"
+  },
+  "documentation/classes.qmd": {
+    "classes.html": "1c4ba885"
+  },
+  "documentation/functions.qmd": {
+    "functions.html": "13753bf7"
+  },
+  "documentation/packages.qmd": {
+    "packages.html": "f3397aa1"
+  },
+  "analyses/map.qmd": {
+    "map.html": "6cd52e5b"
+  },
+  "analyses/video.qmd": {
+    "video.html": "c3f1ffd5"
   }
 }

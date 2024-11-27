@@ -36,7 +36,7 @@ format:
 
 <p class = "text"> Following our descriptive analyses, we obtained the following graph:  </p>
 
-<img src="/images/Graph_1.png" alt="Graph_1" width="1000px">
+<img src="/images/intensity_graph.svg" alt="Graph_1" width="1000px">
 
 <p class = "text"> This graph shows the total number of bicycles passing in front of the city of Montpellier's eco-counters per week. Please note that this data does not correspond to the number of bicycles, as a bicycle may be counted several times if it passes in front of several counters. This data therefore corresponds to the total number of journeys made by cyclists in Montpellier (number of times they pass in front of a counter). We can see that the Tour de France period is highlighted in green. </p>
 
@@ -44,7 +44,7 @@ format:
 
 <p class = "text"> We then continued by checking the homogeneity of variances and normality. Then, given that normality was not verified, we performed a Kruskal Wallis test (because we had several independent groups and only one variable of interest). We obtained the following graph to represent the differences between our groups. </p>
 
-<img src="/images/Graph_2.png" alt="Graph_2" width="800px">
+<img src="/images/boxplot.svg" alt="Graph_2" width="800px">
 
 <p class = "text"> This graph is a boxplot that represents the number of passes in front of eco-counters according to our three periods of interest. </p>
 

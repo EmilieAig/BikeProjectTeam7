@@ -17,6 +17,8 @@ sns.set_theme(style="whitegrid")
 # 2. Path to the folder containing the CSV files
 
 current_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+output_path_svg1 = os.path.join(current_directory, 'SCRIPTS', 'Website', 'images', "intensity_graph.svg")
+output_path_svg2 = os.path.join(current_directory, 'SCRIPTS', 'Website', 'images', "boxplot.svg")
 path = os.path.join(current_directory, 'Data', 'Data_EcoCompt_clean')
 all_files = glob.glob(os.path.join(path, "*.csv"))
 
@@ -84,9 +86,10 @@ plt.xticks(weekly_data['week_start'], labels=weekly_data['week_start'].dt.strfti
 plt.legend()
 plt.grid(True)
 
-# Display the graph
+# Save the graph as SVG
 plt.tight_layout()
-plt.show()
+plt.savefig(output_path_svg1, format='svg')
+plt.close()  # Fermez la figure pour libérer la mémoire
 
 # %% 
 # 6. Comparison of periods (before, during, after the Tour de France)
@@ -180,7 +183,8 @@ plt.title("Boxplot of the number of bike rides in front of eco-counters accordin
 plt.ylabel("Mean of the bike passages' intensity")
 plt.grid(True)
 plt.tight_layout()
-plt.show()
+plt.savefig(output_path_svg2, format='svg')
+plt.close()  # Fermez la figure pour libérer la mémoire
 
 # %% 
 # 10. Comments

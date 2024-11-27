@@ -13,15 +13,19 @@ website:
       - text: "Analyses"
         menu:
           - text: "Statistics"
-            href: page1/page1_3.qmd
+            href: analyses/statistics.qmd
           - text: "Interactive map"
-            href: page1/page1_1.qmd
+            href: analyses/map.qmd
           - text: "Video"
-            href: page1/page1_2.qmd
+            href: analyses/video.qmd
       - text: "Documentation"
         menu:
-          - text: "Option 1"
-            href: page2/page2_1.qmd
+          - text: "Packages"
+            href: documentation/packages.qmd
+          - text: "Functions"
+            href: documentation/functions.qmd
+          - text: "Classes"
+            href: documentation/classes.qmd
     right:
       - icon: github
         href: https://github.com/EmilieAig/BikeProjectTeam7

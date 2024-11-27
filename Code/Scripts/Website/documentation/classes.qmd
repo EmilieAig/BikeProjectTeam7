@@ -7,38 +7,10 @@ format:
 ---
 
 <div style="text-align: center;">
-<h1>Documentation <i class="fas fa-book-open"></i></h1>
+<h1>Classes <i class="fas fa-book-open"></i></h1>
 </div>
 
-## Packages
-
-<p class = "text"> For the code, we have used some packages to make our analyses. </p>
-
-### 'Numpy'
-
-<p class = "text"> This package was used to </p>
-
-<p class = "text"> For more details we can consult the <a href="https://numpy.org/doc/">documentation</a> of this packages. </p>
-
-### 'Pandas'
-
-<p class = "text"> This package was used to </p>
-
-<p class = "text"> For more details we can consult the <a href="https://pandas.pydata.org/docs/">documentation</a> of this packages. </p>
-
-### 'Matplotlib'
-
-<p class = "text"> This package was used to </p>
-
-<p class = "text"> For more details we can consult the <a href="https://matplotlib.org/stable/index.html">documentation</a> of this packages. </p>
-
-### 'Pooch'
-
-<p class = "text"> This package was used to </p>
-
-<p class = "text"> For more details we can consult the <a href="https://www.fatiando.org/pooch/latest/">documentation</a> of this packages. </p>
-
-## Classes
+## Website classes
 
 ### 'Text'
 
@@ -121,4 +93,4 @@ format:
 
 <p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
 
-## Fonctions
+## Python classes
