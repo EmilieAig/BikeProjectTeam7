@@ -1,0 +1,45 @@
+---
+format:
+  html:
+    css: styles.css
+    include-in-header:
+      text: |
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+---
+
+<div style="text-align: center;">
+<h1>Welcome to our project <i class="fas fa-bicycle"></i><br>
+bike analyses in Montpellier</h1>
+</div>
+
+<div class="bike"> <img src="images/bike.png" alt="Image" style="width: 100%; max-width: 40px; display: block; margin: 0 auto -10px auto;">
+</div>
+
+<div class="pointilles-rectangle">
+</div>
+
+<br>
+
+## Context
+
+### Problematic
+
+<p class = "text"> Our project will focus on the following question: "What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists' behaviors evolved before and after this major event?". </p> 
+
+### Goal
+
+<p class = "text"> The goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits. </p>
+
+### Hypothesis
+
+<p class = "text"> Based on data from the Tour de France, we hypothesised that that there would be an increase in the number of people cycling during the Tour de France period. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly. </p>
+
+## Data
+
+<p class = "text"> To carry out this study, we selected several types of data. </p>
+
+<p class = "text"> Firstly, we retrieved data on the journeys made by VéloMagg bikes between stations in the VéloMagg network in the Montpellier metropolitan area. </p>
+
+<p class = "text"> Secondly, we have retrieved data for each of the bicycle counters (eco-counters) in production in the Montpellier Metropolitan Area, showing the number of bicycles (and piétions in some cases) counted. The daily data is the total of the previous day's count. This information is divided into as many files as there are eco-counters. Each eco-counter is identified by a serial number, which we were able to find and associate with its latitude and longitude. </p>
+
+<p class = "text"> All the data we have selected was extracted between April 2023 and October 2023. This corresponds to 3 months before the Telethon and 3 months after, which we thought was a good margin for observing changes around the Tour de France and which is just over half a year (7 months). </p>

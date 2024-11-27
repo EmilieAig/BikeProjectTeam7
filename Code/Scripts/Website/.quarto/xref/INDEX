@@ -1,0 +1,68 @@
+{
+  "index.qmd": {
+    "index.html": "7ad8d28e"
+  },
+  "python/basics.qmd": {
+    "basics.html": "a7dcde16"
+  },
+  "general-tools/option2.qmd": {
+    "option2.html": "10250cb9"
+  },
+  "general-tools/option1.qmd": {
+    "option1.html": "db581906"
+  },
+  "project/guidelines.qmd": {
+    "guidelines.html": "5cd57cc1"
+  },
+  "project/2024-2025.qmd": {
+    "2024-2025.html": "8091134d"
+  },
+  "page2/page2_1.qmd": {
+    "page2_1.html": "fbc50e1f"
+  },
+  "page1/page1_2.qmd": {
+    "page1_2.html": "3b199c0b"
+  },
+  "page1/page1_1.qmd": {
+    "page1_1.html": "ad3a423e"
+  },
+  "footer/about_us.qmd": {
+    "about_us.html": "45f8b4b7"
+  },
+  "footer/terms_conditions.qmd": {
+    "terms_conditions.html": "d5e134f3"
+  },
+  "footer/privacy_policy.qmd": {
+    "privacy_policy.html": "e73396d7"
+  },
+  "page1/page1_3.qmd": {
+    "page1_3.html": "33d09dac"
+  },
+  "footer.qmd": {
+    "footer.html": "89f7c64c"
+  },
+  "page2/page2_3.qmd": {
+    "page2_3.html": "73b00ed3"
+  },
+  "page2/page2_2.qmd": {
+    "page2_2.html": "83e76fdc"
+  },
+  "analyses/statistics.qmd": {
+    "statistics.html": "902af8a9"
+  },
+  "documentation/classes.qmd": {
+    "classes.html": "1c4ba885"
+  },
+  "documentation/functions.qmd": {
+    "functions.html": "13753bf7"
+  },
+  "documentation/packages.qmd": {
+    "packages.html": "f3397aa1"
+  },
+  "analyses/map.qmd": {
+    "map.html": "6cd52e5b"
+  },
+  "analyses/video.qmd": {
+    "video.html": "c3f1ffd5"
+  }
+}
