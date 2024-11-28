@@ -19,7 +19,7 @@ format:
 <div class="trombinoscope">
 
 <div class="member">
-   <img src="/images/member1.jpeg" alt="Member 1" width="150px">
+   <img src="/images/member1.png" alt="Member 1" width="150px">
    <h4>Emilie AIGOIN</h4>
    <h5>Contributions: <br> Gantt diagram, website creation.</h5>
 </div>
@@ -37,7 +37,7 @@ format:
 </div>
 
 <div class="member">
-   <img src="/images/member4.jpg" alt="Member 4" width="150px">
+   <img src="/images/member4.png" alt="Member 4" width="150px">
    <h4>Qingjian ZHU</h4>
    <h5>Contributions: <br> Map visualization, bike layout on the map.</h5>
 </div>
