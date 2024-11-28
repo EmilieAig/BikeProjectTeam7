@@ -4,21 +4,28 @@ project:
   output-dir: docs
 
 website:
-  title: "BikeProjectTeam7"
+  title: |
+    <a href="/" class="navbar-brand">
+      <i class="fas fa-home"></i>
+    </a>
   navbar:
     left:
       - text: "Analyses"
         menu:
           - text: "Statistics"
-            href: page1/page1_3.qmd
+            href: analyses/statistics.qmd
           - text: "Interactive map"
-            href: page1/page1_1.qmd
+            href: analyses/map.qmd
           - text: "Video"
-            href: page1/page1_2.qmd
+            href: analyses/video.qmd
       - text: "Documentation"
         menu:
-          - text: "Option 1"
-            href: page2/page2_1.qmd
+          - text: "Packages"
+            href: documentation/packages.qmd
+          - text: "Functions"
+            href: documentation/functions.qmd
+          - text: "Classes"
+            href: documentation/classes.qmd
     right:
       - icon: github
         href: https://github.com/EmilieAig/BikeProjectTeam7
@@ -33,4 +40,4 @@ format:
     toc: true
     toc-location: right
     toc-depth: 4
-    page-layout: full
+    page-layout: article

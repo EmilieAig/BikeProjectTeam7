@@ -37,16 +37,16 @@
   {
     "objectID": "page2/page2_1.html",
     "href": "page2/page2_1.html",
-    "title": "Documentation",
+    "title": "\nPackages \n",
     "section": "",
-    "text": "Contenu de la page…\n\n\nPackages\nClasses\nFonctions"
+    "text": "Packages \n\n\n\nFor the code, we have used some packages to make our analyses.\n\n\n‘Numpy’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pandas’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Matplotlib’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pooch’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages."
   },
   {
     "objectID": "page1/page1_2.html",
     "href": "page1/page1_2.html",
-    "title": "Video",
+    "title": "Carrousel de Vidéos",
     "section": "",
-    "text": "In this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\nYou can choose the date and the video will be interactive."
+    "text": "Bienvenue au Carrousel de Vidéos\n\n\n&lt;div class=\"carousel-item active\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n\n  Previous    Next"
   },
   {
     "objectID": "index.html#title-2",
@@ -67,14 +67,14 @@
     "href": "index.html#data",
     "title": "\nWelcome to our project  bike analyses in Montpellier\n",
     "section": "Data",
-    "text": "Data\n\nTo conduct this study, we have chosen to analyze data on bicycle usage spanning from April to October 2023. This time frame allows us to examine bike traffic before, during, and after the Tour de France, providing a comprehensive view of usage patterns around this event. The selection of this period is crucial for capturing short-term trends related to the Tour and distinguishing them from seasonal or contextual factors that might also influence cycling behavior."
+    "text": "Data\n\nTo carry out this study, we selected several types of data.\n\n\nFirstly, we retrieved data on the journeys made by VéloMagg bikes between stations in the VéloMagg network in the Montpellier metropolitan area.\n\n\nSecondly, we have retrieved data for each of the bicycle counters (eco-counters) in production in the Montpellier Metropolitan Area, showing the number of bicycles (and piétions in some cases) counted. The daily data is the total of the previous day’s count. This information is divided into as many files as there are eco-counters. Each eco-counter is identified by a serial number, which we were able to find and associate with its latitude and longitude.\n\n\nAll the data we have selected was extracted between April 2023 and October 2023. This corresponds to 3 months before the Telethon and 3 months after, which we thought was a good margin for observing changes around the Tour de France and which is just over half a year (7 months)."
   },
   {
     "objectID": "index.html#introduction",
     "href": "index.html#introduction",
     "title": "\nWelcome to our project  bike analyses in Montpellier\n",
     "section": "Introduction",
-    "text": "Introduction\n\nProblematic\n\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.\n\n\n\nHypothesis\n\nBased on data from the Tour de France, we hypothesised that there would be a greater number of cyclists in Montpellier around the time of the Tour de France. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly."
+    "text": "Introduction\n\nProblematic\n\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.\n\n\n\nHypothesis\n\nBased on data from the Tour de France, we hypothesised that that there would be an increase in the number of people cycling during the Tour de France period. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly."
   },
   {
     "objectID": "index.html#tour-de-france",
@@ -93,7 +93,7 @@
   {
     "objectID": "page1/page1_2.html#presentation",
     "href": "page1/page1_2.html#presentation",
-    "title": "\nVideo \n",
+    "title": "\nVideos \n",
     "section": "Presentation",
     "text": "Presentation\n\nOn this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\n\n\nYou can choose the date and the video will be interactive."
   },
@@ -102,7 +102,7 @@
     "href": "page1/page1_2.html#video",
     "title": "\nVideo \n",
     "section": "Video",
-    "text": "Video"
+    "text": "Video\n\n\n\n\n\n\nMonday 10 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 11 July 2023\n\n\n\n\n\n\n\n\n\nWednesday 12 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 13 July 2023\n\n\n\n\n\n\n\n\n\nFriday 14 July 2023\n\n\n\n\n\n\n\n\n\nSaturday 15 July 2023\n\n\n\n\n\n\n\n\n\nSunday 16 July 2023"
   },
   {
     "objectID": "footer.html",
@@ -158,7 +158,7 @@
     "href": "page1/page1_3.html#introduction",
     "title": "\nStatistics \n",
     "section": "Introduction",
-    "text": "Introduction\n\nOn this page, we present a statistical analysis of bicycle traffic data in Montpellier from April to October 2023.\n\n\n\nJust before the Tour de France.\n\n\nDuring the Tour de France.\n\n\nJust after the Tour de France.\n\n\n\nTo answer this question, we used the collected data (described on the homepage) to perform statisctical analyses that would confirm or refute our initial hypothesis. We expected to observe an increase in bicycle usage during the Tour de France due to the popularity of the event and its potential influence on local behaviour."
+    "text": "Introduction\n\nOn this page, we present a short preliminary statistical analysis of the data we selected (see home page for a detailed explanation of our data).\n\n\nOur question was “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?” and we hypothesized that there would be an increase in the number of people cycling during the Tour de France period. A sporting event like this encourages people to get back into sport, and cycling in particular."
   },
   {
     "objectID": "page1/page1_3.html#méthode",
@@ -179,14 +179,14 @@
     "href": "page1/page1_3.html#discussion",
     "title": "\nStatistics \n",
     "section": "Discussion",
-    "text": "Discussion\n\nThe analyses indicate that the Tour de France did not have a significant effect on bicycle traffic in Montpellier in 2023. Instead, the observed variations seems to align more closely with the summer vacation period, which generally starts at the beginning of July and lasts until the end of August. We noticed a decrease in bicycle usage during this time, foloowed by a marked increase from September onwards, likely corresponding to the return to school and work after the holidays.\n\n\nThese findings suggest that bicycle usage patterns in Montpellier are more influenced by the school calendar and typical work periods than by occasional sporting events like the Tour de France, execpt when the event directly passes through the city, which was not the case in 2023."
+    "text": "Discussion\n\nOur analyses seem to show that there is no significant difference in the number of cycles passing through eco-counters in the city of Montpellier between the periods before, during and after the Tour de France. However, if we look at the first graph we got, we can say that this evolution could be linked to other factors such as school and work holiday periods. Indeed, we note that there is a decrease at the beginning of the summer holiday period (July) and that seems to be accentuated during the August period. In addition, at the beginning of September, during the school year, there seems to be a strong increase in the number of bicycle trips.\n\n\nThus, it would be interesting to do more detailed analyses than those we have done, but also to look at the link with school holidays."
   },
   {
     "objectID": "page1/page1_3.html#conclusion",
     "href": "page1/page1_3.html#conclusion",
     "title": "\nStatistics \n",
     "section": "Conclusion",
-    "text": "Conclusion\n\nOur hypothesis that the Tour de France would significantly increase bicycle traffic in Montpellier was not supported by the data. Instead, the influence of the summer vacation period was much more pronounced. For further research, it would be interesting to analyze data over multiple years, especially when the Tour de France stage passes through Montpellier, to see of a stronger local effect can be observed in these circumstances."
+    "text": "Conclusion\n\nTo conclude, from these preliminary analyses, we did not validate our hypothesis that the Tour de France had a positive impact on bicycle use in the city of Montpellier. But we have shown that it would be interesting to use other sources to justify these trends."
   },
   {
     "objectID": "footer/about_us.html",
@@ -263,14 +263,14 @@
     "href": "page1/page1_3.html#methods",
     "title": "\nStatistics \n",
     "section": "Methods",
-    "text": "Methods\n\nWe used cleaned data files that recorded the daily number of cyclists in Montpellier, and compiled them into a single dataset. The statistical analyses focused on the following periods :\n\n\n\nBefore the Tour de France : April to June.\n\n\nDuring the Tour de France : July 1st to July 23rd.\n\n\nAfter the Tour de France : late July to October.\n\n\n\nThe data were aggregated by day to compute the mean and standard deviation of the intensity of bicycle traffic. Temporal trends were visualized using line plots, and we compared descriptive statistics for each period."
+    "text": "Methods\n\nWe used sorted data corresponding to the number of bicycles passing in front of counters located in the city of Montpellier and compiled them into a single dataset. The statistical analyses focused on the following periods :\n\n\n\nBefore the Tour de France : April to June.\n\n\nDuring the Tour de France : July 1st to July 23rd.\n\n\nAfter the Tour de France : late July to October.\n\n\n\nWe carried out a number of statistical analyses to see if our hypothesis could be validated. These analyses are not intended to be taken literally, as there are many other parameters to be taken into account, but they are a short preliminary study of our data.\n\n\nWe began by performing descriptive analyses to give us a visual representation of our data. We then carried out tests to check the normality and homogeneity of the variances in order to choose the appropriate statistical test. Finally, we performed the test and compared the results with our hypothesis."
   },
   {
     "objectID": "page1/page1_3.html#results",
     "href": "page1/page1_3.html#results",
     "title": "\nStatistics \n",
     "section": "Results",
-    "text": "Results\nWe have made\n\n\nThis graph below shows the averag week intensity of bicycle traffic from April to October 2023, highlighting the period of the Tour de France.\n\n\nThe results indicate changes in bicycle usage throughout the study period. We observed that the average daily bicycle count before July was ?X cyclist per day?, compared to ?Y cyclists par day? during the Tour de France, and ?Z cyclists per day? after de Tour de France.\n\n\nThe computed standard deviations for these periods were similar, suggesting comparable variability in bicycle usage before, during, and after the Tour de France. Howevers, no significant differences were observed between the means of the different periods, indicating that the event did not have a substantial impact on bicycle usage in Montpellier.\n\n\n\nThis graph represent the distribution of average bicycle usage in Montpellier across three different periods relative to the Tour de France.\n\n\n\nThe box shows the interquartile range, which contains the middle 50% of the data (from the 25th to the 75th percentile).\n\n\nThe horizontal line inside the box représents the median (the middle value of the dataset).\n\n\nThe whiskerw extend to the smallest and largest values within 1.5 times the interquartile range.\n\n\n\nBy comparing the three periods, we can observe any changes in bicycle usage that might be linked to the Tour de France event."
+    "text": "Results\n\nWe started by conducting descriptive analyses to get a first idea of our data. We found an average of 610.06 passes in front of eco-counters during the period before the Tour de France 523.07 passes during the Tour de France and 599.80 passes after the Tour de France. We see that there seems to be a slight decrease during the Tour de France, which would be the opposite of our hypothesis, but we will see if this difference is significant.\n\n\nFollowing our descriptive analyses, we obtained the following graph:\n\n\n\nThis graph shows the total number of bicycles passing in front of the city of Montpellier’s eco-counters per week. Please note that this data does not correspond to the number of bicycles, as a bicycle may be counted several times if it passes in front of several counters. This data therefore corresponds to the total number of journeys made by cyclists in Montpellier (number of times they pass in front of a counter). We can see that the Tour de France period is highlighted in green.\n\n\nVisually, we can see that there does not seem to be an increase during the period of the Tour de France compared with the periods before and after. We also note that there is a sharp decrease in the number of crossings in front of a meter during the period of August and that it goes back to early September.\n\n\nWe then continued by checking the homogeneity of variances and normality. Then, given that normality was not verified, we performed a Kruskal Wallis test (because we had several independent groups and only one variable of interest). We obtained the following graph to represent the differences between our groups.\n\n\n\nThis graph is a boxplot that represents the number of passes in front of eco-counters according to our three periods of interest.\n\n\n\nThe box shows the interquartile range, which contains the middle 50% of the data (from the 25th to the 75th percentile).\n\n\nThe horizontal line inside the box représents the median (the middle value of the dataset).\n\n\nThe whiskerw extend to the smallest and largest values within 1.5 times the interquartile range.\n\n\n\nOur analyses by the test of Kruskal Wallis showed us that there did not seem to be a significant difference between our different periods in terms of the number of passages in front of eco-counters of the vulle de Montpellier. Indeed, we found a p-value of 0.16 and an H-value of 3.59. Thus, the differences do not seem to be significant."
   },
   {
     "objectID": "page1/page1_3.html#introductio",
@@ -285,5 +285,173 @@
     "title": "\nVideo \n",
     "section": "Carrousel des vidéos",
     "text": "Carrousel des vidéos\n\n❮\n\n&lt;video class=\"video-slide\" src=\"/images/ADM.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_mardi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_mercredi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_jeudi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_vendredi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_samedi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_dimanche.mp4\" controls&gt;&lt;/video&gt;\n\n❯"
+  },
+  {
+    "objectID": "index.html#context",
+    "href": "index.html#context",
+    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
+    "section": "Context",
+    "text": "Context\n\nProblematic\n\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.\n\n\n\nHypothesis\n\nBased on data from the Tour de France, we hypothesised that that there would be an increase in the number of people cycling during the Tour de France period. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly."
+  },
+  {
+    "objectID": "page1/page1_2.html#video-carousel",
+    "href": "page1/page1_2.html#video-carousel",
+    "title": "\nVideo \n",
+    "section": "Video Carousel",
+    "text": "Video Carousel\n\n\n\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"3\" aria-label=\"Slide 4\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"4\" aria-label=\"Slide 5\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"5\" aria-label=\"Slide 6\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"6\" aria-label=\"Slide 7\"&gt;&lt;/button&gt;\n\n\n\n&lt;div class=\"carousel-item active\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_1\" title=\"YouTube video 1\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_2\" title=\"YouTube video 2\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_3\" title=\"YouTube video 3\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_4\" title=\"YouTube video 4\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_5\" title=\"YouTube video 5\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_6\" title=\"YouTube video 6\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_7\" title=\"YouTube video 7\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n   Previous    Next"
+  },
+  {
+    "objectID": "page1/page1_2.html#videos",
+    "href": "page1/page1_2.html#videos",
+    "title": "\nVideos \n",
+    "section": "Videos",
+    "text": "Videos\n\n\n\n\n\n\nMonday 10 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 11 July 2023\n\n\n\n\n\n\n\n\n\nWednesday 12 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 13 July 2023\n\n\n\n\n\n\n\n\n\nFriday 14 July 2023\n\n\n\n\n\n\n\n\n\nSaturday 15 July 2023\n\n\n\n\n\n\n\n\n\nSunday 16 July 2023"
+  },
+  {
+    "objectID": "page2/page2_2.html#packages",
+    "href": "page2/page2_2.html#packages",
+    "title": "\nDocumentation \n",
+    "section": "Packages",
+    "text": "Packages\n\nFor the code, we have used some packages to make our analyses.\n\n\n‘Numpy’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pandas’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Matplotlib’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pooch’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages."
+  },
+  {
+    "objectID": "page2/page2_2.html#classes",
+    "href": "page2/page2_2.html#classes",
+    "title": "\nDocumentation \n",
+    "section": "Classes",
+    "text": "Classes\n\n‘Text’\n\nIn the website, we have used the class named “text”.\n\n\nThis class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls :\n\n\n\ncolor : for the choice of the text color : black.\n\n\ntext-align : for the choice of the text alignement : justify.\n\n\nfont-family : for the choice of font : Lato, sans serif.\n\n\nfont-size : for the choice of text size : 15px.\n\n\nfont-weight : for the choice of the text weight (level of bold) : 500.\n\n\nmargin-bottom : for the choice of the spacing between paragraphs : 1em.\n\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Navbar’\n\nIn the website, we have used the class named “navbar”.\n\n\nThis class is used in all sections of the website to style the navigation bar on the right\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Nav’\n\nIn the website, we have used the class named “nav”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Content’\n\nIn the website, we have used the class named “content”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Footer’\n\nIn the website, we have used the class named “footer”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Pointilles-rectangle’\n\nIn the website, we have used the class named “pointilles-rectangle”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Bike’\n\nIn the website, we have used the class named “bike”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Trombinoscope’\n\nIn the website, we have used the class named “trombinoscope”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Member’\n\nIn the website, we have used the class named “member”.\n\n\nThis class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other.\n\n\nThis class is defined in the styles.css file."
+  },
+  {
+    "objectID": "page2/page2_2.html#fonctions",
+    "href": "page2/page2_2.html#fonctions",
+    "title": "\nDocumentation \n",
+    "section": "Fonctions",
+    "text": "Fonctions"
+  },
+  {
+    "objectID": "page2/page2_3.html#packages",
+    "href": "page2/page2_3.html#packages",
+    "title": "\nDocumentation \n",
+    "section": "Packages",
+    "text": "Packages\n\nFor the code, we have used some packages to make our analyses.\n\n\n‘Numpy’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pandas’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Matplotlib’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pooch’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages."
+  },
+  {
+    "objectID": "page2/page2_3.html#classes",
+    "href": "page2/page2_3.html#classes",
+    "title": "\nDocumentation \n",
+    "section": "Classes",
+    "text": "Classes\n\n‘Text’\n\nIn the website, we have used the class named “text”.\n\n\nThis class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls :\n\n\n\ncolor : for the choice of the text color : black.\n\n\ntext-align : for the choice of the text alignement : justify.\n\n\nfont-family : for the choice of font : Lato, sans serif.\n\n\nfont-size : for the choice of text size : 15px.\n\n\nfont-weight : for the choice of the text weight (level of bold) : 500.\n\n\nmargin-bottom : for the choice of the spacing between paragraphs : 1em.\n\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Navbar’\n\nIn the website, we have used the class named “navbar”.\n\n\nThis class is used in all sections of the website to style the navigation bar on the right\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Nav’\n\nIn the website, we have used the class named “nav”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Content’\n\nIn the website, we have used the class named “content”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Footer’\n\nIn the website, we have used the class named “footer”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Pointilles-rectangle’\n\nIn the website, we have used the class named “pointilles-rectangle”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Bike’\n\nIn the website, we have used the class named “bike”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Trombinoscope’\n\nIn the website, we have used the class named “trombinoscope”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Member’\n\nIn the website, we have used the class named “member”.\n\n\nThis class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other.\n\n\nThis class is defined in the styles.css file."
+  },
+  {
+    "objectID": "page2/page2_3.html#fonctions",
+    "href": "page2/page2_3.html#fonctions",
+    "title": "\nDocumentation \n",
+    "section": "Fonctions",
+    "text": "Fonctions"
+  },
+  {
+    "objectID": "page2/page2_2.html",
+    "href": "page2/page2_2.html",
+    "title": "\nFunctions \n",
+    "section": "",
+    "text": "Functions"
+  },
+  {
+    "objectID": "page2/page2_3.html#website-classes",
+    "href": "page2/page2_3.html#website-classes",
+    "title": "\nClasses \n",
+    "section": "Website classes",
+    "text": "Website classes\n\n‘Text’\n\nIn the website, we have used the class named “text”.\n\n\nThis class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls :\n\n\n\ncolor : for the choice of the text color : black.\n\n\ntext-align : for the choice of the text alignement : justify.\n\n\nfont-family : for the choice of font : Lato, sans serif.\n\n\nfont-size : for the choice of text size : 15px.\n\n\nfont-weight : for the choice of the text weight (level of bold) : 500.\n\n\nmargin-bottom : for the choice of the spacing between paragraphs : 1em.\n\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Navbar’\n\nIn the website, we have used the class named “navbar”.\n\n\nThis class is used in all sections of the website to style the navigation bar on the right\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Nav’\n\nIn the website, we have used the class named “nav”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Content’\n\nIn the website, we have used the class named “content”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Footer’\n\nIn the website, we have used the class named “footer”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Pointilles-rectangle’\n\nIn the website, we have used the class named “pointilles-rectangle”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Bike’\n\nIn the website, we have used the class named “bike”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Trombinoscope’\n\nIn the website, we have used the class named “trombinoscope”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Member’\n\nIn the website, we have used the class named “member”.\n\n\nThis class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other.\n\n\nThis class is defined in the styles.css file."
+  },
+  {
+    "objectID": "page2/page2_3.html#python-classes",
+    "href": "page2/page2_3.html#python-classes",
+    "title": "\nClasses \n",
+    "section": "Python classes",
+    "text": "Python classes"
+  },
+  {
+    "objectID": "analyses/statistics.html#introduction",
+    "href": "analyses/statistics.html#introduction",
+    "title": "\nStatistics \n",
+    "section": "Introduction",
+    "text": "Introduction\n\nOn this page, we present a short preliminary statistical analysis of the data we selected (see home page for a detailed explanation of our data).\n\n\nOur question was “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?” and we hypothesized that there would be an increase in the number of people cycling during the Tour de France period. A sporting event like this encourages people to get back into sport, and cycling in particular."
+  },
+  {
+    "objectID": "analyses/statistics.html#methods",
+    "href": "analyses/statistics.html#methods",
+    "title": "\nStatistics \n",
+    "section": "Methods",
+    "text": "Methods\n\nWe used sorted data corresponding to the number of bicycles passing in front of counters located in the city of Montpellier and compiled them into a single dataset. The statistical analyses focused on the following periods :\n\n\n\nBefore the Tour de France : April to June.\n\n\nDuring the Tour de France : July 1st to July 23rd.\n\n\nAfter the Tour de France : late July to October.\n\n\n\nWe carried out a number of statistical analyses to see if our hypothesis could be validated. These analyses are not intended to be taken literally, as there are many other parameters to be taken into account, but they are a short preliminary study of our data.\n\n\nWe began by performing descriptive analyses to give us a visual representation of our data. We then carried out tests to check the normality and homogeneity of the variances in order to choose the appropriate statistical test. Finally, we performed the test and compared the results with our hypothesis."
+  },
+  {
+    "objectID": "analyses/statistics.html#results",
+    "href": "analyses/statistics.html#results",
+    "title": "\nStatistics \n",
+    "section": "Results",
+    "text": "Results\n\nWe started by conducting descriptive analyses to get a first idea of our data. We found an average of 610.06 passes in front of eco-counters during the period before the Tour de France 523.07 passes during the Tour de France and 599.80 passes after the Tour de France. We see that there seems to be a slight decrease during the Tour de France, which would be the opposite of our hypothesis, but we will see if this difference is significant.\n\n\nFollowing our descriptive analyses, we obtained the following graph:\n\n\n\nThis graph shows the total number of bicycles passing in front of the city of Montpellier’s eco-counters per week. Please note that this data does not correspond to the number of bicycles, as a bicycle may be counted several times if it passes in front of several counters. This data therefore corresponds to the total number of journeys made by cyclists in Montpellier (number of times they pass in front of a counter). We can see that the Tour de France period is highlighted in green.\n\n\nVisually, we can see that there does not seem to be an increase during the period of the Tour de France compared with the periods before and after. We also note that there is a sharp decrease in the number of crossings in front of a meter during the period of August and that it goes back to early September.\n\n\nWe then continued by checking the homogeneity of variances and normality. Then, given that normality was not verified, we performed a Kruskal Wallis test (because we had several independent groups and only one variable of interest). We obtained the following graph to represent the differences between our groups.\n\n\n\nThis graph is a boxplot that represents the number of passes in front of eco-counters according to our three periods of interest.\n\n\n\nThe box shows the interquartile range, which contains the middle 50% of the data (from the 25th to the 75th percentile).\n\n\nThe horizontal line inside the box représents the median (the middle value of the dataset).\n\n\nThe whiskerw extend to the smallest and largest values within 1.5 times the interquartile range.\n\n\n\nOur analyses by the test of Kruskal Wallis showed us that there did not seem to be a significant difference between our different periods in terms of the number of passages in front of eco-counters of the vulle de Montpellier. Indeed, we found a p-value of 0.16 and an H-value of 3.59. Thus, the differences do not seem to be significant."
+  },
+  {
+    "objectID": "analyses/statistics.html#discussion",
+    "href": "analyses/statistics.html#discussion",
+    "title": "\nStatistics \n",
+    "section": "Discussion",
+    "text": "Discussion\n\nOur analyses seem to show that there is no significant difference in the number of cycles passing through eco-counters in the city of Montpellier between the periods before, during and after the Tour de France. However, if we look at the first graph we got, we can say that this evolution could be linked to other factors such as school and work holiday periods. Indeed, we note that there is a decrease at the beginning of the summer holiday period (July) and that seems to be accentuated during the August period. In addition, at the beginning of September, during the school year, there seems to be a strong increase in the number of bicycle trips.\n\n\nThus, it would be interesting to do more detailed analyses than those we have done, but also to look at the link with school holidays."
+  },
+  {
+    "objectID": "analyses/statistics.html#conclusion",
+    "href": "analyses/statistics.html#conclusion",
+    "title": "\nStatistics \n",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nTo conclude, from these preliminary analyses, we did not validate our hypothesis that the Tour de France had a positive impact on bicycle use in the city of Montpellier. But we have shown that it would be interesting to use other sources to justify these trends."
+  },
+  {
+    "objectID": "analyses/video.html#presentation",
+    "href": "analyses/video.html#presentation",
+    "title": "\nVideos \n",
+    "section": "Presentation",
+    "text": "Presentation\n\nOn this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\n\n\nYou can choose the date and the video will be interactive."
+  },
+  {
+    "objectID": "analyses/video.html#videos",
+    "href": "analyses/video.html#videos",
+    "title": "\nVideos \n",
+    "section": "Videos",
+    "text": "Videos\n\n\n\n\n\n\nMonday 10 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 11 July 2023\n\n\n\n\n\n\n\n\n\nWednesday 12 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 13 July 2023\n\n\n\n\n\n\n\n\n\nFriday 14 July 2023\n\n\n\n\n\n\n\n\n\nSaturday 15 July 2023\n\n\n\n\n\n\n\n\n\nSunday 16 July 2023"
+  },
+  {
+    "objectID": "documentation/functions.html",
+    "href": "documentation/functions.html",
+    "title": "\nFunctions \n",
+    "section": "",
+    "text": "Functions"
+  },
+  {
+    "objectID": "documentation/classes.html#website-classes",
+    "href": "documentation/classes.html#website-classes",
+    "title": "\nClasses \n",
+    "section": "Website classes",
+    "text": "Website classes\n\n‘Text’\n\nIn the website, we have used the class named “text”.\n\n\nThis class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls :\n\n\n\ncolor : for the choice of the text color : black.\n\n\ntext-align : for the choice of the text alignement : justify.\n\n\nfont-family : for the choice of font : Lato, sans serif.\n\n\nfont-size : for the choice of text size : 15px.\n\n\nfont-weight : for the choice of the text weight (level of bold) : 500.\n\n\nmargin-bottom : for the choice of the spacing between paragraphs : 1em.\n\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Navbar’\n\nIn the website, we have used the class named “navbar”.\n\n\nThis class is used in all sections of the website to style the navigation bar on the right\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Nav’\n\nIn the website, we have used the class named “nav”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Content’\n\nIn the website, we have used the class named “content”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Footer’\n\nIn the website, we have used the class named “footer”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Pointilles-rectangle’\n\nIn the website, we have used the class named “pointilles-rectangle”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Bike’\n\nIn the website, we have used the class named “bike”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Trombinoscope’\n\nIn the website, we have used the class named “trombinoscope”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Member’\n\nIn the website, we have used the class named “member”.\n\n\nThis class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other.\n\n\nThis class is defined in the styles.css file."
+  },
+  {
+    "objectID": "documentation/classes.html#python-classes",
+    "href": "documentation/classes.html#python-classes",
+    "title": "\nClasses \n",
+    "section": "Python classes",
+    "text": "Python classes"
+  },
+  {
+    "objectID": "documentation/packages.html",
+    "href": "documentation/packages.html",
+    "title": "\nPackages \n",
+    "section": "",
+    "text": "Packages \n\n\n\nFor the code, we have used some packages to make our analyses.\n\n\n‘Numpy’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pandas’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Matplotlib’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pooch’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages."
+  },
+  {
+    "objectID": "analyses/map.html#section",
+    "href": "analyses/map.html#section",
+    "title": "\nInteractive map \n",
+    "section": "Section",
+    "text": "Section\n\nOn this page we can see an interactive map of the traffic of bikes in the town of Montpellier. We can choose a date and view:\n\n\n\nThe past traffic.\n\n\nThe prediction of the traffic for nexts days.\n\n\n\nWe have choose the date of ?? because it corresponds to the middle wek of the Tour de France and it’s the period examined in our problematic."
   }
 ]

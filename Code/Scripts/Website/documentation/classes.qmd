@@ -1,0 +1,96 @@
+---
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+---
+
+<div style="text-align: center;">
+<h1>Classes <i class="fas fa-book-open"></i></h1>
+</div>
+
+## Website classes
+
+### 'Text'
+
+<p class = "text"> In the website, we have used the class named "text". </p>
+
+<p class ="text"> This class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls : </p> 
+
+<ul class = "text"> 
+<li><strong>color :</strong> for the choice of the text color : <code>black</code>. </li>
+<li><strong>text-align :</strong> for the choice of the text alignement : <code>justify</code>. </li>
+<li><strong>font-family :</strong> for the choice of font : <code>Lato, sans serif</code>. </li>
+<li><strong>font-size :</strong> for the choice of text size : <code>15px</code>. </li>
+<li><strong>font-weight :</strong> for the choice of the text weight (level of bold) : <code>500</code>. </li>
+<li><strong>margin-bottom :</strong> for the choice of the spacing between paragraphs : <code>1em</code>. </li>
+</ul>
+
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Navbar'
+
+<p class = "text"> In the website, we have used the class named "navbar". </p>
+
+<p class = "text"> This class is used in all sections of the website to style the navigation bar on the right  </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Nav'
+
+<p class = "text"> In the website, we have used the class named "nav". </p>
+
+<p class = "text"> This class is used in the '' section to </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Content'
+
+<p class = "text"> In the website, we have used the class named "content". </p>
+
+<p class = "text"> This class is used in the '' section to </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Footer'
+
+<p class = "text"> In the website, we have used the class named "footer". </p>
+
+<p class = "text"> This class is used in the '' section to </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Pointilles-rectangle'
+
+<p class = "text"> In the website, we have used the class named "pointilles-rectangle". </p>
+
+<p class = "text"> This class is used in the '' section to </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Bike'
+
+<p class = "text"> In the website, we have used the class named "bike". </p>
+
+<p class = "text"> This class is used in the '' section to </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Trombinoscope'
+
+<p class = "text"> In the website, we have used the class named "trombinoscope". </p>
+
+<p class = "text"> This class is used in the '' section to </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Member'
+
+<p class = "text"> In the website, we have used the class named "member". </p> 
+
+<p class = "text"> This class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other. </p>
+
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+## Python classes

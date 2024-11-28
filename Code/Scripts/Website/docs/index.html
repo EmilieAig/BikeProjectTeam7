@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BikeProjectTeam7</title>
+<title>&lt;p&gt;&lt;a href="/" class="navbar-brand"&gt; &lt;i class="fas fa-home"&gt;&lt;/i&gt; &lt;/a&gt;&lt;/p&gt;</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">BikeProjectTeam7</span>
+    <span class="navbar-title"><a href="./" class="navbar-brand"> <i class="fas fa-home"></i> </a></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -97,15 +97,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-analyses">    
         <li>
-    <a class="dropdown-item" href="./page1/page1_3.html">
+    <a class="dropdown-item" href="./analyses/statistics.html">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./page1/page1_1.html">
+    <a class="dropdown-item" href="./analyses/map.html">
  <span class="dropdown-text">Interactive map</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./page1/page1_2.html">
+    <a class="dropdown-item" href="./analyses/video.html">
  <span class="dropdown-text">Video</span></a>
   </li>  
     </ul>
@@ -116,8 +116,16 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-documentation">    
         <li>
-    <a class="dropdown-item" href="./page2/page2_1.html">
- <span class="dropdown-text">Option 1</span></a>
+    <a class="dropdown-item" href="./documentation/packages.html">
+ <span class="dropdown-text">Packages</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./documentation/functions.html">
+ <span class="dropdown-text">Functions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./documentation/classes.html">
+ <span class="dropdown-text">Classes</span></a>
   </li>  
     </ul>
   </li>
@@ -137,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -145,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <li><a href="#context" id="toc-context" class="nav-link active" data-scroll-target="#context">Context</a>
   <ul>
   <li><a href="#problematic" id="toc-problematic" class="nav-link" data-scroll-target="#problematic">Problematic</a></li>
   <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal">Goal</a></li>
@@ -156,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
@@ -173,8 +181,8 @@ Welcome to our project <i class="fas fa-bicycle"></i><br> bike analyses in Montp
 
 </div>
 <p><br></p>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<section id="context" class="level2">
+<h2 class="anchored" data-anchor-id="context">Context</h2>
 <section id="problematic" class="level3">
 <h3 class="anchored" data-anchor-id="problematic">Problematic</h3>
 <p class="text">
@@ -190,14 +198,23 @@ The goal is to analyze whether this sporting event, which took place in July 202
 <section id="hypothesis" class="level3">
 <h3 class="anchored" data-anchor-id="hypothesis">Hypothesis</h3>
 <p class="text">
-Based on data from the Tour de France, we hypothesised that there would be a greater number of cyclists in Montpellier around the time of the Tour de France. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly.
+Based on data from the Tour de France, we hypothesised that that there would be an increase in the number of people cycling during the Tour de France period. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly.
 </p>
 </section>
 </section>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
 <p class="text">
-To conduct this study, we have chosen to analyze data on bicycle usage spanning from April to October 2023. This time frame allows us to examine bike traffic before, during, and after the Tour de France, providing a comprehensive view of usage patterns around this event. The selection of this period is crucial for capturing short-term trends related to the Tour and distinguishing them from seasonal or contextual factors that might also influence cycling behavior.
+To carry out this study, we selected several types of data.
+</p>
+<p class="text">
+Firstly, we retrieved data on the journeys made by VéloMagg bikes between stations in the VéloMagg network in the Montpellier metropolitan area.
+</p>
+<p class="text">
+Secondly, we have retrieved data for each of the bicycle counters (eco-counters) in production in the Montpellier Metropolitan Area, showing the number of bicycles (and piétions in some cases) counted. The daily data is the total of the previous day’s count. This information is divided into as many files as there are eco-counters. Each eco-counter is identified by a serial number, which we were able to find and associate with its latitude and longitude.
+</p>
+<p class="text">
+All the data we have selected was extracted between April 2023 and October 2023. This corresponds to 3 months before the Telethon and 3 months after, which we thought was a good margin for observing changes around the Tour de France and which is just over half a year (7 months).
 </p>
 
 
