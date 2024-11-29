@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "\nWelcome to our project  bike analyses in Montpellier\n",
     "section": "",
-    "text": "© 2024 - All rights reserved. \n    Privacy policy | \n    Terms & Conditions |\n    Cookies"
+    "text": "&lt;div&gt;\n    &lt;div id=\"loading-message\"&gt;Chargement en cours...&lt;/div&gt;\n    &lt;img id=\"loading-image\" src=\"images/loading.gif\" alt=\"Chargement\"&gt;\n&lt;/div&gt;"
   },
   {
     "objectID": "general-tools/option1.html",
@@ -109,7 +109,7 @@
     "href": "footer.html",
     "title": "<a href=\"/\" class=\"navbar-brand\">\n  <i class=\"fas fa-home\"></i>\n</a>\n",
     "section": "",
-    "text": "© 2024 - All rights reserved. Privacy policy | Terms & Conditions | About us"
+    "text": "© 2024 - All rights reserved. MIT License | Privacy policy | About us"
   },
   {
     "objectID": "page1/page1_3.html",
@@ -130,7 +130,7 @@
     "href": "footer/privacy_policy.html#introduction",
     "title": "\nPrivacy polity \n",
     "section": "Introduction",
-    "text": "Introduction\n\nWelcome to BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information.\n\n\n1. Information We Collect\n\nWe may collect the following types of information: Personal Information: Name, email address, phone number (when you fill out a form or subscribe to our newsletter). Usage Data: Information on how you use our site (e.g., pages visited, time spent on the site).\n\n\nCookies and Tracking Technologies: We use cookies to enhance user experience and analyze site traffic.\n\n\n\n2. How We Use Your Information\n\nWe use your information to:\n\n\n\nProvide and maintain our services.\n\n\nImprove the user experience on our site.\n\n\nSend you promotional content if you’ve opted in.\n\n\n\n\n3. Data Sharing and Disclosure\n\nWe do not sell your personal data. We may share information with trusted third-party providers for analytics or marketing purposes (e.g., Google Analytics).\n\n\n\n4. Your Rights\n\nYou have the right to:\n\n\n\nAccess your personal data.\n\n\nRequest correction or deletion of your data.\n\n\nOpt out of data collection (e.g., disable cookies).\n\n\n\n\n5. Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
+    "text": "Introduction\n\nEFFECTIVE DATE: 2024-01-22\n\n\nWelcome to BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information.\n\n\n1. Information We Collect\n\nWe may collect the following types of information: Personal Information: Name, email address, phone number (when you fill out a form or subscribe to our newsletter). Usage Data: Information on how you use our site (e.g., pages visited, time spent on the site).\n\n\nCookies and Tracking Technologies: We use cookies to enhance user experience and analyze site traffic.\n\n\n\n2. How We Use Your Information\n\nWe use your information to:\n\n\n\nProvide and maintain our services.\n\n\nImprove the user experience on our site.\n\n\nSend you promotional content if you’ve opted in.\n\n\n\n\n3. Data Sharing and Disclosure\n\nWe do not sell your personal data. We may share information with trusted third-party providers for analytics or marketing purposes (e.g., Google Analytics).\n\n\n\n4. Your Rights\n\nYou have the right to:\n\n\n\nAccess your personal data.\n\n\nRequest correction or deletion of your data.\n\n\nOpt out of data collection (e.g., disable cookies).\n\n\n\n\n5. Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
   },
   {
     "objectID": "footer/terms_conditions.html#section",
@@ -452,6 +452,20 @@
     "href": "analyses/map.html#section",
     "title": "\nInteractive map \n",
     "section": "Section",
-    "text": "Section\n\nOn this page we can see an interactive map of the traffic of bikes in the town of Montpellier. We can choose a date and view:\n\n\n\nThe past traffic.\n\n\nThe prediction of the traffic for nexts days.\n\n\n\nWe have choose the date of ?? because it corresponds to the middle wek of the Tour de France and it’s the period examined in our problematic."
+    "text": "Section\n\nOn this page we can see an interactive map of the traffic of bikes in the town of Montpellier. We can choose a date and view:\n\n\n\nThe past traffic.\n\n\nThe prediction of the traffic for nexts days.\n\n\n\nWe have choose the date of Monday 10 July 2023 to Sunday 16 July 2023 because it corresponds to the middle wek of the Tour de France and it’s the period examined in our problematic.\n\n\nWe can see the prediction based ????? à compléter ?????"
+  },
+  {
+    "objectID": "footer/MIT_license.html",
+    "href": "footer/MIT_license.html",
+    "title": "\nMIT License \n",
+    "section": "",
+    "text": "MIT License \n\n\n\nCopyright © - 2024 - BikeProjectT\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions.\n\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\nContact Us\n\nIf you have any questions about these Terms, please contact us at your email address."
+  },
+  {
+    "objectID": "footer/privacy_policy.html",
+    "href": "footer/privacy_policy.html",
+    "title": "\nPrivacy polity \n",
+    "section": "",
+    "text": "EFFECTIVE DATE: 2024-01-22"
   }
 ]

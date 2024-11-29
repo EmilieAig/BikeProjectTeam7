@@ -170,7 +170,7 @@ body:not(.quarto-dark) .navbar .dropdown-item:hover {
   text-decoration: underline;
 }
 
-.custom-footer .privacy-policy {
+.custom-footer .MIT-license {
   margin-left: 20px;                /* Pushes "Privacy policy" to the right */
 }
 
@@ -346,4 +346,3 @@ img, table {
   height: auto;  /* Garde les proportions de la vidéo */
   border: 1px solid #ccc;
 }
-
