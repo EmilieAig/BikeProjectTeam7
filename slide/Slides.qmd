@@ -1,0 +1,29 @@
+---
+title: "Pollution en Occitanie"
+author: "1234"
+format: 
+ revealjs :
+     theme: serif
+
+---
+# Problématique 
+Comment... ?
+
+# Introduction 
+:::{.incremental}
+- Architecture du site 
+- Visualisation (video)
+- Visualisation (map)
+- Utilisation de gitHub?
+- Problèmes rencontrés 
+- Conclusion
+:::
+
+# Architecture du site 
+
+# Visualisation (video)
+
+# Visualisation (map)
+
+# Conclusion 
+Merci pour votre écoute.

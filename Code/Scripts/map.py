@@ -49,9 +49,9 @@ polygon = Polygon([
 # 使用自定义多边形提取自行车网络
 G = ox.graph_from_polygon(polygon, network_type='bike')
 
-'''
+
 # 定义要保留的道路类型
-desired_highways = {'service', 'primary', 'trunk', 'trunk_link', 'primary_link', 'cycleway'}
+desired_highways = {'primary', 'trunk', 'secondary', 'tertiary', 'secondary_link', 'unclassified', 'trunk_link', 'primary_link', 'cycleway', 'tertiary_link', 'living_street', 'track', 'bridleway', 'residential'}
 
 # 遍历图中的边并过滤筛选
 edges_to_remove = []
@@ -67,7 +67,7 @@ for u, v, key, data in G.edges(keys=True, data=True):
 
 # 删除不需要的边
 G.remove_edges_from(edges_to_remove)
-'''
+
 
 # 可视化网络
 print(f"nb edges: {G.number_of_edges()}")
