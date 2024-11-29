@@ -20,3 +20,6 @@ format:
 </ul>
 
 <p class = "text"> We have choose the date of ?? because it corresponds to the middle wek of the Tour de France and it's the period examined in our problematic. </p>
+
+```{=html}
+{{< >}}
