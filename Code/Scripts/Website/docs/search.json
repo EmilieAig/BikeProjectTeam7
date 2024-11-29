@@ -107,7 +107,7 @@
   {
     "objectID": "footer.html",
     "href": "footer.html",
-    "title": "BikeProjectTeam7",
+    "title": "<a href=\"/\" class=\"navbar-brand\">\n  <i class=\"fas fa-home\"></i>\n</a>\n",
     "section": "",
     "text": "© 2024 - All rights reserved. Privacy policy | Terms & Conditions | About us"
   },
@@ -452,6 +452,6 @@
     "href": "analyses/map.html#section",
     "title": "\nInteractive map \n",
     "section": "Section",
-    "text": "Section\n\nOn this page we can see an interactive map of the traffic of bikes in the town of Montpellier. We can choose a date and view:\n\n\n\nThe past traffic.\n\n\nThe prediction of the traffic for nexts days.\n\n\n\nWe have choose the date of ?? because it corresponds to the middle wek of the Tour de France and it’s the period examined in our problematic.\n\n{{&lt; file://wsl.localhost/Ubuntu/home/anne_laure/HA712X/BikeProjectTeam7/Code/Scripts/Prediction/map_prediction_multiple_days_with_layers_and_legend.html  &gt;}}"
+    "text": "Section\n\nOn this page we can see an interactive map of the traffic of bikes in the town of Montpellier. We can choose a date and view:\n\n\n\nThe past traffic.\n\n\nThe prediction of the traffic for nexts days.\n\n\n\nWe have choose the date of ?? because it corresponds to the middle wek of the Tour de France and it’s the period examined in our problematic."
   }
 ]

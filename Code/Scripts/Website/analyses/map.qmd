@@ -21,5 +21,8 @@ format:
 
 <p class = "text"> We have choose the date of ?? because it corresponds to the middle wek of the Tour de France and it's the period examined in our problematic. </p>
 
-```{=html}
-{{< >}}
+<iframe src="https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/refs/heads/Data/Code/Scripts/Prediction/map_prediction_multiple_days_with_layers_and_legend.html" width="100%"></iframe>
+
+<iframe src="file:///Users/emilieaigoin/Desktop/BikeProjectTeam7/code/Scripts/Prediction/map_prediction_multiple_days_with_layers_and_legend.html" width="100%"></iframe>
+
+<iframe src="https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Data/Code/Scripts/Prediction/map_prediction_multiple_days_with_layers_and_legend.html" width="100%" height="600px"></iframe>
