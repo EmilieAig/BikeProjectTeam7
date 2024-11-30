@@ -1,7 +1,0 @@
----
-title: "Titre de la page"
----
-
-# Section principale
-
-<p class = "text"> Contenu de la page... </p>

@@ -7,7 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>page1_3 – BikeProjectTeam7</title>
+<title>page1_3 – &lt;a href="/" class="navbar-brand"&gt;
+  &lt;i class="fas fa-home"&gt;&lt;/i&gt;
+&lt;/a&gt;</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,10 +37,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">BikeProjectTeam7</span>
+    <span class="navbar-title"><a href="../" class="navbar-brand"> <i class="fas fa-home"></i> </a></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -129,12 +133,13 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -142,12 +147,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">Section</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
@@ -157,9 +166,89 @@ ul.task-list li input[type="checkbox"] {
 Statistics <i class="fas fa-chart-line"></i>
 </h1>
 </div>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">Section</h2>
-<p>In this page we can see the global statistics.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p class="text">
+On this page, we present a short preliminary statistical analysis of the data we selected (see home page for a detailed explanation of our data).
+</p>
+<p class="text">
+Our question was “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?” and we hypothesized that there would be an increase in the number of people cycling during the Tour de France period. A sporting event like this encourages people to get back into sport, and cycling in particular.
+</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p class="text">
+We used sorted data corresponding to the number of bicycles passing in front of counters located in the city of Montpellier and compiled them into a single dataset. The statistical analyses focused on the following periods :
+</p>
+<ul class="text">
+<li>
+Before the Tour de France : April to June.
+</li>
+<li>
+During the Tour de France : July 1st to July 23rd.
+</li>
+<li>
+After the Tour de France : late July to October.
+</li>
+</ul>
+<p class="text">
+We carried out a number of statistical analyses to see if our hypothesis could be validated. These analyses are not intended to be taken literally, as there are many other parameters to be taken into account, but they are a short preliminary study of our data.
+</p>
+<p class="text">
+We began by performing descriptive analyses to give us a visual representation of our data. We then carried out tests to check the normality and homogeneity of the variances in order to choose the appropriate statistical test. Finally, we performed the test and compared the results with our hypothesis.
+</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p class="text">
+We started by conducting descriptive analyses to get a first idea of our data. We found an average of 610.06 passes in front of eco-counters during the period before the Tour de France 523.07 passes during the Tour de France and 599.80 passes after the Tour de France. We see that there seems to be a slight decrease during the Tour de France, which would be the opposite of our hypothesis, but we will see if this difference is significant.
+</p>
+<p class="text">
+Following our descriptive analyses, we obtained the following graph:
+</p>
+<p><img src="../images/Graph_1.png" alt="Graph_1" width="1000px"></p>
+<p class="text">
+This graph shows the total number of bicycles passing in front of the city of Montpellier’s eco-counters per week. Please note that this data does not correspond to the number of bicycles, as a bicycle may be counted several times if it passes in front of several counters. This data therefore corresponds to the total number of journeys made by cyclists in Montpellier (number of times they pass in front of a counter). We can see that the Tour de France period is highlighted in green.
+</p>
+<p class="text">
+Visually, we can see that there does not seem to be an increase during the period of the Tour de France compared with the periods before and after. We also note that there is a sharp decrease in the number of crossings in front of a meter during the period of August and that it goes back to early September.
+</p>
+<p class="text">
+We then continued by checking the homogeneity of variances and normality. Then, given that normality was not verified, we performed a Kruskal Wallis test (because we had several independent groups and only one variable of interest). We obtained the following graph to represent the differences between our groups.
+</p>
+<p><img src="../images/Graph_2.png" alt="Graph_2" width="800px"></p>
+<p class="text">
+This graph is a boxplot that represents the number of passes in front of eco-counters according to our three periods of interest.
+</p>
+<ul class="text">
+<li>
+The box shows the interquartile range, which contains the middle 50% of the data (from the 25th to the 75th percentile).
+</li>
+<li>
+The horizontal line inside the box représents the median (the middle value of the dataset).
+</li>
+<li>
+The whiskerw extend to the smallest and largest values within 1.5 times the interquartile range.
+</li>
+</ul>
+<p class="text">
+Our analyses by the test of Kruskal Wallis showed us that there did not seem to be a significant difference between our different periods in terms of the number of passages in front of eco-counters of the vulle de Montpellier. Indeed, we found a p-value of 0.16 and an H-value of 3.59. Thus, the differences do not seem to be significant.
+</p>
+</section>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<p class="text">
+Our analyses seem to show that there is no significant difference in the number of cycles passing through eco-counters in the city of Montpellier between the periods before, during and after the Tour de France. However, if we look at the first graph we got, we can say that this evolution could be linked to other factors such as school and work holiday periods. Indeed, we note that there is a decrease at the beginning of the summer holiday period (July) and that seems to be accentuated during the August period. In addition, at the beginning of September, during the school year, there seems to be a strong increase in the number of bicycle trips.
+</p>
+<p class="text">
+Thus, it would be interesting to do more detailed analyses than those we have done, but also to look at the link with school holidays.
+</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p class="text">
+To conclude, from these preliminary analyses, we did not validate our hypothesis that the Tour de France had a positive impact on bicycle use in the city of Montpellier. But we have shown that it would be interesting to use other sources to justify these trends.
+</p>
 
 
 </section>
@@ -169,7 +258,7 @@ Statistics <i class="fas fa-chart-line"></i>
   <p>© 2024 - All rights reserved. 
     <a class="privacy-policy" href="../footer/privacy_policy.html">Privacy policy</a> | 
     <a class="terms-conditions" href="../footer/terms_conditions.html">Terms &amp; Conditions</a> |
-    <a href="#lien-legislation">Cookies</a>
+    <a class="about-us" href="../footer/about_us.html">About us</a>
   </p>
 </div>
 <script id="quarto-html-after-body" type="application/javascript">
@@ -192,6 +281,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

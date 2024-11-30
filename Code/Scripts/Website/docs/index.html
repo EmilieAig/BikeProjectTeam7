@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BikeProjectTeam7</title>
+<title>&lt;p&gt;&lt;a href="/" class="navbar-brand"&gt; &lt;i class="fas fa-home"&gt;&lt;/i&gt; &lt;/a&gt;&lt;/p&gt;</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,10 +35,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">BikeProjectTeam7</span>
+    <span class="navbar-title"><a href="./" class="navbar-brand"> <i class="fas fa-home"></i> </a></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -95,15 +97,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-analyses">    
         <li>
-    <a class="dropdown-item" href="./page1/page1_3.html">
+    <a class="dropdown-item" href="./analyses/statistics.html">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./page1/page1_1.html">
+    <a class="dropdown-item" href="./analyses/map.html">
  <span class="dropdown-text">Interactive map</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./page1/page1_2.html">
+    <a class="dropdown-item" href="./analyses/video.html">
  <span class="dropdown-text">Video</span></a>
   </li>  
     </ul>
@@ -114,8 +116,16 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-documentation">    
         <li>
-    <a class="dropdown-item" href="./page2/page2_1.html">
- <span class="dropdown-text">Option 1</span></a>
+    <a class="dropdown-item" href="./documentation/packages.html">
+ <span class="dropdown-text">Packages</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./documentation/functions.html">
+ <span class="dropdown-text">Functions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./documentation/classes.html">
+ <span class="dropdown-text">Classes</span></a>
   </li>  
     </ul>
   </li>
@@ -129,12 +139,13 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -142,17 +153,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <li><a href="#context" id="toc-context" class="nav-link active" data-scroll-target="#context">Context</a>
   <ul>
   <li><a href="#problematic" id="toc-problematic" class="nav-link" data-scroll-target="#problematic">Problematic</a></li>
   <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal">Goal</a></li>
+  <li><a href="#hypothesis" id="toc-hypothesis" class="nav-link" data-scroll-target="#hypothesis">Hypothesis</a></li>
   </ul></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
@@ -169,25 +181,40 @@ Welcome to our project <i class="fas fa-bicycle"></i><br> bike analyses in Montp
 
 </div>
 <p><br></p>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<section id="problematic" class="level4">
-<h4 class="anchored" data-anchor-id="problematic">Problematic</h4>
+<section id="context" class="level2">
+<h2 class="anchored" data-anchor-id="context">Context</h2>
+<section id="problematic" class="level3">
+<h3 class="anchored" data-anchor-id="problematic">Problematic</h3>
 <p class="text">
 Our project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.
 </p>
 </section>
-<section id="goal" class="level4">
-<h4 class="anchored" data-anchor-id="goal">Goal</h4>
+<section id="goal" class="level3">
+<h3 class="anchored" data-anchor-id="goal">Goal</h3>
 <p class="text">
 The goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.
+</p>
+</section>
+<section id="hypothesis" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis">Hypothesis</h3>
+<p class="text">
+Based on data from the Tour de France, we hypothesised that that there would be an increase in the number of people cycling during the Tour de France period. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly.
 </p>
 </section>
 </section>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
 <p class="text">
-To conduct this study, we have chosen to analyze data on bicycle usage spanning from April to October 2023. This time frame allows us to examine bike traffic before, during, and after the Tour de France, providing a comprehensive view of usage patterns around this event. The selection of this period is crucial for capturing short-term trends related to the Tour and distinguishing them from seasonal or contextual factors that might also influence cycling behavior.
+To carry out this study, we selected several types of data.
+</p>
+<p class="text">
+Firstly, we retrieved data on the journeys made by VéloMagg bikes between stations in the VéloMagg network in the Montpellier metropolitan area.
+</p>
+<p class="text">
+Secondly, we have retrieved data for each of the bicycle counters (eco-counters) in production in the Montpellier Metropolitan Area, showing the number of bicycles (and piétions in some cases) counted. The daily data is the total of the previous day’s count. This information is divided into as many files as there are eco-counters. Each eco-counter is identified by a serial number, which we were able to find and associate with its latitude and longitude.
+</p>
+<p class="text">
+All the data we have selected was extracted between April 2023 and October 2023. This corresponds to 3 months before the Telethon and 3 months after, which we thought was a good margin for observing changes around the Tour de France and which is just over half a year (7 months).
 </p>
 
 
@@ -198,7 +225,7 @@ To conduct this study, we have chosen to analyze data on bicycle usage spanning 
   <p>© 2024 - All rights reserved. 
     <a class="privacy-policy" href="./footer/privacy_policy.html">Privacy policy</a> | 
     <a class="terms-conditions" href="./footer/terms_conditions.html">Terms &amp; Conditions</a> |
-    <a href="#lien-legislation">Cookies</a>
+    <a class="about-us" href="./footer/about_us.html">About us</a>
   </p>
 </div>
 <script id="quarto-html-after-body" type="application/javascript">
@@ -221,6 +248,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
