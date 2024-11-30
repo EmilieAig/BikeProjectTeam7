@@ -1,35 +1,36 @@
 #%%
-import pandas as pd
-import folium
-import osmnx as ox
-from geopy.distance import geodesic
-from folium import LayerControl
-from tqdm import tqdm
-import pooch
-import os
+# Importing necessary libraries
+import pandas as pd # Manipulation of data in tabular form (DataFrames)
+import folium # Creation of interactive maps
+import osmnx as ox # Downloading and manipulating OpenStreetMap data, particularly road networks
+from geopy.distance import geodesic # Calculation of geographical distances between two points
+from folium import LayerControl # Managing layers on a Folium map
+from tqdm import tqdm # Displaying a progress bar in loops
+import pooch # For downloading and caching files
+import os # For interacting with the file system
 
-# Fonction pour télécharger les fichiers avec Pooch
+# Function to download files using Pooch
 def download_file(url, target_path, known_hash):
     """
-    Télécharge un fichier depuis une URL et vérifie son intégrité à l'aide d'un hachage SHA256.
+    Downloads a file from a URL and verifies its integrity using a SHA256 hash.
     
     Args:
-        url (str): URL du fichier.
-        target_path (str): Chemin où le fichier sera enregistré localement.
-        known_hash (str): Hachage SHA256 attendu du fichier.
+        url (str): The file's URL.
+        target_path (str): The local path where the file will be saved.
+        known_hash (str): The expected SHA256 hash of the file.
         
     Returns:
-        str: Chemin du fichier téléchargé.
+        str: The path where the downloaded file is stored.
     """
     path, fname = os.path.split(target_path)
     return pooch.retrieve(url=url, fname=fname, path=path, known_hash=known_hash)
 
-# URLs et hachages des fichiers nécessaires
+# File URLs and their respective hash values
 files_info = {
     "ecocompteur_file": {
         "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Scripts/Prediction/ecocompteurs_coords.csv",
         "target_path": "./data/ecocompteurs_coords.csv",
-        "known_hash": "08c71a1718b279efe1ebb60f6446e19c8b786d93a2a16bcb8504ab1a888dc3f8" #sha256sum ecocompteurs_coords.cvs
+        "known_hash": "08c71a1718b279efe1ebb60f6446e19c8b786d93a2a16bcb8504ab1a888dc3f8"  # SHA256 hash of ecocompteurs_coords.csv
     },
     "predictions_file": {
         "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Scripts/Prediction/predictions_long_format_july.csv",
@@ -37,27 +38,27 @@ files_info = {
         "known_hash": "1c57f8aae4ef6eb940319776a9b66e7a1d3731fa1b5f2cced8493fa27928bf42"
     },
     "stations_file": {
-        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/Data/Code/Scripts/Prediction/GeolocalisationStation.csv",
-        "target_path": "./data/GeolocalisationStation.csv",
+        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Video_Data/GeolocalisationStation.csv",
+        "target_path": "./GeolocalisationStation.csv",
         "known_hash": "9638579e4d6e416196bd2ed7c7c0b9f9bc1d5a39e7a9ca6e5d45336c02ad3ab6"
     },
 }
 
-# Télécharger les fichiers
+# Download the necessary files
 for key, info in files_info.items():
-    print(f"Téléchargement de {key}...")
+    print(f"Downloading {key}...")
     files_info[key]["local_path"] = download_file(
         url=info["url"],
         target_path=info["target_path"],
         known_hash=info["known_hash"]
     )
 
-# Charger les fichiers téléchargés
+# Load the downloaded files
 ecocompteur_file = files_info["ecocompteur_file"]["local_path"]
 predictions_file = files_info["predictions_file"]["local_path"]
 stations_file = files_info["stations_file"]["local_path"]
 
-# Reste du script inchangé
+# Read and process the downloaded data
 ecocompteur = pd.read_csv(ecocompteur_file, sep=',')
 ecocompteur.rename(columns=lambda x: x.strip(), inplace=True)
 ecocompteur.rename(columns={"LaneID": "laneId"}, inplace=True)
@@ -67,30 +68,32 @@ predictions['date'] = pd.to_datetime(predictions['date'])
 
 stations = pd.read_csv(stations_file)
 
-# Sélectionner les dates spécifiques (10 au 16 juillet 2023)
+# Select data for the period between July 10th and 16th, 2023
 dates_of_interest = pd.date_range('2023-07-10', '2023-07-16')
 predictions_filtered = predictions[predictions['date'].isin(dates_of_interest)]
 
-# Joindre les prédictions aux coordonnées des éco-compteurs
+# Merge the predictions with the eco-compteur coordinates based on laneId
 merged_data = pd.merge(ecocompteur, predictions_filtered, on='laneId', how='inner')
 
-# Filtrer les points dans un rayon de 15 km autour de Montpellier
+# Filter points within a 15 km radius of Montpellier
 map_center = [43.6117, 3.8777]
 radius_km = 15
 
+# Function to check if a point is within the specified radius
 def is_within_radius(lat, lon, center, radius):
     return geodesic(center, (lat, lon)).km <= radius
 
+# Apply the radius filter to the merged data
 merged_data['within_radius'] = merged_data.apply(
     lambda row: is_within_radius(row['latitude'], row['longitude'], map_center, radius_km),
     axis=1
 )
 merged_data = merged_data[merged_data['within_radius']]
 
-# Charger les données des stations
+# Reload the stations file (to ensure it's available)
 stations = pd.read_csv(stations_file)
 
-# Associer les noms de stations aux éco-compteurs via coordonnées
+# Function to find the nearest station name based on coordinates
 def find_station_name(lat, lon, stations):
     stations_copy = stations.copy()
     stations_copy['distance'] = stations_copy.apply(
@@ -100,36 +103,38 @@ def find_station_name(lat, lon, stations):
     closest_station = stations_copy.loc[stations_copy['distance'].idxmin()]
     return closest_station['Station']
 
+# Apply the station name assignment to the merged data
 merged_data['station_name'] = merged_data.apply(
     lambda row: find_station_name(row['latitude'], row['longitude'], stations),
     axis=1
 )
 
-# Charger un graphe routier élargi pour Montpellier
-print("Téléchargement du graphe routier d'OSM...")
+# Download a bike-friendly road graph around Montpellier
+print("Downloading road graph from OSM...")
 graph = ox.graph_from_point(map_center, dist=radius_km * 1000, network_type='bike', simplify=True)
 
-# Vérifier si les points sont reliés au graphe
+# Function to safely retrieve the nearest node in the road graph for a given point
 def safe_nearest_node(graph, x, y):
     try:
         return ox.distance.nearest_nodes(graph, X=x, Y=y)
     except Exception as e:
-        print(f"Erreur pour les coordonnées ({y}, {x}): {e}")
+        print(f"Error for coordinates ({y}, {x}): {e}")
         return None
 
-print("Association des points aux nœuds OSM...")
+# Apply the nearest node association to the merged data
+print("Associating points with OSM nodes...")
 merged_data['osmid'] = merged_data.apply(
     lambda row: safe_nearest_node(graph, row['longitude'], row['latitude']),
     axis=1
 )
 
-# Retirer les points non associés à un nœud
+# Remove points that couldn't be associated with a node
 merged_data.dropna(subset=['osmid'], inplace=True)
 
-# Créer une carte Folium
+# Create a Folium map centered around Montpellier
 m = folium.Map(location=map_center, zoom_start=13)
 
-# Ajouter la légende
+# Add a legend for intensity levels
 legend_html = '''
 <div style="position: fixed; bottom: 50px; left: 50px; width: 300px; height: 180px; 
     background-color: white; z-index:9999; font-size:14px;
@@ -145,12 +150,12 @@ legend_html = '''
 '''
 m.get_root().html.add_child(folium.Element(legend_html))
 
-# Fonction pour ajouter les points et les routes à un FeatureGroup selon le jour sélectionné
+# Function to create a layer for each selected date, adding connected paths and station names to the map
 def create_layer_for_date(date, graph, merged_data):
     day_data = merged_data[merged_data['date'] == date]
     feature_group = folium.FeatureGroup(name=f"{date.strftime('%Y-%m-%d')}")
 
-    # Ajouter les chemins entre tous les points connectés avec intensités colorées
+    # Add paths between connected points with color-coded intensity
     for i, row1 in tqdm(day_data.iterrows(), total=len(day_data), desc=f"Processing {date}"):
         for j, row2 in day_data.iterrows():
             if i >= j:
@@ -158,212 +163,48 @@ def create_layer_for_date(date, graph, merged_data):
             
             osmid1 = row1['osmid']
             osmid2 = row2['osmid']
-            intensity = (row1['predicted_intensity'] + row2['predicted_intensity']) / 2  # Moyenne d'intensité
+            intensity = (row1['predicted_intensity'] + row2['predicted_intensity']) / 2  # Average intensity
 
-            # Déterminer la couleur en fonction de l'intensité
+            # Determine path color based on intensity
             if intensity > 1500:
-                color = '#FE4528'  # Rouge
+                color = '#FE4528'  # Red
             elif intensity > 1200:
                 color = '#FD6121'  # Orange
             elif intensity > 900:
-                color = '#D95018'    # Orange clair
+                color = '#D95018'  # Light Orange
             elif intensity > 600:
-                color = '#FFEF3A'  # Jaune
+                color = '#FFEF3A'  # Yellow
             elif intensity > 300:
-                color = '#6CD932'  # Vert clair
+                color = '#6CD932'  # Light Green
             else:
-                color = '#038C05'  # Vert foncé
+                color = '#038C05'  # Dark Green
             
             try:
                 shortest_path = ox.shortest_path(graph, osmid1, osmid2, weight='length')
                 if shortest_path:
                     path_coords = [(graph.nodes[n]['y'], graph.nodes[n]['x']) for n in shortest_path]
-                    folium.PolyLine(path_coords, color=color, weight=5, opacity=0.7).add_to(feature_group)
+                    folium.PolyLine(path_coords, color=color, weight=4, opacity=0.6).add_to(feature_group)
             except Exception as e:
-                print(f"Impossible de relier les points {osmid1} et {osmid2}: {e}")
+                print(f"Error while creating path for nodes {osmid1} and {osmid2}: {e}")
 
-    # Ajouter les prédictions sur la carte avec les noms des stations
+    # Add station names and intensity markers
     for _, row in day_data.iterrows():
-        lat, lon = row['latitude'], row['longitude']
-        station_name = row['station_name']
-        
-        # Ajouter un marqueur avec le nom de la station
         folium.Marker(
-            location=[lat, lon],
-            popup=f"Station: {station_name}"
-        ).add_to(feature_group)
-
-    return feature_group
-
-# Ajouter une couche pour chaque jour
-for date in dates_of_interest:
-    layer = create_layer_for_date(date, graph, merged_data)
-    layer.add_to(m)
-
-# Ajouter un contrôle de couches
-LayerControl(collapsed=False).add_to(m)
-
-# Déterminer le répertoire où se trouve le script
-script_dir = os.path.dirname(__file__)
-
-# Créer le chemin complet pour le fichier de sortie (juste le nom du fichier sans sous-dossiers)
-output_file = 'map_prediction_multiple_days_with_layers_and_legend.html'
-
-# Sauvegarder la carte dans ce répertoire
-try:
-    m.save(output_file)
-    print(f"Carte enregistrée sous '{output_file}'.")
-except Exception as e:
-    print(f"Erreur lors de l'enregistrement du fichier: {e}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#VERSION 2
-# %%
-import pandas as pd
-import folium
-import osmnx as ox
-from geopy.distance import geodesic
-from folium import LayerControl
-from tqdm import tqdm
-import pooch
-import os
-
-# Fonction pour télécharger les fichiers avec Pooch
-def download_file(url, target_path, known_hash):
-    """
-    Télécharge un fichier depuis une URL et vérifie son intégrité à l'aide d'un hachage SHA256.
-    """
-    path, fname = os.path.split(target_path)
-    return pooch.retrieve(url=url, fname=fname, path=path, known_hash=known_hash)
-
-# URLs et hachages des fichiers nécessaires
-files_info = {
-    "ecocompteur_file": {
-        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Scripts/Prediction/ecocompteurs_coords.csv",
-        "target_path": "./ecocompteurs_coords.csv",
-        "known_hash": "08c71a1718b279efe1ebb60f6446e19c8b786d93a2a16bcb8504ab1a888dc3f8"
-    },
-    "predictions_file": {
-        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Scripts/Prediction/predictions_long_format_july.csv",
-        "target_path": "./predictions_long_format_july.csv",
-        "known_hash": "1c57f8aae4ef6eb940319776a9b66e7a1d3731fa1b5f2cced8493fa27928bf42"
-    },
-    "stations_file": {
-        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Video_Data/GeolocalisationStation.csv",
-        "target_path": "./GeolocalisationStation.csv",
-        "known_hash": "9638579e4d6e416196bd2ed7c7c0b9f9bc1d5a39e7a9ca6e5d45336c02ad3ab6" #à changer car brancg data changer en branche main
-    },
-}
-
-# Télécharger les fichiers
-for key, info in files_info.items():
-    print(f"Téléchargement de {key}...")
-    files_info[key]["local_path"] = download_file(
-        url=info["url"],
-        target_path=info["target_path"],
-        known_hash=info["known_hash"]
-    )
-
-# Charger les fichiers téléchargés
-ecocompteur_file = files_info["ecocompteur_file"]["local_path"]
-predictions_file = files_info["predictions_file"]["local_path"]
-stations_file = files_info["stations_file"]["local_path"]
-
-# Charger les données
-ecocompteur = pd.read_csv(ecocompteur_file, sep=',')
-ecocompteur.rename(columns=lambda x: x.strip(), inplace=True)
-ecocompteur.rename(columns={"LaneID": "laneId"}, inplace=True)
-
-predictions = pd.read_csv(predictions_file, sep=';')
-predictions['date'] = pd.to_datetime(predictions['date'])
-
-stations = pd.read_csv(stations_file)
-
-# Dates spécifiques
-dates_of_interest = pd.date_range('2023-07-10', '2023-07-16')
-predictions_filtered = predictions[predictions['date'].isin(dates_of_interest)]
-
-# Joindre prédictions et coordonnées
-merged_data = pd.merge(ecocompteur, predictions_filtered, on='laneId', how='inner')
-
-# Filtrer points dans un rayon de 15 km autour de Montpellier
-map_center = [43.6117, 3.8777]
-radius_km = 15
-merged_data = merged_data[merged_data.apply(
-    lambda row: geodesic(map_center, (row['latitude'], row['longitude'])).km <= radius_km,
-    axis=1
-)]
-
-# Associer noms de stations
-def find_station_name(lat, lon, stations):
-    stations['distance'] = stations.apply(
-        lambda row: geodesic((lat, lon), (row['Latitude'], row['Longitude'])).km, axis=1)
-    return stations.loc[stations['distance'].idxmin(), 'Station']
-
-merged_data['station_name'] = merged_data.apply(
-    lambda row: find_station_name(row['latitude'], row['longitude'], stations), axis=1)
-
-# Graphe routier d'OSM
-print("Téléchargement du graphe routier d'OSM...")
-graph = ox.graph_from_point(map_center, dist=radius_km * 1000, network_type='bike', simplify=True)
-
-merged_data['osmid'] = merged_data.apply(
-    lambda row: ox.distance.nearest_nodes(graph, X=row['longitude'], Y=row['latitude']), axis=1)
-
-# Carte Folium
-m = folium.Map(location=map_center, zoom_start=13)
-
-# Couleurs des intensités
-def intensity_color(intensity):
-    if intensity > 1500:
-        return '#FE4528'  # Rouge
-    elif intensity > 1200:
-        return '#FD6121'
-    elif intensity > 900:
-        return '#D95018'
-    elif intensity > 600:
-        return '#FFEF3A'
-    elif intensity > 300:
-        return '#6CD932'
-    else:
-        return '#038C05'
-
-# Ajouter une couche par jour
-for date in dates_of_interest:
-    day_data = merged_data[merged_data['date'] == date]
-    fg = folium.FeatureGroup(name=date.strftime('%Y-%m-%d'))
-
-    for _, row in day_data.iterrows():
-        folium.CircleMarker(
             location=[row['latitude'], row['longitude']],
-            radius=5,
-            color=intensity_color(row['predicted_intensity']),
-            fill=True,
-            fill_opacity=0.7,
-            popup=f"Station: {row['station_name']}<br>Intensity: {row['predicted_intensity']}"
-        ).add_to(fg)
+            popup=f"Station: {row['station_name']}<br>Intensity: {row['predicted_intensity']}",
+            icon=folium.Icon(color="blue")
+        ).add_to(feature_group)
+    
+    feature_group.add_to(m)
 
-    fg.add_to(m)
+# Create layers for each date in the filtered predictions
+for date in dates_of_interest:
+    create_layer_for_date(date, graph, merged_data)
 
-# Légende et contrôle
-LayerControl(collapsed=False).add_to(m)
+# Add layer control to toggle between date layers
+LayerControl().add_to(m)
 
-# Enregistrer la carte
-output_file = os.path.join(os.getcwd(), 'map_prediction.html')
-m.save(output_file)
-print(f"Carte enregistrée sous '{output_file}'.")
+# Save the map to an HTML file
+map_file = "bike_traffic_map.html"
+m.save(map_file)
+print(f"Map saved as {map_file}")
