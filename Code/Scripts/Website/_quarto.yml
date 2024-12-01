@@ -3,6 +3,9 @@ project:
   type: website
   output-dir: docs
 
+execute:
+  freeze: auto
+
 website:
   title: |
     <a href="/" class="navbar-brand">

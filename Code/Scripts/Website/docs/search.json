@@ -4,7 +4,11 @@
     "href": "footer.html",
     "title": "<a href=\"/\" class=\"navbar-brand\">\n  <i class=\"fas fa-home\"></i>\n</a>\n",
     "section": "",
+<<<<<<< HEAD
     "text": "© 2024 - All rights reserved. Privacy policy | Terms & Conditions | About us"
+=======
+    "text": "© 2024 - All rights reserved. MIT License | Privacy policy | About us"
+>>>>>>> 907fa41a771149a84639233315be26f7209edc7d
   },
   {
     "objectID": "analyses/statistics.html#introduction",
@@ -67,7 +71,11 @@
     "href": "footer/privacy_policy.html#introduction",
     "title": "\nPrivacy polity \n",
     "section": "Introduction",
+<<<<<<< HEAD
     "text": "Introduction\n\nWelcome to BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information.\n\n\n1. Information We Collect\n\nWe may collect the following types of information: Personal Information: Name, email address, phone number (when you fill out a form or subscribe to our newsletter). Usage Data: Information on how you use our site (e.g., pages visited, time spent on the site).\n\n\nCookies and Tracking Technologies: We use cookies to enhance user experience and analyze site traffic.\n\n\n\n2. How We Use Your Information\n\nWe use your information to:\n\n\n\nProvide and maintain our services.\n\n\nImprove the user experience on our site.\n\n\nSend you promotional content if you’ve opted in.\n\n\n\n\n3. Data Sharing and Disclosure\n\nWe do not sell your personal data. We may share information with trusted third-party providers for analytics or marketing purposes (e.g., Google Analytics).\n\n\n\n4. Your Rights\n\nYou have the right to:\n\n\n\nAccess your personal data.\n\n\nRequest correction or deletion of your data.\n\n\nOpt out of data collection (e.g., disable cookies).\n\n\n\n\n5. Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
+=======
+    "text": "Introduction\n\nEFFECTIVE DATE: 2024-01-22\n\n\nWelcome to BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information.\n\n\n1. Information We Collect\n\nWe may collect the following types of information: Personal Information: Name, email address, phone number (when you fill out a form or subscribe to our newsletter). Usage Data: Information on how you use our site (e.g., pages visited, time spent on the site).\n\n\nCookies and Tracking Technologies: We use cookies to enhance user experience and analyze site traffic.\n\n\n\n2. How We Use Your Information\n\nWe use your information to:\n\n\n\nProvide and maintain our services.\n\n\nImprove the user experience on our site.\n\n\nSend you promotional content if you’ve opted in.\n\n\n\n\n3. Data Sharing and Disclosure\n\nWe do not sell your personal data. We may share information with trusted third-party providers for analytics or marketing purposes (e.g., Google Analytics).\n\n\n\n4. Your Rights\n\nYou have the right to:\n\n\n\nAccess your personal data.\n\n\nRequest correction or deletion of your data.\n\n\nOpt out of data collection (e.g., disable cookies).\n\n\n\n\n5. Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
+>>>>>>> 907fa41a771149a84639233315be26f7209edc7d
   },
   {
     "objectID": "footer/about_us.html#global-presentation",
@@ -91,11 +99,19 @@
     "text": "Closing remarks\n\nWe’re very proud to have been able to complete this project and hope you enjoy this website too.\n\n\nIf you have any questions please don’t hesitate to contact us by email (format: firstname.lastname@etu.umontpellier.fr). We will be delighted to try and provide answers to your questions.\n\n\nEnjoy!"
   },
   {
+<<<<<<< HEAD
     "objectID": "footer/terms_conditions.html",
     "href": "footer/terms_conditions.html",
     "title": "\nTerms and Conditions \n",
     "section": "",
     "text": "Terms and Conditions \n\n\n\nThese Terms & Conditions govern your use of our website BikeProjectTeam7. By accessing or using our site, you agree to comply with these Terms.\n\n\n1. Use of the Website\n\nYou may use this website for personal and non-commercial purposes. You agree not to:\n\n\n\nPost any unlawful or harmful content.\n\n\nAttempt to gain unauthorized access to the website or its systems.\n\n\nUse the website for fraudulent purposes.\n\n\n\n\n2. Intellectual Property\n\nAll content on this site, including text, images, and logos, is the property of [Your Website Name]. Unauthorized use of any content is prohibited.\n\n\n\n3. Limitation of Liability\n\nWe are not responsible for any errors, interruptions, or losses that may occur while using our website. The content is provided “as is” without any warranties.\n\n\n\n4. Changes to Terms\n\nWe reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting on this page. Please review the Terms regularly.\n\n\n\n5. Governing Law\n\nThese Terms are governed by the laws of [Your Country/Region]. Any disputes arising from these Terms will be resolved in the courts of [Your Country/Region].\n\n\n\n6. Contact Us\n\nIf you have any questions about these Terms, please contact us at your email address."
+=======
+    "objectID": "footer/MIT_license.html",
+    "href": "footer/MIT_license.html",
+    "title": "\nMIT License \n",
+    "section": "",
+    "text": "MIT License \n\n\n\nCopyright © - 2024 - BikeProjectT\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions.\n\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\nContact Us\n\nIf you have any questions about these Terms, please contact us at your email address."
+>>>>>>> 907fa41a771149a84639233315be26f7209edc7d
   },
   {
     "objectID": "documentation/classes.html#website-classes",
@@ -119,11 +135,23 @@
     "text": "Packages \n\n\n\nFor the code, we have used some packages to make our analyses.\n\n\n‘Numpy’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pandas’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Matplotlib’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pooch’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages."
   },
   {
-    "objectID": "analyses/map.html#section",
-    "href": "analyses/map.html#section",
+    "objectID": "analyses/map.html#map-context",
+    "href": "analyses/map.html#map-context",
     "title": "\nInteractive map \n",
+<<<<<<< HEAD
     "section": "Section",
     "text": "Section\n\nOn this page we can see an interactive map of the traffic of bikes in the town of Montpellier. We can choose a date and view:\n\n\n\nThe past traffic.\n\n\nThe prediction of the traffic for nexts days.\n\n\n\nWe have choose the date of ?? because it corresponds to the middle wek of the Tour de France and it’s the period examined in our problematic."
+=======
+    "section": "Map context",
+    "text": "Map context\n\nOn this page we can see an interactive map of the traffic of bikes in the town of Montpellier. We can choose a date and view:\n\n\n\nThe past traffic.\n\n\nThe prediction of the traffic for nexts days."
+  },
+  {
+    "objectID": "analyses/map.html#map-predictions",
+    "href": "analyses/map.html#map-predictions",
+    "title": "\nInteractive map \n",
+    "section": "Map predictions",
+    "text": "Map predictions\n\nPresentation\n\nThe interactive map below shows predicted bicycle traffic in the city of Montpellier from 10 July to 16 July 2023. These dates represent the intermediate week (2nd week out of 3) of the Tour de France.\n\n\nThe bicycle traffic predictions were made using the ‘Prophet’ model, a flexible tool for time series analysis. This model is particularly well suited to data with temporal variations, making it an ideal choice for modelling cycle traffic. The prediction was influenced by factors such as days of the week, weather and local events (such as the Tour de France). The predictions generated by Prophet have been integrated into the interactive map, making it possible to visualise predicted traffic levels on the various routes between stations. To make this prediction, we decided to calculate only the shortest paths between each of the stations and not all the possible paths, for the sake of optimising journey times and also to make the map easier to read.\n\n\n\nGraph\n\n\n\nOn this graph, the data is represented by coloured lines linking the different bicycle stations.\n\n\n\nCycle stations (Eco-counters)\n\nThe stations are represented by blue markers distributed around the city.\n\n\n\nPaths between stations\n\nThe lines connecting the stations correspond to the predicted paths between them. The colours of the lines vary according to the levels of intensity of cycle traffic, i.e. according to the number of cycles predicted to pass along the route:\n\n\n\nRed: Very high intensity (&gt; 1500).\n\n\nOrange: High intensity (1200-1500).\n\n\nYellow: Moderate intensity (900-1200).\n\n\nLight green: Low intensity (300-900).\n\n\nDark green: Very low intensity (&lt; 300).\n\n\n\n\nGeographical coverage\n\nPredictions cover a 15km radius around Montpellier, including areas such as Saint-Jean-de-Védas, Castelnau-le-Lez, and Villeneuve-lès-Maguelone. We decided not to extend this area because bike journeys were becoming rare and we weren’t sure whether a station further away would actually correspond to a journey between that station and Montpellier or just a journey within its city.\n\n\n\nLegend\n\nThe legend in the bottom left-hand corner explains the meaning of the line colours. The control at the top right allows you to view data for specific days. Several days can be selected at the same time, but we advise you to select the days one after the other for consistent predictions."
+>>>>>>> 907fa41a771149a84639233315be26f7209edc7d
   },
   {
     "objectID": "analyses/video.html#presentation",
