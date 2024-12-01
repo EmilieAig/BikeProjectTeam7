@@ -20,19 +20,11 @@ jobs:
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
-<<<<<<< HEAD
           path: code/Scripts/Website
-=======
-          path: code/Scripts/Website  # Chemin corrigé vers votre dossier de projet Quarto
->>>>>>> af268e716712429920cc702169c757f1bc9b883e
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-<<<<<<< HEAD
           publish_branch: gh-pages
           publish_dir: ./code/Scripts/Website/docs
-=======
-          publish_dir: ./code/scripts/website/docs  # Chemin corrigé vers votre dossier de sortie
->>>>>>> af268e716712429920cc702169c757f1bc9b883e
