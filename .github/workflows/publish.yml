@@ -28,7 +28,7 @@ jobs:
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
-          target: gh-pages
+          target: main
           working-directory: Code/Scripts/Website
           output-dir: docs
         env:
