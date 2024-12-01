@@ -79,8 +79,8 @@ h5 {
 /*    LAYOUT AND GLOBAL STYLES  */
 /* ---------------------------- */
 
-main, .content {
-  max-width: 2000px !important;         /* Expanded width for text area */
+.page-content {
+  max-width: 2000px !important;
   margin: 0 auto;
   padding: 0 20px;
 }
