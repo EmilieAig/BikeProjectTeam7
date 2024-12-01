@@ -1,0 +1,348 @@
+/* styles.css : to determine the graphic chart */
+
+/* ---------------------------- */
+/*        TITLES STYLES         */
+/* ---------------------------- */
+
+h1 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e8e5e5;   /* Grey underline for h2 */
+  padding-bottom: 5px;                  /* Push the underline down */
+}
+
+h3 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e8e5e5;   /* Grey underline for h3 */
+  padding-bottom: 5px;
+}
+
+h4 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e8e5e5;
+  padding-bottom: 5px;
+}
+
+h5 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* ---------------------------- */
+/*        TEXT STYLES           */
+/* ---------------------------- */
+
+.text {
+  color: black;
+  text-align: justify; 
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+/* Bullet points in text */
+.text ul {
+  list-style-type: disc;
+  padding-left: 20px;                   /* Left padding for bullets */
+}
+
+.text li {
+  margin-bottom: 5px;                   /* Space between list items */
+}
+
+/* ---------------------------- */
+/*    LAYOUT AND GLOBAL STYLES  */
+/* ---------------------------- */
+
+.page-content {
+  max-width: 2000px !important;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 2000px) {
+  .content {
+    margin-right: 0;
+  }
+  
+  nav.toc-content {
+    display: none;
+  }
+}
+
+/* ---------------------------- */
+/*     NAVIGATION BAR STYLES    */
+/* ---------------------------- */
+
+.navbar {
+  background-color: #209f59 !important;   /* Background color */
+  color: black;                           /* Text color */
+}
+
+.navbar-brand {
+  color: black !important;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+.nav-link {
+  color: black !important;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.navbar-brand:hover {
+  color: white !important;
+}
+
+/* Light mode dropdown menus */
+body:not(.quarto-dark) .navbar .dropdown-menu {
+  color: black;
+  background-color: white;
+}
+
+body:not(.quarto-dark) .navbar .dropdown-item {
+  color: black;
+}
+
+body:not(.quarto-dark) .navbar .dropdown-item:hover {
+  background-color: #63d396;
+  color: black;
+}
+
+/* ---------------------------- */
+/*        FOOTER STYLES         */
+/* ---------------------------- */
+
+.custom-footer {
+  background-color: #e3e4e6;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.8em;
+  border-top: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.custom-footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.custom-footer a:hover {
+  color: #209f59;
+  text-decoration: underline;
+}
+
+.custom-footer .MIT-license {
+  margin-left: 20px;                /* Pushes "Privacy policy" to the right */
+}
+
+/* ---------------------------- */
+/*   DASHED LINE & ANIMATION    */
+/* ---------------------------- */
+
+.pointilles-rectangle {
+  border: none;
+  border-top: 5px dashed #000000;   /* Dashed border */
+  width: 100%;                  
+  margin: 0 auto;               
+  background: repeating-linear-gradient(90deg, #000000 0px, #000000 20px, transparent 20px, transparent 40px); 
+  background-size: 400px 100%;
+}
+
+.bike {
+  animation: move-dashed-line 10s linear infinite;  /* Animation */
+}
+
+@keyframes move-dashed-line {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+/* ---------------------------- */
+/*       TROMBINOSCOPE          */
+/* ---------------------------- */
+
+.trombinoscope {
+  display: flex;
+  flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
+  gap: 10px; /* Espacement entre les membres */
+  justify-content: space-around; /* Répartit les éléments uniformément */
+  align-items: center; /* Aligne les éléments verticalement */
+}
+
+.member {
+  text-align: center;
+  max-width: 180px; /* Taille maximale de chaque carte membre */
+  flex: 1; /* Permet à chaque élément de s'adapter pour rester sur une ligne */
+}
+
+.member img {
+  border-radius: 10%; /* Maintient les bordures arrondies */
+  max-width: 100%; /* Empêche les images de dépasser leur conteneur */
+  width: 140px; /* Largeur fixée pour toutes les images */
+  height: 120px; /* Hauteur fixée pour toutes les images */
+  object-fit: cover; /* Pour que l'image remplisse l'espace sans déformer son ratio */
+}
+
+/* ---------------------------- */
+/*       DARK MODE STYLES       */
+/* ---------------------------- */
+
+:root {
+  --text-color-light: black;
+  --text-color-dark: #e0e0e0;
+  --background-color-light: white;
+  --background-color-dark: #474646;
+}
+
+/* Dark mode adjustments */
+body.quarto-dark {
+  color: var(--text-color-dark);
+  background-color: var(--background-color-dark);
+}
+
+body.quarto-dark h1,
+body.quarto-dark h2,
+body.quarto-dark h3 {
+  color: var(--text-color-dark);
+}
+
+body.quarto-dark .text {
+  color: var(--text-color-dark);
+}
+
+body.quarto-dark .navbar {
+  background-color: #187240 !important;
+  color: var(--text-color-dark);
+}
+
+body.quarto-dark .navbar-brand,
+body.quarto-dark .nav-link {
+  color: var(--text-color-dark) !important;
+}
+
+body.quarto-dark a {
+  color: #3498db;
+}
+
+body.quarto-dark .custom-footer {
+  background-color: #232323;
+  color: #e0e0e0;
+}
+
+body.quarto-dark .custom-footer a {
+  color: white;
+}
+
+body.quarto-dark .custom-footer a:hover {
+  color: #209f59;
+}
+
+/* ---------------------------- */
+/*       IMAGES STYLES          */
+/* ---------------------------- */
+
+img .member {
+  max-width: 100%; /* Limite la largeur de l'image au conteneur */
+  width: 150px; /* Spécifie la largeur en pixels (ajuste selon tes besoins) */
+  height: 110px; /* Garde les proportions de l'image */
+  display: block;
+  margin: 0 auto; /* Centre l'image */
+}
+
+img, table {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------------------------- */
+/*       VIDEOS STYLES          */
+/* ---------------------------- */
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;  /* Ajoute un espace en dessous du bloc */
+}
+
+.video-container {
+  flex: 2;  /* Augmente la proportion de l'espace attribuée à la vidéo */
+  margin-right: 20px;
+}
+
+.video-container video {
+  width: 100%;  /* La vidéo occupe toute la largeur du conteneur */
+  height: auto;  /* Garde les proportions de la vidéo */
+  border: 1px solid #ccc;
+}
+
+.container-r {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: row-reverse;  /* Inverse l'ordre des éléments (vidéo à droite et texte à gauche) */
+  margin-bottom: 20px;  /* Ajoute un espace en dessous du bloc */
+}
+
+.video-container-r {
+  flex: 2;  /* Prend plus de place que le texte */
+  margin-left: 20px;  /* Espacement à gauche pour la vidéo (inverse de margin-right) */
+  max-width: 70%;  /* Limite la taille de la vidéo à 70% de la largeur du conteneur */
+}
+
+.video-container-r video {
+  width: 100%;  /* La vidéo occupe toute la largeur du conteneur */
+  height: auto;  /* Garde les proportions de la vidéo */
+  border: 1px solid #ccc;
+}
