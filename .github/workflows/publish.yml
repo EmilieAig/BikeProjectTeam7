@@ -13,18 +13,23 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-      
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
+
+      - name: Install Python and Dependencies
+        uses: actions/setup-python@v5
         with:
-          path: code/Scripts/Website
-      
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+          python-version: '3.10'
+          cache: 'pip'
+      - run: pip install jupyter
+      - run: pip install -r requirements.txt
+
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./code/Scripts/Website/docs
+          target: main
+          working-directory: Code/Scripts/Website
+          output-dir: docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
