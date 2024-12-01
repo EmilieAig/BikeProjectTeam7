@@ -1,374 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
-    "section": "",
-    "text": "© 2024 - All rights reserved. \n    Privacy policy | \n    Terms & Conditions |\n    Cookies"
-  },
-  {
-    "objectID": "general-tools/option1.html",
-    "href": "general-tools/option1.html",
-    "title": "Titre de la page",
-    "section": "",
-    "text": "Section principale\nContenu de la page…"
-  },
-  {
-    "objectID": "python/basics.html",
-    "href": "python/basics.html",
-    "title": "Titre de la page",
-    "section": "",
-    "text": "Section principale\nContenu de la page…"
-  },
-  {
-    "objectID": "general-tools/option2.html",
-    "href": "general-tools/option2.html",
-    "title": "Titre de la page",
-    "section": "",
-    "text": "Section principale\nContenu de la page…"
-  },
-  {
-    "objectID": "page1/page1_1.html",
-    "href": "page1/page1_1.html",
-    "title": "\nInteractive map \n",
-    "section": "",
-    "text": "Interactive map \n\n\nIn this page we can see an interactive map of the traffic of bikes in the town of Montpellier.\nWe can choose a date and view :\n\nThe past traffic.\nThe prediction of the traffic for nexts days."
-  },
-  {
-    "objectID": "page2/page2_1.html",
-    "href": "page2/page2_1.html",
-    "title": "\nPackages \n",
-    "section": "",
-    "text": "Packages \n\n\n\nFor the code, we have used some packages to make our analyses.\n\n\n‘Numpy’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pandas’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Matplotlib’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pooch’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages."
-  },
-  {
-    "objectID": "page1/page1_2.html",
-    "href": "page1/page1_2.html",
-    "title": "Carrousel de Vidéos",
-    "section": "",
-    "text": "Bienvenue au Carrousel de Vidéos\n\n\n&lt;div class=\"carousel-item active\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;video class=\"d-block w-100\" src=\"https://www.w3schools.com/html/mov_bbb.mp4\" controls&gt;&lt;/video&gt;\n&lt;/div&gt;\n\n  Previous    Next"
-  },
-  {
-    "objectID": "index.html#title-2",
-    "href": "index.html#title-2",
-    "title": "Welcome to our project",
-    "section": "",
-    "text": "Contenu de la page…\nBonjour"
-  },
-  {
-    "objectID": "index.html#explications",
-    "href": "index.html#explications",
-    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
-    "section": "Explications",
-    "text": "Explications\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits."
-  },
-  {
-    "objectID": "index.html#data",
-    "href": "index.html#data",
-    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
-    "section": "Data",
-    "text": "Data\n\nTo carry out this study, we selected several types of data.\n\n\nFirstly, we retrieved data on the journeys made by VéloMagg bikes between stations in the VéloMagg network in the Montpellier metropolitan area.\n\n\nSecondly, we have retrieved data for each of the bicycle counters (eco-counters) in production in the Montpellier Metropolitan Area, showing the number of bicycles (and piétions in some cases) counted. The daily data is the total of the previous day’s count. This information is divided into as many files as there are eco-counters. Each eco-counter is identified by a serial number, which we were able to find and associate with its latitude and longitude.\n\n\nAll the data we have selected was extracted between April 2023 and October 2023. This corresponds to 3 months before the Telethon and 3 months after, which we thought was a good margin for observing changes around the Tour de France and which is just over half a year (7 months)."
-  },
-  {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
-    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
-    "section": "Introduction",
-    "text": "Introduction\n\nProblematic\n\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.\n\n\n\nHypothesis\n\nBased on data from the Tour de France, we hypothesised that that there would be an increase in the number of people cycling during the Tour de France period. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly."
-  },
-  {
-    "objectID": "index.html#tour-de-france",
-    "href": "index.html#tour-de-france",
-    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
-    "section": "Tour de France",
-    "text": "Tour de France"
-  },
-  {
-    "objectID": "page1/page1_2.html#test",
-    "href": "page1/page1_2.html#test",
-    "title": "Video",
-    "section": "",
-    "text": "In this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\nYou can choose the date and the video will be interactive."
-  },
-  {
-    "objectID": "page1/page1_2.html#presentation",
-    "href": "page1/page1_2.html#presentation",
-    "title": "\nVideos \n",
-    "section": "Presentation",
-    "text": "Presentation\n\nOn this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\n\n\nYou can choose the date and the video will be interactive."
-  },
-  {
-    "objectID": "page1/page1_2.html#video",
-    "href": "page1/page1_2.html#video",
-    "title": "\nVideo \n",
-    "section": "Video",
-    "text": "Video\n\n\n\n\n\n\nMonday 10 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 11 July 2023\n\n\n\n\n\n\n\n\n\nWednesday 12 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 13 July 2023\n\n\n\n\n\n\n\n\n\nFriday 14 July 2023\n\n\n\n\n\n\n\n\n\nSaturday 15 July 2023\n\n\n\n\n\n\n\n\n\nSunday 16 July 2023"
-  },
-  {
     "objectID": "footer.html",
     "href": "footer.html",
-    "title": "BikeProjectTeam7",
+    "title": "<a href=\"/\" class=\"navbar-brand\">\n  <i class=\"fas fa-home\"></i>\n</a>\n",
     "section": "",
-    "text": "© 2024 - All rights reserved. Privacy policy | Terms & Conditions | About us"
-  },
-  {
-    "objectID": "page1/page1_3.html",
-    "href": "page1/page1_3.html",
-    "title": "\nStatistics \n",
-    "section": "",
-    "text": "Statistics \n\n\nIn this page we can see the global statistics."
-  },
-  {
-    "objectID": "page1/page1_3.html#section",
-    "href": "page1/page1_3.html#section",
-    "title": "\nStatistics \n",
-    "section": "Section",
-    "text": "Section\n\nIn this page we can see the global statistics.\n\nNous cherchons à voir s’il existe des différences au niveau de la fréquentation des vélos dans la ville de Montpellier en fonction des périodes : juste avant le Tour de France, pendant le Tour de France, juste après le Tour de France et le reste de l’année."
-  },
-  {
-    "objectID": "footer/privacy_policy.html#introduction",
-    "href": "footer/privacy_policy.html#introduction",
-    "title": "\nPrivacy polity \n",
-    "section": "Introduction",
-    "text": "Introduction\n\nWelcome to BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information.\n\n\n1. Information We Collect\n\nWe may collect the following types of information: Personal Information: Name, email address, phone number (when you fill out a form or subscribe to our newsletter). Usage Data: Information on how you use our site (e.g., pages visited, time spent on the site).\n\n\nCookies and Tracking Technologies: We use cookies to enhance user experience and analyze site traffic.\n\n\n\n2. How We Use Your Information\n\nWe use your information to:\n\n\n\nProvide and maintain our services.\n\n\nImprove the user experience on our site.\n\n\nSend you promotional content if you’ve opted in.\n\n\n\n\n3. Data Sharing and Disclosure\n\nWe do not sell your personal data. We may share information with trusted third-party providers for analytics or marketing purposes (e.g., Google Analytics).\n\n\n\n4. Your Rights\n\nYou have the right to:\n\n\n\nAccess your personal data.\n\n\nRequest correction or deletion of your data.\n\n\nOpt out of data collection (e.g., disable cookies).\n\n\n\n\n5. Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
-  },
-  {
-    "objectID": "footer/terms_conditions.html#section",
-    "href": "footer/terms_conditions.html#section",
-    "title": "\nTerms and Conditions \n",
-    "section": "Section",
-    "text": "Section\n\nThese Terms & Conditions govern your use of our website BikeProjectTeam7. By accessing or using our site, you agree to comply with these Terms.\n\n\n1. Use of the Website\n\nYou may use this website for personal and non-commercial purposes. You agree not to:\n\nPost any unlawful or harmful content.\nAttempt to gain unauthorized access to the website or its systems.\nUse the website for fraudulent purposes.\n\n\n\n\n2. Intellectual Property\n\nAll content on this site, including text, images, and logos, is the property of [Your Website Name]. Unauthorized use of any content is prohibited.\n\n\n\n3. Limitation of Liability\n\nWe are not responsible for any errors, interruptions, or losses that may occur while using our website. The content is provided “as is” without any warranties.\n\n\n\n4. Changes to Terms\n\nWe reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting on this page. Please review the Terms regularly.\n\n\n\n5. Governing Law\n\nThese Terms are governed by the laws of [Your Country/Region]. Any disputes arising from these Terms will be resolved in the courts of [Your Country/Region].\n\n\n\n6. Contact Us\n\nIf you have any questions about these Terms, please contact us at [your email address]."
-  },
-  {
-    "objectID": "page1/page1_1.html#section",
-    "href": "page1/page1_1.html#section",
-    "title": "\nInteractive map \n",
-    "section": "Section",
-    "text": "Section\n\nOn this page we can see an interactive map of the traffic of bikes in the town of Montpellier. We can choose a date and view:\n\n\n\nThe past traffic.\n\n\nThe prediction of the traffic for nexts days.\n\n\n\nWe have choose the date of ?? because it corresponds to the middle wek of the Tour de France and it’s the period examined in our problematic."
-  },
-  {
-    "objectID": "footer/about_us.html#introduction",
-    "href": "footer/about_us.html#introduction",
-    "title": "\nAbout us \n",
-    "section": "Introduction",
-    "text": "Introduction\n\nWelcome to BikeProjectTeam7. .\n\n\n1. The team\n\nNous sommes une équipe de 4 personnes étudiants à la Faculté des Sciences de Montpellier. Nous sommes actuellemnt en première année de Master en Statistiques et Sciences des Données. Nous réalisons ce projet dans le cadre de l’unité d’enseignement ‘Développement logiciel’.\n\n\nVous pouvez retrouver dans notre équipe :\n\nSamira : qui a participé aux rédactions des Readme et à la création de la vidéo.\nAnne-Laure : qui a participé à la création de la maquette du site web et à la création des prédictions des cartes.\nQinjian : qui a participé à la visualisation de la carte et à la création des tracés sur la carte.\nEmilie : qui a participé à la réalisation du diagramme de Gantt et à la création du site web.\n\n\n\nNous sommes très fiers d’avoir pu réaliser ce projet et espérons que ce site web vous plapit également.\n\n\nSi vous avez des questions n’hésitez pas à nous contacter par mail (adresse mail sous le format : prénom.nom@etu.umontpellier.fr). Nous serons ravie d’essayer d’apporter des réponses à vos questions.\n\n\nEnjoy!"
-  },
-  {
-    "objectID": "page1/page1_3.html#introduction",
-    "href": "page1/page1_3.html#introduction",
-    "title": "\nStatistics \n",
-    "section": "Introduction",
-    "text": "Introduction\n\nOn this page, we present a short preliminary statistical analysis of the data we selected (see home page for a detailed explanation of our data).\n\n\nOur question was “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?” and we hypothesized that there would be an increase in the number of people cycling during the Tour de France period. A sporting event like this encourages people to get back into sport, and cycling in particular."
-  },
-  {
-    "objectID": "page1/page1_3.html#méthode",
-    "href": "page1/page1_3.html#méthode",
-    "title": "\nStatistics \n",
-    "section": "Méthode",
-    "text": "Méthode"
-  },
-  {
-    "objectID": "page1/page1_3.html#résultats",
-    "href": "page1/page1_3.html#résultats",
-    "title": "\nStatistics \n",
-    "section": "Résultats",
-    "text": "Résultats"
-  },
-  {
-    "objectID": "page1/page1_3.html#discussion",
-    "href": "page1/page1_3.html#discussion",
-    "title": "\nStatistics \n",
-    "section": "Discussion",
-    "text": "Discussion\n\nOur analyses seem to show that there is no significant difference in the number of cycles passing through eco-counters in the city of Montpellier between the periods before, during and after the Tour de France. However, if we look at the first graph we got, we can say that this evolution could be linked to other factors such as school and work holiday periods. Indeed, we note that there is a decrease at the beginning of the summer holiday period (July) and that seems to be accentuated during the August period. In addition, at the beginning of September, during the school year, there seems to be a strong increase in the number of bicycle trips.\n\n\nThus, it would be interesting to do more detailed analyses than those we have done, but also to look at the link with school holidays."
-  },
-  {
-    "objectID": "page1/page1_3.html#conclusion",
-    "href": "page1/page1_3.html#conclusion",
-    "title": "\nStatistics \n",
-    "section": "Conclusion",
-    "text": "Conclusion\n\nTo conclude, from these preliminary analyses, we did not validate our hypothesis that the Tour de France had a positive impact on bicycle use in the city of Montpellier. But we have shown that it would be interesting to use other sources to justify these trends."
-  },
-  {
-    "objectID": "footer/about_us.html",
-    "href": "footer/about_us.html",
-    "title": "\nAbout us \n",
-    "section": "",
-    "text": "About us \n\n\n\nThe team\n\nNous sommes une équipe de 4 personnes étudiants à la Faculté des Sciences de Montpellier. Nous sommes actuellemnt en première année de Master en Statistiques et Sciences des Données. Nous réalisons ce projet dans le cadre de l’unité d’enseignement ‘Développement logiciel’.\n\n\nVous pouvez retrouver dans notre équipe :\n\nSamira : qui a participé aux rédactions des Readme et à la création de la vidéo.\nAnne-Laure : qui a participé à la création de la maquette du site web et à la création des prédictions des cartes.\nQinjian : qui a participé à la visualisation de la carte et à la création des tracés sur la carte.\nEmilie : qui a participé à la réalisation du diagramme de Gantt et à la création du site web.\n\n\n\n\nPetit mot de la fin\n\nNous sommes très fiers d’avoir pu réaliser ce projet et espérons que ce site web vous plapit également.\n\n\nSi vous avez des questions n’hésitez pas à nous contacter par mail (adresse mail sous le format : prénom.nom@etu.umontpellier.fr). Nous serons ravie d’essayer d’apporter des réponses à vos questions.\n\n\nEnjoy!"
-  },
-  {
-    "objectID": "footer/terms_conditions.html",
-    "href": "footer/terms_conditions.html",
-    "title": "\nTerms and Conditions \n",
-    "section": "",
-    "text": "Terms and Conditions \n\n\n\nThese Terms & Conditions govern your use of our website BikeProjectTeam7. By accessing or using our site, you agree to comply with these Terms.\n\n\n1. Use of the Website\n\nYou may use this website for personal and non-commercial purposes. You agree not to:\n\n\n\nPost any unlawful or harmful content.\n\n\nAttempt to gain unauthorized access to the website or its systems.\n\n\nUse the website for fraudulent purposes.\n\n\n\n\n2. Intellectual Property\n\nAll content on this site, including text, images, and logos, is the property of [Your Website Name]. Unauthorized use of any content is prohibited.\n\n\n\n3. Limitation of Liability\n\nWe are not responsible for any errors, interruptions, or losses that may occur while using our website. The content is provided “as is” without any warranties.\n\n\n\n4. Changes to Terms\n\nWe reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting on this page. Please review the Terms regularly.\n\n\n\n5. Governing Law\n\nThese Terms are governed by the laws of [Your Country/Region]. Any disputes arising from these Terms will be resolved in the courts of [Your Country/Region].\n\n\n\n6. Contact Us\n\nIf you have any questions about these Terms, please contact us at your email address."
-  },
-  {
-    "objectID": "footer/about_us.html#about-us",
-    "href": "footer/about_us.html#about-us",
-    "title": "\nAbout us \n",
-    "section": "About Us",
-    "text": "About Us\n\nTeam Members\n\n\n\nJohn Doe\n\n\nRole: Project Manager\n\n\nContributions: Managed project timeline and communication with stakeholders.\n\n\n\n\n\nJane Smith\n\n\nRole: Data Analyst\n\n\nContributions: Analyzed bike rental data, provided statistical insights.\n\n\n\n\n\nPetit mot de la fin\n\nNous sommes très fiers d’avoir pu réaliser ce projet et espérons que ce site web vous plapit également.\n\n\nSi vous avez des questions n’hésitez pas à nous contacter par mail (adresse mail sous le format : prénom.nom@etu.umontpellier.fr). Nous serons ravie d’essayer d’apporter des réponses à vos questions.\n\n\nEnjoy!"
-  },
-  {
-    "objectID": "footer/about_us.html#team-members",
-    "href": "footer/about_us.html#team-members",
-    "title": "\nAbout us \n",
-    "section": "Team members",
-    "text": "Team members\n\n\n\n\nEmilie AIGOIN\n\n\nContributions:  Gantt diagram, website creation.\n\n\n\n\n\nSamira MAMANE SIDI\n\n\nContributions:  Readme redaction, video creation.\n\n\n\n\n\nAnne-Laure THOMAS\n\n\nContributions:  Website mockup, traffic prediction on the map.\n\n\n\n\n\nQingjian ZHU\n\n\nContributions:  Map visualization, bike layout on the map."
-  },
-  {
-    "objectID": "footer/about_us.html#global-presentation",
-    "href": "footer/about_us.html#global-presentation",
-    "title": "\nAbout us \n",
-    "section": "Global presentation",
-    "text": "Global presentation\n\nWe are a team of 4 students at the Montpellier Faculty of Science. We are currently in the first year of our Masters in Statistics and Data Science. We are carrying out this project as part of the ‘Software Development’ teaching unit."
-  },
-  {
-    "objectID": "footer/about_us.html#petit-mot-de-la-fin",
-    "href": "footer/about_us.html#petit-mot-de-la-fin",
-    "title": "\nAbout us \n",
-    "section": "Petit mot de la fin",
-    "text": "Petit mot de la fin\n\nNous sommes très fiers d’avoir pu réaliser ce projet et espérons que ce site web vous plapit également.\n\n\nSi vous avez des questions n’hésitez pas à nous contacter par mail (format : prénom.nom@etu.umontpellier.fr). Nous serons ravie d’essayer d’apporter des réponses à vos questions.\n\n\nEnjoy!"
-  },
-  {
-    "objectID": "page2/page2_1.html#packages",
-    "href": "page2/page2_1.html#packages",
-    "title": "\nDocumentation \n",
-    "section": "Packages",
-    "text": "Packages\n\nFor the code, we have used some packages to make our analyses.\n\n\n‘Numpy’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pandas’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Matplotlib’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pooch’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages."
-  },
-  {
-    "objectID": "page2/page2_1.html#classes",
-    "href": "page2/page2_1.html#classes",
-    "title": "\nDocumentation \n",
-    "section": "Classes",
-    "text": "Classes\n\n‘Text’\n\nIn the website, we have used the class named “text”.\n\n\nThis class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls :\n\n\n\ncolor : for the choice of the text color : black.\n\n\ntext-align : for the choice of the text alignement : justify.\n\n\nfont-family : for the choice of font : Lato, sans serif.\n\n\nfont-size : for the choice of text size : 15px.\n\n\nfont-weight : for the choice of the text weight (level of bold) : 500.\n\n\nmargin-bottom : for the choice of the spacing between paragraphs : 1em.\n\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Navbar’\n\nIn the website, we have used the class named “navbar”.\n\n\nThis class is used in all sections of the website to style the navigation bar on the right\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Nav’\n\nIn the website, we have used the class named “nav”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Content’\n\nIn the website, we have used the class named “content”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Footer’\n\nIn the website, we have used the class named “footer”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Pointilles-rectangle’\n\nIn the website, we have used the class named “pointilles-rectangle”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Bike’\n\nIn the website, we have used the class named “bike”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Trombinoscope’\n\nIn the website, we have used the class named “trombinoscope”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Member’\n\nIn the website, we have used the class named “member”.\n\n\nThis class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other.\n\n\nThis class is defined in the styles.css file."
-  },
-  {
-    "objectID": "page2/page2_1.html#fonctions",
-    "href": "page2/page2_1.html#fonctions",
-    "title": "\nDocumentation \n",
-    "section": "Fonctions",
-    "text": "Fonctions"
-  },
-  {
-    "objectID": "footer/about_us.html#closing-remarks",
-    "href": "footer/about_us.html#closing-remarks",
-    "title": "\nAbout us \n",
-    "section": "Closing remarks",
-    "text": "Closing remarks\n\nWe’re very proud to have been able to complete this project and hope you enjoy this website too.\n\n\nIf you have any questions please don’t hesitate to contact us by email (format: firstname.lastname@etu.umontpellier.fr). We will be delighted to try and provide answers to your questions.\n\n\nEnjoy!"
-  },
-  {
-    "objectID": "page1/page1_3.html#methods",
-    "href": "page1/page1_3.html#methods",
-    "title": "\nStatistics \n",
-    "section": "Methods",
-    "text": "Methods\n\nWe used sorted data corresponding to the number of bicycles passing in front of counters located in the city of Montpellier and compiled them into a single dataset. The statistical analyses focused on the following periods :\n\n\n\nBefore the Tour de France : April to June.\n\n\nDuring the Tour de France : July 1st to July 23rd.\n\n\nAfter the Tour de France : late July to October.\n\n\n\nWe carried out a number of statistical analyses to see if our hypothesis could be validated. These analyses are not intended to be taken literally, as there are many other parameters to be taken into account, but they are a short preliminary study of our data.\n\n\nWe began by performing descriptive analyses to give us a visual representation of our data. We then carried out tests to check the normality and homogeneity of the variances in order to choose the appropriate statistical test. Finally, we performed the test and compared the results with our hypothesis."
-  },
-  {
-    "objectID": "page1/page1_3.html#results",
-    "href": "page1/page1_3.html#results",
-    "title": "\nStatistics \n",
-    "section": "Results",
-    "text": "Results\n\nWe started by conducting descriptive analyses to get a first idea of our data. We found an average of 610.06 passes in front of eco-counters during the period before the Tour de France 523.07 passes during the Tour de France and 599.80 passes after the Tour de France. We see that there seems to be a slight decrease during the Tour de France, which would be the opposite of our hypothesis, but we will see if this difference is significant.\n\n\nFollowing our descriptive analyses, we obtained the following graph:\n\n\n\nThis graph shows the total number of bicycles passing in front of the city of Montpellier’s eco-counters per week. Please note that this data does not correspond to the number of bicycles, as a bicycle may be counted several times if it passes in front of several counters. This data therefore corresponds to the total number of journeys made by cyclists in Montpellier (number of times they pass in front of a counter). We can see that the Tour de France period is highlighted in green.\n\n\nVisually, we can see that there does not seem to be an increase during the period of the Tour de France compared with the periods before and after. We also note that there is a sharp decrease in the number of crossings in front of a meter during the period of August and that it goes back to early September.\n\n\nWe then continued by checking the homogeneity of variances and normality. Then, given that normality was not verified, we performed a Kruskal Wallis test (because we had several independent groups and only one variable of interest). We obtained the following graph to represent the differences between our groups.\n\n\n\nThis graph is a boxplot that represents the number of passes in front of eco-counters according to our three periods of interest.\n\n\n\nThe box shows the interquartile range, which contains the middle 50% of the data (from the 25th to the 75th percentile).\n\n\nThe horizontal line inside the box représents the median (the middle value of the dataset).\n\n\nThe whiskerw extend to the smallest and largest values within 1.5 times the interquartile range.\n\n\n\nOur analyses by the test of Kruskal Wallis showed us that there did not seem to be a significant difference between our different periods in terms of the number of passages in front of eco-counters of the vulle de Montpellier. Indeed, we found a p-value of 0.16 and an H-value of 3.59. Thus, the differences do not seem to be significant."
-  },
-  {
-    "objectID": "page1/page1_3.html#introductio",
-    "href": "page1/page1_3.html#introductio",
-    "title": "\nStatistics \n",
-    "section": "Introductio",
-    "text": "Introductio\n\nOn this page, we present a statistical analysis of bicycle traffic data in Montpellier from April to October 2023.\n\n\n\nJust before the Tour de France.\n\ns\n\nDuring the Tour de France.\n\n\nJust after the Tour de France.\n\n\n\nTo answer this question, we used the collected data (described on the homepage) to perform statisctical analyses that would confirm or refute our initial hypothesis. We expected to observe an increase in bicycle usage during the Tour de France due to the popularity of the event and its potential influence on local behaviour."
-  },
-  {
-    "objectID": "page1/page1_2.html#carrousel-des-vidéos",
-    "href": "page1/page1_2.html#carrousel-des-vidéos",
-    "title": "\nVideo \n",
-    "section": "Carrousel des vidéos",
-    "text": "Carrousel des vidéos\n\n❮\n\n&lt;video class=\"video-slide\" src=\"/images/ADM.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_mardi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_mercredi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_jeudi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_vendredi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_samedi.mp4\" controls&gt;&lt;/video&gt;\n&lt;video class=\"video-slide\" src=\"assets/videos/video_dimanche.mp4\" controls&gt;&lt;/video&gt;\n\n❯"
-  },
-  {
-    "objectID": "index.html#context",
-    "href": "index.html#context",
-    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
-    "section": "Context",
-    "text": "Context\n\nProblematic\n\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.\n\n\n\nHypothesis\n\nBased on data from the Tour de France, we hypothesised that that there would be an increase in the number of people cycling during the Tour de France period. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly."
-  },
-  {
-    "objectID": "page1/page1_2.html#video-carousel",
-    "href": "page1/page1_2.html#video-carousel",
-    "title": "\nVideo \n",
-    "section": "Video Carousel",
-    "text": "Video Carousel\n\n\n\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"3\" aria-label=\"Slide 4\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"4\" aria-label=\"Slide 5\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"5\" aria-label=\"Slide 6\"&gt;&lt;/button&gt;\n&lt;button type=\"button\" data-bs-target=\"#videoCarousel\" data-bs-slide-to=\"6\" aria-label=\"Slide 7\"&gt;&lt;/button&gt;\n\n\n\n&lt;div class=\"carousel-item active\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_1\" title=\"YouTube video 1\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_2\" title=\"YouTube video 2\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_3\" title=\"YouTube video 3\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_4\" title=\"YouTube video 4\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_5\" title=\"YouTube video 5\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_6\" title=\"YouTube video 6\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;div class=\"ratio ratio-16x9\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/VIDEO_ID_7\" title=\"YouTube video 7\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n   Previous    Next"
-  },
-  {
-    "objectID": "page1/page1_2.html#videos",
-    "href": "page1/page1_2.html#videos",
-    "title": "\nVideos \n",
-    "section": "Videos",
-    "text": "Videos\n\n\n\n\n\n\nMonday 10 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 11 July 2023\n\n\n\n\n\n\n\n\n\nWednesday 12 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 13 July 2023\n\n\n\n\n\n\n\n\n\nFriday 14 July 2023\n\n\n\n\n\n\n\n\n\nSaturday 15 July 2023\n\n\n\n\n\n\n\n\n\nSunday 16 July 2023"
-  },
-  {
-    "objectID": "page2/page2_2.html#packages",
-    "href": "page2/page2_2.html#packages",
-    "title": "\nDocumentation \n",
-    "section": "Packages",
-    "text": "Packages\n\nFor the code, we have used some packages to make our analyses.\n\n\n‘Numpy’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pandas’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Matplotlib’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pooch’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages."
-  },
-  {
-    "objectID": "page2/page2_2.html#classes",
-    "href": "page2/page2_2.html#classes",
-    "title": "\nDocumentation \n",
-    "section": "Classes",
-    "text": "Classes\n\n‘Text’\n\nIn the website, we have used the class named “text”.\n\n\nThis class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls :\n\n\n\ncolor : for the choice of the text color : black.\n\n\ntext-align : for the choice of the text alignement : justify.\n\n\nfont-family : for the choice of font : Lato, sans serif.\n\n\nfont-size : for the choice of text size : 15px.\n\n\nfont-weight : for the choice of the text weight (level of bold) : 500.\n\n\nmargin-bottom : for the choice of the spacing between paragraphs : 1em.\n\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Navbar’\n\nIn the website, we have used the class named “navbar”.\n\n\nThis class is used in all sections of the website to style the navigation bar on the right\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Nav’\n\nIn the website, we have used the class named “nav”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Content’\n\nIn the website, we have used the class named “content”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Footer’\n\nIn the website, we have used the class named “footer”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Pointilles-rectangle’\n\nIn the website, we have used the class named “pointilles-rectangle”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Bike’\n\nIn the website, we have used the class named “bike”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Trombinoscope’\n\nIn the website, we have used the class named “trombinoscope”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Member’\n\nIn the website, we have used the class named “member”.\n\n\nThis class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other.\n\n\nThis class is defined in the styles.css file."
-  },
-  {
-    "objectID": "page2/page2_2.html#fonctions",
-    "href": "page2/page2_2.html#fonctions",
-    "title": "\nDocumentation \n",
-    "section": "Fonctions",
-    "text": "Fonctions"
-  },
-  {
-    "objectID": "page2/page2_3.html#packages",
-    "href": "page2/page2_3.html#packages",
-    "title": "\nDocumentation \n",
-    "section": "Packages",
-    "text": "Packages\n\nFor the code, we have used some packages to make our analyses.\n\n\n‘Numpy’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pandas’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Matplotlib’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pooch’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages."
-  },
-  {
-    "objectID": "page2/page2_3.html#classes",
-    "href": "page2/page2_3.html#classes",
-    "title": "\nDocumentation \n",
-    "section": "Classes",
-    "text": "Classes\n\n‘Text’\n\nIn the website, we have used the class named “text”.\n\n\nThis class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls :\n\n\n\ncolor : for the choice of the text color : black.\n\n\ntext-align : for the choice of the text alignement : justify.\n\n\nfont-family : for the choice of font : Lato, sans serif.\n\n\nfont-size : for the choice of text size : 15px.\n\n\nfont-weight : for the choice of the text weight (level of bold) : 500.\n\n\nmargin-bottom : for the choice of the spacing between paragraphs : 1em.\n\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Navbar’\n\nIn the website, we have used the class named “navbar”.\n\n\nThis class is used in all sections of the website to style the navigation bar on the right\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Nav’\n\nIn the website, we have used the class named “nav”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Content’\n\nIn the website, we have used the class named “content”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Footer’\n\nIn the website, we have used the class named “footer”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Pointilles-rectangle’\n\nIn the website, we have used the class named “pointilles-rectangle”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Bike’\n\nIn the website, we have used the class named “bike”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Trombinoscope’\n\nIn the website, we have used the class named “trombinoscope”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Member’\n\nIn the website, we have used the class named “member”.\n\n\nThis class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other.\n\n\nThis class is defined in the styles.css file."
-  },
-  {
-    "objectID": "page2/page2_3.html#fonctions",
-    "href": "page2/page2_3.html#fonctions",
-    "title": "\nDocumentation \n",
-    "section": "Fonctions",
-    "text": "Fonctions"
-  },
-  {
-    "objectID": "page2/page2_2.html",
-    "href": "page2/page2_2.html",
-    "title": "\nFunctions \n",
-    "section": "",
-    "text": "Functions"
-  },
-  {
-    "objectID": "page2/page2_3.html#website-classes",
-    "href": "page2/page2_3.html#website-classes",
-    "title": "\nClasses \n",
-    "section": "Website classes",
-    "text": "Website classes\n\n‘Text’\n\nIn the website, we have used the class named “text”.\n\n\nThis class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls :\n\n\n\ncolor : for the choice of the text color : black.\n\n\ntext-align : for the choice of the text alignement : justify.\n\n\nfont-family : for the choice of font : Lato, sans serif.\n\n\nfont-size : for the choice of text size : 15px.\n\n\nfont-weight : for the choice of the text weight (level of bold) : 500.\n\n\nmargin-bottom : for the choice of the spacing between paragraphs : 1em.\n\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Navbar’\n\nIn the website, we have used the class named “navbar”.\n\n\nThis class is used in all sections of the website to style the navigation bar on the right\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Nav’\n\nIn the website, we have used the class named “nav”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Content’\n\nIn the website, we have used the class named “content”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Footer’\n\nIn the website, we have used the class named “footer”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Pointilles-rectangle’\n\nIn the website, we have used the class named “pointilles-rectangle”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Bike’\n\nIn the website, we have used the class named “bike”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Trombinoscope’\n\nIn the website, we have used the class named “trombinoscope”.\n\n\nThis class is used in the ’’ section to\n\n\nThis class is defined in the styles.css file.\n\n\n\n‘Member’\n\nIn the website, we have used the class named “member”.\n\n\nThis class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other.\n\n\nThis class is defined in the styles.css file."
-  },
-  {
-    "objectID": "page2/page2_3.html#python-classes",
-    "href": "page2/page2_3.html#python-classes",
-    "title": "\nClasses \n",
-    "section": "Python classes",
-    "text": "Python classes"
+    "text": "© 2024 - All rights reserved. MIT License | Privacy policy | About us"
   },
   {
     "objectID": "analyses/statistics.html#introduction",
@@ -406,18 +42,18 @@
     "text": "Conclusion\n\nTo conclude, from these preliminary analyses, we did not validate our hypothesis that the Tour de France had a positive impact on bicycle use in the city of Montpellier. But we have shown that it would be interesting to use other sources to justify these trends."
   },
   {
-    "objectID": "analyses/video.html#presentation",
-    "href": "analyses/video.html#presentation",
-    "title": "\nVideos \n",
-    "section": "Presentation",
-    "text": "Presentation\n\nOn this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\n\n\nYou can choose the date and the video will be interactive."
+    "objectID": "index.html#context",
+    "href": "index.html#context",
+    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
+    "section": "Context",
+    "text": "Context\n\nProblematic\n\nOur project will focus on the following question: “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?”.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.\n\n\n\nHypothesis\n\nBased on data from the Tour de France, we hypothesised that that there would be an increase in the number of people cycling during the Tour de France period. We believe that an event such as the Tour de France can encourage people to get on their bikes, whether just before, during or just after the event. In addition, we believe that these effects are not felt over a long period before and after the event, and that they dissipate quickly."
   },
   {
-    "objectID": "analyses/video.html#videos",
-    "href": "analyses/video.html#videos",
-    "title": "\nVideos \n",
-    "section": "Videos",
-    "text": "Videos\n\n\n\n\n\n\nMonday 10 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 11 July 2023\n\n\n\n\n\n\n\n\n\nWednesday 12 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 13 July 2023\n\n\n\n\n\n\n\n\n\nFriday 14 July 2023\n\n\n\n\n\n\n\n\n\nSaturday 15 July 2023\n\n\n\n\n\n\n\n\n\nSunday 16 July 2023"
+    "objectID": "index.html#data",
+    "href": "index.html#data",
+    "title": "\nWelcome to our project  bike analyses in Montpellier\n",
+    "section": "Data",
+    "text": "Data\n\nTo carry out this study, we selected several types of data.\n\n\nFirstly, we retrieved data on the journeys made by VéloMagg bikes between stations in the VéloMagg network in the Montpellier metropolitan area.\n\n\nSecondly, we have retrieved data for each of the bicycle counters (eco-counters) in production in the Montpellier Metropolitan Area, showing the number of bicycles (and piétions in some cases) counted. The daily data is the total of the previous day’s count. This information is divided into as many files as there are eco-counters. Each eco-counter is identified by a serial number, which we were able to find and associate with its latitude and longitude.\n\n\nAll the data we have selected was extracted between April 2023 and October 2023. This corresponds to 3 months before the Telethon and 3 months after, which we thought was a good margin for observing changes around the Tour de France and which is just over half a year (7 months)."
   },
   {
     "objectID": "documentation/functions.html",
@@ -425,6 +61,41 @@
     "title": "\nFunctions \n",
     "section": "",
     "text": "Functions"
+  },
+  {
+    "objectID": "footer/privacy_policy.html#introduction",
+    "href": "footer/privacy_policy.html#introduction",
+    "title": "\nPrivacy polity \n",
+    "section": "Introduction",
+    "text": "Introduction\n\nEFFECTIVE DATE: 2024-01-22\n\n\nWelcome to BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information.\n\n\n1. Information We Collect\n\nWe may collect the following types of information: Personal Information: Name, email address, phone number (when you fill out a form or subscribe to our newsletter). Usage Data: Information on how you use our site (e.g., pages visited, time spent on the site).\n\n\nCookies and Tracking Technologies: We use cookies to enhance user experience and analyze site traffic.\n\n\n\n2. How We Use Your Information\n\nWe use your information to:\n\n\n\nProvide and maintain our services.\n\n\nImprove the user experience on our site.\n\n\nSend you promotional content if you’ve opted in.\n\n\n\n\n3. Data Sharing and Disclosure\n\nWe do not sell your personal data. We may share information with trusted third-party providers for analytics or marketing purposes (e.g., Google Analytics).\n\n\n\n4. Your Rights\n\nYou have the right to:\n\n\n\nAccess your personal data.\n\n\nRequest correction or deletion of your data.\n\n\nOpt out of data collection (e.g., disable cookies).\n\n\n\n\n5. Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
+  },
+  {
+    "objectID": "footer/about_us.html#global-presentation",
+    "href": "footer/about_us.html#global-presentation",
+    "title": "\nAbout us \n",
+    "section": "Global presentation",
+    "text": "Global presentation\n\nWe are a team of 4 students at the Montpellier Faculty of Science. We are currently in the first year of our Masters in Statistics and Data Science. We are carrying out this project as part of the ‘Software Development’ teaching unit."
+  },
+  {
+    "objectID": "footer/about_us.html#team-members",
+    "href": "footer/about_us.html#team-members",
+    "title": "\nAbout us \n",
+    "section": "Team members",
+    "text": "Team members\n\n\n\n\nEmilie AIGOIN\n\n\nContributions:  Gantt diagram, website creation.\n\n\n\n\n\nSamira MAMANE SIDI\n\n\nContributions:  Readme redaction, video creation.\n\n\n\n\n\nAnne-Laure THOMAS\n\n\nContributions:  Website mockup, traffic prediction on the map.\n\n\n\n\n\nQingjian ZHU\n\n\nContributions:  Map visualization, bike layout on the map."
+  },
+  {
+    "objectID": "footer/about_us.html#closing-remarks",
+    "href": "footer/about_us.html#closing-remarks",
+    "title": "\nAbout us \n",
+    "section": "Closing remarks",
+    "text": "Closing remarks\n\nWe’re very proud to have been able to complete this project and hope you enjoy this website too.\n\n\nIf you have any questions please don’t hesitate to contact us by email (format: firstname.lastname@etu.umontpellier.fr). We will be delighted to try and provide answers to your questions.\n\n\nEnjoy!"
+  },
+  {
+    "objectID": "footer/MIT_license.html",
+    "href": "footer/MIT_license.html",
+    "title": "\nMIT License \n",
+    "section": "",
+    "text": "MIT License \n\n\n\nCopyright © - 2024 - BikeProjectT\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions.\n\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\nContact Us\n\nIf you have any questions about these Terms, please contact us at your email address."
   },
   {
     "objectID": "documentation/classes.html#website-classes",
@@ -448,10 +119,31 @@
     "text": "Packages \n\n\n\nFor the code, we have used some packages to make our analyses.\n\n\n‘Numpy’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pandas’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Matplotlib’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pooch’\n\nThis package was used to\n\n\nFor more details we can consult the documentation of this packages."
   },
   {
-    "objectID": "analyses/map.html#section",
-    "href": "analyses/map.html#section",
+    "objectID": "analyses/map.html#map-context",
+    "href": "analyses/map.html#map-context",
     "title": "\nInteractive map \n",
-    "section": "Section",
-    "text": "Section\n\nOn this page we can see an interactive map of the traffic of bikes in the town of Montpellier. We can choose a date and view:\n\n\n\nThe past traffic.\n\n\nThe prediction of the traffic for nexts days.\n\n\n\nWe have choose the date of ?? because it corresponds to the middle wek of the Tour de France and it’s the period examined in our problematic."
+    "section": "Map context",
+    "text": "Map context\n\nOn this page we can see an interactive map of the traffic of bikes in the town of Montpellier. We can choose a date and view:\n\n\n\nThe past traffic.\n\n\nThe prediction of the traffic for nexts days."
+  },
+  {
+    "objectID": "analyses/map.html#map-predictions",
+    "href": "analyses/map.html#map-predictions",
+    "title": "\nInteractive map \n",
+    "section": "Map predictions",
+    "text": "Map predictions\n\nPresentation\n\nThe interactive map below shows predicted bicycle traffic in the city of Montpellier from 10 July to 16 July 2023. These dates represent the intermediate week (2nd week out of 3) of the Tour de France.\n\n\nThe bicycle traffic predictions were made using the ‘Prophet’ model, a flexible tool for time series analysis. This model is particularly well suited to data with temporal variations, making it an ideal choice for modelling cycle traffic. The prediction was influenced by factors such as days of the week, weather and local events (such as the Tour de France). The predictions generated by Prophet have been integrated into the interactive map, making it possible to visualise predicted traffic levels on the various routes between stations. To make this prediction, we decided to calculate only the shortest paths between each of the stations and not all the possible paths, for the sake of optimising journey times and also to make the map easier to read.\n\n\n\nGraph\n\n\n\nOn this graph, the data is represented by coloured lines linking the different bicycle stations.\n\n\n\nCycle stations (Eco-counters)\n\nThe stations are represented by blue markers distributed around the city.\n\n\n\nPaths between stations\n\nThe lines connecting the stations correspond to the predicted paths between them. The colours of the lines vary according to the levels of intensity of cycle traffic, i.e. according to the number of cycles predicted to pass along the route:\n\n\n\nRed: Very high intensity (&gt; 1500).\n\n\nOrange: High intensity (1200-1500).\n\n\nYellow: Moderate intensity (900-1200).\n\n\nLight green: Low intensity (300-900).\n\n\nDark green: Very low intensity (&lt; 300).\n\n\n\n\nGeographical coverage\n\nPredictions cover a 15km radius around Montpellier, including areas such as Saint-Jean-de-Védas, Castelnau-le-Lez, and Villeneuve-lès-Maguelone. We decided not to extend this area because bike journeys were becoming rare and we weren’t sure whether a station further away would actually correspond to a journey between that station and Montpellier or just a journey within its city.\n\n\n\nLegend\n\nThe legend in the bottom left-hand corner explains the meaning of the line colours. The control at the top right allows you to view data for specific days. Several days can be selected at the same time, but we advise you to select the days one after the other for consistent predictions."
+  },
+  {
+    "objectID": "analyses/video.html#presentation",
+    "href": "analyses/video.html#presentation",
+    "title": "\nVideos \n",
+    "section": "Presentation",
+    "text": "Presentation\n\nOn this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.\n\n\nYou can choose the date and the video will be interactive."
+  },
+  {
+    "objectID": "analyses/video.html#videos",
+    "href": "analyses/video.html#videos",
+    "title": "\nVideos \n",
+    "section": "Videos",
+    "text": "Videos\n\n\n\n\n\n\nMonday 10 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 11 July 2023\n\n\n\n\n\n\n\n\n\nWednesday 12 July 2023\n\n\n\n\n\n\n\n\n\nTuesday 13 July 2023\n\n\n\n\n\n\n\n\n\nFriday 14 July 2023\n\n\n\n\n\n\n\n\n\nSaturday 15 July 2023\n\n\n\n\n\n\n\n\n\nSunday 16 July 2023"
   }
 ]
