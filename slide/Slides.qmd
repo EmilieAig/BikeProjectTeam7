@@ -1,0 +1,32 @@
+---
+title: "bikeprojectteam7"
+author: "1234"
+format: 
+ revealjs :
+     theme: serif
+
+---
+# Problématique 
+Comment... ?
+
+# Introduction 
+:::{.incremental}
+- Architecture du site 
+- Visualisation (video)
+- Visualisation (map)
+- Prévisions
+- Utilisation de gitHub?
+- Problèmes rencontrés 
+- Conclusion
+:::
+
+# Architecture du site 
+
+# Visualisation (video)
+
+# Visualisation (map)
+
+# Prévisions
+
+# Conclusion 
+Merci pour votre écoute.

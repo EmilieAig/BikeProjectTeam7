@@ -49,15 +49,33 @@ polygon = Polygon([
 # 使用自定义多边形提取自行车网络
 G = ox.graph_from_polygon(polygon, network_type='bike')
 
+
+# 定义要保留的道路类型
+desired_highways = {'primary', 'trunk', 'secondary', 'tertiary', 'secondary_link', 'unclassified', 'trunk_link', 'primary_link', 'cycleway', 'tertiary_link', 'living_street', 'track', 'bridleway', 'residential'}
+
+# 遍历图中的边并过滤筛选
+edges_to_remove = []
+for u, v, key, data in G.edges(keys=True, data=True):
+    highway = data.get('highway', None)
+    if isinstance(highway, list):
+        # 如果 highway 是列表，检查是否与 desired_highways 有交集
+        if not any(h in desired_highways for h in highway):
+            edges_to_remove.append((u, v, key))
+    elif highway not in desired_highways:
+        # 如果 highway 是单个值，直接检查是否在 desired_highways 中
+        edges_to_remove.append((u, v, key))
+
+# 删除不需要的边
+G.remove_edges_from(edges_to_remove)
+
+
 # 可视化网络
 print(f"nb edges: {G.number_of_edges()}")
 print(f"nb nodes: {G.number_of_nodes()}")
-
-
 fig, ax = ox.plot_graph(G)
 
 
-# %%
+# %% 将计数器的坐标和节点坐标进行匹配
 import osmnx as ox
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -80,7 +98,7 @@ counters['node_latitude'] = counters['nearest_node'].map(nodes['y'])
 # 5. 可视化网络及标记节点
 fig, ax = ox.plot_graph(G, show=False, close=False)
 
-# 绘制最近节点的位置（以红色标记）
+# 6. 绘制最近节点的位置（以红色标记）
 nearest_positions = counters[['node_longitude', 'node_latitude']].values
 ax.scatter(nearest_positions[:, 0], nearest_positions[:, 1], c='red', s=50, label='Nearest Nodes')
 
@@ -93,7 +111,7 @@ for u, v, data in G.edges(data=True):
     print(data.get('highway'))
 
 
-# %%
+# %% 导入某日数据
 import pandas as pd
 import os
 
@@ -216,7 +234,7 @@ for u, v, data in G.edges(data=True):
 print("边 intensity 已计算")
 
 
-# %%
+# %% 可视化部分，预期达到示例图片的效果
 # 3. 可视化图 G 的边 intensity
 import folium
 
@@ -242,6 +260,8 @@ def get_color(intensity):
 # 添加边到地图
 for u, v, data in G.edges(data=True):
     intensity = data.get('intensity', None)
+    highway_type = data.get('highway', 'Unknown')  # 获取道路种类
+
     if intensity is not None and not np.isnan(intensity):
         # 根据 intensity 设置颜色
         color = get_color(intensity)
@@ -262,15 +282,35 @@ for u, v, data in G.edges(data=True):
             coords,
             color=color,
             weight=3,  # 固定宽度
-            opacity=0.8
+            opacity=0.8,
+            tooltip=folium.Tooltip(f"Road Type: {highway_type}")  # 悬停时显示道路类型
         ).add_to(m)
+
+# 标记计数器节点
+for _, row in node_intensity.iterrows():
+    node = row['nearest_node']
+    intensity = row['intensity']
+    # 获取节点坐标
+    lat, lon = G.nodes[node]['y'], G.nodes[node]['x']
+    # 添加圆形标记
+    folium.CircleMarker(
+        location=(lat, lon),
+        radius=5,  # 标记的大小
+        color='#0074E0',  # 边框颜色
+        fill=True,
+        fill_color='#0074E0',  # 填充颜色
+        fill_opacity=0.8,
+        tooltip=folium.Tooltip(f"Intensity: {intensity}")  # 悬停时显示
+    ).add_to(m)        
 
 # 保存地图
 output_map_path = "../Data/Data_EcoCompt_Combined/edge_intensity_map.html"
 m.save(output_map_path)
 print(f"地图已保存到：{output_map_path}")
 
-# %%
+
+
+# %% 检查每条edges的属性是什么，以便能够了解有什么样的种类
 from collections import Counter
 
 # 提取所有边的 highway 属性
