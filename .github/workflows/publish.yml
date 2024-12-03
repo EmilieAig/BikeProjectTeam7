@@ -1,7 +1,11 @@
 on:
   workflow_dispatch:
   push:
-    branches: main
+    branches: 
+      - main
+    pull_request:
+      branches:
+        - main
 
 name: Quarto Publish
 
@@ -29,6 +33,5 @@ jobs:
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: main
-          output-dir: docs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
