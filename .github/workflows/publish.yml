@@ -29,7 +29,6 @@ jobs:
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: main
-          working-directory: Code/Scripts/Website
           output-dir: docs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

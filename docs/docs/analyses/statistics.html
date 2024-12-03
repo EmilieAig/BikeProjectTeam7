@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>packages – &lt;a href="/" class="navbar-brand"&gt;
+<title>statistics – &lt;a href="/" class="navbar-brand"&gt;
   &lt;i class="fas fa-home"&gt;&lt;/i&gt;
 &lt;/a&gt;</title>
 <style>
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -155,10 +155,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#numpy" id="toc-numpy" class="nav-link active" data-scroll-target="#numpy">‘Numpy’</a></li>
-  <li><a href="#pandas" id="toc-pandas" class="nav-link" data-scroll-target="#pandas">‘Pandas’</a></li>
-  <li><a href="#matplotlib" id="toc-matplotlib" class="nav-link" data-scroll-target="#matplotlib">‘Matplotlib’</a></li>
-  <li><a href="#pooch" id="toc-pooch" class="nav-link" data-scroll-target="#pooch">‘Pooch’</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -170,46 +171,91 @@ ul.task-list li input[type="checkbox"] {
 
 <div style="text-align: center;">
 <h1>
-Packages <i class="fas fa-book-open"></i>
+Statistics <i class="fas fa-chart-line"></i>
 </h1>
 </div>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p class="text">
-For the code, we have used some packages to make our analyses.
-</p>
-<section id="numpy" class="level3">
-<h3 class="anchored" data-anchor-id="numpy">‘Numpy’</h3>
-<p class="text">
-This package was used to
+On this page, we present a short preliminary statistical analysis of the data we selected (see home page for a detailed explanation of our data).
 </p>
 <p class="text">
-For more details we can consult the <a href="https://numpy.org/doc/">documentation</a> of this packages.
+Our question was “What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists’ behaviors evolved before and after this major event?” and we hypothesized that there would be an increase in the number of people cycling during the Tour de France period. A sporting event like this encourages people to get back into sport, and cycling in particular.
 </p>
 </section>
-<section id="pandas" class="level3">
-<h3 class="anchored" data-anchor-id="pandas">‘Pandas’</h3>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
 <p class="text">
-This package was used to
+We used sorted data corresponding to the number of bicycles passing in front of counters located in the city of Montpellier and compiled them into a single dataset. The statistical analyses focused on the following periods :
+</p>
+<ul class="text">
+<li>
+Before the Tour de France : April to June.
+</li>
+<li>
+During the Tour de France : July 1st to July 23rd.
+</li>
+<li>
+After the Tour de France : late July to October.
+</li>
+</ul>
+<p class="text">
+We carried out a number of statistical analyses to see if our hypothesis could be validated. These analyses are not intended to be taken literally, as there are many other parameters to be taken into account, but they are a short preliminary study of our data.
 </p>
 <p class="text">
-For more details we can consult the <a href="https://pandas.pydata.org/docs/">documentation</a> of this packages.
+We began by performing descriptive analyses to give us a visual representation of our data. We then carried out tests to check the normality and homogeneity of the variances in order to choose the appropriate statistical test. Finally, we performed the test and compared the results with our hypothesis.
 </p>
 </section>
-<section id="matplotlib" class="level3">
-<h3 class="anchored" data-anchor-id="matplotlib">‘Matplotlib’</h3>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
 <p class="text">
-This package was used to
+We started by conducting descriptive analyses to get a first idea of our data. We found an average of 610.06 passes in front of eco-counters during the period before the Tour de France 523.07 passes during the Tour de France and 599.80 passes after the Tour de France. We see that there seems to be a slight decrease during the Tour de France, which would be the opposite of our hypothesis, but we will see if this difference is significant.
 </p>
 <p class="text">
-For more details we can consult the <a href="https://matplotlib.org/stable/index.html">documentation</a> of this packages.
+Following our descriptive analyses, we obtained the following graph:
+</p>
+<p><img src="../images/intensity_graph.svg" alt="Graph_1" width="1000px"></p>
+<p class="text">
+This graph shows the total number of bicycles passing in front of the city of Montpellier’s eco-counters per week. Please note that this data does not correspond to the number of bicycles, as a bicycle may be counted several times if it passes in front of several counters. This data therefore corresponds to the total number of journeys made by cyclists in Montpellier (number of times they pass in front of a counter). We can see that the Tour de France period is highlighted in green.
+</p>
+<p class="text">
+Visually, we can see that there does not seem to be an increase during the period of the Tour de France compared with the periods before and after. We also note that there is a sharp decrease in the number of crossings in front of a meter during the period of August and that it goes back to early September.
+</p>
+<p class="text">
+We then continued by checking the homogeneity of variances and normality. Then, given that normality was not verified, we performed a Kruskal Wallis test (because we had several independent groups and only one variable of interest). We obtained the following graph to represent the differences between our groups.
+</p>
+<p><img src="../images/boxplot.svg" alt="Graph_2" width="800px"></p>
+<p class="text">
+This graph is a boxplot that represents the number of passes in front of eco-counters according to our three periods of interest.
+</p>
+<ul class="text">
+<li>
+The box shows the interquartile range, which contains the middle 50% of the data (from the 25th to the 75th percentile).
+</li>
+<li>
+The horizontal line inside the box représents the median (the middle value of the dataset).
+</li>
+<li>
+The whiskerw extend to the smallest and largest values within 1.5 times the interquartile range.
+</li>
+</ul>
+<p class="text">
+Our analyses by the test of Kruskal Wallis showed us that there did not seem to be a significant difference between our different periods in terms of the number of passages in front of eco-counters of the vulle de Montpellier. Indeed, we found a p-value of 0.16 and an H-value of 3.59. Thus, the differences do not seem to be significant.
 </p>
 </section>
-<section id="pooch" class="level3">
-<h3 class="anchored" data-anchor-id="pooch">‘Pooch’</h3>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
 <p class="text">
-This package was used to
+Our analyses seem to show that there is no significant difference in the number of cycles passing through eco-counters in the city of Montpellier between the periods before, during and after the Tour de France. However, if we look at the first graph we got, we can say that this evolution could be linked to other factors such as school and work holiday periods. Indeed, we note that there is a decrease at the beginning of the summer holiday period (July) and that seems to be accentuated during the August period. In addition, at the beginning of September, during the school year, there seems to be a strong increase in the number of bicycle trips.
 </p>
 <p class="text">
-For more details we can consult the <a href="https://www.fatiando.org/pooch/latest/">documentation</a> of this packages.
+Thus, it would be interesting to do more detailed analyses than those we have done, but also to look at the link with school holidays.
+</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p class="text">
+To conclude, from these preliminary analyses, we did not validate our hypothesis that the Tour de France had a positive impact on bicycle use in the city of Montpellier. But we have shown that it would be interesting to use other sources to justify these trends.
 </p>
 
 
@@ -459,7 +505,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/EmilieAig\.github\.io\/BikeProjectTeam7\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

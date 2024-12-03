@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>video – &lt;a href="/" class="navbar-brand"&gt;
+<title>packages – &lt;a href="/" class="navbar-brand"&gt;
   &lt;i class="fas fa-home"&gt;&lt;/i&gt;
 &lt;/a&gt;</title>
 <style>
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -155,8 +155,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#presentation" id="toc-presentation" class="nav-link active" data-scroll-target="#presentation">Presentation</a></li>
-  <li><a href="#videos" id="toc-videos" class="nav-link" data-scroll-target="#videos">Videos</a></li>
+  <li><a href="#numpy" id="toc-numpy" class="nav-link active" data-scroll-target="#numpy">‘Numpy’</a></li>
+  <li><a href="#pandas" id="toc-pandas" class="nav-link" data-scroll-target="#pandas">‘Pandas’</a></li>
+  <li><a href="#matplotlib" id="toc-matplotlib" class="nav-link" data-scroll-target="#matplotlib">‘Matplotlib’</a></li>
+  <li><a href="#pooch" id="toc-pooch" class="nav-link" data-scroll-target="#pooch">‘Pooch’</a></li>
   </ul>
 </nav>
     </div>
@@ -168,90 +170,47 @@ ul.task-list li input[type="checkbox"] {
 
 <div style="text-align: center;">
 <h1>
-Videos <i class="fas fa-video"></i>
+Packages <i class="fas fa-book-open"></i>
 </h1>
 </div>
-<section id="presentation" class="level2">
-<h2 class="anchored" data-anchor-id="presentation">Presentation</h2>
 <p class="text">
-On this page we can see a youtube video of the Velomagg bikes traffic in Montpellier.
+For the code, we have used some packages to make our analyses.
+</p>
+<section id="numpy" class="level3">
+<h3 class="anchored" data-anchor-id="numpy">‘Numpy’</h3>
+<p class="text">
+This package was used to
 </p>
 <p class="text">
-You can choose the date and the video will be interactive.
+For more details we can consult the <a href="https://numpy.org/doc/">documentation</a> of this packages.
 </p>
 </section>
-<section id="videos" class="level2">
-<h2 class="anchored" data-anchor-id="videos">Videos</h2>
-<div class="container">
-<div class="video-container">
-<video src="/images/video_1.mp4" controls=""></video>
-</div>
-<div class="text">
-<p>
-Monday 10 July 2023
+<section id="pandas" class="level3">
+<h3 class="anchored" data-anchor-id="pandas">‘Pandas’</h3>
+<p class="text">
+This package was used to
 </p>
-</div>
-</div>
-<div class="container-r">
-<div class="video-container-r">
-<video src="/images/video_1.mp4" controls=""></video>
-</div>
-<div class="text">
-<p>
-Tuesday 11 July 2023
+<p class="text">
+For more details we can consult the <a href="https://pandas.pydata.org/docs/">documentation</a> of this packages.
 </p>
-</div>
-</div>
-<div class="container">
-<div class="video-container">
-<video src="/images/video_1.mp4" controls=""></video>
-</div>
-<div class="text">
-<p>
-Wednesday 12 July 2023
+</section>
+<section id="matplotlib" class="level3">
+<h3 class="anchored" data-anchor-id="matplotlib">‘Matplotlib’</h3>
+<p class="text">
+This package was used to
 </p>
-</div>
-</div>
-<div class="container-r">
-<div class="video-container-r">
-<video src="/images/video_1.mp4" controls=""></video>
-</div>
-<div class="text">
-<p>
-Tuesday 13 July 2023
+<p class="text">
+For more details we can consult the <a href="https://matplotlib.org/stable/index.html">documentation</a> of this packages.
 </p>
-</div>
-</div>
-<div class="container">
-<div class="video-container">
-<video src="/images/video_1.mp4" controls=""></video>
-</div>
-<div class="text">
-<p>
-Friday 14 July 2023
+</section>
+<section id="pooch" class="level3">
+<h3 class="anchored" data-anchor-id="pooch">‘Pooch’</h3>
+<p class="text">
+This package was used to
 </p>
-</div>
-</div>
-<div class="container-r">
-<div class="video-container-r">
-<video src="/images/video_1.mp4" controls=""></video>
-</div>
-<div class="text">
-<p>
-Saturday 15 July 2023
+<p class="text">
+For more details we can consult the <a href="https://www.fatiando.org/pooch/latest/">documentation</a> of this packages.
 </p>
-</div>
-</div>
-<div class="container">
-<div class="video-container">
-<video src="/images/video_1.mp4" controls=""></video>
-</div>
-<div class="text">
-<p>
-Sunday 16 July 2023
-</p>
-</div>
-</div>
 
 
 </section>
@@ -500,7 +459,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/EmilieAig\.github\.io\/BikeProjectTeam7\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
