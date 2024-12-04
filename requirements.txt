@@ -20,7 +20,7 @@ nest-asyncio==1.6.0
 numpy==2.1.3
 opencv-python
 osmnx==1.9.4
-pandas==2.2.3
+pandas
 peep==2.0.0
 pillow==10.4.0
 plotly==5.24.1
