@@ -1,0 +1,46 @@
+# _quarto.yml
+project:
+  type: website
+  output-dir: docs
+
+execute:
+  freeze: auto
+
+website:
+  title: |
+    <a href="/" class="navbar-brand">
+      <i class="fas fa-home"></i>
+    </a>
+  navbar:
+    left:
+      - text: "Analyses"
+        menu:
+          - text: "Statistics"
+            href: analyses/statistics.qmd
+          - text: "Interactive map"
+            href: analyses/map.qmd
+          - text: "Video"
+            href: analyses/video.qmd
+      - text: "Documentation"
+        menu:
+          - text: "Packages"
+            href: documentation/packages.qmd
+          - text: "Functions"
+            href: documentation/functions.qmd
+          - text: "Classes"
+            href: documentation/classes.qmd
+    right:
+      - icon: github
+        href: https://github.com/EmilieAig/BikeProjectTeam7
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    include-after-body: footer.qmd
+    toc: true
+    toc-location: right
+    toc-depth: 4
+    page-layout: article
