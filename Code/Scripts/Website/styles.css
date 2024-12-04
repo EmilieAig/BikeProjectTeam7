@@ -1,79 +1,131 @@
 /* styles.css : to determine the graphic chart */
 
-/* Style for main titles */
+/* ---------------------------- */
+/*        TITLES STYLES         */
+/* ---------------------------- */
+
 h1 {
   color: black;
   font-family: 'Lato', sans-serif;
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 500;
   margin-bottom: 1.5em;
 }
 
-/* Style for subtitles 2 */
 h2 {
   color: black;
   font-family: 'Lato', sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
   margin-bottom: 1em;
-  border-bottom: 2px solid #e8e5e5; /* Trait gris sous h3 */
-  padding-bottom: 5px; /* Décale la ligne vers le bas */
+  border-bottom: 2px solid #e8e5e5;   /* Grey underline for h2 */
+  padding-bottom: 5px;                  /* Push the underline down */
 }
 
-/* Style for subtitles 3 */
 h3 {
   color: black;
   font-family: 'Lato', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 1em;
-  border-bottom: 2px solid #e8e5e5; /* Trait gris sous h3 */
-  padding-bottom: 5px; /* Décale la ligne vers le bas */
+  border-bottom: 2px solid #e8e5e5;   /* Grey underline for h3 */
+  padding-bottom: 5px;
 }
 
-/* Style for text */
-.text {
+h4 {
   color: black;
-  text-align: justify; 
   font-family: 'Lato', sans-serif;
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 1em;
+  border-bottom: 2px solid #e8e5e5;
+  padding-bottom: 5px;
 }
 
+h5 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* ---------------------------- */
+/*        TEXT STYLES           */
+/* ---------------------------- */
+
+.text {
+  color: black;
+  text-align: justify; 
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+/* Bullet points in text */
 .text ul {
-  list-style-type: disc; /* Définit des puces (bullet points) */
-  padding-left: 20px;     /* Espace à gauche pour les puces */
+  list-style-type: disc;
+  padding-left: 20px;                   /* Left padding for bullets */
 }
 
 .text li {
-  margin-bottom: 5px;    /* Espace entre chaque élément de la liste */
+  margin-bottom: 5px;                   /* Space between list items */
 }
 
-/* Style for navigation bar */
+/* ---------------------------- */
+/*    LAYOUT AND GLOBAL STYLES  */
+/* ---------------------------- */
+
+.page-content {
+  max-width: 2000px !important;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 2000px) {
+  .content {
+    margin-right: 0;
+  }
+  
+  nav.toc-content {
+    display: none;
+  }
+}
+
+/* ---------------------------- */
+/*     NAVIGATION BAR STYLES    */
+/* ---------------------------- */
+
 .navbar {
-  background-color: #209f59 !important;   /* background color */
-  color: black;                           /* text color */
+  background-color: #209f59 !important;   /* Background color */
+  color: black;                           /* Text color */
 }
 
-/* Style for logo or title color */
 .navbar-brand {
   color: black !important;
   font-family: 'Lato', sans-serif;
+  font-size: 18px;
 }
 
-/* Style for navigation links */
 .nav-link {
   color: black !important;
+  font-size: 16px;
   font-family: 'Lato', sans-serif;
 }
 
-/* Style for navigation links when computer mouse hovers over them */
 .nav-link:hover {
   color: white !important;
 }
 
-/* Couleurs des sous-menus en mode clair */
+.navbar-brand:hover {
+  color: white !important;
+}
+
+/* Light mode dropdown menus */
 body:not(.quarto-dark) .navbar .dropdown-menu {
   color: black;
   background-color: white;
@@ -88,56 +140,55 @@ body:not(.quarto-dark) .navbar .dropdown-item:hover {
   color: black;
 }
 
-/* Global style to the main content section */
-.content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2em;
-}
+/* ---------------------------- */
+/*        FOOTER STYLES         */
+/* ---------------------------- */
 
 .custom-footer {
-  background-color: #e3e4e6; /* Couleur de fond */
+  background-color: #e3e4e6;
   font-family: 'Lato', sans-serif;
-  color: #333; /* Couleur du texte */
+  color: #333;
   padding: 5px;
   text-align: center;
   font-size: 0.8em;
   border-top: 1px solid #ddd;
-  position: fixed; /* Fixe le footer en bas de la fenêtre */
+  position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%; /* Assure une largeur de 100% */
-  box-sizing: border-box; /* Inclus le padding dans la largeur */
+  width: 100%;
+  box-sizing: border-box;
   z-index: 1000;
 }
 
-/* Enlève la couleur bleue et le soulignement par défaut des liens */
 .custom-footer a {
-  color: #333; /* Couleur du texte normale */
-  text-decoration: none; /* Supprime le soulignement */
+  color: #333;
+  text-decoration: none;
 }
 
-/* Effet de survol des liens */
 .custom-footer a:hover {
-  color: #209f59; /* Couleur bleue lors du survol */
-  text-decoration: underline; /* Soulignement lors du survol */
+  color: #209f59;
+  text-decoration: underline;
 }
 
-.custom-footer .privacy-policy {
-  margin-left: 20px; /* Décale "Privacy policy" vers la droite */
+.custom-footer .MIT-license {
+  margin-left: 20px;                /* Pushes "Privacy policy" to the right */
 }
+
+/* ---------------------------- */
+/*   DASHED LINE & ANIMATION    */
+/* ---------------------------- */
 
 .pointilles-rectangle {
   border: none;
-  border-top: 5px dashed #000000; /* Bordure pointillée */
-  width: 100%;                      /* Largeur de la ligne */
-  margin: 0 auto;                  /* Centrer la ligne */
-  background: repeating-linear-gradient(90deg, #000000 0px, #000000 20px, transparent 20px, transparent 40px); /* Augmenter la taille des points */
-  background-size: 400px 100%;      /* Augmenter la taille des points et de l'espacement */
+  border-top: 5px dashed #000000;   /* Dashed border */
+  width: 100%;                  
+  margin: 0 auto;               
+  background: repeating-linear-gradient(90deg, #000000 0px, #000000 20px, transparent 20px, transparent 40px); 
+  background-size: 400px 100%;
 }
 
 .bike {
-  animation: move-dashed-line 10s linear infinite; /* Animation */
+  animation: move-dashed-line 10s linear infinite;  /* Animation */
 }
 
 @keyframes move-dashed-line {
@@ -149,21 +200,36 @@ body:not(.quarto-dark) .navbar .dropdown-item:hover {
   }
 }
 
+/* ---------------------------- */
+/*       TROMBINOSCOPE          */
+/* ---------------------------- */
+
 .trombinoscope {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-.member {
-  text-align: center;
-  max-width: 180px;
-}
-.member img {
-  border-radius: 10%;
+  flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
+  gap: 10px; /* Espacement entre les membres */
+  justify-content: space-around; /* Répartit les éléments uniformément */
+  align-items: center; /* Aligne les éléments verticalement */
 }
 
-/* Styles de base */
+.member {
+  text-align: center;
+  max-width: 180px; /* Taille maximale de chaque carte membre */
+  flex: 1; /* Permet à chaque élément de s'adapter pour rester sur une ligne */
+}
+
+.member img {
+  border-radius: 10%; /* Maintient les bordures arrondies */
+  max-width: 100%; /* Empêche les images de dépasser leur conteneur */
+  width: 140px; /* Largeur fixée pour toutes les images */
+  height: 120px; /* Hauteur fixée pour toutes les images */
+  object-fit: cover; /* Pour que l'image remplisse l'espace sans déformer son ratio */
+}
+
+/* ---------------------------- */
+/*       DARK MODE STYLES       */
+/* ---------------------------- */
+
 :root {
   --text-color-light: black;
   --text-color-dark: #e0e0e0;
@@ -171,15 +237,12 @@ body:not(.quarto-dark) .navbar .dropdown-item:hover {
   --background-color-dark: #474646;
 }
 
-/* Mode sombre */
-
-/* Mode sombre */
+/* Dark mode adjustments */
 body.quarto-dark {
   color: var(--text-color-dark);
   background-color: var(--background-color-dark);
 }
 
-/* Ajustements spécifiques pour le mode sombre */
 body.quarto-dark h1,
 body.quarto-dark h2,
 body.quarto-dark h3 {
@@ -201,42 +264,85 @@ body.quarto-dark .nav-link {
 }
 
 body.quarto-dark a {
-  color: #3498db; /* Couleur de lien visible en mode sombre */
+  color: #3498db;
 }
 
 body.quarto-dark .custom-footer {
-  background-color: #232323; /* Nouvelle couleur de fond sombre */
-  color: #e0e0e0; /* Couleur de texte claire */
+  background-color: #232323;
+  color: #e0e0e0;
 }
 
 body.quarto-dark .custom-footer a {
-  color: white; /* Couleur de liens en mode sombre */
+  color: white;
 }
 
 body.quarto-dark .custom-footer a:hover {
-  color: #209f59; /* Couleur de survol des liens */
+  color: #209f59;
 }
 
-/* Couleur des liens (encres) en mode clair */
-a {
-  color: #209f59; /* Changez cette couleur selon vos préférences */
-  text-decoration: none; /* Supprime le soulignement par défaut */
+/* ---------------------------- */
+/*       IMAGES STYLES          */
+/* ---------------------------- */
+
+img .member {
+  max-width: 100%; /* Limite la largeur de l'image au conteneur */
+  width: 150px; /* Spécifie la largeur en pixels (ajuste selon tes besoins) */
+  height: 110px; /* Garde les proportions de l'image */
+  display: block;
+  margin: 0 auto; /* Centre l'image */
 }
 
-/* Couleur des liens lors du survol (hover) en mode clair */
-a:hover {
-  color: #209f59; /* Couleur différente au survol */
-  text-decoration: underline; /* Ajoute un soulignement au survol */
+img, table {
+  max-width: 100%;
+  height: auto;
 }
 
-/* Couleur des liens en mode sombre */
-body.quarto-dark a {
-  color: #209f59; /* Changez cette couleur selon vos préférences */
-  text-decoration: none; /* Supprime le soulignement par défaut */
+/* ---------------------------- */
+/*       VIDEOS STYLES          */
+/* ---------------------------- */
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;  /* Ajoute un espace en dessous du bloc */
 }
 
-/* Couleur des liens au survol en mode sombre */
-body.quarto-dark a:hover {
-  color: #209f59; /* Couleur au survol */
-  text-decoration: underline; /* Ajoute un soulignement au survol */
+.video-container {
+  flex: 2;  /* Augmente la proportion de l'espace attribuée à la vidéo */
+  margin-right: 20px;
+}
+
+.video-container video {
+  width: 100%;  /* La vidéo occupe toute la largeur du conteneur */
+  height: auto;  /* Garde les proportions de la vidéo */
+  border: 1px solid #ccc;
+}
+
+.container-r {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: row-reverse;  /* Inverse l'ordre des éléments (vidéo à droite et texte à gauche) */
+  margin-bottom: 20px;  /* Ajoute un espace en dessous du bloc */
+}
+
+.video-container-r {
+  flex: 2;  /* Prend plus de place que le texte */
+  margin-left: 20px;  /* Espacement à gauche pour la vidéo (inverse de margin-right) */
+  max-width: 70%;  /* Limite la taille de la vidéo à 70% de la largeur du conteneur */
+}
+
+.video-container-r video {
+  width: 100%;  /* La vidéo occupe toute la largeur du conteneur */
+  height: auto;  /* Garde les proportions de la vidéo */
+  border: 1px solid #ccc;
 }
