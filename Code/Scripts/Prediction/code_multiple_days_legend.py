@@ -205,6 +205,6 @@ for date in dates_of_interest:
 LayerControl().add_to(m)
 
 # Save the map to an HTML file
-map_file = "bike_traffic_map.html"
+map_file = "bike_traffic_prediction_map.html"
 m.save(map_file)
 print(f"Map saved as {map_file}")
