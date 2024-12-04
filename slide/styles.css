@@ -1,0 +1,25 @@
+
+.reveal .slides section:first-of-type {
+    background-color: #bbdabb; /* Couleur verte */
+    margin: 0;
+    padding: 1em; /* Ajustez les espacements internes si nécessaire */
+    height: 100%; /* Occupe toute la hauteur */
+    width: 100%; /* Assure que la couleur couvre toute la largeur */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+    overflow: hidden; /* Évite que quelque chose déborde */
+}
+
+/* Applique ces critères à tous les h2 des slides */
+.reveal .slides h2 {
+    padding: 12px; /* Optionnel : ajoute un espace autour du texte */
+    text-align: center;
+}
+
+.text {
+    color: black;
+    text-align: justify; 
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
