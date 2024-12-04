@@ -94,24 +94,4 @@ format:
 <p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
 
 ## Python classes
-## Class: BikeAnimation
-This class is used to generate an animation of bike trips based on trip data and an OpenStreetMap graph.
 
-### Constructor Parameters
-- `input_file` (str): Path to the CSV file containing trip data.
-- `place_name` (str, optional): Name of the city or region to load the OSM graph for. Default is "Montpellier, France".
-- `target_date` (str or datetime, optional): Target date to filter trips.
-- `output_video` (str, optional): Name of the generated video file. Default is "bike_animation.mp4".
-- ...
-
-### Main Attributes
-- `df`: A pandas DataFrame containing the trip data.
-- `G`: The OpenStreetMap graph for the specified region.
-- ...
-
-### Methods
-- `precompute_route(row)`: Calculates the shortest route between two points.
-- `save_graph_background()`: Generates and saves a background image of the graph.
-- `create_animation()`: Creates a video animation from the trips.
-
-**Note:** For detailed explanations of the methods, see the [Functions](#functions) section.
