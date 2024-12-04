@@ -35,3 +35,28 @@ format:
 <p class = "text"> This package was used to </p>
 
 <p class = "text"> For more details we can consult the <a href="https://www.fatiando.org/pooch/latest/">documentation</a> of this packages. </p>
+
+### 'Geopy'
+<p class = "text"> This package was used to </p>
+
+<p class = "text"> For more details we can consult the <a href=" https://geopy.readthedocs.io/en/stable/">documentation</a> of this packages. </p>
+
+### 'Osmnx'
+<p class = "text"> This package was used to </p>
+
+<p class = "text"> For more details we can consult the <a href="https://osmnx.readthedocs.io/en/stable/">documentation</a> of this packages. </p>
+
+### 'Seaborn'
+<p class = "text"> This package was used to </p>
+
+<p class = "text"> For more details we can consult the <a href=" https://seaborn.pydata.org/">documentation</a> of this packages. </p>
+
+### 'Tqdm'
+<p class = "text"> This package was used to </p>
+
+<p class = "text"> For more details we can consult the <a href="https://tqdm.github.io/">documentation</a> of this packages. </p>
+
+### 'Moviepy'
+<p class = "text"> This package was used to </p>
+
+<p class = "text"> For more details we can consult the <a href="https://moviepy.readthedocs.io/en/latest/">documentation</a> of this packages. </p>
