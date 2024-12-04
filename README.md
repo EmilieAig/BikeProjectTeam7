@@ -39,8 +39,8 @@ Here is a diagram of the architecture of our project, detailing the location of 
     │     └── Oral.txt
     ├── RoadMap/
     │     └── README.md
-    ├── Website
-    ├── docs
+    ├── Website/
+    ├── docs/
     ├── .gitignore
     ├── README.md
     └── requirements.txt 
