@@ -49,6 +49,20 @@
     "text": "Introduction\n\nEFFECTIVE DATE: 2024-01-22\n\n\nWelcome to BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information.\n\n\n1. Information We Collect\n\nWe may collect the following types of information: Personal Information: Name, email address, phone number (when you fill out a form or subscribe to our newsletter). Usage Data: Information on how you use our site (e.g., pages visited, time spent on the site).\n\n\nCookies and Tracking Technologies: We use cookies to enhance user experience and analyze site traffic.\n\n\n\n2. How We Use Your Information\n\nWe use your information to:\n\n\n\nProvide and maintain our services.\n\n\nImprove the user experience on our site.\n\n\nSend you promotional content if you’ve opted in.\n\n\n\n\n3. Data Sharing and Disclosure\n\nWe do not sell your personal data. We may share information with trusted third-party providers for analytics or marketing purposes (e.g., Google Analytics).\n\n\n\n4. Your Rights\n\nYou have the right to:\n\n\n\nAccess your personal data.\n\n\nRequest correction or deletion of your data.\n\n\nOpt out of data collection (e.g., disable cookies).\n\n\n\n\n5. Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
   },
   {
+    "objectID": "documentation/functions.html#method-precompute_route",
+    "href": "documentation/functions.html#method-precompute_route",
+    "title": "\nFunctions \n",
+    "section": "Method: precompute_route",
+    "text": "Method: precompute_route\nPrecompute the shortest route for a single trip.\nGiven a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph.\n\nParameters\n\nrow (pandas.Series):\nA row from the input DataFrame containing trip information.\nThe row must include the following columns:\n\n'Departure_latitude', 'Departure_longitude'\n'Return_latitude', 'Return_longitude'\n\n\n\n\nReturns\n\nlist of int or None:\nA list of node IDs representing the shortest path in the graph, or None if the route cannot be computed.\n\n\n\nExamples\n\nExample 1: Precompute the shortest route for a single trip\nimport pandas as pd\n\nrow = pd.Series({\n    \"Departure_latitude\": 43.608,\n    \"Departure_longitude\": 3.879,\n    \"Return_latitude\": 43.610,\n    \"Return_longitude\": 3.881\n})\n\nanimation.precompute_route(row)\n# Output: [123456, 123457, 123458, ...]"
+  },
+  {
+    "objectID": "documentation/functions.html#method-create_animation",
+    "href": "documentation/functions.html#method-create_animation",
+    "title": "\nFunctions \n",
+    "section": "Method: create_animation",
+    "text": "Method: create_animation\nGenerate a video animation of the bike trips.\nThis method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file.\n\nReturns\n\nNone:\nThis method does not return any value.\n\n\n\nNotes\n\nThis method uses multiprocessing to parallelize frame generation, which can be resource-intensive.\nEnsure that you have sufficient disk space for temporary files generated during the process.\n\n\n\nExamples\n\nExample 1: Generate the animation for the loaded dataset\nanimation = BikeAnimation(input_file=\"data/trips.csv\")\nanimation.create_animation()"
+  },
+  {
     "objectID": "documentation/packages.html",
     "href": "documentation/packages.html",
     "title": "\nPackages \n",
@@ -74,7 +88,35 @@
     "href": "documentation/classes.html#class-bikeanimation",
     "title": "\nClasses \n",
     "section": "Class: BikeAnimation",
-    "text": "Class: BikeAnimation\nThis class is used to generate an animation of bike trips based on trip data and an OpenStreetMap graph.\n\nConstructor Parameters\n\ninput_file (str): Path to the CSV file containing trip data.\nplace_name (str, optional): Name of the city or region to load the OSM graph for. Default is “Montpellier, France”.\ntarget_date (str or datetime, optional): Target date to filter trips.\noutput_video (str, optional): Name of the generated video file. Default is “bike_animation.mp4”.\n…\n\n\n\nMain Attributes\n\ndf: A pandas DataFrame containing the trip data.\nG: The OpenStreetMap graph for the specified region.\n…\n\n\n\nMethods\n\nprecompute_route(row): Calculates the shortest route between two points.\nsave_graph_background(): Generates and saves a background image of the graph.\ncreate_animation(): Creates a video animation from the trips.\n\nNote: For detailed explanations of the methods, see the Functions section."
+    "text": "Class: BikeAnimation\nGenerate an animation of bike trips using geospatial data and OpenStreetMap.\nThis class processes bike trip data, computes routes on a graph derived from OpenStreetMap, and generates a video animation visualizing the trips over time."
+  },
+  {
+    "objectID": "documentation/classes.html#parameters",
+    "href": "documentation/classes.html#parameters",
+    "title": "\nClasses \n",
+    "section": "Parameters",
+    "text": "Parameters\n\ninput_file (str):\nPath to the CSV file containing trip data. The file must include the following columns:\n'Departure_Date', 'Departure_Time', 'Return_Date', 'Return_Time',\n'Departure_latitude', 'Departure_longitude', 'Return_latitude', 'Return_longitude'.\nplace_name (str, optional):\nName of the place to fetch the OpenStreetMap graph for, e.g., \"Montpellier, France\".\nDefault is \"Montpellier, France\".\ntarget_date (str or datetime-like, optional):\nFilter trips for a specific date. If not specified, all dates in the input file are used.\nDefault is None.\noutput_video (str, optional):\nPath to the output video file. Default is \"bike_animation.mp4\".\nfps (int, optional):\nFrames per second for the output video. Default is 30.\nminutes_per_second (int, optional):\nThe speed ratio of real-world minutes to animation seconds.\nDefault is 120 minutes per animation second.\nsample_size (int, optional):\nNumber of trips to process from the input file. If None, all trips are processed.\nDefault is None."
+  },
+  {
+    "objectID": "documentation/classes.html#attributes",
+    "href": "documentation/classes.html#attributes",
+    "title": "\nClasses \n",
+    "section": "Attributes",
+    "text": "Attributes\n\ndf (pandas.DataFrame):\nThe processed DataFrame containing trip data with additional computed fields.\nG (networkx.MultiDiGraph):\nThe graph representation of the OpenStreetMap data for the specified place.\nnodes (geopandas.GeoDataFrame):\nGeoDataFrame containing the nodes of the graph.\ntotal_frames (int):\nTotal number of frames to generate for the animation.\nbackground_file (str):\nPath to the saved background graph image."
+  },
+  {
+    "objectID": "documentation/classes.html#methods",
+    "href": "documentation/classes.html#methods",
+    "title": "\nClasses \n",
+    "section": "Methods",
+    "text": "Methods\n\nprecompute_route(row): Calculates the shortest route between two points.\nsave_graph_background(): Generates and saves a background image of the graph.\ncreate_animation(): Creates a video animation from the trips.\n\nNote: For more details about the functions, visit the Functions section."
+  },
+  {
+    "objectID": "documentation/classes.html#examples",
+    "href": "documentation/classes.html#examples",
+    "title": "\nClasses \n",
+    "section": "Examples",
+    "text": "Examples\n\nCreate an animation for a dataset with the default settings\nanimation = BikeAnimation(input_file=\"data/trips.csv\", place_name=\"Paris, France\")\nanimation.create_animation()"
   },
   {
     "objectID": "footer/MIT_license.html",
