@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,12 +37,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-41afc036f4045670d8a63ab41900e02e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-a040cd6abc73b98b2f4c673569425434.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -168,19 +168,25 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#member" id="toc-member" class="nav-link" data-scroll-target="#member">‘Member’</a></li>
   </ul></li>
   <li><a href="#python-classes" id="toc-python-classes" class="nav-link" data-scroll-target="#python-classes">Python classes</a></li>
+  <li><a href="#class-bikeanimation" id="toc-class-bikeanimation" class="nav-link" data-scroll-target="#class-bikeanimation">Class: BikeAnimation</a>
+  <ul>
+  <li><a href="#constructor-parameters" id="toc-constructor-parameters" class="nav-link" data-scroll-target="#constructor-parameters">Constructor Parameters</a></li>
+  <li><a href="#main-attributes" id="toc-main-attributes" class="nav-link" data-scroll-target="#main-attributes">Main Attributes</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">
+Classes <i class="fas fa-book-open"></i>
+</h1></header>
 
 
 
 
 <div style="text-align: center;">
-<h1>
-Classes <i class="fas fa-book-open"></i>
-</h1>
+
 </div>
 <section id="website-classes" class="level2">
 <h2 class="anchored" data-anchor-id="website-classes">Website classes</h2>
@@ -315,8 +321,39 @@ This class is defined in the <code>styles.css</code> file.
 </section>
 <section id="python-classes" class="level2">
 <h2 class="anchored" data-anchor-id="python-classes">Python classes</h2>
+</section>
+<section id="class-bikeanimation" class="level2">
+<h2 class="anchored" data-anchor-id="class-bikeanimation">Class: BikeAnimation</h2>
+<p>This class is used to generate an animation of bike trips based on trip data and an OpenStreetMap graph.</p>
+<section id="constructor-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="constructor-parameters">Constructor Parameters</h3>
+<ul>
+<li><code>input_file</code> (str): Path to the CSV file containing trip data.</li>
+<li><code>place_name</code> (str, optional): Name of the city or region to load the OSM graph for. Default is “Montpellier, France”.</li>
+<li><code>target_date</code> (str or datetime, optional): Target date to filter trips.</li>
+<li><code>output_video</code> (str, optional): Name of the generated video file. Default is “bike_animation.mp4”.</li>
+<li>…</li>
+</ul>
+</section>
+<section id="main-attributes" class="level3">
+<h3 class="anchored" data-anchor-id="main-attributes">Main Attributes</h3>
+<ul>
+<li><code>df</code>: A pandas DataFrame containing the trip data.</li>
+<li><code>G</code>: The OpenStreetMap graph for the specified region.</li>
+<li>…</li>
+</ul>
+</section>
+<section id="methods" class="level3">
+<h3 class="anchored" data-anchor-id="methods">Methods</h3>
+<ul>
+<li><code>precompute_route(row)</code>: Calculates the shortest route between two points.</li>
+<li><code>save_graph_background()</code>: Generates and saves a background image of the graph.</li>
+<li><code>create_animation()</code>: Creates a video animation from the trips.</li>
+</ul>
+<p><strong>Note:</strong> For detailed explanations of the methods, see the <a href="#functions">Functions</a> section.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -553,8 +590,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -563,7 +598,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/EmilieAig\.github\.io\/BikeProjectTeam7\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -665,7 +700,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
