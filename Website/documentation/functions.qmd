@@ -6,7 +6,67 @@ format:
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 ---
 
-<div style="text-align: center;">
-<h1>Functions <i class="fas fa-book-open"></i></h1>
+<div style="text-align: center;" id="functions">
+  <h1>Functions <i class="fas fa-book-open"></i></h1>
 </div>
 
+## Method: `precompute_route`
+
+Precompute the shortest route for a single trip.
+
+Given a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph.
+
+### Parameters
+
+- **`row`** (pandas.Series):  
+  A row from the input DataFrame containing trip information.  
+  The row must include the following columns:
+  - `'Departure_latitude'`, `'Departure_longitude'`
+  - `'Return_latitude'`, `'Return_longitude'`
+
+### Returns
+
+- **list of int or None**:  
+  A list of node IDs representing the shortest path in the graph, or `None` if the route cannot be computed.
+
+### Examples
+
+#### Example 1: Precompute the shortest route for a single trip
+
+```python
+import pandas as pd
+
+row = pd.Series({
+    "Departure_latitude": 43.608,
+    "Departure_longitude": 3.879,
+    "Return_latitude": 43.610,
+    "Return_longitude": 3.881
+})
+
+animation.precompute_route(row)
+# Output: [123456, 123457, 123458, ...]
+```
+## Method: `create_animation`
+
+Generate a video animation of the bike trips.
+
+This method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file.
+
+### Returns
+
+- **None**:  
+  This method does not return any value.
+
+### Notes
+
+- This method uses **multiprocessing** to parallelize frame generation, which can be resource-intensive.
+- Ensure that you have sufficient disk space for temporary files generated during the process.
+
+### Examples
+
+#### Example 1: Generate the animation for the loaded dataset
+
+```python
+animation = BikeAnimation(input_file="data/trips.csv")
+animation.create_animation()
+```
