@@ -1,5 +1,18 @@
-# BikeProjectTeam7
-Welcome to the BikeProjectTeam7 page.  
+ # BikeProjectTeam7
+Welcome to our project for the HAX712X course for the academic year 2024-2025.
+Our project is titled **BikeProjectTeam7**.\
+The team members are :
+- AIGOIN Emilie
+- MAMANE SIDI Samira
+- THOMAS Anne-Laure
+- ZHU Qingjian
+## Introduction:  
+Our project will focus on the following question: "What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists' behaviors evolved before and after this major event?". The goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.
+
+To conduct this study, we have chosen to analyze data on bicycle usage spanning from April to October 2023. This time frame allows us to examine bike traffic before, during, and after the Tour de France, providing a comprehensive view of usage patterns around this event. The selection of this period is crucial for capturing short-term trends related to the Tour and distinguishing them from seasonal or contextual factors that might also influence cycling behavior.
+
+Through this analysis, we aim to provide a clear and detailed understanding of how cyclists' behaviors in Montpellier have evolved in relation to this major sporting event.
+
 Here is our current Gantt diagram:  
 [Gantt Diagram](https://emilieaig.github.io/BikeProjectTeam7/Organization/Gantt_Diagram/Gantt_Diagram.html)  
 Please follow the link below to access the details of our project:  
@@ -14,21 +27,39 @@ Here is a diagram of the architecture of our project, detailing the location of 
     │     └── publish.yml
     ├── Code/ 
     │     ├── Data/
-    │     │      └─ Data Bike 2023.csv
-    │     ├── Scripts/
-    │     │     └── Prediction/
-    │     │         ├── bike_traffic_prediction_map.html
-    │     │         ├── code_bike_traffic_prediction.py
-    │     │         ├── code_eco_coord.py
-    │     │         ├── code_prediction_july.py
-    │     │         ├── code_prediction_long_format_july.py
-    │     │         ├── ecocompteurs_coords.csv
-    │     │         ├── predictions_bike_intensity_july_week.csv
-    │     │         └── predictions_long_format_july.csv
-    │     ├── bike_animation_test.mp4
+    |     |     |── Data_EcoCompt/
+    |     |     |── Data_EcoCompt_Combined/
+    |     |     |       ├── counter_coordinates.csv
+    │     │     |       ├── edge_intensity_map.html
+    |     |     |       |── fichier_combined.csv
+    |     |     |       |── node_intensity_20230710.csv
+    |     |     |       └── unknown_nodes_intensity.csv   
+    |     |     |── Data_EcoCompt_clean/
+    │     │     └── Video_Data/
+    |     |              ├── GeolocalisationStation.csv
+    |     |              └── VideoDatacleaned.csv
+    │     └── Scripts/
+    │           ├── Prediction/
+    │           |       ├── bike_traffic_prediction_map.html
+    │           |       ├── code_bike_traffic_prediction.py
+    │           |       ├── code_eco_coord.py
+    │           |       ├── code_prediction_july.py
+    │           |       ├── code_prediction_long_format_july.py
+    │           |       ├── ecocompteurs_coords.csv
+    │           |       ├── predictions_bike_intensity_july_week.csv
+    │           |       └── predictions_long_format_july.csv
+    |           ├── .Rhistory
+    |           ├── Animation_Bike.py
+    |           ├── DataProcessing.py
+    |           ├── Download_and_Combine.py
+    |           ├── ModelTraining.py
+    |           ├── Statistics.py
+    |           ├── data_treatment_EcoCompt.py
+    |           ├── data_treatment_Velomag.py  
+    |           └── map.py
     ├── Organization/
     │     ├── Gantt diagram/
-    │     │     ├── Gantt Diagram_files/
+    │     │     ├── Gantt_Diagram_files/libs
     │     │     ├── Gantt Diagram.html
     │     │     └── Gantt Diagram.qmd
     │     ├── Models/
@@ -40,6 +71,34 @@ Here is a diagram of the architecture of our project, detailing the location of 
     ├── RoadMap/
     │     └── README.md
     ├── Website/
+    |      ├── analyses/
+    │      |    ├── map.qmd
+    │      |    ├── statistics.qmd
+    │      │    └── video.qmd
+    |      ├── documentation/
+    │      |    ├── classes.qmd
+    │      |    ├── functions.qmd
+    │      │    └── packages.qmd
+    |      ├── footer/
+    │      |    ├── MIT_license.qmd
+    │      |    ├── about_us.qmd
+    │      │    └── privacy_policy.qmd
+    |      ├── images/
+    |      |    ├── bike.png
+    |      |    ├── boxplot.svg
+    |      |    ├── intensity_graph.svg
+    |      |    ├── map_prediction_multiple_days_with_layers_and_legend.html
+    |      |    ├── member1.png
+    |      |    ├── member2.png
+    |      |    ├── member3.png
+    |      |    ├── member4.png  
+    |      |    └── video_1.mp4
+    |      ├── .Rhistory
+    |      ├── .gitignore
+    |      ├── _quarto.yml
+    |      ├── footer.qmd
+    |      ├── index.qmd
+    │      └── styles.css
     ├── docs/
     ├── .gitignore
     ├── README.md
