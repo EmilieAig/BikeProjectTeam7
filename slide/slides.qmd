@@ -25,14 +25,11 @@ format:
 #### Problématique 
 :::
 
-::: {.fragment} 
-![](/images/logo_tourdefrance.png){.absolute top=320 left=450}
-:::
-
 <br>
 
 ::: {.fragment} 
 <p class="text"> Quel a été l'impact du Tour de France 2023 sur les comportements des cyclistes à Montpellier avant, pendant et après cet événement ? </p>
+![](/images/logo_tourdefrance.png){.absolute top=320 left=450}
 :::
 
 <br>
@@ -44,7 +41,7 @@ format:
 <br>
 
 ::: {.fragment} 
-<p class="text"> ↗ nombre de cycliste pendant la période du </p>
+<p class="text"> ↗ nombre de cycliste pendant cette période </p>
 :::
 
 ![](/images/bike.png){.absolute top=650 left=-100 width="20" height="20"}
