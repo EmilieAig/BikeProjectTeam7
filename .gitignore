@@ -166,3 +166,7 @@ cython_debug/
 **/.gitkeep
 
 .quarto/
+
+# Cache folders in Prediction and Scripts
+Prediction/**/.cache/
+Scripts/**/.cache/
