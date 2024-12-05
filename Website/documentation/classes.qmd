@@ -152,7 +152,7 @@ This class processes bike trip data, computes routes on a graph derived from Ope
 - `save_graph_background()`: Generates and saves a background image of the graph.
 - `create_animation()`: Creates a video animation from the trips.
 
-**Note:** For more details about the functions, visit the [Functions section](#functions).
+**Note:** For more details about the functions, visit the <a href="functions.html">Functions section</a>.
 
 ## Examples
 
