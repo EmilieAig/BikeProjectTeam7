@@ -30,11 +30,11 @@ The development pipeline will be divided into several stages:
 - **Visualization of Historical Data**: Create time series charts and maps showing bike traffic from April to October 2023.
 - **Modeling and Prediction**: Train a model to forecast bike traffic for the upcoming days.
 - **Website Development**: Integrate visualizations and the prediction model into an interactive website. 
-5. The Gantt Diagram\
+3. The Gantt Diagram\
 We will also create a Gantt Diagram to illustrate the project's timeline and track its progress over time. This diagram will help visualize each phase of the project, from data collection to website development, allowing us to monitor deadlines, dependencies, and milestones clearly.
-6. Creation of branch:\
+4. Creation of branch:\
 We have created three additional branches:Data,Visualization and Website, aside from the main branch. Gradually, we will merge our respective work into the main branch.
-7. Task Distribution for the project \
+5. Task Distribution for the project \
 To organize our work efficiently, we have established the following task distribution plan,with a weekly meeting every Wednesday from 10 a.m. to 12 p.m:
 
     **Planning:**
