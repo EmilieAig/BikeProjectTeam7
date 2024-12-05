@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -37,12 +71,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-053a3190e84d4388479eaffb24dcc574.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-25954c385d9f0d07373bb7a492e9b003.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -168,19 +202,27 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#member" id="toc-member" class="nav-link" data-scroll-target="#member">‘Member’</a></li>
   </ul></li>
   <li><a href="#python-classes" id="toc-python-classes" class="nav-link" data-scroll-target="#python-classes">Python classes</a></li>
+  <li><a href="#class-bikeanimation" id="toc-class-bikeanimation" class="nav-link" data-scroll-target="#class-bikeanimation">Class: <code>BikeAnimation</code></a></li>
+  <li><a href="#parameters" id="toc-parameters" class="nav-link" data-scroll-target="#parameters">Parameters</a></li>
+  <li><a href="#attributes" id="toc-attributes" class="nav-link" data-scroll-target="#attributes">Attributes</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a>
+  <ul>
+  <li><a href="#create-an-animation-for-a-dataset-with-the-default-settings" id="toc-create-an-animation-for-a-dataset-with-the-default-settings" class="nav-link" data-scroll-target="#create-an-animation-for-a-dataset-with-the-default-settings">Create an animation for a dataset with the default settings</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">
+Classes <i class="fas fa-book-open"></i>
+</h1></header>
 
 
 
 
 <div style="text-align: center;">
-<h1>
-Classes <i class="fas fa-book-open"></i>
-</h1>
+
 </div>
 <section id="website-classes" class="level2">
 <h2 class="anchored" data-anchor-id="website-classes">Website classes</h2>
@@ -315,8 +357,70 @@ This class is defined in the <code>styles.css</code> file.
 </section>
 <section id="python-classes" class="level2">
 <h2 class="anchored" data-anchor-id="python-classes">Python classes</h2>
+</section>
+<section id="class-bikeanimation" class="level2">
+<h2 class="anchored" data-anchor-id="class-bikeanimation">Class: <code>BikeAnimation</code></h2>
+<p>Generate an animation of bike trips using geospatial data and OpenStreetMap.</p>
+<p>This class processes bike trip data, computes routes on a graph derived from OpenStreetMap, and generates a video animation visualizing the trips over time.</p>
+</section>
+<section id="parameters" class="level2">
+<h2 class="anchored" data-anchor-id="parameters">Parameters</h2>
+<ul>
+<li><p><strong><code>input_file</code></strong> (str):<br>
+Path to the CSV file containing trip data. The file must include the following columns:<br>
+<code>'Departure_Date'</code>, <code>'Departure_Time'</code>, <code>'Return_Date'</code>, <code>'Return_Time'</code>,<br>
+<code>'Departure_latitude'</code>, <code>'Departure_longitude'</code>, <code>'Return_latitude'</code>, <code>'Return_longitude'</code>.</p></li>
+<li><p><strong><code>place_name</code></strong> (str, optional):<br>
+Name of the place to fetch the OpenStreetMap graph for, e.g., <code>"Montpellier, France"</code>.<br>
+Default is <code>"Montpellier, France"</code>.</p></li>
+<li><p><strong><code>target_date</code></strong> (str or datetime-like, optional):<br>
+Filter trips for a specific date. If not specified, all dates in the input file are used.<br>
+Default is <code>None</code>.</p></li>
+<li><p><strong><code>output_video</code></strong> (str, optional):<br>
+Path to the output video file. Default is <code>"bike_animation.mp4"</code>.</p></li>
+<li><p><strong><code>fps</code></strong> (int, optional):<br>
+Frames per second for the output video. Default is 30.</p></li>
+<li><p><strong><code>minutes_per_second</code></strong> (int, optional):<br>
+The speed ratio of real-world minutes to animation seconds.<br>
+Default is 120 minutes per animation second.</p></li>
+<li><p><strong><code>sample_size</code></strong> (int, optional):<br>
+Number of trips to process from the input file. If <code>None</code>, all trips are processed.<br>
+Default is <code>None</code>.</p></li>
+</ul>
+</section>
+<section id="attributes" class="level2">
+<h2 class="anchored" data-anchor-id="attributes">Attributes</h2>
+<ul>
+<li><p><strong><code>df</code></strong> (pandas.DataFrame):<br>
+The processed DataFrame containing trip data with additional computed fields.</p></li>
+<li><p><strong><code>G</code></strong> (networkx.MultiDiGraph):<br>
+The graph representation of the OpenStreetMap data for the specified place.</p></li>
+<li><p><strong><code>nodes</code></strong> (geopandas.GeoDataFrame):<br>
+GeoDataFrame containing the nodes of the graph.</p></li>
+<li><p><strong><code>total_frames</code></strong> (int):<br>
+Total number of frames to generate for the animation.</p></li>
+<li><p><strong><code>background_file</code></strong> (str):<br>
+Path to the saved background graph image.</p></li>
+</ul>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<ul>
+<li><strong><code>precompute_route(row)</code></strong>: Calculates the shortest route between two points.</li>
+<li><code>save_graph_background()</code>: Generates and saves a background image of the graph.</li>
+<li><code>create_animation()</code>: Creates a video animation from the trips.</li>
+</ul>
+<p><strong>Note:</strong> For more details about the functions, visit the <a href="#functions">Functions section</a>.</p>
+</section>
+<section id="examples" class="level2">
+<h2 class="anchored" data-anchor-id="examples">Examples</h2>
+<section id="create-an-animation-for-a-dataset-with-the-default-settings" class="level3">
+<h3 class="anchored" data-anchor-id="create-an-animation-for-a-dataset-with-the-default-settings">Create an animation for a dataset with the default settings</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>animation <span class="op">=</span> BikeAnimation(input_file<span class="op">=</span><span class="st">"data/trips.csv"</span>, place_name<span class="op">=</span><span class="st">"Paris, France"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>animation.create_animation()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -553,8 +657,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -665,7 +767,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
