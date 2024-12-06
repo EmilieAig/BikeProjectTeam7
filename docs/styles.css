@@ -78,12 +78,12 @@ body.quarto-dark .text {
 /* Bullet points in text */
 .text ul {
   list-style-type: disc;                /* define the bullet style */
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 /* Space between list items */
 .text li {
-  margin-bottom: 5px;                   
+  margin-bottom: 10px;                   
 }
 
 /* ---------------------------- */
@@ -110,7 +110,7 @@ body.quarto-dark .text {
 
 /* Dark mode adjustments */
 body.quarto-dark {
-  background-color: #474646;
+  background-color: #4F4F4F;
 }
 
 /* ---------------------------- */
@@ -121,7 +121,7 @@ body.quarto-dark {
 
 /* Navbar styles */
 body:not(.quarto-dark) .navbar {
-  background-color: #209f59 !important;   /* green background color */
+  background-color: #26BA69 !important;   /* green background color */
   color: black;                           /* text color */
   font-family: 'Lato', sans-serif;
 }
@@ -160,7 +160,7 @@ body:not(.quarto-dark) .navbar .dropdown-item:hover {
 
 /* Navbar styles */
 body.quarto-dark .navbar {
-  background-color: #187240 !important;   /* green background color */
+  background-color: #125932 !important;   /* green background color */
   color: black;                           /* text color */
   font-family: 'Lato', sans-serif;
 }
@@ -187,7 +187,7 @@ body.quarto-dark .navbar .dropdown-menu {
 
 /* Color for hover dropdown items */
 body.quarto-dark .navbar .dropdown-item:hover {
-  background-color: #63d396;
+  background-color: #176E3E;
   color: black;
 }
 
