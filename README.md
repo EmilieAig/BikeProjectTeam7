@@ -17,8 +17,7 @@ Through this analysis, we aim to provide a clear and detailed understanding of h
 By following this link, you will have access to our website, which showcases the entirety of our project:[BikeProjectTeam7](https://emilieaig.github.io/BikeProjectTeam7/)
 
 ### Project Documentation
-You can view the full documentation for this project [Documentation](https://emilieaig.github.io/BikeProjectTeam7/documentation/).
-
+You can view the full documentation for this project on our website.
 Here is our current Gantt diagram:  
 [Gantt Diagram](https://emilieaig.github.io/BikeProjectTeam7/Organization/Gantt_Diagram/Gantt_Diagram.html)  
 Please follow the link below to access the details of our project:  
