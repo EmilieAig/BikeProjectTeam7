@@ -28,14 +28,14 @@ def download_file(url, target_path, known_hash):
 # File URLs and their respective hash values
 files_info = {
     "ecocompteur_file": {
-        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Scripts/Prediction/ecocompteurs_coords.csv",
-        "target_path": "./data/ecocompteurs_coords.csv",
+        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Prediction_Data/ecocompteurs_coords.csv",
+        "target_path": "./ecocompteurs_coords.csv",
         "known_hash": "08c71a1718b279efe1ebb60f6446e19c8b786d93a2a16bcb8504ab1a888dc3f8"  # SHA256 hash of ecocompteurs_coords.csv
     },
     "predictions_file": {
-        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Scripts/Prediction/predictions_long_format_july.csv",
-        "target_path": "./data/predictions_long_format_july.csv",
-        "known_hash": "1c57f8aae4ef6eb940319776a9b66e7a1d3731fa1b5f2cced8493fa27928bf42"
+        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Prediction_Data/predictions_long_format_july.csv",
+        "target_path": "./predictions_long_format_july.csv",
+        "known_hash": "eea6dc71213cf36a6ce9ea768cc01c3c08595a6e01513b6248c64ba117626035"
     },
     "stations_file": {
         "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Video_Data/GeolocalisationStation.csv",
@@ -204,7 +204,8 @@ for date in dates_of_interest:
 # Add layer control to toggle between date layers
 LayerControl().add_to(m)
 
-# Save the map to an HTML file
-map_file = "bike_traffic_prediction_map.html"
-m.save(map_file)
-print(f"Map saved as {map_file}")
+# Save the map to the 'Result' folder
+output_path = "Code/Result/bike_traffic_prediction_map.html"
+m.save(output_path)
+print(f"Map saved as {output_path}")
+# %%
