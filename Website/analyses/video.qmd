@@ -12,13 +12,13 @@ format:
 
 ## Presentation
 
-<p class = "text"> On this page we can see a youtube video of the Velomagg bikes traffic in Montpellier. </p>
+<p class = "text"> This section presents an animated video visualizing the cyclists' journeys during a specific day of the 2023 Tour de France. It highlights cycling activity in Montpellier using data from the VéloMagg system. </p>
 
 <p class = "text"> You can choose the date and the video will be interactive. </p>
 
 ## Videos
 
-<div class="container"> <div class="video-container"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
+<div class="container"> <div class="video-container"> <video src="https://github.com/EmilieAig/BikeProjectTeam7/blob/main/Code/Result/Bike_Animation_10-07-2023.MOV" controls></video> </div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
 
 <div class="container-r"> <div class="video-container-r"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Tuesday 11 July 2023</p> </div> </div>
 
