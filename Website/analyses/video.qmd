@@ -24,9 +24,7 @@ format:
                 width="640" 
                 height="360" 
                 frameborder="0" 
-                allow="autoplay; fullscreen">
-        </iframe>
-    </div>
+                allow="autoplay; fullscreen"></iframe></div>
     <div class="text">
         <p>Monday 10 July 2023</p>
     </div>
