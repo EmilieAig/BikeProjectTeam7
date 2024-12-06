@@ -54,3 +54,9 @@ format:
 ### Geographical coverage
 
 <p class = "text"> Predictions cover a 15km radius around Montpellier, including areas such as Saint-Jean-de-Védas, Castelnau-le-Lez, and Villeneuve-lès-Maguelone. We decided not to extend this area because bike journeys were becoming rare and we weren't sure whether a station further away would actually correspond to a journey between that station and Montpellier or just a journey within its city. </p>
+
+## Comparisons
+
+### Between maps
+
+### Between days 

@@ -36,7 +36,7 @@ format:
 
 <p class = "text"> Following our descriptive analyses, we obtained the following graph:  </p>
 
-<img src="/images/intensity_graph.svg" alt="Graph_1" width="1000px">
+<img src="/images/intensity_graph.svg" alt="Graph_1" width="800px" id="graph1">
 
 <p class = "text"> This graph shows the total number of bicycles passing in front of the city of Montpellier's eco-counters per week. Please note that this data does not correspond to the number of bicycles, as a bicycle may be counted several times if it passes in front of several counters. This data therefore corresponds to the total number of times cyclists pass in front of a counter in Montpellier. We can see that the Tour de France period is highlighted in green. </p>
 
