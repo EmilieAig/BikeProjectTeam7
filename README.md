@@ -14,6 +14,7 @@ To conduct this study, we have chosen to analyze data on bicycle usage spanning 
 Through this analysis, we aim to provide a clear and detailed understanding of how cyclists' behaviors in Montpellier have evolved in relation to this major sporting event.
 
 By following this link, you will have access to our website, which showcases the entirety of our project:[BikeProjectTeam7](https://emilieaig.github.io/BikeProjectTeam7/)
+
 Here is our current Gantt diagram:  
 [Gantt Diagram](https://emilieaig.github.io/BikeProjectTeam7/Organization/Gantt_Diagram/Gantt_Diagram.html)  
 Please follow the link below to access the details of our project:  
