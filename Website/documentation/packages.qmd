@@ -10,7 +10,7 @@ format:
 <h1>Packages <i class="fas fa-book-open"></i></h1>
 </div>
 
-<p class = "text"> For the code, we have used some packages to make our analysis. </p>
+<p class = "text"> For the necessary codes for our project, we have used some packages to make our analysis. </p>
 
 ### 'Numpy'
 
