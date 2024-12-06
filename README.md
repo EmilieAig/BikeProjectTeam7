@@ -13,19 +13,19 @@ To conduct this study, we have chosen to analyze data on bicycle usage spanning 
 
 Through this analysis, we aim to provide a clear and detailed understanding of how cyclists' behaviors in Montpellier have evolved in relation to this major sporting event.
 
+By following this link, you will have access to our website, which showcases the entirety of our project:[BikeProjectTeam7](https://emilieaig.github.io/BikeProjectTeam7/)
 Here is our current Gantt diagram:  
 [Gantt Diagram](https://emilieaig.github.io/BikeProjectTeam7/Organization/Gantt_Diagram/Gantt_Diagram.html)  
 Please follow the link below to access the details of our project:  
 [README.md](https://github.com/EmilieAig/BikeProjectTeam7/blob/main/RoadMap/README.md)  
-This link leads to images that respectively correspond to the mockup of our website and a preview of the output from our graphics card:  
-[Models](https://github.com/EmilieAig/BikeProjectTeam7/tree/main/Organization/Models)  
-
+ 
 Here is a diagram of the architecture of our project, detailing the location of each folder and file:
 
 ```BikeProjectTeam7/
     ├── .github/workflows/
     │     └── publish.yml
     ├── Code/ 
+    │     ├── Readme.md
     │     ├── Data/
     |     |     |── Data_EcoCompt/
     |     |     |── Data_EcoCompt_Combined/
@@ -66,8 +66,8 @@ Here is a diagram of the architecture of our project, detailing the location of 
     │     │     ├── Map Model.png
     │     │     └── Website Model.png
     ├── Restitution/
-    │     ├── Slides.qmd
-    │     └── Oral.txt
+    │     └── Slides.qmd
+    │      
     ├── RoadMap/
     │     └── README.md
     ├── Website/
