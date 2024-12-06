@@ -27,9 +27,14 @@ This file contains all the code scripts we created to successfully complete our 
 ## Prediction
 
 ### code_bike_traffic_prediction.py
+   This file contains the code responsible for creating an interactive map that visualizes the paths between data points and bike stations, coloring the paths according to traffic intensity from July 10 to 16, 2023.
 
 ### code_eco_coord.py
+   This file processes the data related to the eco-counters, which contain information about bike paths (path ID, GPS coordinates). It renames the columns and prepares the data to merge with the traffic predictions in the other files.
 
 ### code_prediction_july.py
+   This file allows to filter the predictions for the period from July 10 to 16 and prepares the data for analysis by merging it with the eco-counter data.
 
 ### code_prediction_long_format_july.py
+   This file contains the code to handle traffic predictions in a specific data format (long format), in order to make the data compatible with those in other files for display on the map.
+   
