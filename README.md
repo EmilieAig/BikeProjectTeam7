@@ -29,7 +29,6 @@ Here is a diagram of the architecture of our project, detailing the location of 
     ├── .github/workflows/
     │     └── publish.yml
     ├── Code/ 
-    │     ├── Readme.md
     │     ├── Data/
     |     |     |── Data_EcoCompt/
     |     |     |── Data_EcoCompt_Combined/
@@ -39,19 +38,24 @@ Here is a diagram of the architecture of our project, detailing the location of 
     |     |     |       |── node_intensity_20230710.csv
     |     |     |       └── unknown_nodes_intensity.csv   
     |     |     |── Data_EcoCompt_clean/
-    │     │     └── Video_Data/
-    |     |              ├── GeolocalisationStation.csv
-    |     |              └── VideoDatacleaned.csv
+    │     │     |── Prediction_Data/
+    |     |     |        ├── ecocompteurs_coords.csv
+    |     |     |        ├── predictions_bike_intensity_july_week.csv   
+    |     |     |        └── predictions_long_format_july.csv
+    │     │     |── Video_Data/
+    |     |     |        ├── GeolocalisationStation.csv
+    |     |     |        └── VideoDatacleaned.csv
+    │     │     └── Readme.md
+    |     ├── Result/
+    |     |     |── Bike_Animation_10-07-2023.mp4
+    │     │     └── bike_traffic_prediction_map.html
     │     └── Scripts/
     │           ├── Prediction/
-    │           |       ├── bike_traffic_prediction_map.html
+    │           |       ├── Readme.md
     │           |       ├── code_bike_traffic_prediction.py
     │           |       ├── code_eco_coord.py
     │           |       ├── code_prediction_july.py
-    │           |       ├── code_prediction_long_format_july.py
-    │           |       ├── ecocompteurs_coords.csv
-    │           |       ├── predictions_bike_intensity_july_week.csv
-    │           |       └── predictions_long_format_july.csv
+    │           |       └── code_prediction_long_format_july.py
     |           ├── .Rhistory
     |           ├── Animation_Bike.py
     |           ├── DataProcessing.py
