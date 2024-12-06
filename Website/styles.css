@@ -301,48 +301,56 @@ img, table {
 /*       VIDEOS STYLES          */
 /* ---------------------------- */
 
+/* Conteneur principal avec vidéo et texte */
 .container {
   display: flex;
   align-items: center;
-  max-width: 1000px;
+  justify-content: center;  /* Centre les éléments horizontalement */
+  max-width: 1000px;  /* Limite la taille du conteneur */
+  padding: 20px;
   background-color: white;
   border: 1px solid #ccc;
-  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;  /* Ajoute un espace en dessous du bloc */
+  margin-bottom: 20px;
 }
 
 .video-container {
-  flex: 2;  /* Augmente la proportion de l'espace attribuée à la vidéo */
+  position: relative;
+  flex: 1;  /* L'espace de la vidéo s'adapte */
   margin-right: 20px;
+  padding-top: 56.25%; /* Ratio 16:9 (hauteur à 56.25% de la largeur) */
+  height: 0;
 }
 
-.video-container video {
-  width: 100%;  /* La vidéo occupe toute la largeur du conteneur */
-  height: auto;  /* Garde les proportions de la vidéo */
+.video-container iframe, .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border: 1px solid #ccc;
 }
 
-.container-r {
-  display: flex;
-  align-items: center;
-  max-width: 1000px;
-  background-color: white;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex-direction: row-reverse;  /* Inverse l'ordre des éléments (vidéo à droite et texte à gauche) */
-  margin-bottom: 20px;  /* Ajoute un espace en dessous du bloc */
+.text {
+  flex: 1;  /* L'espace du texte s'adapte également */
+  max-width: 300px; /* Limite la largeur du texte */
 }
 
-.video-container-r {
-  flex: 2;  /* Prend plus de place que le texte */
-  margin-left: 20px;  /* Espacement à gauche pour la vidéo (inverse de margin-right) */
-  max-width: 70%;  /* Limite la taille de la vidéo à 70% de la largeur du conteneur */
-}
+@media (max-width: 768px) {
+  /* Sur les petits écrans, empile vidéo et texte */
+  .container {
+    flex-direction: column;  /* Empile les éléments verticalement */
+    align-items: center;     /* Centre les éléments */
+  }
 
-.video-container-r video {
-  width: 100%;  /* La vidéo occupe toute la largeur du conteneur */
-  height: auto;  /* Garde les proportions de la vidéo */
-  border: 1px solid #ccc;
+  .video-container {
+    margin-right: 0; /* Enlever la marge droite sur petits écrans */
+    max-width: 100%; /* La vidéo occupe toute la largeur du conteneur */
+    padding-top: 56.25%; /* Ratio 16:9 sur petits écrans */
+  }
+
+  .text {
+    max-width: 100%;  /* Assurer que le texte occupe toute la largeur */
+    margin-top: 20px; /* Ajoute un espacement entre la vidéo et le texte */
+  }
 }
