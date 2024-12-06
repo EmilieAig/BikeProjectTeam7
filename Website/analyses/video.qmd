@@ -18,16 +18,5 @@ format:
 
 ## Videos
 
-<div class="container"> <div class="video-container"> <video src="https://www.youtube.com/embed/qv52shLfUX8" controls></video> </div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
-
-<div class="container-r"> <div class="video-container-r"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Tuesday 11 July 2023</p> </div> </div>
-
-<div class="container"> <div class="video-container"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Wednesday 12 July 2023</p> </div> </div>
-
-<div class="container-r"> <div class="video-container-r"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Tuesday 13 July 2023</p> </div> </div>
-
-<div class="container"> <div class="video-container"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Friday 14 July 2023</p> </div> </div>
-
-<div class="container-r"> <div class="video-container-r"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Saturday 15 July 2023</p> </div> </div>
-
-<div class="container"> <div class="video-container"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Sunday 16 July 2023</p> </div> </div>
+<div class="container"> <div class="video-container"> 
+<iframe src="https://www.youtube.com/embed/qv52shLfUX8" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
