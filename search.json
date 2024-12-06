@@ -25,7 +25,7 @@
     "href": "analyses/video.html#videos",
     "title": "\nVideos \n",
     "section": "Videos",
-    "text": "Videos\n\n\n\n\n\n\n\nMonday 10 July 2023"
+    "text": "Videos\n\n&lt;div class=\"video-container\"&gt;\n    &lt;iframe src=\"https://drive.google.com/uc?id=1axKX5f3x1gWShoaOjhzLno8dUTnxGAhl&export=preview\" \n            width=\"640\" \n            height=\"360\" \n            frameborder=\"0\" \n            allow=\"autoplay; fullscreen\"&gt;\n    &lt;/iframe&gt;\n&lt;/div&gt;\n&lt;div class=\"text\"&gt;\n    &lt;p&gt;Monday 10 July 2023&lt;/p&gt;\n&lt;/div&gt;"
   },
   {
     "objectID": "analyses/map.html#map-context",
