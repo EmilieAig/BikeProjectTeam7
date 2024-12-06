@@ -1,4 +1,4 @@
- # BikeProjectTeam7
+# BikeProjectTeam7
 Welcome to our project for the HAX712X course for the academic year 2024-2025.
 Our project is titled **BikeProjectTeam7**.\
 The team members are :
@@ -6,6 +6,7 @@ The team members are :
 - MAMANE SIDI Samira
 - THOMAS Anne-Laure
 - ZHU Qingjian
+
 ## Introduction:  
 Our project will focus on the following question: "What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists' behaviors evolved before and after this major event?". The goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.
 
@@ -14,6 +15,9 @@ To conduct this study, we have chosen to analyze data on bicycle usage spanning 
 Through this analysis, we aim to provide a clear and detailed understanding of how cyclists' behaviors in Montpellier have evolved in relation to this major sporting event.
 
 By following this link, you will have access to our website, which showcases the entirety of our project:[BikeProjectTeam7](https://emilieaig.github.io/BikeProjectTeam7/)
+
+### Project Documentation
+You can view the full documentation for this project [Documentation](https://emilieaig.github.io/BikeProjectTeam7/documentation).
 
 Here is our current Gantt diagram:  
 [Gantt Diagram](https://emilieaig.github.io/BikeProjectTeam7/Organization/Gantt_Diagram/Gantt_Diagram.html)  
