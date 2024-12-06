@@ -59,9 +59,11 @@ predictions_df.interpolate(method='linear', axis=0, inplace=True)  # Fill missin
 # Reset the index to have the 'date' column instead of an index
 predictions_df.reset_index(inplace=True)
 
-# Save the results to a CSV file in the same directory as this script
-current_dir = Path(__file__).resolve().parent  # Get the directory of the script
-predictions_path = current_dir / 'predictions_bike_intensity_july_week.csv'  # Define the output file path
+# Define the output file path in the 'Prediction_Data' folder within 'Code/Data'
+output_dir = Path("Code/Data/Prediction_Data")  # Set the correct directory path
+output_dir.mkdir(parents=True, exist_ok=True)  # Create the directory if it doesn't exist
+
+predictions_path = output_dir / 'predictions_bike_intensity_july_week.csv'  # Define the output file path
 predictions_df.to_csv(predictions_path, index=False, sep=';')  # Save the predictions as a CSV file
 
 # Print the location of the saved file
