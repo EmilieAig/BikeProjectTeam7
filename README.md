@@ -30,14 +30,14 @@ Here is a diagram of the architecture of our project, detailing the location of 
     │     └── publish.yml
     ├── Code/ 
     │     ├── Data/
-    |     |     |── Data_EcoCompt/
+    |     |     |── Data_EcoCompt/...
     |     |     |── Data_EcoCompt_Combined/
     |     |     |       ├── counter_coordinates.csv
     │     │     |       ├── edge_intensity_map.html
     |     |     |       |── fichier_combined.csv
     |     |     |       |── node_intensity_20230710.csv
     |     |     |       └── unknown_nodes_intensity.csv   
-    |     |     |── Data_EcoCompt_clean/
+    |     |     |── Data_EcoCompt_clean/...
     │     │     |── Prediction_Data/
     |     |     |        ├── ecocompteurs_coords.csv
     |     |     |        ├── predictions_bike_intensity_july_week.csv   
