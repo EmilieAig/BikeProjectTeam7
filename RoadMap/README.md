@@ -20,42 +20,21 @@ A website where users can browse and interact with various visualizations.
 The site will feature charts and an interactive map displaying bike traffic predictions for Montpellier.\
 **Back-end (data processing)**:\
 Data analysis from April to October 2023, based on bike counting data, public bike-sharing trip data, and OpenStreetMap data.
-A prediction model based on time series analysis (using tools like Prophet, ARIMA, or Machine Learning methods) to forecast bike traffic for the coming days.  
-2. Main Files:\
-The different files,we will use are the following:  
-**Data**: Folder containing the data files (CSV, JSON, etc.):
-- Data Bike 2023.csv \
-**Scripts**: The source code, with subfolders for:
-- data_processing.py: For cleaning and structuring the data.  
-- model_training.py: For training the prediction model.  
-- visualization maps.py: For generating charts and maps.  
-- web_app.py: The script responsible for generating the website. 
-- website.qmd
-- website.html \
-**Restitution**:It contains the files about the slides and the oral for our presentation
-- Slides.qmd
-- Oral.txt
+A prediction model based on time series analysis (using tools like Prophet, ARIMA, or Machine Learning methods) to forecast bike traffic for the coming days. 
 
-3. Development Pipeline
+2. Development Pipeline
 
 The development pipeline will be divided into several stages:
 - **Data Collection**: Import and clean data from various datasets (VéloMagg, bike/pedestrian counts, OpenStreetMap).
 - **Preprocessing**: Filter the data, handle missing values, and merge the different data sources.
 - **Visualization of Historical Data**: Create time series charts and maps showing bike traffic from April to October 2023.
 - **Modeling and Prediction**: Train a model to forecast bike traffic for the upcoming days.
-- **Website Development**: Integrate visualizations and the prediction model into an interactive website.
-4. Technologies and Packages Used:
-- **Primary Language**: Python
-- **Packages**:  
-      - **For data management and analysis**: Pandas, NumPy  
-      - **For visualization**: Matplotlib, Seaborn, Plotly (for interactive charts), Folium  or Leaflet.js (for the interactive map)
-      - **For modeling and prediction**: scikit-learn, Prophet (or ARIMA)  
-      - **For the website and the slides**: Quarto  
-5. The Gantt Diagram\
+- **Website Development**: Integrate visualizations and the prediction model into an interactive website. 
+3. The Gantt Diagram\
 We will also create a Gantt Diagram to illustrate the project's timeline and track its progress over time. This diagram will help visualize each phase of the project, from data collection to website development, allowing us to monitor deadlines, dependencies, and milestones clearly.
-6. Creation of branch:\
+4. Creation of branch:\
 We have created three additional branches:Data,Visualization and Website, aside from the main branch. Gradually, we will merge our respective work into the main branch.
-7. Task Distribution for the project \
+5. Task Distribution for the project \
 To organize our work efficiently, we have established the following task distribution plan,with a weekly meeting every Wednesday from 10 a.m. to 12 p.m:
 
     **Planning:**
@@ -65,10 +44,10 @@ To organize our work efficiently, we have established the following task distrib
     - Qingjian designed a preliminary representation of the graphical map that we aim to achieve as the final result.
 
     **Data Processing and Scripts:**
-    - Samira will be in charge of cleaning and structuring the data in the dataprocessing.py file.
-    - Anne-Laure will train these data using a forecasting model in the modeltraining.py file.
-    - Qingjian will handle the generation of charts and maps in the visualisation.py file.
-    - Emilie will be responsible for developing the website script in the webapp.py file.
+    - Samira will be in charge of cleaning and structuring the data .
+    - Anne-Laure will train these data using a forecasting model .
+    - Qingjian will handle the generation of charts and maps .
+    - Emilie will be responsible for developing the website script.
 
     **Multimedia Creation:**
     - The video representing a cycling race forecast for a specific date will be made by Samira and helping by one or two other team member.
