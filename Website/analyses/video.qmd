@@ -18,7 +18,7 @@ format:
 
 ## Videos
 
-<div class="container"> <div class="video-container"> <video src="https://vimeo.com/1036781028?ts=0&share=copy" controls></video> </div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
+<div class="container"> <div class="video-container"> <video src="https://www.youtube.com/embed/qv52shLfUX8" controls></video> </div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
 
 <div class="container-r"> <div class="video-container-r"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Tuesday 11 July 2023</p> </div> </div>
 
