@@ -89,6 +89,14 @@ format:
 
 ### Prévisions {background-color="white" background-image="/images/background.png" background-size=cover}
 
+- **Fonctionnalités de la carte**
+
+- **Choix de Prophet comme modèle**
+
+- **Réflexions et défis**
+
+- **Points positifs et apprentissages**
+
 ### Données réelles {background-color="white" background-image="/images/background.png" background-size=cover}
 
 <!-- slide 6 -->
