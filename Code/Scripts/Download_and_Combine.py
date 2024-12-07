@@ -20,10 +20,10 @@ pd.options.display.max_rows = 8
 
 ## data processing
 
-
+# %%下载
 # 基础 URL 和下载目录
 base_url = "https://data.montpellier3m.fr/sites/default/files/ressources/"
-page_url = "https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo"  # 网页链接
+page_url = "https://data.montpellier3m.fr/dataset/comptages-velo-et-pieton-issus-des-compteurs-de-velo"  
 path_target = "../Data/Data_EcoCompt/"
 
 # 获取包含文件列表的网页
@@ -40,17 +40,26 @@ for link in soup.find_all('a'):
 # 下载符合条件的文件
 for url in file_links:
     file_name = url.split("/")[-1]
-    path, fname = os.path.split(os.path.join(path_target, file_name))
-    
-    print(f"正在下载 {file_name}...")
-    pooch.retrieve(url, path=path, fname=fname, known_hash=None)
-    print(f"{file_name} 下载完成")
+    full_path = os.path.join(path_target, file_name)
 
+    # 删除文件（如果存在）
+    if os.path.exists(full_path):
+        os.remove(full_path)
+        print(f"删除已存在文件: {full_path}")
+    
+    # 重新下载
+    print(f"正在下载 {file_name}...")
+    pooch.retrieve(
+        url,
+        path=path_target,
+        fname=file_name,
+        known_hash=None,
+    )
+    
 print("所有符合条件的文件下载完成！")
 
 
 ## data treatment 
-
 
 
 # %% Conversion and selection of data 
