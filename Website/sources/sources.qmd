@@ -10,13 +10,20 @@ format:
 <h1>Sources <i class="fas fa-book"></i></h1>
 </div>
 
-## Introduction
+## General
 
 <p class = "text"> The guidelines for this project were provided by our teachers, and are available on this page. </p>
 
 <p class = "text"> In terms of content and form, it was our collective work that led to this result. However, we drew inspiration from several pages of documentation, help, templates, etc. to arrive at this final result. </p>
 
 <p class = "text"> Below is a list of the external elements that enabled us to bring this project to fruition. </p>
+
+## Hypothesis 
+
+<p class = "text"> To make an hypothesis from our problem, we based on the work of <a href="https://www.researchgate.net/publication/337445763_L'impact_social_des_grands_evenements_sportifs_reflexions_theoriques_et_methodologiques_a_partir_de_l'Euro_2016">Charrier et al., 2019</a>:</p>
+
+<p style="text-indent: -1.25em; margin-left: 1.25em;">
+Charrier, D., Jourdan, J., Bourbillères, H., Djaballah, M., & Parmantier, C. (2019). L’impact social des grands événements sportifs : Réflexions théoriques et méthodologiques à partir de l’Euro 2016. Movement and Sports Sciences - Science et Motricite. https://doi.org/10.1051/sm/2019029 </p>
 
 ## Visuals
 

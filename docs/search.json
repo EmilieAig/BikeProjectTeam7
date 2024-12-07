@@ -11,7 +11,7 @@
     "href": "analyses/video.html#presentation",
     "title": "\nVideos \n",
     "section": "Presentation",
-    "text": "Presentation\n\nOn this page we can see a video of the Velomagg bikes traffic in Montpellier."
+    "text": "Presentation\n\nOn this page, we will present you a video of the routes of the bicycles Velomag in the city of Montpellier for the date of Monday, July 10, 2023. This date corresponds to the first day of the second week of the Tour de France.\n\n\nThis allows us to deepen the results we have obtained in the maps game and will allow us to look at what is happening in terms of traffic of cyclists during the different hours of a day.\n\n\nWe decided to choose a day of the week because we could notice on the maps that there was less traffic during the weekend."
   },
   {
     "objectID": "analyses/video.html#videos",
@@ -102,7 +102,7 @@
     "href": "index.html#context",
     "title": "\nWelcome to our project  Bike analyses in Montpellier during Tour de France\n",
     "section": "Context",
-    "text": "Context\n\nInstructions\n\nThe brief for this project was to carry out a survey of cycle traffic in Montpellier, through the analysis of datasets such as Montpellier Méditerranée Métropole’s VéloMagg bike runs, cyclist and pedestrian counts and data from the open road map.\n\n\nThis project had to combine aspects of interactive visualisation and the creation of a website. We had a choice of temporal resolution and the data was available from 2020 to 2024.\n\n\n\nProblematic\n\nWe decided that our project would focus on the following question: ‘What is the impact of the Tour de France 2023 on the behaviour of cyclists in Montpellier before, during and after the event?’.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, has had an impact on the habits of cyclists in the city of Montpellier.\n\n\n\nHypothesis\n\nBased in part on this article and our personal reflections, we believe that a high-profile, high-profile event such as the Tour de France can encourage people to cycle, during or after the Tour de France period. We have therefore made the assumption that the number of cyclists will increase during the period of the Tour de France and the following weeks."
+    "text": "Context\n\nInstructions\n\nThe brief for this project was to carry out a survey of cycle traffic in Montpellier, through the analysis of datasets such as Montpellier Méditerranée Métropole’s VéloMagg bike runs, cyclist and pedestrian counts and data from the open road map.\n\n\nThis project had to combine aspects of interactive visualisation and the creation of a website. We had a choice of temporal resolution and the data was available from 2020 to 2024.\n\n\n\nProblematic\n\nWe decided that our project would focus on the following question: ‘What is the impact of the Tour de France 2023 on the behaviour of cyclists in Montpellier before, during and after the event?’.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, has had an impact on the habits of cyclists in the city of Montpellier.\n\n\n\nHypothesis\n\nBased in part on the work of Charrier et al., 2019 and our personal reflections, we believe that a high-profile, high-profile event such as the Tour de France can encourage people to cycle, during or after the Tour de France period. We have therefore made the assumption that the number of cyclists will increase during the period of the Tour de France and the following weeks."
   },
   {
     "objectID": "index.html#data",
@@ -187,5 +187,26 @@
     "title": "\nInteractive map \n",
     "section": "Comparisons",
     "text": "Comparisons\n\nBetween maps\n\n\nBetween days"
+  },
+  {
+    "objectID": "analyses/video.html#analyses",
+    "href": "analyses/video.html#analyses",
+    "title": "\nVideos \n",
+    "section": "Analyses",
+    "text": "Analyses"
+  },
+  {
+    "objectID": "sources/sources.html#general",
+    "href": "sources/sources.html#general",
+    "title": "\nSources \n",
+    "section": "General",
+    "text": "General\n\nThe guidelines for this project were provided by our teachers, and are available on this page.\n\n\nIn terms of content and form, it was our collective work that led to this result. However, we drew inspiration from several pages of documentation, help, templates, etc. to arrive at this final result.\n\n\nBelow is a list of the external elements that enabled us to bring this project to fruition."
+  },
+  {
+    "objectID": "sources/sources.html#hypothesis",
+    "href": "sources/sources.html#hypothesis",
+    "title": "\nSources \n",
+    "section": "Hypothesis",
+    "text": "Hypothesis\n\nTo make an hypothesis from our problem, we based on the work of Charrier et al., 2019:\n\n\nCharrier, D., Jourdan, J., Bourbillères, H., Djaballah, M., & Parmantier, C. (2019). L’impact social des grands événements sportifs : Réflexions théoriques et méthodologiques à partir de l’Euro 2016. Movement and Sports Sciences - Science et Motricite. https://doi.org/10.1051/sm/2019029"
   }
 ]
