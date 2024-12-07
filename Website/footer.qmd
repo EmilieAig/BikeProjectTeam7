@@ -1,0 +1,7 @@
+<div class="custom-footer">
+  <p>&copy; 2024 - All rights reserved. 
+    <a class="MIT-license" href=/footer/MIT_license.qmd>MIT License</a> |
+    <a class="privacy-policy" href=/footer/privacy_policy.qmd>Privacy policy</a> | 
+    <a class="about-us" href=/footer/about_us.qmd>About us</a>
+  </p>
+</div>

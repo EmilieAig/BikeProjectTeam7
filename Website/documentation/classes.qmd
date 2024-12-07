@@ -1,0 +1,165 @@
+---
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+---
+
+<div style="text-align: center;">
+<h1>Classes <i class="fas fa-book-open"></i></h1>
+</div>
+
+## Website classes
+
+### 'Text'
+
+<p class = "text"> In the website, we have used the class named "text". </p>
+
+<p class ="text"> This class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls : </p> 
+
+<ul class = "text"> 
+<li><strong>color :</strong> for the choice of the text color : <code>black</code>. </li>
+<li><strong>text-align :</strong> for the choice of the text alignement : <code>justify</code>. </li>
+<li><strong>font-family :</strong> for the choice of font : <code>Lato, sans serif</code>. </li>
+<li><strong>font-size :</strong> for the choice of text size : <code>15px</code>. </li>
+<li><strong>font-weight :</strong> for the choice of the text weight (level of bold) : <code>500</code>. </li>
+<li><strong>margin-bottom :</strong> for the choice of the spacing between paragraphs : <code>1em</code>. </li>
+</ul>
+
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Navbar'
+
+<p class = "text"> In the website, we have used the class named "navbar". </p>
+
+<p class = "text"> This class is used in all sections of the website to style the navigation bar on the right  </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Nav'
+
+<p class = "text"> In the website, we have used the class named "nav". </p>
+
+<p class = "text"> This class is used in the '' section to </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Content'
+
+<p class = "text"> In the website, we have used the class named "content". </p>
+
+<p class = "text"> This class is used in the '' section to </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Footer'
+
+<p class = "text"> In the website, we have used the class named "footer". </p>
+
+<p class = "text"> This class is used in the '' section to </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Pointilles-rectangle'
+
+<p class = "text"> In the website, we have used the class named "pointilles-rectangle". </p>
+
+<p class = "text"> This class is used in the '' section to </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Bike'
+
+<p class = "text"> In the website, we have used the class named "bike". </p>
+
+<p class = "text"> This class is used in the '' section to </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Trombinoscope'
+
+<p class = "text"> In the website, we have used the class named "trombinoscope". </p>
+
+<p class = "text"> This class is used in the '' section to </p>
+ 
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+### 'Member'
+
+<p class = "text"> In the website, we have used the class named "member". </p> 
+
+<p class = "text"> This class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other. </p>
+
+<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+
+## Python classes
+## Class: `BikeAnimation`
+
+Generate an animation of bike trips using geospatial data and OpenStreetMap.
+
+This class processes bike trip data, computes routes on a graph derived from OpenStreetMap, and generates a video animation visualizing the trips over time.
+
+## Parameters
+
+- **`input_file`** (str):  
+  Path to the CSV file containing trip data. The file must include the following columns:  
+  `'Departure_Date'`, `'Departure_Time'`, `'Return_Date'`, `'Return_Time'`,  
+  `'Departure_latitude'`, `'Departure_longitude'`, `'Return_latitude'`, `'Return_longitude'`.
+
+- **`place_name`** (str, optional):  
+  Name of the place to fetch the OpenStreetMap graph for, e.g., `"Montpellier, France"`.  
+  Default is `"Montpellier, France"`.
+
+- **`target_date`** (str or datetime-like, optional):  
+  Filter trips for a specific date. If not specified, all dates in the input file are used.  
+  Default is `None`.
+
+- **`output_video`** (str, optional):  
+  Path to the output video file. Default is `"bike_animation.mp4"`.
+
+- **`fps`** (int, optional):  
+  Frames per second for the output video. Default is 30.
+
+- **`minutes_per_second`** (int, optional):  
+  The speed ratio of real-world minutes to animation seconds.  
+  Default is 120 minutes per animation second.
+
+- **`sample_size`** (int, optional):  
+  Number of trips to process from the input file. If `None`, all trips are processed.  
+  Default is `None`.
+
+## Attributes
+
+- **`df`** (pandas.DataFrame):  
+  The processed DataFrame containing trip data with additional computed fields.
+
+- **`G`** (networkx.MultiDiGraph):  
+  The graph representation of the OpenStreetMap data for the specified place.
+
+- **`nodes`** (geopandas.GeoDataFrame):  
+  GeoDataFrame containing the nodes of the graph.
+
+- **`total_frames`** (int):  
+  Total number of frames to generate for the animation.
+
+- **`background_file`** (str):  
+  Path to the saved background graph image.
+
+## Methods
+
+- **`precompute_route(row)`**: Calculates the shortest route between two points.
+- `save_graph_background()`: Generates and saves a background image of the graph.
+- `create_animation()`: Creates a video animation from the trips.
+
+**Note:** For more details about the functions, visit the <a href="functions.html">Functions section</a>.
+
+## Examples
+
+### Create an animation for a dataset with the default settings
+
+```python
+animation = BikeAnimation(input_file="data/trips.csv", place_name="Paris, France")
+animation.create_animation()
+```
+

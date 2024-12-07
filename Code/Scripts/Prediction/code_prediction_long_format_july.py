@@ -1,64 +1,52 @@
 #%%
-import pandas as pd
+# Importing necessary libraries
+import pandas as pd # For data manipulation and analysis
+import pooch # For downloading and caching files
+from pathlib import Path # For handling file paths
 
-# Chargement des données de prédictions
-data_path = '/home/anne_laure/HA712X/BikeProjectTeam7/Code/Scripts/Prediction/predictions_bike_intensity_july_week.csv'
+# Configure Pooch to manage the necessary files
+BASE_URL = "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Prediction_Data/"
+pooch_data = pooch.create(
+    path=pooch.os_cache("BikeProjectTeam7"),  # Cache for downloaded files
+    base_url=BASE_URL,                       # Base URL for files
+    registry={                               # Files to manage with their SHA256 hashes
+        "predictions_bike_intensity_july_week.csv": "6a384fa7960da607f14b5dbee0241783b8e8c510a971a8c7439a2a587449e53b"
+    },
+)
+
+# Define the output directory for the saved files
+output_dir = Path("Code/Data/Prediction_Data")  # Define the folder where you want to save the file
+output_dir.mkdir(parents=True, exist_ok=True)  # Create the directory if it doesn't exist
+
+# Download and load the predictions file
+data_path = pooch_data.fetch("predictions_bike_intensity_july_week.csv")  # Fetch or verify the file
 predictions_df = pd.read_csv(data_path, sep=';')
 
-# Transformation des données en format long
-melted_df = pd.melt(predictions_df, id_vars=['date'], var_name='laneId', value_name='predicted_intensity')
-
-# Conversion de la date en format datetime
-melted_df['date'] = pd.to_datetime(melted_df['date'])
-
-# Sauvegarde du DataFrame transformé dans un nouveau fichier CSV
-output_path = '/home/anne_laure/HA712X/BikeProjectTeam7/Code/Scripts/Prediction/predictions_long_format_july.csv'
-melted_df.to_csv(output_path, index=False, sep=';')
-
-print(f"Transformation terminée et sauvegardée sous '{output_path}'")
-
-##########On voit que il y a un troue ##############################################################
-# %%
-import pandas as pd
-
-# Chargement des données de prédictions
-data_path = '/home/anne_laure/HA712X/BikeProjectTeam7/Code/Scripts/Prediction/predictions_bike_intensity_july_week.csv'
-predictions_df = pd.read_csv(data_path, sep=';')
-
-# Vérifier les valeurs manquantes dans la colonne '253757735'
-missing_values = predictions_df['253757735'].isna().sum()
-print(f"Nombre de valeurs manquantes pour '253757735' : {missing_values}")
-
-######################## Bon code ###############################################################################################
-
-#%%
-import pandas as pd
-
-# Chargement des données de prédictions
-data_path = '/home/anne_laure/HA712X/BikeProjectTeam7/Code/Scripts/Prediction/predictions_bike_intensity_july_week.csv'
-predictions_df = pd.read_csv(data_path, sep=';')
-
-# Série de valeurs à remplacer pour les valeurs manquantes de '253757735'
+# Series of replacement values for missing data in '253757735'
 replacement_values = [
     461.34576511247957, 562.0277158350742, 543.6324160701633, 537.5385273355084,
     401.0681366893027, 245.31856472538269, 168.9334585514308
 ]
 
-# Identifier les indices où les valeurs sont manquantes pour la colonne '253757735'
+# Identify indices with missing values in the '253757735' column
 missing_indices = predictions_df[predictions_df['253757735'].isna()].index
 
-# Remplacer les valeurs manquantes par les valeurs spécifiques
+# Replace missing values with the specific values
 for idx, value in zip(missing_indices, replacement_values):
     predictions_df.at[idx, '253757735'] = value
 
-# Transformer les données en format long
+# Transform the data into a long format
 melted_df = pd.melt(predictions_df, id_vars=['date'], var_name='laneId', value_name='predicted_intensity')
 
-# Conversion de la date en format datetime
+# Convert the date column to datetime format
 melted_df['date'] = pd.to_datetime(melted_df['date'])
 
-# Sauvegarde du DataFrame transformé dans un nouveau fichier CSV
-output_path = '/home/anne_laure/HA712X/BikeProjectTeam7/Code/Scripts/Prediction/predictions_long_format_july.csv'
-melted_df.to_csv(output_path, index=False, sep=';')
+# Define the output path relative to the Prediction_Data directory
+output_path = output_dir / 'predictions_long_format_july.csv'  # Save the file in Prediction_Data
 
-print(f"Transformation terminée et sauvegardée sous '{output_path}'")
+# Save the results to a CSV file in the 'Prediction_Data' directory
+melted_df.to_csv(output_path, index=False, sep=';')  # Save the transformed data as a CSV file
+
+print(f"Transformation complete and saved to '{output_path}'.")
+
+# %%

@@ -1,0 +1,22 @@
+---
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+---
+
+<div style="text-align: center;">
+<h1>Videos <i class="fas fa-video"></i></h1>
+</div>
+
+## Presentation
+
+<p class = "text"> This section presents an animated video visualizing the cyclists' journeys during a specific day of the 2023 Tour de France. It highlights cycling activity in Montpellier using data from the VéloMagg system. </p>
+
+<p class = "text"> You can choose the date and the video will be interactive. </p>
+
+## Videos
+
+<div class="container"> <div class="video-container"> 
+<iframe src="https://www.youtube.com/embed/Gc6I6s13_JY " frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width="800" height="450"></iframe></div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
