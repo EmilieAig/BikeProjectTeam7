@@ -204,8 +204,12 @@ for date in dates_of_interest:
 # Add layer control to toggle between date layers
 LayerControl().add_to(m)
 
-# Save the map to the 'Result' folder
-output_path = "Code/Result/bike_traffic_prediction_map.html"
-m.save(output_path)
-print(f"Map saved as {output_path}")
+# Save the map in the 'Result' folder
+result_folder = Path("BikeProjectTeam7/Code/Result")
+result_folder.mkdir(parents=True, exist_ok=True)
+map_file_path = result_folder / "bike_traffic_prediction_map.html"
+m.save(str(map_file_path))
+
+print(f"Map saved to {map_file_path}")
+
 # %%
