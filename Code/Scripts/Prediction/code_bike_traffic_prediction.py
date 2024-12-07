@@ -6,6 +6,7 @@ import osmnx as ox # Downloading and manipulating OpenStreetMap data, particular
 from geopy.distance import geodesic # Calculation of geographical distances between two points
 from folium import LayerControl # Managing layers on a Folium map
 from tqdm import tqdm # Displaying a progress bar in loops
+from pathlib import Path #To work with paths
 import pooch # For downloading and caching files
 import os # For interacting with the file system
 
@@ -144,8 +145,8 @@ legend_html = '''
     <i style="background:#FD6121; width:15px; height:15px; display:inline-block;"></i> > 1200<br>
     <i style="background:#D95018; width:15px; height:15px; display:inline-block;"></i> > 900<br>
     <i style="background:#FFEF3A; width:15px; height:15px; display:inline-block;"></i> > 600<br>
-    <i style="background:#6CD932; width:15px; height:15px; display:inline-block;"></i> >= 300<br>
-    <i style="background:#038C05; width:15px; height:15px; display:inline-block;"></i> < 300 (Low Intensity)<br>
+    <i style="background:#6CD932; width:15px; height:15px; display:inline-block;"></i> > 300<br>
+    <i style="background:#038C05; width:15px; height:15px; display:inline-block;"></i> <= 300 (Low Intensity)<br>
 </div>
 '''
 m.get_root().html.add_child(folium.Element(legend_html))
@@ -167,11 +168,11 @@ def create_layer_for_date(date, graph, merged_data):
 
             # Determine path color based on intensity
             if intensity > 1500:
-                color = '#FE4528'  # Red
+                color = '#D12315'  # Red
             elif intensity > 1200:
-                color = '#FD6121'  # Orange
+                color = '#FE4528'  # Orange
             elif intensity > 900:
-                color = '#D95018'  # Light Orange
+                color = '#FB9234'  # Light Orange
             elif intensity > 600:
                 color = '#FFEF3A'  # Yellow
             elif intensity > 300:
@@ -205,11 +206,13 @@ for date in dates_of_interest:
 LayerControl().add_to(m)
 
 # Save the map in the 'Result' folder
-result_folder = Path("BikeProjectTeam7/Code/Result")
-result_folder.mkdir(parents=True, exist_ok=True)
+result_folder = Path("../../Result")   
+result_folder.mkdir(parents=True, exist_ok=True)  
+
 map_file_path = result_folder / "bike_traffic_prediction_map.html"
+
 m.save(str(map_file_path))
 
-print(f"Map saved to {map_file_path}")
+print(f"Carte enregistrée dans {map_file_path}")
 
 # %%
