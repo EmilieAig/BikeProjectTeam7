@@ -205,7 +205,7 @@ for date in dates_of_interest:
 # Add layer control to toggle between date layers
 LayerControl().add_to(m)
 
-# Save the map in the 'Result' folder
+# Save the map in the 'Result' folder 
 result_folder = Path("../../Result")   
 result_folder.mkdir(parents=True, exist_ok=True)  
 
