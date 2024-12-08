@@ -6,6 +6,7 @@ import osmnx as ox # Downloading and manipulating OpenStreetMap data, particular
 from geopy.distance import geodesic # Calculation of geographical distances between two points
 from folium import LayerControl # Managing layers on a Folium map
 from tqdm import tqdm # Displaying a progress bar in loops
+from pathlib import Path #To work with paths
 import pooch # For downloading and caching files
 import os # For interacting with the file system
 
@@ -28,14 +29,14 @@ def download_file(url, target_path, known_hash):
 # File URLs and their respective hash values
 files_info = {
     "ecocompteur_file": {
-        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Scripts/Prediction/ecocompteurs_coords.csv",
-        "target_path": "./data/ecocompteurs_coords.csv",
+        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Prediction_Data/ecocompteurs_coords.csv",
+        "target_path": "./ecocompteurs_coords.csv",
         "known_hash": "08c71a1718b279efe1ebb60f6446e19c8b786d93a2a16bcb8504ab1a888dc3f8"  # SHA256 hash of ecocompteurs_coords.csv
     },
     "predictions_file": {
-        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Scripts/Prediction/predictions_long_format_july.csv",
-        "target_path": "./data/predictions_long_format_july.csv",
-        "known_hash": "1c57f8aae4ef6eb940319776a9b66e7a1d3731fa1b5f2cced8493fa27928bf42"
+        "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Prediction_Data/predictions_long_format_july.csv",
+        "target_path": "./predictions_long_format_july.csv",
+        "known_hash": "eea6dc71213cf36a6ce9ea768cc01c3c08595a6e01513b6248c64ba117626035"
     },
     "stations_file": {
         "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Video_Data/GeolocalisationStation.csv",
@@ -144,8 +145,8 @@ legend_html = '''
     <i style="background:#FD6121; width:15px; height:15px; display:inline-block;"></i> > 1200<br>
     <i style="background:#D95018; width:15px; height:15px; display:inline-block;"></i> > 900<br>
     <i style="background:#FFEF3A; width:15px; height:15px; display:inline-block;"></i> > 600<br>
-    <i style="background:#6CD932; width:15px; height:15px; display:inline-block;"></i> >= 300<br>
-    <i style="background:#038C05; width:15px; height:15px; display:inline-block;"></i> < 300 (Low Intensity)<br>
+    <i style="background:#6CD932; width:15px; height:15px; display:inline-block;"></i> > 300<br>
+    <i style="background:#038C05; width:15px; height:15px; display:inline-block;"></i> <= 300 (Low Intensity)<br>
 </div>
 '''
 m.get_root().html.add_child(folium.Element(legend_html))
@@ -167,11 +168,11 @@ def create_layer_for_date(date, graph, merged_data):
 
             # Determine path color based on intensity
             if intensity > 1500:
-                color = '#FE4528'  # Red
+                color = '#D12315'  # Red
             elif intensity > 1200:
-                color = '#FD6121'  # Orange
+                color = '#FE4528'  # Orange
             elif intensity > 900:
-                color = '#D95018'  # Light Orange
+                color = '#FB9234'  # Light Orange
             elif intensity > 600:
                 color = '#FFEF3A'  # Yellow
             elif intensity > 300:
@@ -204,7 +205,14 @@ for date in dates_of_interest:
 # Add layer control to toggle between date layers
 LayerControl().add_to(m)
 
-# Save the map to an HTML file
-map_file = "bike_traffic_prediction_map.html"
-m.save(map_file)
-print(f"Map saved as {map_file}")
+# Save the map in the 'Result' folder 
+result_folder = Path("../../Result")   
+result_folder.mkdir(parents=True, exist_ok=True)  
+
+map_file_path = result_folder / "bike_traffic_prediction_map.html"
+
+m.save(str(map_file_path))
+
+print(f"Carte enregistrée dans {map_file_path}")
+
+# %%

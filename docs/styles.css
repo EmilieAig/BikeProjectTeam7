@@ -315,19 +315,41 @@ body.quarto-dark .custom-footer a:hover {
 /*       VIDEOS STYLES          */
 /* ---------------------------- */
 
+<<<<<<< HEAD
 /* Common styles for video container and reverse container */
 .video-container video, .video-container-r video {
   width: 100%;
   height: auto;                   /* maintain aspect ratio of the video */
   border: 1px solid #ccc;
+=======
+/* Conteneur principal avec vidéo et texte */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* Centre les éléments horizontalement */
+  max-width: 1000px;  /* Limite la taille du conteneur */
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+>>>>>>> 106c1d70ba8c865cbdfc7711f8297ac699874776
 }
 
 /* Style for video container (flex item) */
 .video-container {
+<<<<<<< HEAD
   flex: 2;                      /* video container will take up more space */
+=======
+  position: relative;
+  flex: 1;  /* L'espace de la vidéo s'adapte */
+>>>>>>> 106c1d70ba8c865cbdfc7711f8297ac699874776
   margin-right: 20px;
+  padding-top: 56.25%; /* Ratio 16:9 (hauteur à 56.25% de la largeur) */
+  height: 0;
 }
 
+<<<<<<< HEAD
 /* Style for reverse video container (flex item) */
 .video-container-r {
   flex: 2;  
@@ -351,3 +373,37 @@ body.quarto-dark .custom-footer a:hover {
 .container-r {
   flex-direction: row-reverse;  /* reverse the order of video and text */
 }
+=======
+.video-container iframe, .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+.text {
+  flex: 1;  /* L'espace du texte s'adapte également */
+  max-width: 300px; /* Limite la largeur du texte */
+}
+
+@media (max-width: 768px) {
+  /* Sur les petits écrans, empile vidéo et texte */
+  .container {
+    flex-direction: column;  /* Empile les éléments verticalement */
+    align-items: center;     /* Centre les éléments */
+  }
+
+  .video-container {
+    margin-right: 0; /* Enlever la marge droite sur petits écrans */
+    max-width: 100%; /* La vidéo occupe toute la largeur du conteneur */
+    padding-top: 56.25%; /* Ratio 16:9 sur petits écrans */
+  }
+
+  .text {
+    max-width: 100%;  /* Assurer que le texte occupe toute la largeur */
+    margin-top: 20px; /* Ajoute un espacement entre la vidéo et le texte */
+  }
+}
+>>>>>>> 106c1d70ba8c865cbdfc7711f8297ac699874776

@@ -23,7 +23,8 @@ coords_df = combined_df[['laneId', 'latitude', 'longitude']].drop_duplicates()
 
 # Define the save path for the output file 'ecocompteurs_coords.csv'
 current_folder = Path.cwd()
-coords_file_path = current_folder / 'ecocompteurs_coords.csv'
+prediction_data_folder = current_folder / 'Code' / 'Data' / 'Prediction_Data'  # Path to the Prediction_Data folder
+coords_file_path = prediction_data_folder / 'ecocompteurs_coords.csv'
 
 # Save the extracted data into a CSV file
 coords_df.to_csv(coords_file_path, index=False)
