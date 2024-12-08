@@ -10,7 +10,7 @@ format:
   <h1>Functions <i class="fas fa-book-open"></i></h1>
 </div>
 
-## Method: `precompute_route`
+## `precompute_route`
 
 <p class = "text"> Precompute the shortest route for a single trip. </p>
 
@@ -50,7 +50,7 @@ animation.precompute_route(row)
 # Output: [123456, 123457, 123458, ...]
 ```
 
-## Method: `create_animation`
+## `create_animation`
 
 <p class = "text"> Generate a video animation of the bike trips. </p>
 
@@ -78,27 +78,27 @@ animation = BikeAnimation(input_file="data/trips.csv")
 animation.create_animation()
 ```
 
-## Method : `download_file`
+## `download_file`
 
 <p class = "text"> Download a file from a URL, store it locally, and verify its integrity using a SHA256 hash. </p>
 
 ### Parameters
 
 <ul class = "text">
-  <li> **`url`** (str): The URL of the file to download. </li>
-  <li> **`output_path`** (str): Path where the downloaded file will be saved. </li>
-  <li> **`expected_hash`** (str): The expected SHA256 hash of the file to verify its integrity. </li>
+  <li> **`url`** (str): the URL of the file to download. </li>
+  <li> **`output_path`** (str): path where the downloaded file will be saved. </li>
+  <li> **`expected_hash`** (str): the expected SHA256 hash of the file to verify its integrity. </li>
 </ul>
 
 ### Returns
 
 <ul class = "text">
-  <li> **None**: This function does not return any value but raises an exception if the hash verification fails. </li>
+  <li> **None**: this function does not return any value but raises an exception if the hash verification fails. </li>
 </ul>
 
 ### Examples
 
-<p class = "text"> Example: Download a file and verify its integrity. </p>
+<p class = "text"> Example: download a file and verify its integrity. </p>
 
 ```python
 download_file(
@@ -108,20 +108,28 @@ download_file(
 )
 ```
 
-## Method : `is_within_radius`
+## `is_within_radius`
 
 <p class = "text"> Check if a given point (latitude, longitude) is within a specified radius from a center point. </p>
 
 ### Parameters
 
-<ul class = "text"> <li> **`lat`** (float): Latitude of the point to check. </li> <li> **`lon`** (float): Longitude of the point to check. </li> <li> **`center_lat`** (float): Latitude of the center point. </li> <li> **`center_lon`** (float): Longitude of the center point. </li> <li> **`radius_km`** (float): The radius in kilometers. </li> </ul>
+<ul class = "text"> 
+  <li> **`lat`** (float): latitude of the point to check. </li> 
+  <li> **`lon`** (float): Longitude of the point to check. </li> 
+  <li> **`center_lat`** (float): latitude of the center point. </li> 
+  <li> **`center_lon`** (float): Longitude of the center point. </li> 
+  <li> **`radius_km`** (float): the radius in kilometers. </li> 
+</ul>
 
 ### Returns
-<ul class = "text"> <li> **bool**: `True` if the point is within the radius, otherwise `False`. </li> </ul>
+<ul class = "text"> 
+  <li> **bool**: `True` if the point is within the radius, otherwise `False`. </li> 
+</ul>
 
 ### Examples
 
-<p class = "text"> Example: Check if a point is within 15 km of Montpellier. </p>
+<p class = "text"> Example: check if a point is within 15 km of Montpellier. </p>
 
 ```python
 is_within_radius(
@@ -131,21 +139,27 @@ is_within_radius(
 )
 ```
 
-## Method : `find_station_name`
+## `find_station_name`
 
 <p class = "text"> Find the name of the nearest station for a given geographic point by calculating distances using Geopy. </p>
 
 ### Parameters
 
-<ul class = "text"> <li> **`latitude`** (float): Latitude of the target point. </li> <li> **`longitude`** (float): Longitude of the target point. </li> <li> **`stations_df`** (pandas.DataFrame): DataFrame containing station data with columns `'latitude'`, `'longitude'`, and `'station_name'`. </li> </ul>
+<ul class = "text"> 
+  <li> **`latitude`** (float): latitude of the target point. </li> 
+  <li> **`longitude`** (float): longitude of the target point. </li> 
+  <li> **`stations_df`** (pandas.DataFrame): dataFrame containing station data with columns `'latitude'`, `'longitude'`, and `'station_name'`. </li> 
+</ul>
 
 ### Returns
 
-<ul class = "text"> <li> **str**: Name of the nearest station. </li> </ul>
+<ul class = "text"> 
+  <li> **str**: name of the nearest station. </li> 
+</ul>
 
 ### Examples
 
-<p class = "text"> Example: Find the nearest station to a point. </p>
+<p class = "text"> Example: find the nearest station to a point. </p>
 
 ```python
 find_station_name(
@@ -154,21 +168,27 @@ find_station_name(
 )
 ```
 
-## Method : `safe_nearest_node`
+## `safe_nearest_node`
 
 <p class = "text"> Securely find the nearest node in a graph for a given geographic point, handling exceptions. </p>
 
 ### Parameters
 
-<ul class = "text"> <li> **`graph`** (networkx.Graph): The road network graph. </li> <li> **`latitude`** (float): Latitude of the target point. </li> <li> **`longitude`** (float): Longitude of the target point. </li> </ul>
+<ul class = "text"> 
+  <li> **`graph`** (networkx.Graph): the road network graph. </li> 
+  <li> **`latitude`** (float): Latitude of the target point. </li> 
+  <li> **`longitude`** (float): longitude of the target point. </li> 
+</ul>
 
 ### Returns
 
-<ul class = "text"> <li> **int**: ID of the nearest node. </li> </ul>
+<ul class = "text"> 
+  <li> **int**: ID of the nearest node. </li> 
+</ul>
 
 ### Examples
 
-<p class = "text"> Example: Find the nearest node in a road network. </p>
+<p class = "text"> Example: find the nearest node in a road network. </p>
 
 ```python
 safe_nearest_node(
@@ -177,21 +197,27 @@ safe_nearest_node(
 )
 ```
 
-## Method : `create_layer_for_date`
+## `create_layer_for_date`
 
 <p class = "text"> Create a map layer for a given date, including paths and station markers. </p>
 
 ### Parameters
 
-<ul class = "text"> <li> **`date`** (str): Date in the format `'YYYY-MM-DD'`. </li> <li> **`map_obj`** (folium.Map): The map object to add the layer to. </li> <li> **`data`** (pandas.DataFrame): DataFrame containing path and station information for the date. </li> </ul>
+<ul class = "text"> 
+  <li> **`date`** (str): date in the format `'YYYY-MM-DD'`. </li> 
+  <li> **`map_obj`** (folium.Map): The map object to add the layer to. </li> 
+  <li> **`data`** (pandas.DataFrame): dataFrame containing path and station information for the date. </li> 
+</ul>
 
 ### Returns
 
-<ul class = "text"> <li> **None**: This function does not return a value but modifies the map object in place. </li> </ul>
+<ul class = "text"> 
+  <li> **None**: this function does not return a value but modifies the map object in place. </li> 
+</ul>
 
 ### Examples
 
-<p class = "text"> Example: Create a map layer for July 10, 2023. </p>
+<p class = "text"> Example: create a map layer for July 10, 2023. </p>
 
 ```python
 create_layer_for_date(

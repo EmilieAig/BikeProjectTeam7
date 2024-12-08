@@ -32,14 +32,14 @@ Bike analyses in Montpellier during Tour de France</h1>
 
 <p class = "text"> We decided that our project would focus on the following question: ‘What is the impact of the Tour de France 2023 on the behaviour of cyclists in Montpellier before, during and after the event?’. </p> 
 
-### Goal
+### Aim
 
 <p class = "text"> The goal is to analyze whether this sporting event, which took place in July 2023, has had an impact on the habits of cyclists in the city of Montpellier. </p>
 
 ### Hypothesis
 
 <p class = "text"> 
-Based in part on the work of <a href="https://www.researchgate.net/publication/337445763_L'impact_social_des_grands_evenements_sportifs_reflexions_theoriques_et_methodologiques_a_partir_de_l'Euro_2016">Charrier et al., 2019</a> and our personal reflections, we believe that a high-profile, high-profile event such as the Tour de France can encourage people to cycle, during or after the Tour de France period. We have therefore made the assumption that the number of cyclists will increase during the period of the Tour de France and the following weeks. </p>
+Based in part on the work of <a href="https://www.researchgate.net/publication/337445763_L'impact_social_des_grands_evenements_sportifs_reflexions_theoriques_et_methodologiques_a_partir_de_l'Euro_2016">Charrier et al., 2019</a> and our personal reflections, we believe that a high-profile event such as the Tour de France can encourage people to cycle, during or after the Tour de France period. We have therefore made the assumption that the number of cyclists will increase during the period of the Tour de France and the following weeks. </p>
 
 ## Analyses
 
@@ -57,8 +57,8 @@ Based in part on the work of <a href="https://www.researchgate.net/publication/3
 
 <p class = "text"> Firstly, we retrieved data on the journeys made by VéloMagg bikes between stations in the VéloMagg network in the Montpellier metropolitan area. </p>
 
-<p class = "text"> Secondly, we have retrieved data for each of the bicycle counters (eco-counters) in production in the Montpellier Metropolitan Area, showing the number of bicycles (and piétions in some cases) counted. The daily data is the total of the previous day's count. This information is divided into as many files as there are eco-counters. Each eco-counter is identified by a serial number, which we were able to find and associate with its latitude and longitude. </p>
+<p class = "text"> Secondly, we have retrieved data for each of the bicycle counters (eco-counters) in production in the Montpellier Metropolitan Area, showing the number of bicycles (and pietons in some cases) counted. The daily data is the total of the previous day's count. This information is divided into as many files as there are eco-counters. Each eco-counter is identified by a serial number, which we were able to find and associate with its latitude and longitude. </p>
 
 <p class = "text"> All the data we have selected was extracted between April 2023 and October 2023. This corresponds to 3 months before the Tour de France and 3 months after, which we thought was a good margin for observing changes and  which is just over half a year (7 months). </p>
 
-<p class = "text"> We have processed and re-organised this data so that it can be used in various scripts (available in full on our Github page) to produce graphs, maps and a video. </p>
+<p class = "text"> We have processed and re-organised this data so that it can be used in various scripts (fully available on our Github page) to produce graphs, maps and a video. </p>

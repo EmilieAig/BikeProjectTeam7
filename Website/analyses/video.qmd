@@ -12,15 +12,7 @@ format:
 
 ## Presentation
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 <p class = "text"> On this page, we will present you a video of the routes of the bicycles Velomag in the city of Montpellier for the date of Monday, July 10, 2023. This date corresponds to the first day of the second week of the Tour de France. </p>
-=======
-<p class = "text"> This section presents an animated video visualizing the cyclists' journeys during a specific day of the 2023 Tour de France. It highlights cycling activity in Montpellier using data from the VéloMagg system. </p>
->>>>>>> 106c1d70ba8c865cbdfc7711f8297ac699874776
-=======
-<p class = "text"> On this page, we will present you a video of the routes of the bicycles Velomag in the city of Montpellier for the date of Monday, July 10, 2023. This date corresponds to the first day of the second week of the Tour de France. </p>
->>>>>>> ec9329df5560dacde195ce765f5e77c41c337422
 
 <p class = "text"> This allows us to deepen the results we have obtained in the maps game and will allow us to look at what is happening in terms of traffic of cyclists during the different hours of a day. </p>
 
@@ -28,26 +20,14 @@ format:
 
 ## Videos
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<div class="container"> <div class="video-container"> <video src="/images/Bike_Animation_10-07-2023.MOV" controls></video> </div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
-=======
 <p class="text">Bike trafic of Monday 10 July 2023</p>
->>>>>>> ec9329df5560dacde195ce765f5e77c41c337422
 
 <iframe src="https://www.youtube.com/embed/Gc6I6s13_JY " frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width="800" height="450"></iframe> 
 
 ## Analyses
 
-<<<<<<< HEAD
-=======
-<div class="container"> <div class="video-container"> 
-<iframe src="https://www.youtube.com/embed/Gc6I6s13_JY " frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width="800" height="450"></iframe></div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
->>>>>>> 106c1d70ba8c865cbdfc7711f8297ac699874776
-=======
 <p class="text"> This video shows Velomagg bike journeys in Montpellier from midnight on Monday 10 July 2023 to 11.59pm on the same day. </p>
 
 <p class="text"> The peak times are from 7.30am to 9am, around 1pm and from 5.30pm to around 9pm. </p>
 
 <p class="text"> This seems to correspond to the start of work, the lunch break and the end of the working day. </p>
->>>>>>> ec9329df5560dacde195ce765f5e77c41c337422
