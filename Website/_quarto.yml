@@ -1,7 +1,7 @@
 # _quarto.yml
 project:
   type: website
-  output-dir: /docs
+  output-dir: /Website/docs
 
 execute:
   freeze: auto
