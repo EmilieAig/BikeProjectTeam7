@@ -105,7 +105,35 @@ download_file(
     expected_hash="abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"
 )
 ```
+##  `estimate_unknown_intensity`
 
+### Description:
+This function estimates the traffic intensity of unknown nodes using the intensity data from known nodes. It then updates the graph `G` with the estimated intensities for the unknown nodes.
+
+### Parameters:
+- `daily_data` (dict): A dictionary containing daily traffic intensity data for known nodes, in the format `{date: DataFrame}`. Each DataFrame includes information about the known nodes and their intensities for each date.
+- `G` (networkx.Graph): A `networkx` graph object representing the bike network structure. The graph must contain nodes for which traffic intensity is known, as well as nodes for which intensity is unknown.
+
+### Returns:
+- `estimated_data` (dict): A dictionary containing the estimated intensities for unknown nodes, in the format `{date: DataFrame}`. Each DataFrame includes the estimated intensities for unknown nodes on the corresponding date.
+
+### Example:
+```python
+# Define known daily traffic intensity data
+daily_data_known = {
+    "2023-07-10": pd.DataFrame({"nearest_node": [1, 2, 3], "intensity": [100, 150, 200]}),
+    "2023-07-11": pd.DataFrame({"nearest_node": [1, 2, 3], "intensity": [110, 160, 210]})
+}
+
+# Load the graph representing the network
+G = nx.Graph()
+
+# Estimate intensity for unknown nodes
+estimated_data = estimate_unknown_intensity(daily_data_known, G)
+
+# Display the estimated data for July 10, 2023
+print(estimated_data["2023-07-10"])
+```
 ## `find_station_name`
 
 <p class = "text"> Find the name of the nearest station for a given geographic point by calculating distances using Geopy. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions. </p>
@@ -165,7 +193,36 @@ is_within_radius(
     radius_km=15
 )
 ```
+## `load_daily_node_intensity`
 
+### Description:
+This function loads traffic intensity data for multiple dates and returns a dictionary where each key is a date, and each value is a DataFrame containing the traffic intensity data for the corresponding date.
+
+### Parameters:
+- `dates` (list): A list of dates to process, formatted as strings (e.g., "2023-07-10").
+- `counters` (DataFrame): A DataFrame that maps counters to their corresponding network nodes.
+- `combined_file_path` (str): The path to the original counter data file that contains the traffic data for all dates.
+
+### Returns:
+- `daily_data` (dict): A dictionary where each key is a date, and each value is a DataFrame containing the traffic intensity data for that date, formatted as `{date: DataFrame}`.
+
+### Example:
+```python
+# Example list of dates to process
+dates = ["2023-07-10", "2023-07-11"]
+
+# Example counter-to-node mapping DataFrame
+counters = pd.DataFrame({"counter_id": [1, 2], "node_id": [1001, 1002]})
+
+# Example path to the original counter data file
+combined_file_path = "path/to/data.csv"
+
+# Load the daily node intensity data
+daily_data = load_daily_node_intensity(dates, counters, combined_file_path)
+
+# Display the loaded data for July 10, 2023
+print(daily_data["2023-07-10"])
+```
 ## Method: `create_animation`
 
 <p class = "text"> Generate a video animation of the bike trips. </p>
