@@ -181,9 +181,9 @@ format:
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
-:::: {.fragment}
+::: {.fragment}
 - **Fonctionnalités de la carte**
-::::
+:::
 
 :::: {.columns}
 
@@ -201,9 +201,12 @@ format:
 
 ::::
 
-<div style="position: relative; text-align: center; margin-top: 700px;">
-  <img src="/images/Legend.PNG" width="150" height="100" />
+<!-- Image légende après la première carte avec un fragment -->
+::: {.fragment}
+<div style="position: relative; text-align: center; margin-top: 80px;">
+  <img src="/images/Legend.PNG" alt="Legend" width="200" height="150" />
 </div>
+:::
 
 ![](/images/bike.png){.absolute top=800 left=400 width="20" height="20"}
 
