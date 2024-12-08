@@ -29,6 +29,8 @@ website:
             href: documentation/functions.qmd
           - text: "Classes"
             href: documentation/classes.qmd
+      - text: "Sources"
+        href: sources/sources.qmd
     right:
       - icon: github
         href: https://github.com/EmilieAig/BikeProjectTeam7

@@ -12,26 +12,29 @@ format:
 
 ## Method: `precompute_route`
 
-Precompute the shortest route for a single trip.
+<p class = "text"> Precompute the shortest route for a single trip. </p>
 
-Given a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph.
+<p class = "text"> Given a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph. </p>
 
 ### Parameters
 
-- **`row`** (pandas.Series):  
-  A row from the input DataFrame containing trip information.  
-  The row must include the following columns:
-  - `'Departure_latitude'`, `'Departure_longitude'`
-  - `'Return_latitude'`, `'Return_longitude'`
+<ul class = "text">
+  <li> **`row`** (pandas.Series): a row from the input DataFrame containing trip information. The row must include the following columns: </li> 
+  <ul class = "text">
+    <li> `'Departure_latitude'`, `'Departure_longitude'` </li>
+    <li> `'Return_latitude'`, `'Return_longitude'` </li>
+  </ul>
+</ul>
 
 ### Returns
 
-- **list of int or None**:  
-  A list of node IDs representing the shortest path in the graph, or `None` if the route cannot be computed.
+<ul class = "text"> 
+  <li> **list of int or None**: a list of node IDs representing the shortest path in the graph, or `None` if the route cannot be computed. </li>
+</ul>
 
 ### Examples
 
-#### Example 1: Precompute the shortest route for a single trip
+<p class = "text"> Example: Precompute the shortest route for a single trip. </p>
 
 ```python
 import pandas as pd
@@ -46,25 +49,29 @@ row = pd.Series({
 animation.precompute_route(row)
 # Output: [123456, 123457, 123458, ...]
 ```
+
 ## Method: `create_animation`
 
-Generate a video animation of the bike trips.
+<p class = "text"> Generate a video animation of the bike trips. </p>
 
-This method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file.
+<p class = "text"> This method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file. </p>
 
 ### Returns
 
-- **None**:  
-  This method does not return any value.
+<ul class = "text">
+  <li> **None**: this method does not return any value. </li>
+</ul>
 
 ### Notes
 
-- This method uses **multiprocessing** to parallelize frame generation, which can be resource-intensive.
-- Ensure that you have sufficient disk space for temporary files generated during the process.
+<ul class = "text">
+ <li> This method uses **multiprocessing** to parallelize frame generation, which can be resource-intensive. </li>
+ <li> Ensure that you have sufficient disk space for temporary files generated during the process. </li>
+</ul>
 
 ### Examples
 
-#### Example 1: Generate the animation for the loaded dataset
+<p class = "text"> Example: Generate the animation for the loaded dataset. </p>
 
 ```python
 animation = BikeAnimation(input_file="data/trips.csv")

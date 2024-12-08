@@ -1,86 +1,98 @@
-/* styles.css : to determine the graphic chart */
+/* styles.css : to determine the graphic charter and styles  */
 
 /* ---------------------------- */
 /*        TITLES STYLES         */
 /* ---------------------------- */
 
+/* Common styles for all titles and text */
+h1, h2, h3, h4, h5, .text {
+  color: black;                           /* text color */
+  font-family: 'Lato', sans-serif;          /* font style */
+  font-weight: 500;                         /* font weight */
+}
+
+/* Appearance of first-level titles */
 h1 {
-  color: black;
-  font-family: 'Lato', sans-serif;
-  font-size: 34px;
-  font-weight: 500;
-  margin-bottom: 1.5em;
+  font-size: 38px;
+  margin-bottom: 1.5em;                  
+  text-align: center;
 }
 
+/* Common styles for h2, h3 and h4 */
+
+h2, h3, h4 {
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e8e5e5;     /* grey underline */
+  padding-bottom: 5px;                    /* push the underline down */
+}
+
+/* Appearance of second-level titles */
 h2 {
-  color: black;
-  font-family: 'Lato', sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 1em;
-  border-bottom: 2px solid #e8e5e5;   /* Grey underline for h2 */
-  padding-bottom: 5px;                  /* Push the underline down */
+  font-size: 30px;
+  border-bottom: 4px solid #7a7878;     /* grey underline */
 }
 
+/* Appearance of third-level titles */
 h3 {
-  color: black;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 1em;
-  border-bottom: 2px solid #e8e5e5;   /* Grey underline for h3 */
-  padding-bottom: 5px;
+  font-size: 24px;
 }
 
+/* Appearance of fourth-level titles */
 h4 {
-  color: black;
-  font-family: 'Lato', sans-serif;
   font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 1em;
-  border-bottom: 2px solid #e8e5e5;
-  padding-bottom: 5px;
 }
 
+/* Appearance of fifth-level titles */
 h5 {
-  color: black;
-  font-family: 'Lato', sans-serif;
   font-size: 14px;
-  font-weight: 500;
   margin-bottom: 1em;
   padding-bottom: 5px;
   text-align: center;
+}
+
+/* Title styles for dark mode */
+body.quarto-dark h1,
+body.quarto-dark h2,
+body.quarto-dark h3,
+body.quarto-dark h4,
+body.quarto-dark h5 {
+  color: #e0e0e0;
 }
 
 /* ---------------------------- */
 /*        TEXT STYLES           */
 /* ---------------------------- */
 
+/* Appearance of texts */
 .text {
-  color: black;
   text-align: justify; 
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 17px;
   margin-bottom: 1em;
+}
+
+/* Appareance of texts in the dark mode */
+body.quarto-dark .text {
+  color: #e0e0e0;
 }
 
 /* Bullet points in text */
 .text ul {
-  list-style-type: disc;
-  padding-left: 20px;                   /* Left padding for bullets */
+  list-style-type: disc;                /* define the bullet style */
+  padding-left: 30px;
 }
 
+/* Space between list items */
 .text li {
-  margin-bottom: 5px;                   /* Space between list items */
+  margin-bottom: 10px;                   
 }
 
 /* ---------------------------- */
 /*    LAYOUT AND GLOBAL STYLES  */
 /* ---------------------------- */
 
+/* Main content */
 .page-content {
-  max-width: 2000px !important;
+  max-width: 2000px !important;         /* maximum width of the content zone */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -90,60 +102,102 @@ h5 {
   .content {
     margin-right: 0;
   }
-  
+  /* Table of content */
   nav.toc-content {
     display: none;
   }
 }
 
-/* ---------------------------- */
-/*     NAVIGATION BAR STYLES    */
-/* ---------------------------- */
-
-.navbar {
-  background-color: #209f59 !important;   /* Background color */
-  color: black;                           /* Text color */
+/* Dark mode adjustments */
+body.quarto-dark {
+  background-color: #4F4F4F;
 }
 
-.navbar-brand {
-  color: black !important;
+/* ---------------------------- */
+/*     NAVIGATION BAR STYLES    */
+/*              -               */
+/*          LIGHT MODE          */
+/* ---------------------------- */
+
+/* Navbar styles */
+body:not(.quarto-dark) .navbar {
+  background-color: #26BA69 !important;   /* green background color */
+  color: black;                           /* text color */
   font-family: 'Lato', sans-serif;
+}
+
+/* Navbar links, brand and dropdown item */
+body:not(.quarto-dark) .nav-link,
+body:not(.quarto-dark) .navbar .dropdown-item,
+body:not(.quarto-dark) .navbar-brand {
+  color: black !important;
   font-size: 18px;
 }
 
-.nav-link {
-  color: black !important;
-  font-size: 16px;
-  font-family: 'Lato', sans-serif;
-}
-
-.nav-link:hover {
+/* Navbar brand hover effect */
+body:not(.quarto-dark) .nav-link:hover,
+body:not(.quarto-dark) .navbar-brand:hover {
   color: white !important;
 }
 
-.navbar-brand:hover {
-  color: white !important;
-}
-
-/* Light mode dropdown menus */
+/* Dropdown menus */
 body:not(.quarto-dark) .navbar .dropdown-menu {
   color: black;
   background-color: white;
 }
 
-body:not(.quarto-dark) .navbar .dropdown-item {
-  color: black;
-}
-
+/* Color for hover dropdown items */
 body:not(.quarto-dark) .navbar .dropdown-item:hover {
   background-color: #63d396;
   color: black;
 }
 
 /* ---------------------------- */
-/*        FOOTER STYLES         */
+/*     NAVIGATION BAR STYLES    */
+/*              -               */
+/*          DARK MODE           */
 /* ---------------------------- */
 
+/* Navbar styles */
+body.quarto-dark .navbar {
+  background-color: #125932 !important;   /* green background color */
+  color: black;                           /* text color */
+  font-family: 'Lato', sans-serif;
+}
+
+/* Navbar links, brand and dropdown item */
+body.quarto-dark .nav-link,
+body.quarto-dark .navbar .dropdown-item,
+body.quarto-dark .navbar-brand {
+  color: white !important;
+  font-size: 18px;
+}
+
+/* Navbar brand hover effect */
+body.quarto-dark .nav-link:hover,
+body.quarto-dark .navbar-brand:hover {
+  color: black !important;
+}
+
+/* Dropdown menus */
+body.quarto-dark .navbar .dropdown-menu {
+  color: white;
+  background-color: #2c2c2c;
+}
+
+/* Color for hover dropdown items */
+body.quarto-dark .navbar .dropdown-item:hover {
+  background-color: #176E3E;
+  color: black;
+}
+
+/* ---------------------------- */
+/*        FOOTER STYLES         */
+/*              -               */
+/*          LIGHT MODE          */
+/* ---------------------------- */
+
+/* Footer appearance */
 .custom-footer {
   background-color: #e3e4e6;
   font-family: 'Lato', sans-serif;
@@ -160,37 +214,65 @@ body:not(.quarto-dark) .navbar .dropdown-item:hover {
   z-index: 1000;
 }
 
+/* Footer link styles */
 .custom-footer a {
   color: #333;
   text-decoration: none;
 }
 
+/* Hover effects for footer links */
 .custom-footer a:hover {
   color: #209f59;
   text-decoration: underline;
 }
 
+/* Margin for the first link in the footer */
 .custom-footer .MIT-license {
-  margin-left: 20px;                /* Pushes "Privacy policy" to the right */
+  margin-left: 20px;
+}
+
+/* ---------------------------- */
+/*        FOOTER STYLES         */
+/*              -               */
+/*          DARK MODE           */
+/* ---------------------------- */
+
+/* Footer appearance */
+body.quarto-dark .custom-footer {
+  background-color: #232323;
+  color: #e0e0e0;
+}
+
+/* Footer link styles */
+body.quarto-dark .custom-footer a {
+  color: white;
+}
+
+/* Hover effects for footer links */
+body.quarto-dark .custom-footer a:hover {
+  color: #209f59;
 }
 
 /* ---------------------------- */
 /*   DASHED LINE & ANIMATION    */
 /* ---------------------------- */
 
+/* Style of the line (road) in the home page */
 .pointilles-rectangle {
   border: none;
-  border-top: 5px dashed #000000;   /* Dashed border */
+  border-top: 5px dashed #000000;
   width: 100%;                  
   margin: 0 auto;               
   background: repeating-linear-gradient(90deg, #000000 0px, #000000 20px, transparent 20px, transparent 40px); 
   background-size: 400px 100%;
 }
 
+/* Style of the bike in the home page */
 .bike {
-  animation: move-dashed-line 10s linear infinite;  /* Animation */
+  animation: move-dashed-line 10s linear infinite;
 }
 
+/* Animation of the bike in the home page */
 @keyframes move-dashed-line {
   from {
     transform: translateX(-50%);
@@ -201,119 +283,45 @@ body:not(.quarto-dark) .navbar .dropdown-item:hover {
 }
 
 /* ---------------------------- */
-/*       TROMBINOSCOPE          */
+/*      PHOTO DIRECTORY         */
 /* ---------------------------- */
 
+/* Photo directory appareance ('about us' section) */
 .trombinoscope {
   display: flex;
-  flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
-  gap: 10px; /* Espacement entre les membres */
-  justify-content: space-around; /* Répartit les éléments uniformément */
-  align-items: center; /* Aligne les éléments verticalement */
+  flex-wrap: nowrap;              /* prevents elements from passing the line */
+  gap: 10px;                      /* spacing between members */
+  justify-content: space-around;  /* distributes elements evenly */
+  align-items: center;            /* aligns elements vertically */
 }
 
+/* Cases for the members photos ('about us' section) */
 .member {
   text-align: center;
-  max-width: 180px; /* Taille maximale de chaque carte membre */
-  flex: 1; /* Permet à chaque élément de s'adapter pour rester sur une ligne */
+  max-width: 180px;               /* maximum size of each member card */
+  flex: 1;                        /* each element to adapt to stay on 1 line */
 }
 
+/* Appareance and size of the members photos ('about us' section) */
 .member img {
-  border-radius: 10%; /* Maintient les bordures arrondies */
-  max-width: 100%; /* Empêche les images de dépasser leur conteneur */
-  width: 140px; /* Largeur fixée pour toutes les images */
-  height: 120px; /* Hauteur fixée pour toutes les images */
-  object-fit: cover; /* Pour que l'image remplisse l'espace sans déformer son ratio */
-}
-
-/* ---------------------------- */
-/*       DARK MODE STYLES       */
-/* ---------------------------- */
-
-:root {
-  --text-color-light: black;
-  --text-color-dark: #e0e0e0;
-  --background-color-light: white;
-  --background-color-dark: #474646;
-}
-
-/* Dark mode adjustments */
-body.quarto-dark {
-  color: var(--text-color-dark);
-  background-color: var(--background-color-dark);
-}
-
-body.quarto-dark h1,
-body.quarto-dark h2,
-body.quarto-dark h3 {
-  color: var(--text-color-dark);
-}
-
-body.quarto-dark .text {
-  color: var(--text-color-dark);
-}
-
-body.quarto-dark .navbar {
-  background-color: #187240 !important;
-  color: var(--text-color-dark);
-}
-
-body.quarto-dark .navbar-brand,
-body.quarto-dark .nav-link {
-  color: var(--text-color-dark) !important;
-}
-
-body.quarto-dark a {
-  color: #3498db;
-}
-
-body.quarto-dark .custom-footer {
-  background-color: #232323;
-  color: #e0e0e0;
-}
-
-body.quarto-dark .custom-footer a {
-  color: white;
-}
-
-body.quarto-dark .custom-footer a:hover {
-  color: #209f59;
-}
-
-/* ---------------------------- */
-/*       IMAGES STYLES          */
-/* ---------------------------- */
-
-img .member {
-  max-width: 100%; /* Limite la largeur de l'image au conteneur */
-  width: 150px; /* Spécifie la largeur en pixels (ajuste selon tes besoins) */
-  height: 110px; /* Garde les proportions de l'image */
-  display: block;
-  margin: 0 auto; /* Centre l'image */
-}
-
-img, table {
+  border-radius: 10%;             /* maintains rounded edges */
   max-width: 100%;
-  height: auto;
+  width: 140px;
+  height: 120px;
+  object-fit: cover;              /* image conserve its ratio */
 }
 
 /* ---------------------------- */
 /*       VIDEOS STYLES          */
 /* ---------------------------- */
 
-/* Conteneur principal avec vidéo et texte */
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;  /* Centre les éléments horizontalement */
-  max-width: 1000px;  /* Limite la taille du conteneur */
-  padding: 20px;
-  background-color: white;
+/* Common styles for video container and reverse container */
+.video-container video, .video-container-r video {
+  width: 100%;
+  height: auto;                   /* maintain aspect ratio of the video */
   border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
 
+/* Style for video container (flex item) */
 .video-container {
   position: relative;
   flex: 1;  /* L'espace de la vidéo s'adapte */
@@ -322,35 +330,26 @@ img, table {
   height: 0;
 }
 
-.video-container iframe, .video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+/* Style for reverse video container (flex item) */
+.video-container-r {
+  flex: 2;  
+  margin-left: 20px;
+  max-width: 70%;
+}
+
+/* Style for container of the video */
+.container, .container-r {
+  display: flex;                  /* use flexbox for layout */
+  align-items: center;
+  max-width: 1000px;
+  background-color: white;
   border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;          /* add space below the container */
 }
 
-.text {
-  flex: 1;  /* L'espace du texte s'adapte également */
-  max-width: 300px; /* Limite la largeur du texte */
-}
-
-@media (max-width: 768px) {
-  /* Sur les petits écrans, empile vidéo et texte */
-  .container {
-    flex-direction: column;  /* Empile les éléments verticalement */
-    align-items: center;     /* Centre les éléments */
-  }
-
-  .video-container {
-    margin-right: 0; /* Enlever la marge droite sur petits écrans */
-    max-width: 100%; /* La vidéo occupe toute la largeur du conteneur */
-    padding-top: 56.25%; /* Ratio 16:9 sur petits écrans */
-  }
-
-  .text {
-    max-width: 100%;  /* Assurer que le texte occupe toute la largeur */
-    margin-top: 20px; /* Ajoute un espacement entre la vidéo et le texte */
-  }
+/* Style for reverse container of the video */
+.container-r {
+  flex-direction: row-reverse;  /* reverse the order of video and text */
 }
