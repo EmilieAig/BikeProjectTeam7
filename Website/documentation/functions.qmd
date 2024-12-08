@@ -10,9 +10,193 @@ format:
   <h1>Functions <i class="fas fa-book-open"></i></h1>
 </div>
 
+## `convert_json_to_csv`
+
+<p class="text"> Convert a JSON file containing EcoCompt data to a CSV file and filter the data for a specific date range. This function was used in the Code/Scripts/data_treatment_EcoCompt.py and Code/Scripts/ecoCompt_Download_and_Combine.py files to clean the data. </p>
+
+### Parameters
+
+<ul class="text"> 
+  <li> **`input_file`** (str): the path to the JSON file to be converted. </li> 
+  <li> **`output_dir`** (str): the directory where the resulting CSV file will be saved. </li> 
+</ul>
+
+### Returns
+
+<ul class="text"> 
+  <li> **bool**: `True` if the conversion is successful and results in valid data, `False` otherwise. </li> 
+</ul>
+
+### Notes
+
+<ul class="text"> 
+  <li> Filters data to include only dates between April 1, 2023, and October 31, 2023. </li> 
+  <li> Removes rows with missing or invalid data, including null coordinates or essential fields. </li> 
+  <li> The output CSV file is saved with the `UTF-8-SIG` encoding and uses a semicolon (`;`) as a delimiter. </li> 
+</ul>
+
+### Examples
+
+<p class="text"> Example: Convert a JSON file to CSV. </p>
+
+```python
+convert_json_to_csv(
+    input_file="Data/Data_EcoCompt/example.json",
+    output_dir="Data/Data_EcoCompt_clean"
+)
+```
+
+## `create_layer_for_date`
+
+<p class = "text"> Create a map layer for a given date, including paths and station markers. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions. </p>
+
+### Parameters
+
+<ul class = "text"> 
+  <li> **`date`** (str): date in the format `'YYYY-MM-DD'`. </li> 
+  <li> **`map_obj`** (folium.Map): The map object to add the layer to. </li> 
+  <li> **`data`** (pandas.DataFrame): dataFrame containing path and station information for the date. </li> 
+</ul>
+
+### Returns
+
+<ul class = "text"> 
+  <li> **None**: this function does not return a value but modifies the map object in place. </li> 
+</ul>
+
+### Examples
+
+<p class = "text"> Example: create a map layer for July 10, 2023. </p>
+
+```python
+create_layer_for_date(
+    date="2023-07-10", 
+    map_obj=folium_map, 
+    data=traffic_data
+)
+```
+
+## `download_file`
+
+<p class = "text"> Download a file from a URL, store it locally, and verify its integrity using a SHA256 hash. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions. </p>
+
+### Parameters
+
+<ul class = "text">
+  <li> **`url`** (str): the URL of the file to download. </li>
+  <li> **`output_path`** (str): path where the downloaded file will be saved. </li>
+  <li> **`expected_hash`** (str): the expected SHA256 hash of the file to verify its integrity. </li>
+</ul>
+
+### Returns
+
+<ul class = "text">
+  <li> **None**: this function does not return any value but raises an exception if the hash verification fails. </li>
+</ul>
+
+### Examples
+
+<p class = "text"> Example: download a file and verify its integrity. </p>
+
+```python
+download_file(
+    url="https://example.com/data.csv",
+    output_path="local_data/data.csv",
+    expected_hash="abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"
+)
+```
+
+## `find_station_name`
+
+<p class = "text"> Find the name of the nearest station for a given geographic point by calculating distances using Geopy. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions. </p>
+
+### Parameters
+
+<ul class = "text"> 
+  <li> **`latitude`** (float): latitude of the target point. </li> 
+  <li> **`longitude`** (float): longitude of the target point. </li> 
+  <li> **`stations_df`** (pandas.DataFrame): dataFrame containing station data with columns `'latitude'`, `'longitude'`, and `'station_name'`. </li> 
+</ul>
+
+### Returns
+
+<ul class = "text"> 
+  <li> **str**: name of the nearest station. </li> 
+</ul>
+
+### Examples
+
+<p class = "text"> Example: find the nearest station to a point. </p>
+
+```python
+find_station_name(
+    latitude=43.6, longitude=3.9, 
+    stations_df=stations
+)
+```
+
+## `is_within_radius`
+
+<p class = "text"> Check if a given point (latitude, longitude) is within a specified radius from a center point. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions. </p>
+
+### Parameters
+
+<ul class = "text"> 
+  <li> **`lat`** (float): latitude of the point to check. </li> 
+  <li> **`lon`** (float): Longitude of the point to check. </li> 
+  <li> **`center_lat`** (float): latitude of the center point. </li> 
+  <li> **`center_lon`** (float): Longitude of the center point. </li> 
+  <li> **`radius_km`** (float): the radius in kilometers. </li> 
+</ul>
+
+### Returns
+<ul class = "text"> 
+  <li> **bool**: `True` if the point is within the radius, otherwise `False`. </li> 
+</ul>
+
+### Examples
+
+<p class = "text"> Example: check if a point is within 15 km of Montpellier. </p>
+
+```python
+is_within_radius(
+    lat=43.6, lon=3.9, 
+    center_lat=43.6119, center_lon=3.8772, 
+    radius_km=15
+)
+```
+
+## Method: `create_animation`
+
+<p class = "text"> Generate a video animation of the bike trips. </p>
+
+<p class = "text"> This method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file. This function was used in the Code/Scripts/Animation_Bike.py file to make the video. </p>
+
+### Returns
+
+<ul class = "text">
+  <li> **None**: this method does not return any value. </li>
+</ul>
+
+### Notes
+
+<ul class = "text">
+ <li> This method uses **multiprocessing** to parallelize frame generation, which can be resource-intensive. </li>
+ <li> Ensure that you have sufficient disk space for temporary files generated during the process. </li>
+</ul>
+
+### Examples
+
+<p class = "text"> Example: Generate the animation for the loaded dataset. </p>
+
+```python
+animation = BikeAnimation(input_file="data/trips.csv")
+animation.create_animation()
+```
+
 ## Method: `precompute_route`
 
-<p class = "text"> Precompute the shortest route for a single trip. </p>
+<p class = "text"> Precompute the shortest route for a single trip. This function was used in the Code/Scripts/Animation_Bike.py file to generate the video. </p>
 
 <p class = "text"> Given a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph. </p>
 
@@ -50,153 +234,63 @@ animation.precompute_route(row)
 # Output: [123456, 123457, 123458, ...]
 ```
 
-## Method: `create_animation`
+## `process_all_json_files`
 
-<p class = "text"> Generate a video animation of the bike trips. </p>
+<p class="text"> Process all JSON files in a directory, converting each to a filtered CSV file in a target folder. This function was used in the Code/Scripts/data_treatment_EcoCompt.py and Code/Scripts/ecoCompt_Download_and_Combine.py files to clean the data. </p>
 
-<p class = "text"> This method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file. </p>
+### Parameters
 
-### Returns
-
-<ul class = "text">
-  <li> **None**: this method does not return any value. </li>
-</ul>
+<p class="text"> This function does not take parameters directly. Instead, it relies on a predefined folder structure for input and output. </p>
 
 ### Notes
 
-<ul class = "text">
- <li> This method uses **multiprocessing** to parallelize frame generation, which can be resource-intensive. </li>
- <li> Ensure that you have sufficient disk space for temporary files generated during the process. </li>
-</ul>
-
-### Examples
-
-<p class = "text"> Example: Generate the animation for the loaded dataset. </p>
-
-```python
-animation = BikeAnimation(input_file="data/trips.csv")
-animation.create_animation()
-```
-
-## Method : `download_file`
-
-<p class = "text"> Download a file from a URL, store it locally, and verify its integrity using a SHA256 hash. </p>
-
-### Parameters
-
-<ul class = "text">
-  <li> **`url`** (str): The URL of the file to download. </li>
-  <li> **`output_path`** (str): Path where the downloaded file will be saved. </li>
-  <li> **`expected_hash`** (str): The expected SHA256 hash of the file to verify its integrity. </li>
+<ul class="text"> 
+  <li> Searches for JSON files in the `Data/Data_EcoCompt` directory relative to the script's location. </li> 
+  <li> Creates a directory `Data/Data_EcoCompt_clean` for saving the resulting CSV files if it does not already exist. </li> 
+  <li> Displays a summary of successfully processed files and errors at the end. </li> 
 </ul>
 
 ### Returns
 
-<ul class = "text">
-  <li> **None**: This function does not return any value but raises an exception if the hash verification fails. </li>
+<ul class="text"> 
+  <li> **None**: the function does not return a value but logs progress and results to the console. </li> 
 </ul>
 
 ### Examples
 
-<p class = "text"> Example: Download a file and verify its integrity. </p>
+<p class="text"> Example: Process all JSON files in the input directory. </p>
 
 ```python
-download_file(
-    url="https://example.com/data.csv",
-    output_path="local_data/data.csv",
-    expected_hash="abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"
-)
+# Running the function as part of the script
+if __name__ == "__main__":
+    process_all_json_files()
 ```
 
-## Method : `is_within_radius`
+## `safe_nearest_node`
 
-<p class = "text"> Check if a given point (latitude, longitude) is within a specified radius from a center point. </p>
+<p class = "text"> Securely find the nearest node in a graph for a given geographic point, handling exceptions. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions. </p>
 
 ### Parameters
 
-<ul class = "text"> <li> **`lat`** (float): Latitude of the point to check. </li> <li> **`lon`** (float): Longitude of the point to check. </li> <li> **`center_lat`** (float): Latitude of the center point. </li> <li> **`center_lon`** (float): Longitude of the center point. </li> <li> **`radius_km`** (float): The radius in kilometers. </li> </ul>
-
-### Returns
-<ul class = "text"> <li> **bool**: `True` if the point is within the radius, otherwise `False`. </li> </ul>
-
-### Examples
-
-<p class = "text"> Example: Check if a point is within 15 km of Montpellier. </p>
-
-```python
-is_within_radius(
-    lat=43.6, lon=3.9, 
-    center_lat=43.6119, center_lon=3.8772, 
-    radius_km=15
-)
-```
-
-## Method : `find_station_name`
-
-<p class = "text"> Find the name of the nearest station for a given geographic point by calculating distances using Geopy. </p>
-
-### Parameters
-
-<ul class = "text"> <li> **`latitude`** (float): Latitude of the target point. </li> <li> **`longitude`** (float): Longitude of the target point. </li> <li> **`stations_df`** (pandas.DataFrame): DataFrame containing station data with columns `'latitude'`, `'longitude'`, and `'station_name'`. </li> </ul>
+<ul class = "text"> 
+  <li> **`graph`** (networkx.Graph): the road network graph. </li> 
+  <li> **`latitude`** (float): Latitude of the target point. </li> 
+  <li> **`longitude`** (float): longitude of the target point. </li> 
+</ul>
 
 ### Returns
 
-<ul class = "text"> <li> **str**: Name of the nearest station. </li> </ul>
+<ul class = "text"> 
+  <li> **int**: ID of the nearest node. </li> 
+</ul>
 
 ### Examples
 
-<p class = "text"> Example: Find the nearest station to a point. </p>
-
-```python
-find_station_name(
-    latitude=43.6, longitude=3.9, 
-    stations_df=stations
-)
-```
-
-## Method : `safe_nearest_node`
-
-<p class = "text"> Securely find the nearest node in a graph for a given geographic point, handling exceptions. </p>
-
-### Parameters
-
-<ul class = "text"> <li> **`graph`** (networkx.Graph): The road network graph. </li> <li> **`latitude`** (float): Latitude of the target point. </li> <li> **`longitude`** (float): Longitude of the target point. </li> </ul>
-
-### Returns
-
-<ul class = "text"> <li> **int**: ID of the nearest node. </li> </ul>
-
-### Examples
-
-<p class = "text"> Example: Find the nearest node in a road network. </p>
+<p class = "text"> Example: find the nearest node in a road network. </p>
 
 ```python
 safe_nearest_node(
     graph=osm_graph, 
     latitude=43.6, longitude=3.9
-)
-```
-
-## Method : `create_layer_for_date`
-
-<p class = "text"> Create a map layer for a given date, including paths and station markers. </p>
-
-### Parameters
-
-<ul class = "text"> <li> **`date`** (str): Date in the format `'YYYY-MM-DD'`. </li> <li> **`map_obj`** (folium.Map): The map object to add the layer to. </li> <li> **`data`** (pandas.DataFrame): DataFrame containing path and station information for the date. </li> </ul>
-
-### Returns
-
-<ul class = "text"> <li> **None**: This function does not return a value but modifies the map object in place. </li> </ul>
-
-### Examples
-
-<p class = "text"> Example: Create a map layer for July 10, 2023. </p>
-
-```python
-create_layer_for_date(
-    date="2023-07-10", 
-    map_obj=folium_map, 
-    data=traffic_data
 )
 ```

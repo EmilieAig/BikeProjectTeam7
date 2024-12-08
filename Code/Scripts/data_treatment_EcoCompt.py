@@ -1,4 +1,4 @@
-# %% Import packages
+# %% 1. Import packages
 
 import json
 import pandas as pd
@@ -6,7 +6,7 @@ from datetime import datetime
 import os
 import glob
 
-# %% Conversion and selection of data 
+# %% 2. Conversion and selection of data 
 
 def convert_json_to_csv(input_file, output_dir):
     # Create output file name in data_clean folder
@@ -123,7 +123,7 @@ def convert_json_to_csv(input_file, output_dir):
         print(f"Error: {str(e)}")
         return False
 
-# %% Detection of file to analyse and folder to save data clean
+# %% 3. Detection of file to analyse and folder to save data clean
 
 def process_all_json_files():
     # Define folder paths
@@ -176,7 +176,7 @@ def process_all_json_files():
     print(f"Total files: {len(json_files)}")
     print(f"\nThe CSV files have been saved in: {output_dir}")
 
-# %% Run the treatment
+# %% 4. Run the treatment
 
 if __name__ == "__main__":
     print("Start processing JSON files...")
