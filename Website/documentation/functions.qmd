@@ -74,36 +74,6 @@ animation = BikeAnimation(input_file="data/trips.csv")
 animation.create_animation()
 ```
 
-## `create_layer_for_date`
-
-<p class = "text"> Create a map layer for a given date, including paths and station markers. </p>
-
-### Parameters
-
-<ul class = "text"> 
-  <li> **`date`** (str): date in the format `'YYYY-MM-DD'`. </li> 
-  <li> **`map_obj`** (folium.Map): The map object to add the layer to. </li> 
-  <li> **`data`** (pandas.DataFrame): dataFrame containing path and station information for the date. </li> 
-</ul>
-
-### Returns
-
-<ul class = "text"> 
-  <li> **None**: this function does not return a value but modifies the map object in place. </li> 
-</ul>
-
-### Examples
-
-<p class = "text"> Example: create a map layer for July 10, 2023. </p>
-
-```python
-create_layer_for_date(
-    date="2023-07-10", 
-    map_obj=folium_map, 
-    data=traffic_data
-)
-```
-
 ## `download_file`
 
 <p class = "text"> Download a file from a URL, store it locally, and verify its integrity using a SHA256 hash. </p>
@@ -195,7 +165,37 @@ is_within_radius(
 )
 ```
 
-## `precompute_route`
+## Method: `create_layer_for_date`
+
+<p class = "text"> Create a map layer for a given date, including paths and station markers. </p>
+
+### Parameters
+
+<ul class = "text"> 
+  <li> **`date`** (str): date in the format `'YYYY-MM-DD'`. </li> 
+  <li> **`map_obj`** (folium.Map): The map object to add the layer to. </li> 
+  <li> **`data`** (pandas.DataFrame): dataFrame containing path and station information for the date. </li> 
+</ul>
+
+### Returns
+
+<ul class = "text"> 
+  <li> **None**: this function does not return a value but modifies the map object in place. </li> 
+</ul>
+
+### Examples
+
+<p class = "text"> Example: create a map layer for July 10, 2023. </p>
+
+```python
+create_layer_for_date(
+    date="2023-07-10", 
+    map_obj=folium_map, 
+    data=traffic_data
+)
+```
+
+## Method: `precompute_route`
 
 <p class = "text"> Precompute the shortest route for a single trip. </p>
 
