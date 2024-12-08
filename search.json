@@ -140,6 +140,41 @@
     "text": "Method: create_animation\n\nGenerate a video animation of the bike trips.\n\n\nThis method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file.\n\n\nReturns\n\n\nNone: this method does not return any value.\n\n\n\n\nNotes\n\n\nThis method uses multiprocessing to parallelize frame generation, which can be resource-intensive.\n\n\nEnsure that you have sufficient disk space for temporary files generated during the process.\n\n\n\n\nExamples\n\nExample: Generate the animation for the loaded dataset.\n\nanimation = BikeAnimation(input_file=\"data/trips.csv\")\nanimation.create_animation()"
   },
   {
+    "objectID": "documentation/functions.html#method-download_file",
+    "href": "documentation/functions.html#method-download_file",
+    "title": "\nFunctions \n",
+    "section": "Method : download_file",
+    "text": "Method : download_file\n\nDownload a file from a URL, store it locally, and verify its integrity using a SHA256 hash.\n\n\nParameters\n\n\nurl (str): The URL of the file to download.\n\n\noutput_path (str): Path where the downloaded file will be saved.\n\n\nexpected_hash (str): The expected SHA256 hash of the file to verify its integrity.\n\n\n\n\nReturns\n\n\nNone: This function does not return any value but raises an exception if the hash verification fails.\n\n\n\n\nExamples\n\nExample: Download a file and verify its integrity.\n\ndownload_file(\n    url=\"https://example.com/data.csv\",\n    output_path=\"local_data/data.csv\",\n    expected_hash=\"abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890\"\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#method-is_within_radius",
+    "href": "documentation/functions.html#method-is_within_radius",
+    "title": "\nFunctions \n",
+    "section": "Method : is_within_radius",
+    "text": "Method : is_within_radius\n\nCheck if a given point (latitude, longitude) is within a specified radius from a center point.\n\n\nParameters\n\n\nlat (float): Latitude of the point to check.\n\n\nlon (float): Longitude of the point to check.\n\n\ncenter_lat (float): Latitude of the center point.\n\n\ncenter_lon (float): Longitude of the center point.\n\n\nradius_km (float): The radius in kilometers.\n\n\n\n\nReturns\n\n\nbool: True if the point is within the radius, otherwise False.\n\n\n\n\nExamples\n\nExample: Check if a point is within 15 km of Montpellier.\n\nis_within_radius(\n    lat=43.6, lon=3.9, \n    center_lat=43.6119, center_lon=3.8772, \n    radius_km=15\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#method-find_station_name",
+    "href": "documentation/functions.html#method-find_station_name",
+    "title": "\nFunctions \n",
+    "section": "Method : find_station_name",
+    "text": "Method : find_station_name\n\nFind the name of the nearest station for a given geographic point by calculating distances using Geopy.\n\n\nParameters\n\n\nlatitude (float): Latitude of the target point.\n\n\nlongitude (float): Longitude of the target point.\n\n\nstations_df (pandas.DataFrame): DataFrame containing station data with columns 'latitude', 'longitude', and 'station_name'.\n\n\n\n\nReturns\n\n\nstr: Name of the nearest station.\n\n\n\n\nExamples\n\nExample: Find the nearest station to a point.\n\nfind_station_name(\n    latitude=43.6, longitude=3.9, \n    stations_df=stations\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#method-safe_nearest_node",
+    "href": "documentation/functions.html#method-safe_nearest_node",
+    "title": "\nFunctions \n",
+    "section": "Method : safe_nearest_node",
+    "text": "Method : safe_nearest_node\n\nSecurely find the nearest node in a graph for a given geographic point, handling exceptions.\n\n\nParameters\n\n\ngraph (networkx.Graph): The road network graph.\n\n\nlatitude (float): Latitude of the target point.\n\n\nlongitude (float): Longitude of the target point.\n\n\n\n\nReturns\n\n\nint: ID of the nearest node.\n\n\n\n\nExamples\n\nExample: Find the nearest node in a road network.\n\nsafe_nearest_node(\n    graph=osm_graph, \n    latitude=43.6, longitude=3.9\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#method-create_layer_for_date",
+    "href": "documentation/functions.html#method-create_layer_for_date",
+    "title": "\nFunctions \n",
+    "section": "Method : create_layer_for_date",
+    "text": "Method : create_layer_for_date\n\nCreate a map layer for a given date, including paths and station markers.\n\n\nParameters\n\n\ndate (str): Date in the format 'YYYY-MM-DD'.\n\n\nmap_obj (folium.Map): The map object to add the layer to.\n\n\ndata (pandas.DataFrame): DataFrame containing path and station information for the date.\n\n\n\n\nReturns\n\n\nNone: This function does not return a value but modifies the map object in place.\n\n\n\n\nExamples\n\nExample: Create a map layer for July 10, 2023.\n\ncreate_layer_for_date(\n    date=\"2023-07-10\", \n    map_obj=folium_map, \n    data=traffic_data\n)"
+  },
+  {
     "objectID": "footer/privacy_policy.html#introduction",
     "href": "footer/privacy_policy.html#introduction",
     "title": "\nPrivacy polity \n",

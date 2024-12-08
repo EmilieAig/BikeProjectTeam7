@@ -205,6 +205,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
   <li><a href="#examples-1" id="toc-examples-1" class="nav-link" data-scroll-target="#examples-1">Examples</a></li>
   </ul></li>
+  <li><a href="#method-download_file" id="toc-method-download_file" class="nav-link" data-scroll-target="#method-download_file">Method : <code>download_file</code></a>
+  <ul>
+  <li><a href="#parameters-1" id="toc-parameters-1" class="nav-link" data-scroll-target="#parameters-1">Parameters</a></li>
+  <li><a href="#returns-2" id="toc-returns-2" class="nav-link" data-scroll-target="#returns-2">Returns</a></li>
+  <li><a href="#examples-2" id="toc-examples-2" class="nav-link" data-scroll-target="#examples-2">Examples</a></li>
+  </ul></li>
+  <li><a href="#method-is_within_radius" id="toc-method-is_within_radius" class="nav-link" data-scroll-target="#method-is_within_radius">Method : <code>is_within_radius</code></a>
+  <ul>
+  <li><a href="#parameters-2" id="toc-parameters-2" class="nav-link" data-scroll-target="#parameters-2">Parameters</a></li>
+  <li><a href="#returns-3" id="toc-returns-3" class="nav-link" data-scroll-target="#returns-3">Returns</a></li>
+  <li><a href="#examples-3" id="toc-examples-3" class="nav-link" data-scroll-target="#examples-3">Examples</a></li>
+  </ul></li>
+  <li><a href="#method-find_station_name" id="toc-method-find_station_name" class="nav-link" data-scroll-target="#method-find_station_name">Method : <code>find_station_name</code></a>
+  <ul>
+  <li><a href="#parameters-3" id="toc-parameters-3" class="nav-link" data-scroll-target="#parameters-3">Parameters</a></li>
+  <li><a href="#returns-4" id="toc-returns-4" class="nav-link" data-scroll-target="#returns-4">Returns</a></li>
+  <li><a href="#examples-4" id="toc-examples-4" class="nav-link" data-scroll-target="#examples-4">Examples</a></li>
+  </ul></li>
+  <li><a href="#method-safe_nearest_node" id="toc-method-safe_nearest_node" class="nav-link" data-scroll-target="#method-safe_nearest_node">Method : <code>safe_nearest_node</code></a>
+  <ul>
+  <li><a href="#parameters-4" id="toc-parameters-4" class="nav-link" data-scroll-target="#parameters-4">Parameters</a></li>
+  <li><a href="#returns-5" id="toc-returns-5" class="nav-link" data-scroll-target="#returns-5">Returns</a></li>
+  <li><a href="#examples-5" id="toc-examples-5" class="nav-link" data-scroll-target="#examples-5">Examples</a></li>
+  </ul></li>
+  <li><a href="#method-create_layer_for_date" id="toc-method-create_layer_for_date" class="nav-link" data-scroll-target="#method-create_layer_for_date">Method : <code>create_layer_for_date</code></a>
+  <ul>
+  <li><a href="#parameters-5" id="toc-parameters-5" class="nav-link" data-scroll-target="#parameters-5">Parameters</a></li>
+  <li><a href="#returns-6" id="toc-returns-6" class="nav-link" data-scroll-target="#returns-6">Returns</a></li>
+  <li><a href="#examples-6" id="toc-examples-6" class="nav-link" data-scroll-target="#examples-6">Examples</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -303,6 +333,205 @@ Example: Generate the animation for the loaded dataset.
 </p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>animation <span class="op">=</span> BikeAnimation(input_file<span class="op">=</span><span class="st">"data/trips.csv"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>animation.create_animation()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="method-download_file" class="level2">
+<h2 class="anchored" data-anchor-id="method-download_file">Method : <code>download_file</code></h2>
+<p class="text">
+Download a file from a URL, store it locally, and verify its integrity using a SHA256 hash.
+</p>
+<section id="parameters-1" class="level3">
+<h3 class="anchored" data-anchor-id="parameters-1">Parameters</h3>
+<ul class="text">
+<li>
+<strong><code>url</code></strong> (str): The URL of the file to download.
+</li>
+<li>
+<strong><code>output_path</code></strong> (str): Path where the downloaded file will be saved.
+</li>
+<li>
+<strong><code>expected_hash</code></strong> (str): The expected SHA256 hash of the file to verify its integrity.
+</li>
+</ul>
+</section>
+<section id="returns-2" class="level3">
+<h3 class="anchored" data-anchor-id="returns-2">Returns</h3>
+<ul class="text">
+<li>
+<strong>None</strong>: This function does not return any value but raises an exception if the hash verification fails.
+</li>
+</ul>
+</section>
+<section id="examples-2" class="level3">
+<h3 class="anchored" data-anchor-id="examples-2">Examples</h3>
+<p class="text">
+Example: Download a file and verify its integrity.
+</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>download_file(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    url<span class="op">=</span><span class="st">"https://example.com/data.csv"</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    output_path<span class="op">=</span><span class="st">"local_data/data.csv"</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    expected_hash<span class="op">=</span><span class="st">"abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="method-is_within_radius" class="level2">
+<h2 class="anchored" data-anchor-id="method-is_within_radius">Method : <code>is_within_radius</code></h2>
+<p class="text">
+Check if a given point (latitude, longitude) is within a specified radius from a center point.
+</p>
+<section id="parameters-2" class="level3">
+<h3 class="anchored" data-anchor-id="parameters-2">Parameters</h3>
+<ul class="text">
+<li>
+<strong><code>lat</code></strong> (float): Latitude of the point to check.
+</li>
+<li>
+<strong><code>lon</code></strong> (float): Longitude of the point to check.
+</li>
+<li>
+<strong><code>center_lat</code></strong> (float): Latitude of the center point.
+</li>
+<li>
+<strong><code>center_lon</code></strong> (float): Longitude of the center point.
+</li>
+<li>
+<strong><code>radius_km</code></strong> (float): The radius in kilometers.
+</li>
+</ul>
+</section>
+<section id="returns-3" class="level3">
+<h3 class="anchored" data-anchor-id="returns-3">Returns</h3>
+<ul class="text">
+<li>
+<strong>bool</strong>: <code>True</code> if the point is within the radius, otherwise <code>False</code>.
+</li>
+</ul>
+</section>
+<section id="examples-3" class="level3">
+<h3 class="anchored" data-anchor-id="examples-3">Examples</h3>
+<p class="text">
+Example: Check if a point is within 15 km of Montpellier.
+</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>is_within_radius(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    lat<span class="op">=</span><span class="fl">43.6</span>, lon<span class="op">=</span><span class="fl">3.9</span>, </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    center_lat<span class="op">=</span><span class="fl">43.6119</span>, center_lon<span class="op">=</span><span class="fl">3.8772</span>, </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    radius_km<span class="op">=</span><span class="dv">15</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="method-find_station_name" class="level2">
+<h2 class="anchored" data-anchor-id="method-find_station_name">Method : <code>find_station_name</code></h2>
+<p class="text">
+Find the name of the nearest station for a given geographic point by calculating distances using Geopy.
+</p>
+<section id="parameters-3" class="level3">
+<h3 class="anchored" data-anchor-id="parameters-3">Parameters</h3>
+<ul class="text">
+<li>
+<strong><code>latitude</code></strong> (float): Latitude of the target point.
+</li>
+<li>
+<strong><code>longitude</code></strong> (float): Longitude of the target point.
+</li>
+<li>
+<strong><code>stations_df</code></strong> (pandas.DataFrame): DataFrame containing station data with columns <code>'latitude'</code>, <code>'longitude'</code>, and <code>'station_name'</code>.
+</li>
+</ul>
+</section>
+<section id="returns-4" class="level3">
+<h3 class="anchored" data-anchor-id="returns-4">Returns</h3>
+<ul class="text">
+<li>
+<strong>str</strong>: Name of the nearest station.
+</li>
+</ul>
+</section>
+<section id="examples-4" class="level3">
+<h3 class="anchored" data-anchor-id="examples-4">Examples</h3>
+<p class="text">
+Example: Find the nearest station to a point.
+</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>find_station_name(</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    latitude<span class="op">=</span><span class="fl">43.6</span>, longitude<span class="op">=</span><span class="fl">3.9</span>, </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    stations_df<span class="op">=</span>stations</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="method-safe_nearest_node" class="level2">
+<h2 class="anchored" data-anchor-id="method-safe_nearest_node">Method : <code>safe_nearest_node</code></h2>
+<p class="text">
+Securely find the nearest node in a graph for a given geographic point, handling exceptions.
+</p>
+<section id="parameters-4" class="level3">
+<h3 class="anchored" data-anchor-id="parameters-4">Parameters</h3>
+<ul class="text">
+<li>
+<strong><code>graph</code></strong> (networkx.Graph): The road network graph.
+</li>
+<li>
+<strong><code>latitude</code></strong> (float): Latitude of the target point.
+</li>
+<li>
+<strong><code>longitude</code></strong> (float): Longitude of the target point.
+</li>
+</ul>
+</section>
+<section id="returns-5" class="level3">
+<h3 class="anchored" data-anchor-id="returns-5">Returns</h3>
+<ul class="text">
+<li>
+<strong>int</strong>: ID of the nearest node.
+</li>
+</ul>
+</section>
+<section id="examples-5" class="level3">
+<h3 class="anchored" data-anchor-id="examples-5">Examples</h3>
+<p class="text">
+Example: Find the nearest node in a road network.
+</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>safe_nearest_node(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    graph<span class="op">=</span>osm_graph, </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    latitude<span class="op">=</span><span class="fl">43.6</span>, longitude<span class="op">=</span><span class="fl">3.9</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="method-create_layer_for_date" class="level2">
+<h2 class="anchored" data-anchor-id="method-create_layer_for_date">Method : <code>create_layer_for_date</code></h2>
+<p class="text">
+Create a map layer for a given date, including paths and station markers.
+</p>
+<section id="parameters-5" class="level3">
+<h3 class="anchored" data-anchor-id="parameters-5">Parameters</h3>
+<ul class="text">
+<li>
+<strong><code>date</code></strong> (str): Date in the format <code>'YYYY-MM-DD'</code>.
+</li>
+<li>
+<strong><code>map_obj</code></strong> (folium.Map): The map object to add the layer to.
+</li>
+<li>
+<strong><code>data</code></strong> (pandas.DataFrame): DataFrame containing path and station information for the date.
+</li>
+</ul>
+</section>
+<section id="returns-6" class="level3">
+<h3 class="anchored" data-anchor-id="returns-6">Returns</h3>
+<ul class="text">
+<li>
+<strong>None</strong>: This function does not return a value but modifies the map object in place.
+</li>
+</ul>
+</section>
+<section id="examples-6" class="level3">
+<h3 class="anchored" data-anchor-id="examples-6">Examples</h3>
+<p class="text">
+Example: Create a map layer for July 10, 2023.
+</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>create_layer_for_date(</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    date<span class="op">=</span><span class="st">"2023-07-10"</span>, </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    map_obj<span class="op">=</span>folium_map, </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>traffic_data</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
