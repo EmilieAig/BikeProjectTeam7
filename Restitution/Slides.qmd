@@ -2,10 +2,9 @@
 title: |
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="images/Logo_SSD.png" alt="Logo gauche" style="width: 30%; margin-right: 22px;">
-    <h1 style="text-align: center; flex-grow: 0; font-size: 0.8em;">Bike analyses in Montpellier during the Tour de France</h1>
+    <h1 style="text-align: center; margin-bottom: 100px; flex-grow: 0; font-size: 0.8em;">Bike analyses in Montpellier during the Tour de France</h1>
     <img src="images/Logo_univMtp_sansfond.png" alt="Logo droite" style="width: 100%;">
   </div>
-subtitle: "BikeProjectTeam7"
 author: "AIGOIN Emilie - MAMANE SIDI Samira - THOMAS Anne-Laure - ZHU Qingjian"
 format: 
   revealjs:
@@ -24,6 +23,7 @@ format:
 
 ::: {.fragment} 
 #### Problématique 
+![](/images/logo_tourdefrance.png){.absolute top=320 left=450}
 :::
 
 <br>
@@ -42,7 +42,7 @@ format:
 <br>
 
 ::: {.fragment} 
-<p class="text"> ↗ nombre de cycliste pendant cette période </p>
+<p class="text"> ↗ nombre de cycliste pendant et après cette période </p>
 :::
 
 ![](/images/bike.png){.absolute top=650 left=-100 width="20" height="20"}
@@ -52,55 +52,138 @@ format:
 
 ## Introduction {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### Données
+#### Comparaisons
 
-:::: {.columns}
+<br>
 
-::: {.column width="40%"}
-<p class = "text"> Données brutes </p>
+::: {.fragment}
+<p class = "text"> Inter-mois : statistiques. </p>
 :::
 
-::: {.column width="60%"}
-<p class = "text"> Données nettoyées </p>
+<br>
+
+::: {.fragment}
+<p class = "text"> Inter-semaines : graphiques. </p>
 :::
 
-::::
+<br>
+
+::: {.fragment}
+<p class = "text"> Intra-semaines : cartes. </p>
+:::
+
+<br>
+
+::: {.fragment}
+<p class = "text"> Intra-journée : vidéo. </p>
+:::
 
 ![](/images/bike.png){.absolute top=650 left=0 width="20" height="20"}
-
 
 <!-- slide 3 -->
 
 ## Introduction {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### Site web
+#### Données
+
+:::: {.columns}
+
+::: {.column width="50%" .fragment}
+<p class="text">Compteurs de vélos</p>
+![](/images/ecocompt.png){.absolute top=250 left=0 width="350" height="250"}
+<div style="margin-top: 300px;">
+  <p class="text">→ nombre de cyclistes</p>
+</div>
+:::
+
+::: {.column width="50%" .fragment}
+<p class="text">Trajets de Vélomagg</p>
+![](/images/velomagg.png){.absolute top=250 left=550 width="350" height="250"}
+<div style="margin-top: 300px;">
+  <p class="text">→ trajets des cyclistes en Vélomagg</p>
+</div>
+:::
+
+::::
 
 ![](/images/bike.png){.absolute top=650 left=100 width="20" height="20"}
 
 
 <!-- slide 4 -->
 
-## Statistiques {background-color="white" background-image="/images/background.png" background-size=cover}
+## Introduction {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### Descriptives
+#### Site web
 
-#### Résultats
+<br>
 
-#### Discussion
+::: {.fragment}
+![](/images/quarto.png){.absolute top=250 left=0 width="150" height="40"}
+![](/images/arrow.png){.absolute top=250 left=300 width="200" height="50"}
+![](/images/site.png){.absolute top=120 left=600 width="450" height="280"}
+:::
+
+<br>
+
+::: {.fragment}
+![](/images/python.png){.absolute top=500 left=0 width="150" height="40"}
+![](/images/arrow.png){.absolute top=500 left=300 width="200" height="50"}
+![](/images/github.png){.absolute top=450 left=600 width="450" height="200"}
+:::
+
 
 ![](/images/bike.png){.absolute top=650 left=200 width="20" height="20"}
 
 
-<<<<<<< HEAD:Restitution/Slides.qmd
 <!-- slide 5 -->
 
 ## Statistiques {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### Comparaisons
+::: {.fragment}
+#### Descriptives
+:::
+
+::: {.fragment}
+![](/images/intensity_graph.svg){.absolute top=100 left=350 width="800" height="500"}
+:::
+
+<br>
+
+::: {.fragment}
+#### Résultats
+:::
+
+<br>
+
+::: {.fragment}
+<p class = "text"> Hypothèse </p>
+:::
+
+::: {.fragment}
+![](/images/cross.png){.absolute top=318 left=-45 width="200" height="100"}
+:::
+
+<br>
+
+::: {.fragment}
+#### Discussion
+:::
+
+<br>
+
+::: {.fragment}
+<p class = "text"> Vacances et rentrées ? </p>
+:::
 
 ![](/images/bike.png){.absolute top=650 left=300 width="20" height="20"}
 
-=======
+
+<!-- slide 6 -->
+
+## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
+
+#### Explications des prévisions
+
 - **Fonctionnalités de la carte**
 
 - **Choix de Prophet comme modèle**
@@ -108,15 +191,6 @@ format:
 - **Réflexions et défis**
 
 - **Points positifs et apprentissages**
-
-### Données réelles {background-color="white" background-image="/images/background.png" background-size=cover}
->>>>>>> 8038b395d872978dd72b5f20e1456fae05e305c2:slide/slides.qmd
-
-<!-- slide 6 -->
-
-## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
-
-#### Explications des prévisions
 
 ![](/images/bike.png){.absolute top=650 left=400 width="20" height="20"}
 
