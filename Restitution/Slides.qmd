@@ -91,6 +91,7 @@ format:
 ![](/images/bike.png){.absolute top=650 left=200 width="20" height="20"}
 
 
+<<<<<<< HEAD:Restitution/Slides.qmd
 <!-- slide 5 -->
 
 ## Statistiques {background-color="white" background-image="/images/background.png" background-size=cover}
@@ -99,6 +100,17 @@ format:
 
 ![](/images/bike.png){.absolute top=650 left=300 width="20" height="20"}
 
+=======
+- **Fonctionnalités de la carte**
+
+- **Choix de Prophet comme modèle**
+
+- **Réflexions et défis**
+
+- **Points positifs et apprentissages**
+
+### Données réelles {background-color="white" background-image="/images/background.png" background-size=cover}
+>>>>>>> 8038b395d872978dd72b5f20e1456fae05e305c2:slide/slides.qmd
 
 <!-- slide 6 -->
 
