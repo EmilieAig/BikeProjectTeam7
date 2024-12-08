@@ -45,7 +45,7 @@ format:
 <p class="text"> ↗ nombre de cycliste pendant et après cette période </p>
 :::
 
-![](/images/bike.png){.absolute top=650 left=-100 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=-100 width="20" height="20"}
 
 
 <!-- slide 2 -->
@@ -78,7 +78,7 @@ format:
 <p class = "text"> Intra-journée : vidéo. </p>
 :::
 
-![](/images/bike.png){.absolute top=650 left=0 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=0 width="20" height="20"}
 
 <!-- slide 3 -->
 
@@ -106,7 +106,7 @@ format:
 
 ::::
 
-![](/images/bike.png){.absolute top=650 left=100 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=100 width="20" height="20"}
 
 
 <!-- slide 4 -->
@@ -132,7 +132,7 @@ format:
 :::
 
 
-![](/images/bike.png){.absolute top=650 left=200 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=200 width="20" height="20"}
 
 
 <!-- slide 5 -->
@@ -175,34 +175,64 @@ format:
 <p class = "text"> Vacances et rentrées ? </p>
 :::
 
-![](/images/bike.png){.absolute top=650 left=300 width="20" height="20"}
-
+![](/images/bike.png){.absolute top=800 left=300 width="20" height="20"}
 
 <!-- slide 6 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### Explications des prévisions
-
+:::: {.fragment}
 - **Fonctionnalités de la carte**
+::::
 
-- **Choix de Prophet comme modèle**
+:::: {.columns}
 
-- **Réflexions et défis**
+::: {.column width="50%" .fragment}
+<p class="text">Carte prédiction 10/07/2023 </p>
+![](/images/carte_prediction_capture.png){.absolute top=250 left=0 width="500" height="350"}
+<div style="margin-top: 300px;"> </div>
+:::
 
-- **Points positifs et apprentissages**
+::: {.column width="50%" .fragment}
+<p class="text">Carte prédiction 15/07/2023</p>
+![](/images/capture_prediction_week.PNG){.absolute top=250 left=550 width="500" height="350"}
+<div style="margin-top: 300px;"> </div>
+:::
 
-![](/images/bike.png){.absolute top=650 left=400 width="20" height="20"}
+::::
 
+<div style="position: relative; text-align: center; margin-top: 700px;">
+  <img src="/images/Legend.PNG" width="150" height="100" />
+</div>
+
+![](/images/bike.png){.absolute top=800 left=400 width="20" height="20"}
 
 <!-- slide 7 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### Carte des prévisions
+::: {.fragment}
+- **Choix de Prophet comme modèle de prévision**
+:::
 
-![](/images/bike.png){.absolute top=650 left=500 width="20" height="20"}
+::: {.fragment}
+- **Réflexions et décisions clés**
+:::
 
+::: {.fragment}
+  - Réduction des chemins
+:::
+
+::: {.fragment}
+  - Superposition des données
+:::
+
+
+::: {.fragment}
+- **Ouverture**
+:::
+
+![](/images/bike.png){.absolute top=800 left=500 width="20" height="20"}
 
 <!-- slide 8 -->
 
@@ -210,8 +240,7 @@ format:
 
 #### Carte des données réelles
 
-![](/images/bike.png){.absolute top=650 left=600 width="20" height="20"}
-
+![](/images/bike.png){.absolute top=800 left=600 width="20" height="20"}
 
 
 <!-- slide 9 -->
@@ -220,7 +249,7 @@ format:
 
 #### Comparaisons des cartes
 
-![](/images/bike.png){.absolute top=650 left=700 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=700 width="20" height="20"}
 
 
 <!-- slide 10 -->
@@ -229,7 +258,7 @@ format:
 
 #### Création de la vidéo
 
-![](/images/bike.png){.absolute top=650 left=800 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=800 width="20" height="20"}
 
 
 <!-- slide 11 -->
@@ -238,7 +267,7 @@ format:
 
 #### ??
 
-![](/images/bike.png){.absolute top=650 left=900 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=900 width="20" height="20"}
 
 
 <!-- slide 12 -->
@@ -247,7 +276,7 @@ format:
 
 #### ??
 
-![](/images/bike.png){.absolute top=650 left=1000 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=1000 width="20" height="20"}
 
 
 <!-- slide 13 -->
@@ -256,7 +285,7 @@ format:
 
 Merci pour votre écoute.
 
-![](/images/bike.png){.absolute top=650 left=1100 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=1100 width="20" height="20"}
 
 
 <!-- slide bonus 1 -->
