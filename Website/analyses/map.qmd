@@ -28,11 +28,11 @@ format:
 
 <p class = "text"> Map of the **cycling traffic forecast** in Montpellier during the second week of the Tour de France: </p>
 
-<iframe src="/images/bike_traffic_prediction_map.html" width="100%" height="500px" frameborder="0"></iframe>
+<iframe src="/images/bike_traffic_prediction_map.html" width="100%" height="400px" frameborder="0"></iframe>
 
 <p class = "text"> Map of the **cycling traffic** in Montpellier during the second week of the Tour de France: </p>
 
-<iframe src="/images/bike_traffic_prediction_map.html" width="100%" height="500px" frameborder="0"></iframe>
+<iframe src="/images/real_data_map.html" width="100%" height="400px" frameborder="0"></iframe>
 
 ### Cycle stations (Eco-counters)
 
@@ -45,6 +45,7 @@ format:
 <ul class = "text"> 
     <li> Red: Very high intensity (> 1500). </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <li> Orange: High intensity (1201-1500). </li>
     <li> Brown: Moderate intensity (901-1200)
     <li> Yellow: Moderate intensity (6001-900). </li>
@@ -56,6 +57,13 @@ format:
     <li> Light green: Low intensity (301-900). </li>
     <li> Dark green: Very low intensity (≤ 300). </li>
 >>>>>>> 106c1d70ba8c865cbdfc7711f8297ac699874776
+=======
+    <li> Orange: High intensity (1201-1500). </li>
+    <li> Brown: Moderate intensity (901-1200) </li>
+    <li> Yellow: Moderate intensity (601-900). </li>
+    <li> Light green: Low intensity (301-600). </li>
+    <li> Dark green: Very low intensity (<= 300). </li>
+>>>>>>> ec9329df5560dacde195ce765f5e77c41c337422
 </ul>
 
 ### Geographical coverage

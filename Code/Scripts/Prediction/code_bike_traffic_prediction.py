@@ -141,9 +141,9 @@ legend_html = '''
     background-color: white; z-index:9999; font-size:14px;
     border:2px solid grey; border-radius:5px; padding: 10px;">
     <b>Intensity Legend</b><br>
-    <i style="background:#FE4528; width:15px; height:15px; display:inline-block;"></i> > 1500 (High Intensity)<br>
-    <i style="background:#FD6121; width:15px; height:15px; display:inline-block;"></i> > 1200<br>
-    <i style="background:#D95018; width:15px; height:15px; display:inline-block;"></i> > 900<br>
+    <i style="background:#D12315; width:15px; height:15px; display:inline-block;"></i> > 1500 (High Intensity)<br>
+    <i style="background:#FE4528; width:15px; height:15px; display:inline-block;"></i> > 1200<br>
+    <i style="background:#FB9234; width:15px; height:15px; display:inline-block;"></i> > 900<br>
     <i style="background:#FFEF3A; width:15px; height:15px; display:inline-block;"></i> > 600<br>
     <i style="background:#6CD932; width:15px; height:15px; display:inline-block;"></i> > 300<br>
     <i style="background:#038C05; width:15px; height:15px; display:inline-block;"></i> <= 300 (Low Intensity)<br>

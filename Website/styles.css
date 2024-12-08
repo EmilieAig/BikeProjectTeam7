@@ -310,6 +310,7 @@ body.quarto-dark .custom-footer a:hover {
   height: 120px;
   object-fit: cover;              /* image conserve its ratio */
 }
+<<<<<<< HEAD
 
 /* ---------------------------- */
 /*       VIDEOS STYLES          */
@@ -407,3 +408,5 @@ body.quarto-dark .custom-footer a:hover {
   }
 }
 >>>>>>> 106c1d70ba8c865cbdfc7711f8297ac699874776
+=======
+>>>>>>> ec9329df5560dacde195ce765f5e77c41c337422

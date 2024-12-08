@@ -21,8 +21,11 @@ This file contains all the code scripts we created to successfully complete our 
 ### data_treatment_Velomag.py 
    This file includes the code used to clean the data from Velomagg stations, ensuring the dataset was accurate and ready for further processing.
 
+### ecoCompt_Download_and_Combine.py  
+   This file is designed to streamline the process of downloading, cleaning, filtering, and merging counter data from the website in one step, allowing users to directly download the latest data from the site.
+
 ### map.py  
-   This file contains the code used to generate maps and visualizations related to the bike counters and stations.
+   This file contains the code used to generate maps and visualizations related to the bike counters and stations.   
 
 ## Prediction
 
