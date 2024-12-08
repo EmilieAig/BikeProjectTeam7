@@ -20,11 +20,7 @@ format:
 
 ## Videos
 
-<div class="container"> <div class="video-container"> <video src="/images/Bike_Animation_10-07-2023.MOV" controls></video> </div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
-
-<div class="container-r"> <div class="video-container-r"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Tuesday 11 July 2023</p> </div> </div>
-
-<div class="container"> <div class="video-container"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Wednesday 12 July 2023</p> </div> </div>
+<div class="container"> <div class="video-container"> 
+<iframe src="https://www.youtube.com/embed/Gc6I6s13_JY " frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width="800" height="450"></iframe></div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
 
 ## Analyses
-

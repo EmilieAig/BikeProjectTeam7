@@ -1,4 +1,4 @@
- # BikeProjectTeam7
+# BikeProjectTeam7
 Welcome to our project for the HAX712X course for the academic year 2024-2025.
 Our project is titled **BikeProjectTeam7**.\
 The team members are :
@@ -6,6 +6,7 @@ The team members are :
 - MAMANE SIDI Samira
 - THOMAS Anne-Laure
 - ZHU Qingjian
+
 ## Introduction:  
 Our project will focus on the following question: "What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists' behaviors evolved before and after this major event?". The goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.
 
@@ -15,6 +16,8 @@ Through this analysis, we aim to provide a clear and detailed understanding of h
 
 By following this link, you will have access to our website, which showcases the entirety of our project:[BikeProjectTeam7](https://emilieaig.github.io/BikeProjectTeam7/)
 
+### Project Documentation
+You can view the full documentation for this project on our website.
 Here is our current Gantt diagram:  
 [Gantt Diagram](https://emilieaig.github.io/BikeProjectTeam7/Organization/Gantt_Diagram/Gantt_Diagram.html)  
 Please follow the link below to access the details of our project:  
@@ -26,29 +29,33 @@ Here is a diagram of the architecture of our project, detailing the location of 
     ├── .github/workflows/
     │     └── publish.yml
     ├── Code/ 
-    │     ├── Readme.md
     │     ├── Data/
-    |     |     |── Data_EcoCompt/
+    |     |     |── Data_EcoCompt/...
     |     |     |── Data_EcoCompt_Combined/
     |     |     |       ├── counter_coordinates.csv
     │     │     |       ├── edge_intensity_map.html
     |     |     |       |── fichier_combined.csv
     |     |     |       |── node_intensity_20230710.csv
     |     |     |       └── unknown_nodes_intensity.csv   
-    |     |     |── Data_EcoCompt_clean/
-    │     │     └── Video_Data/
-    |     |              ├── GeolocalisationStation.csv
-    |     |              └── VideoDatacleaned.csv
+    |     |     |── Data_EcoCompt_clean/...
+    │     │     |── Prediction_Data/
+    |     |     |        ├── ecocompteurs_coords.csv
+    |     |     |        ├── predictions_bike_intensity_july_week.csv   
+    |     |     |        └── predictions_long_format_july.csv
+    │     │     |── Video_Data/
+    |     |     |        ├── GeolocalisationStation.csv
+    |     |     |        └── VideoDatacleaned.csv
+    │     │     └── Readme.md
+    |     ├── Result/
+    |     |     |── Bike_Animation_10-07-2023.mp4
+    │     │     └── bike_traffic_prediction_map.html
     │     └── Scripts/
     │           ├── Prediction/
-    │           |       ├── bike_traffic_prediction_map.html
+    │           |       ├── Readme.md
     │           |       ├── code_bike_traffic_prediction.py
     │           |       ├── code_eco_coord.py
     │           |       ├── code_prediction_july.py
-    │           |       ├── code_prediction_long_format_july.py
-    │           |       ├── ecocompteurs_coords.csv
-    │           |       ├── predictions_bike_intensity_july_week.csv
-    │           |       └── predictions_long_format_july.csv
+    │           |       └── code_prediction_long_format_july.py
     |           ├── .Rhistory
     |           ├── Animation_Bike.py
     |           ├── DataProcessing.py

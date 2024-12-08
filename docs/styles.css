@@ -320,12 +320,14 @@ body.quarto-dark .custom-footer a:hover {
   width: 100%;
   height: auto;                   /* maintain aspect ratio of the video */
   border: 1px solid #ccc;
-}
 
 /* Style for video container (flex item) */
 .video-container {
-  flex: 2;                      /* video container will take up more space */
+  position: relative;
+  flex: 1;  /* L'espace de la vidéo s'adapte */
   margin-right: 20px;
+  padding-top: 56.25%; /* Ratio 16:9 (hauteur à 56.25% de la largeur) */
+  height: 0;
 }
 
 /* Style for reverse video container (flex item) */

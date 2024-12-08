@@ -5,7 +5,7 @@ import pooch # For downloading and caching files
 from pathlib import Path # For handling file paths
 
 # Configure Pooch to manage the necessary files
-BASE_URL = "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Scripts/Prediction/"
+BASE_URL = "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Prediction_Data/"
 pooch_data = pooch.create(
     path=pooch.os_cache("BikeProjectTeam7"),  # Cache for downloaded files
     base_url=BASE_URL,                       # Base URL for files
@@ -13,6 +13,10 @@ pooch_data = pooch.create(
         "predictions_bike_intensity_july_week.csv": "6a384fa7960da607f14b5dbee0241783b8e8c510a971a8c7439a2a587449e53b"
     },
 )
+
+# Define the output directory for the saved files
+output_dir = Path("Code/Data/Prediction_Data")  # Define the folder where you want to save the file
+output_dir.mkdir(parents=True, exist_ok=True)  # Create the directory if it doesn't exist
 
 # Download and load the predictions file
 data_path = pooch_data.fetch("predictions_bike_intensity_july_week.csv")  # Fetch or verify the file
@@ -37,12 +41,11 @@ melted_df = pd.melt(predictions_df, id_vars=['date'], var_name='laneId', value_n
 # Convert the date column to datetime format
 melted_df['date'] = pd.to_datetime(melted_df['date'])
 
-# Define the output path relative to the current script's directory
-current_dir = Path(__file__).resolve().parent  # Get the current script directory
-output_path = current_dir / 'predictions_long_format_july.csv'  # Save the file in the current directory
+# Define the output path relative to the Prediction_Data directory
+output_path = output_dir / 'predictions_long_format_july.csv'  # Save the file in Prediction_Data
 
-# Save the transformed DataFrame to a new CSV file
-melted_df.to_csv(output_path, index=False, sep=';')
+# Save the results to a CSV file in the 'Prediction_Data' directory
+melted_df.to_csv(output_path, index=False, sep=';')  # Save the transformed data as a CSV file
 
 print(f"Transformation complete and saved to '{output_path}'.")
 
