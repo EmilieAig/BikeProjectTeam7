@@ -33,7 +33,6 @@ Here is a diagram of the architecture of our project, detailing the location of 
     |     |     |── Data_EcoCompt/...
     |     |     |── Data_EcoCompt_Combined/
     |     |     |       ├── counter_coordinates.csv
-    │     │     |       ├── edge_intensity_map.html
     |     |     |       |── fichier_combined.csv
     |     |     |       |── node_intensity_20230710.csv
     |     |     |       └── unknown_nodes_intensity.csv   
@@ -48,41 +47,51 @@ Here is a diagram of the architecture of our project, detailing the location of 
     │     │     └── Readme.md
     |     ├── Result/
     |     |     |── Bike_Animation_10-07-2023.mp4
-    │     │     └── bike_traffic_prediction_map.html
+    │     │     │── Extrait_Bike_Animation.mp4   
+    │     │     │── bike_traffic_prediction_map.html
+    │     │     │── boxplot.svg
+    │     │     │── intensity_graph.svg   
+    │     │     └── real_data_map.html       
     │     └── Scripts/
     │           ├── Prediction/
+    │           |       ├── cache/...    
     │           |       ├── Readme.md
     │           |       ├── code_bike_traffic_prediction.py
     │           |       ├── code_eco_coord.py
     │           |       ├── code_prediction_july.py
     │           |       └── code_prediction_long_format_july.py
+    |           ├── cache/...   
     |           ├── .Rhistory
     |           ├── Animation_Bike.py
     |           ├── DataProcessing.py
-    |           ├── Download_and_Combine.py
-    |           ├── ModelTraining.py
-    |           ├── Statistics.py
+    |           ├── Readme.md    
+    |           ├── Statistics.py    
     |           ├── data_treatment_EcoCompt.py
-    |           ├── data_treatment_Velomag.py  
+    |           ├── data_treatment_Velomag.py 
+    |           ├── ecoCompt_Download_and_Combine.py      
     |           └── map.py
     ├── Organization/
     │     ├── Gantt diagram/
     │     │     ├── Gantt_Diagram_files/libs
     │     │     ├── Gantt Diagram.html
     │     │     └── Gantt Diagram.qmd
-    │     ├── Models/
-    │     │     ├── Map Model.png
-    │     │     └── Website Model.png
+    │     └──── Models/
+    │           ├── Mapmodel.png
+    │           └── Websitemodel.png
     ├── Restitution/
-    │     └── Slides.qmd
-    │      
+    │     ├── images/
+    │     │── slides_files/libs
+    │     │── Slides.html
+    │     │── Slides.qmd   
+    │     └── styles.css        
     ├── RoadMap/
     │     └── README.md
     ├── Website/
-    |      ├── analyses/
+    |      ├── analyses/   
     │      |    ├── map.qmd
     │      |    ├── statistics.qmd
     │      │    └── video.qmd
+    |      ├── docs/    
     |      ├── documentation/
     │      |    ├── classes.qmd
     │      |    ├── functions.qmd
@@ -101,13 +110,12 @@ Here is a diagram of the architecture of our project, detailing the location of 
     |      |    ├── member3.png
     |      |    ├── member4.png  
     |      |    └── video_1.mp4
-    |      ├── .Rhistory
+    |      ├── sources/    
     |      ├── .gitignore
     |      ├── _quarto.yml
     |      ├── footer.qmd
     |      ├── index.qmd
     │      └── styles.css
-    ├── docs/
     ├── .gitignore
     ├── README.md
     └── requirements.txt 

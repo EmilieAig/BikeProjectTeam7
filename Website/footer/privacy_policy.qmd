@@ -11,6 +11,7 @@ format:
 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Introduction
 
@@ -18,6 +19,9 @@ format:
 =======
 <p class = "text"> EFFECTIVE DATE: 2024-01-22 </p>
 >>>>>>> 01a1e4304accaf61e8662360d3dd549e048bf0e7
+=======
+<p class = "text"> EFFECTIVE DATE: 2024-12-10 </p>
+>>>>>>> 93adb5eb4520b5dce27c392c7355bee17a932acc
 
 <p class = "text"> Welcome to the site made by BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information. </p>
 
