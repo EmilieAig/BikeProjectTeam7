@@ -25,3 +25,9 @@ format:
 <iframe src="https://www.youtube.com/embed/Gc6I6s13_JY " frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width="800" height="450"></iframe> 
 
 ## Analyses
+
+<p class="text"> This video shows Velomagg bike journeys in Montpellier from midnight on Monday 10 July 2023 to 11.59pm on the same day. </p>
+
+<p class="text"> The peak times are from 7.30am to 9am, around 1pm and from 5.30pm to around 9pm. </p>
+
+<p class="text"> This seems to correspond to the start of work, the lunch break and the end of the working day. </p>
