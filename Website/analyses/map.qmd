@@ -45,8 +45,8 @@ format:
     <li> Red: Very high intensity (> 1500). </li>
     <li> Orange: High intensity (1200-1500). </li>
     <li> Yellow: Moderate intensity (900-1200). </li>
-    <li> Light green: Low intensity (300-900). </li>
-    <li> Dark green: Very low intensity (< 300). </li>
+    <li> Light green: Low intensity (301-900). </li>
+    <li> Dark green: Very low intensity (≤ 300). </li>
 </ul>
 
 ### Geographical coverage
