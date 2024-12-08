@@ -1,13 +1,11 @@
-#%%
-# Importing necessary libraries
+#%% Importing necessary libraries
 import pandas as pd  # For data manipulation and analysis
 from prophet import Prophet  # For time series forecasting
 from pathlib import Path  # For handling file paths
-import os  # For interacting with the file system
 import pooch  # For downloading and caching files
 
 # Configure Pooch to manage the required files
-BASE_URL = "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Data_EcoCompt_clean/"
+BASE_URL = "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Data_EcoCompt_Combined/"
 pooch_data = pooch.create(
     path=pooch.os_cache("BikeProjectTeam7"),  # Local cache for the files
     base_url=BASE_URL,                       # Base URL to fetch the files
@@ -59,12 +57,18 @@ predictions_df.interpolate(method='linear', axis=0, inplace=True)  # Fill missin
 # Reset the index to have the 'date' column instead of an index
 predictions_df.reset_index(inplace=True)
 
-# Define the output file path in the 'Prediction_Data' folder within 'Code/Data'
-output_dir = Path("Code/Data/Prediction_Data")  # Set the correct directory path
+# Get the current script directory
+script_dir = Path(__file__).parent.resolve()  # Directory containing the script
+
+# Define the output directory relative to the current script location
+output_dir = script_dir.parents[1] / "Data" / "Prediction_Data"  # Navigate to Code/Data/Prediction_Data
 output_dir.mkdir(parents=True, exist_ok=True)  # Create the directory if it doesn't exist
 
-predictions_path = output_dir / 'predictions_bike_intensity_july_week.csv'  # Define the output file path
-predictions_df.to_csv(predictions_path, index=False, sep=';')  # Save the predictions as a CSV file
+# Save the predictions as a CSV file
+predictions_path = output_dir / 'predictions_bike_intensity_july_week.csv'
+predictions_df.to_csv(predictions_path, index=False, sep=';')
 
 # Print the location of the saved file
 print(f"Predictions have been saved to: {predictions_path}")
+
+# %%
