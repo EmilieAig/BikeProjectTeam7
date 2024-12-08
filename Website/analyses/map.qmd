@@ -12,7 +12,7 @@ format:
 
 ## Map context
 
-<p class = "text"> On this page, we can see two interactive maps of bicycle traffic in the city of Montpellier: one corresponds to the predictions that we made from the data from January 2023 to June 2023, and the other on the actual data we have for this period. We decided to represent the two cards so that we could make a compari </p>
+<p class = "text"> On this page, we can see two interactive maps of bicycle traffic in the city of Montpellier: one corresponds to the predictions that we made from the data from January 2023 to June 2023, and the other on the actual data we have for this period. We decided to represent the two maps so that we could compare them and see if our prediction model is correct. </p </p>
 
 <p class = "text"> The interactive maps below show the forecast of cycling/ real cycling in the city of Montpellier from 10 July to 16 July 2023. These dates represent the intermediate week (2nd of 3 weeks) of the Tour de France.</p>
 

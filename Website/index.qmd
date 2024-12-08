@@ -9,7 +9,7 @@ format:
 
 <div style="text-align: center;">
 <h1>Welcome to our project <i class="fas fa-bicycle"></i><br>
-Bike analyses in Montpellier during Tour de France</h1>
+Bike analyses in Montpellier during <br> Tour de France</h1>
 </div>
 
 <div class="bike"> <img src="images/bike.png" alt="Image" style="width: 100%; max-width: 40px; display: block; margin: 0 auto -10px auto;">

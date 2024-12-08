@@ -23,7 +23,7 @@ format:
 <p class = "text"> To make an hypothesis from our problem, we based on the work of <a href="https://www.researchgate.net/publication/337445763_L'impact_social_des_grands_evenements_sportifs_reflexions_theoriques_et_methodologiques_a_partir_de_l'Euro_2016">Charrier et al., 2019</a>:</p>
 
 <p style="text-indent: -1.25em; margin-left: 1.25em;">
-Charrier, D., Jourdan, J., Bourbillères, H., Djaballah, M., & Parmantier, C. (2019). L’impact social des grands événements sportifs : Réflexions théoriques et méthodologiques à partir de l’Euro 2016. Movement and Sports Sciences - Science et Motricite. https://doi.org/10.1051/sm/2019029 </p>
+Charrier, D., Jourdan, J., Bourbillères, H., Djaballah, M., & Parmantier, C. (2019). L’impact social des grands événements sportifs : Réflexions théoriques et méthodologiques à partir de l’Euro 2016. Movement and Sports Sciences - Science et Motricite. <a href="https://doi.org/10.1051/sm/2019029">https://doi.org/10.1051/sm/2019029</a> </p>
 
 ## Visuals
 

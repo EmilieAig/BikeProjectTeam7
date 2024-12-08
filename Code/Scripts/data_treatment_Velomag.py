@@ -1,68 +1,81 @@
+# %% 1. Import packages
+
 import pooch
 import pandas as pd
 import numpy as np
 
-# URL où le fichier est hébergé
+# %% 2. Define the URL and download
+
+# URL where the file is hosted 
 url = "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/DataBike2023.csv"
 
-# Calculer ou obtenir le hachage SHA256 du fichier
-known_hash = "81e2c763a0995e501cb6857160078331ac5a80cc165dd672abaf11c0f4d99d8f"  # Remplacez ceci par le vrai hachage SHA256 du fichier
+# Compute or provide the known SHA256 hash of the file  
+known_hash = "81e2c763a0995e501cb6857160078331ac5a80cc165dd672abaf11c0f4d99d8f"
 
-# Emplacement local pour stocker le fichier téléchargé
-cache_dir = pooch.os_cache("my_data_cache")  # Le cache sera sauvegardé dans un répertoire par défaut
+# Local directory to cache the downloaded file 
+cache_dir = pooch.os_cache("my_data_cache")
 
-# Téléchargement du fichier avec pooch (il sera mis en cache localement)
+# Download the file with `pooch` (it will be cached locally)  
 dataset = pooch.retrieve(url, path=cache_dir, downloader=pooch.HTTPDownloader(), known_hash=known_hash)
 
-# Charger le fichier CSV téléchargé dans un DataFrame
+# Load the downloaded CSV file into a DataFrame 
 df = pd.read_csv(dataset, encoding='utf-8', low_memory=False)
 
-# Nettoyer les noms de colonnes
+# %% 3. Clean the dataset
+
+# Clean column names (strip spaces, remove special characters) 
 df.columns = df.columns.str.strip().str.replace('°', 'C').str.replace(' ', '_').str.replace('(', '').str.replace(')', '')
 
-# Fonction de nettoyage des caractères spéciaux
+# Function to clean special characters in the dataset  
 def clean_text(text):
     return str(text).replace('√©', 'e') \
                      .replace('√®', 'e') \
                      .replace('√†', 'a') \
                      .replace('√ç', 'c')
 
-# Appliquer le nettoyage à toutes les colonnes
+# Apply the cleaning function to all DataFrame cells 
 df = df.applymap(clean_text)
 
-# Séparer la colonne 'Departure' en deux : une pour la date et l'autre pour l'heure
+# %% 4. Process date and time columns
+
+# Split the 'Departure' column into two: one for the date and another for the time  
 df[['Departure_Date', 'Departure_Time']] = df['Departure'].str.split(' ', expand=True)
 
-# Séparer la colonne 'Return' en deux : une pour la date et l'autre pour l'heure
+# Split the 'Return' column into two: one for the date and another for the time 
 df[['Return_Date', 'Return_Time']] = df['Return'].str.split(' ', expand=True)
 
-# Conversion des colonnes de date et d'heure en format DateTime
+# Convert date and time columns into DateTime format 
 df['Departure_DateTime'] = pd.to_datetime(df['Departure_Date'] + ' ' + df['Departure_Time'])
 df['Return_DateTime'] = pd.to_datetime(df['Return_Date'] + ' ' + df['Return_Time'])
 
-# Suppression des colonnes dont on n'a plus besoin
+# %% 5. Remove unnecessary columns
+
+# Remove columns that are no longer needed 
 df = df.drop(['Departure', 'Return', 'Departure_DateTime', 'Return_DateTime', 'Lock_duration_sec.', 'Number_of_bike_locks', 'Manager', 'new_account'], axis=1)
 
-# Générer des données aléatoires de latitude et de longitude autour de Montpellier
-# Plage de latitude autour de 43.61 (de 43.55 à 43.67 pour rester proche)
+# %% 6.  Generate random latitude and longitude data (to fill in the columns, but which will be replaced by the real data afterwards)
+
+# Latitude range near 43.61 (from 43.55 to 43.67 to stay close)
 latitudes_dep = np.random.uniform(43.55, 43.67, len(df))
 
-# Plage de longitude autour de 3.88 (de 3.82 à 3.93 pour rester proche)
+# Longitude range near 3.88 (from 3.82 to 3.93 to stay close)
 longitudes_dep = np.random.uniform(3.82, 3.93, len(df))
 
-# Plage de latitude autour de 43.61 (de 43.55 à 43.67 pour rester proche)
+# Latitude range near 43.61 (from 43.55 to 43.67 to stay close)
 latitudes_ret = np.random.uniform(43.55, 43.67, len(df))
 
-# Plage de longitude autour de 3.88 (de 3.82 à 3.93 pour rester proche)
+# Longitude range near 3.88 (from 3.82 to 3.93 to stay close) 
 longitudes_ret = np.random.uniform(3.82, 3.93, len(df))
 
-# Ajouter les colonnes Latitude et Longitude au DataFrame
+# Add Latitude and Longitude columns to the DataFrame 
 df['Departure latitude'] = latitudes_dep
 df['Departure longitude'] = longitudes_dep
 df['Return latitude'] = latitudes_ret
 df['Return longitude'] = longitudes_ret
 
-# Sauvegarder le DataFrame dans un fichier CSV
+# %% 7. Save the cleaned dataset
+
+# Save the cleaned DataFrame to a CSV file  
 df.to_csv('cleaned_data.csv', index=False, encoding='utf-8')
 
 print("Les données ont été nettoyées et enregistrées dans 'cleaned_data.csv'.")
