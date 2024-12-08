@@ -12,7 +12,7 @@ format:
 
 ## `convert_json_to_csv`
 
-<p class="text"> Convert a JSON file containing EcoCompt data to a CSV file and filter the data for a specific date range. </p>
+<p class="text"> Convert a JSON file containing EcoCompt data to a CSV file and filter the data for a specific date range. This function was used in the Code/Scripts/data_treatment_EcoCompt.py and Code/Scripts/ecoCompt_Download_and_Combine.py files to clean the data. </p>
 
 ### Parameters
 
@@ -46,37 +46,39 @@ convert_json_to_csv(
 )
 ```
 
-## `create_animation`
+## `create_layer_for_date`
 
-<p class = "text"> Generate a video animation of the bike trips. </p>
+<p class = "text"> Create a map layer for a given date, including paths and station markers. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions. </p>
 
-<p class = "text"> This method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file. </p>
+### Parameters
+
+<ul class = "text"> 
+  <li> **`date`** (str): date in the format `'YYYY-MM-DD'`. </li> 
+  <li> **`map_obj`** (folium.Map): The map object to add the layer to. </li> 
+  <li> **`data`** (pandas.DataFrame): dataFrame containing path and station information for the date. </li> 
+</ul>
 
 ### Returns
 
-<ul class = "text">
-  <li> **None**: this method does not return any value. </li>
-</ul>
-
-### Notes
-
-<ul class = "text">
- <li> This method uses **multiprocessing** to parallelize frame generation, which can be resource-intensive. </li>
- <li> Ensure that you have sufficient disk space for temporary files generated during the process. </li>
+<ul class = "text"> 
+  <li> **None**: this function does not return a value but modifies the map object in place. </li> 
 </ul>
 
 ### Examples
 
-<p class = "text"> Example: Generate the animation for the loaded dataset. </p>
+<p class = "text"> Example: create a map layer for July 10, 2023. </p>
 
 ```python
-animation = BikeAnimation(input_file="data/trips.csv")
-animation.create_animation()
+create_layer_for_date(
+    date="2023-07-10", 
+    map_obj=folium_map, 
+    data=traffic_data
+)
 ```
 
 ## `download_file`
 
-<p class = "text"> Download a file from a URL, store it locally, and verify its integrity using a SHA256 hash. </p>
+<p class = "text"> Download a file from a URL, store it locally, and verify its integrity using a SHA256 hash. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions. </p>
 
 ### Parameters
 
@@ -106,7 +108,7 @@ download_file(
 
 ## `find_station_name`
 
-<p class = "text"> Find the name of the nearest station for a given geographic point by calculating distances using Geopy. </p>
+<p class = "text"> Find the name of the nearest station for a given geographic point by calculating distances using Geopy. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions. </p>
 
 ### Parameters
 
@@ -133,10 +135,9 @@ find_station_name(
 )
 ```
 
-
 ## `is_within_radius`
 
-<p class = "text"> Check if a given point (latitude, longitude) is within a specified radius from a center point. </p>
+<p class = "text"> Check if a given point (latitude, longitude) is within a specified radius from a center point. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions. </p>
 
 ### Parameters
 
@@ -165,39 +166,37 @@ is_within_radius(
 )
 ```
 
-## Method: `create_layer_for_date`
+## Method: `create_animation`
 
-<p class = "text"> Create a map layer for a given date, including paths and station markers. </p>
+<p class = "text"> Generate a video animation of the bike trips. </p>
 
-### Parameters
-
-<ul class = "text"> 
-  <li> **`date`** (str): date in the format `'YYYY-MM-DD'`. </li> 
-  <li> **`map_obj`** (folium.Map): The map object to add the layer to. </li> 
-  <li> **`data`** (pandas.DataFrame): dataFrame containing path and station information for the date. </li> 
-</ul>
+<p class = "text"> This method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file. This function was used in the Code/Scripts/Animation_Bike.py file to make the video. </p>
 
 ### Returns
 
-<ul class = "text"> 
-  <li> **None**: this function does not return a value but modifies the map object in place. </li> 
+<ul class = "text">
+  <li> **None**: this method does not return any value. </li>
+</ul>
+
+### Notes
+
+<ul class = "text">
+ <li> This method uses **multiprocessing** to parallelize frame generation, which can be resource-intensive. </li>
+ <li> Ensure that you have sufficient disk space for temporary files generated during the process. </li>
 </ul>
 
 ### Examples
 
-<p class = "text"> Example: create a map layer for July 10, 2023. </p>
+<p class = "text"> Example: Generate the animation for the loaded dataset. </p>
 
 ```python
-create_layer_for_date(
-    date="2023-07-10", 
-    map_obj=folium_map, 
-    data=traffic_data
-)
+animation = BikeAnimation(input_file="data/trips.csv")
+animation.create_animation()
 ```
 
 ## Method: `precompute_route`
 
-<p class = "text"> Precompute the shortest route for a single trip. </p>
+<p class = "text"> Precompute the shortest route for a single trip. This function was used in the Code/Scripts/Animation_Bike.py file to generate the video. </p>
 
 <p class = "text"> Given a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph. </p>
 
@@ -237,7 +236,7 @@ animation.precompute_route(row)
 
 ## `process_all_json_files`
 
-<p class="text"> Process all JSON files in a directory, converting each to a filtered CSV file in a target folder. </p>
+<p class="text"> Process all JSON files in a directory, converting each to a filtered CSV file in a target folder. This function was used in the Code/Scripts/data_treatment_EcoCompt.py and Code/Scripts/ecoCompt_Download_and_Combine.py files to clean the data. </p>
 
 ### Parameters
 
@@ -269,7 +268,7 @@ if __name__ == "__main__":
 
 ## `safe_nearest_node`
 
-<p class = "text"> Securely find the nearest node in a graph for a given geographic point, handling exceptions. </p>
+<p class = "text"> Securely find the nearest node in a graph for a given geographic point, handling exceptions. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions. </p>
 
 ### Parameters
 

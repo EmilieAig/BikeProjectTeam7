@@ -200,37 +200,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
   </ul></li>
-  <li><a href="#create_animation" id="toc-create_animation" class="nav-link" data-scroll-target="#create_animation"><code>create_animation</code></a>
-  <ul>
-  <li><a href="#returns-1" id="toc-returns-1" class="nav-link" data-scroll-target="#returns-1">Returns</a></li>
-  <li><a href="#notes-1" id="toc-notes-1" class="nav-link" data-scroll-target="#notes-1">Notes</a></li>
-  <li><a href="#examples-1" id="toc-examples-1" class="nav-link" data-scroll-target="#examples-1">Examples</a></li>
-  </ul></li>
   <li><a href="#create_layer_for_date" id="toc-create_layer_for_date" class="nav-link" data-scroll-target="#create_layer_for_date"><code>create_layer_for_date</code></a>
   <ul>
   <li><a href="#parameters-1" id="toc-parameters-1" class="nav-link" data-scroll-target="#parameters-1">Parameters</a></li>
-  <li><a href="#returns-2" id="toc-returns-2" class="nav-link" data-scroll-target="#returns-2">Returns</a></li>
-  <li><a href="#examples-2" id="toc-examples-2" class="nav-link" data-scroll-target="#examples-2">Examples</a></li>
+  <li><a href="#returns-1" id="toc-returns-1" class="nav-link" data-scroll-target="#returns-1">Returns</a></li>
+  <li><a href="#examples-1" id="toc-examples-1" class="nav-link" data-scroll-target="#examples-1">Examples</a></li>
   </ul></li>
   <li><a href="#download_file" id="toc-download_file" class="nav-link" data-scroll-target="#download_file"><code>download_file</code></a>
   <ul>
   <li><a href="#parameters-2" id="toc-parameters-2" class="nav-link" data-scroll-target="#parameters-2">Parameters</a></li>
-  <li><a href="#returns-3" id="toc-returns-3" class="nav-link" data-scroll-target="#returns-3">Returns</a></li>
-  <li><a href="#examples-3" id="toc-examples-3" class="nav-link" data-scroll-target="#examples-3">Examples</a></li>
+  <li><a href="#returns-2" id="toc-returns-2" class="nav-link" data-scroll-target="#returns-2">Returns</a></li>
+  <li><a href="#examples-2" id="toc-examples-2" class="nav-link" data-scroll-target="#examples-2">Examples</a></li>
   </ul></li>
   <li><a href="#find_station_name" id="toc-find_station_name" class="nav-link" data-scroll-target="#find_station_name"><code>find_station_name</code></a>
   <ul>
   <li><a href="#parameters-3" id="toc-parameters-3" class="nav-link" data-scroll-target="#parameters-3">Parameters</a></li>
-  <li><a href="#returns-4" id="toc-returns-4" class="nav-link" data-scroll-target="#returns-4">Returns</a></li>
-  <li><a href="#examples-4" id="toc-examples-4" class="nav-link" data-scroll-target="#examples-4">Examples</a></li>
+  <li><a href="#returns-3" id="toc-returns-3" class="nav-link" data-scroll-target="#returns-3">Returns</a></li>
+  <li><a href="#examples-3" id="toc-examples-3" class="nav-link" data-scroll-target="#examples-3">Examples</a></li>
   </ul></li>
   <li><a href="#is_within_radius" id="toc-is_within_radius" class="nav-link" data-scroll-target="#is_within_radius"><code>is_within_radius</code></a>
   <ul>
   <li><a href="#parameters-4" id="toc-parameters-4" class="nav-link" data-scroll-target="#parameters-4">Parameters</a></li>
+  <li><a href="#returns-4" id="toc-returns-4" class="nav-link" data-scroll-target="#returns-4">Returns</a></li>
+  <li><a href="#examples-4" id="toc-examples-4" class="nav-link" data-scroll-target="#examples-4">Examples</a></li>
+  </ul></li>
+  <li><a href="#method-create_animation" id="toc-method-create_animation" class="nav-link" data-scroll-target="#method-create_animation">Method: <code>create_animation</code></a>
+  <ul>
   <li><a href="#returns-5" id="toc-returns-5" class="nav-link" data-scroll-target="#returns-5">Returns</a></li>
+  <li><a href="#notes-1" id="toc-notes-1" class="nav-link" data-scroll-target="#notes-1">Notes</a></li>
   <li><a href="#examples-5" id="toc-examples-5" class="nav-link" data-scroll-target="#examples-5">Examples</a></li>
   </ul></li>
-  <li><a href="#precompute_route" id="toc-precompute_route" class="nav-link" data-scroll-target="#precompute_route"><code>precompute_route</code></a>
+  <li><a href="#method-precompute_route" id="toc-method-precompute_route" class="nav-link" data-scroll-target="#method-precompute_route">Method: <code>precompute_route</code></a>
   <ul>
   <li><a href="#parameters-5" id="toc-parameters-5" class="nav-link" data-scroll-target="#parameters-5">Parameters</a></li>
   <li><a href="#returns-6" id="toc-returns-6" class="nav-link" data-scroll-target="#returns-6">Returns</a></li>
@@ -266,7 +266,7 @@ Functions <i class="fas fa-book-open"></i>
 <section id="convert_json_to_csv" class="level2">
 <h2 class="anchored" data-anchor-id="convert_json_to_csv"><code>convert_json_to_csv</code></h2>
 <p class="text">
-Convert a JSON file containing EcoCompt data to a CSV file and filter the data for a specific date range.
+Convert a JSON file containing EcoCompt data to a CSV file and filter the data for a specific date range. This function was used in the Code/Scripts/data_treatment_EcoCompt.py and Code/Scripts/ecoCompt_Download_and_Combine.py files to clean the data.
 </p>
 <section id="parameters" class="level3">
 <h3 class="anchored" data-anchor-id="parameters">Parameters</h3>
@@ -312,46 +312,10 @@ Example: Convert a JSON file to CSV.
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="create_animation" class="level2">
-<h2 class="anchored" data-anchor-id="create_animation"><code>create_animation</code></h2>
-<p class="text">
-Generate a video animation of the bike trips.
-</p>
-<p class="text">
-This method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file.
-</p>
-<section id="returns-1" class="level3">
-<h3 class="anchored" data-anchor-id="returns-1">Returns</h3>
-<ul class="text">
-<li>
-<strong>None</strong>: this method does not return any value.
-</li>
-</ul>
-</section>
-<section id="notes-1" class="level3">
-<h3 class="anchored" data-anchor-id="notes-1">Notes</h3>
-<ul class="text">
-<li>
-This method uses <strong>multiprocessing</strong> to parallelize frame generation, which can be resource-intensive.
-</li>
-<li>
-Ensure that you have sufficient disk space for temporary files generated during the process.
-</li>
-</ul>
-</section>
-<section id="examples-1" class="level3">
-<h3 class="anchored" data-anchor-id="examples-1">Examples</h3>
-<p class="text">
-Example: Generate the animation for the loaded dataset.
-</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>animation <span class="op">=</span> BikeAnimation(input_file<span class="op">=</span><span class="st">"data/trips.csv"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>animation.create_animation()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-</section>
 <section id="create_layer_for_date" class="level2">
 <h2 class="anchored" data-anchor-id="create_layer_for_date"><code>create_layer_for_date</code></h2>
 <p class="text">
-Create a map layer for a given date, including paths and station markers.
+Create a map layer for a given date, including paths and station markers. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.
 </p>
 <section id="parameters-1" class="level3">
 <h3 class="anchored" data-anchor-id="parameters-1">Parameters</h3>
@@ -367,30 +331,30 @@ Create a map layer for a given date, including paths and station markers.
 </li>
 </ul>
 </section>
-<section id="returns-2" class="level3">
-<h3 class="anchored" data-anchor-id="returns-2">Returns</h3>
+<section id="returns-1" class="level3">
+<h3 class="anchored" data-anchor-id="returns-1">Returns</h3>
 <ul class="text">
 <li>
 <strong>None</strong>: this function does not return a value but modifies the map object in place.
 </li>
 </ul>
 </section>
-<section id="examples-2" class="level3">
-<h3 class="anchored" data-anchor-id="examples-2">Examples</h3>
+<section id="examples-1" class="level3">
+<h3 class="anchored" data-anchor-id="examples-1">Examples</h3>
 <p class="text">
 Example: create a map layer for July 10, 2023.
 </p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>create_layer_for_date(</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    date<span class="op">=</span><span class="st">"2023-07-10"</span>, </span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    map_obj<span class="op">=</span>folium_map, </span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>traffic_data</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>create_layer_for_date(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    date<span class="op">=</span><span class="st">"2023-07-10"</span>, </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    map_obj<span class="op">=</span>folium_map, </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>traffic_data</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="download_file" class="level2">
 <h2 class="anchored" data-anchor-id="download_file"><code>download_file</code></h2>
 <p class="text">
-Download a file from a URL, store it locally, and verify its integrity using a SHA256 hash.
+Download a file from a URL, store it locally, and verify its integrity using a SHA256 hash. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.
 </p>
 <section id="parameters-2" class="level3">
 <h3 class="anchored" data-anchor-id="parameters-2">Parameters</h3>
@@ -406,30 +370,30 @@ Download a file from a URL, store it locally, and verify its integrity using a S
 </li>
 </ul>
 </section>
-<section id="returns-3" class="level3">
-<h3 class="anchored" data-anchor-id="returns-3">Returns</h3>
+<section id="returns-2" class="level3">
+<h3 class="anchored" data-anchor-id="returns-2">Returns</h3>
 <ul class="text">
 <li>
 <strong>None</strong>: this function does not return any value but raises an exception if the hash verification fails.
 </li>
 </ul>
 </section>
-<section id="examples-3" class="level3">
-<h3 class="anchored" data-anchor-id="examples-3">Examples</h3>
+<section id="examples-2" class="level3">
+<h3 class="anchored" data-anchor-id="examples-2">Examples</h3>
 <p class="text">
 Example: download a file and verify its integrity.
 </p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>download_file(</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    url<span class="op">=</span><span class="st">"https://example.com/data.csv"</span>,</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    output_path<span class="op">=</span><span class="st">"local_data/data.csv"</span>,</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    expected_hash<span class="op">=</span><span class="st">"abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>download_file(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    url<span class="op">=</span><span class="st">"https://example.com/data.csv"</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    output_path<span class="op">=</span><span class="st">"local_data/data.csv"</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    expected_hash<span class="op">=</span><span class="st">"abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="find_station_name" class="level2">
 <h2 class="anchored" data-anchor-id="find_station_name"><code>find_station_name</code></h2>
 <p class="text">
-Find the name of the nearest station for a given geographic point by calculating distances using Geopy.
+Find the name of the nearest station for a given geographic point by calculating distances using Geopy. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.
 </p>
 <section id="parameters-3" class="level3">
 <h3 class="anchored" data-anchor-id="parameters-3">Parameters</h3>
@@ -445,29 +409,29 @@ Find the name of the nearest station for a given geographic point by calculating
 </li>
 </ul>
 </section>
-<section id="returns-4" class="level3">
-<h3 class="anchored" data-anchor-id="returns-4">Returns</h3>
+<section id="returns-3" class="level3">
+<h3 class="anchored" data-anchor-id="returns-3">Returns</h3>
 <ul class="text">
 <li>
 <strong>str</strong>: name of the nearest station.
 </li>
 </ul>
 </section>
-<section id="examples-4" class="level3">
-<h3 class="anchored" data-anchor-id="examples-4">Examples</h3>
+<section id="examples-3" class="level3">
+<h3 class="anchored" data-anchor-id="examples-3">Examples</h3>
 <p class="text">
 Example: find the nearest station to a point.
 </p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>find_station_name(</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    latitude<span class="op">=</span><span class="fl">43.6</span>, longitude<span class="op">=</span><span class="fl">3.9</span>, </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    stations_df<span class="op">=</span>stations</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>find_station_name(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    latitude<span class="op">=</span><span class="fl">43.6</span>, longitude<span class="op">=</span><span class="fl">3.9</span>, </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    stations_df<span class="op">=</span>stations</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="is_within_radius" class="level2">
 <h2 class="anchored" data-anchor-id="is_within_radius"><code>is_within_radius</code></h2>
 <p class="text">
-Check if a given point (latitude, longitude) is within a specified radius from a center point.
+Check if a given point (latitude, longitude) is within a specified radius from a center point. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.
 </p>
 <section id="parameters-4" class="level3">
 <h3 class="anchored" data-anchor-id="parameters-4">Parameters</h3>
@@ -489,30 +453,66 @@ Check if a given point (latitude, longitude) is within a specified radius from a
 </li>
 </ul>
 </section>
-<section id="returns-5" class="level3">
-<h3 class="anchored" data-anchor-id="returns-5">Returns</h3>
+<section id="returns-4" class="level3">
+<h3 class="anchored" data-anchor-id="returns-4">Returns</h3>
 <ul class="text">
 <li>
 <strong>bool</strong>: <code>True</code> if the point is within the radius, otherwise <code>False</code>.
 </li>
 </ul>
 </section>
-<section id="examples-5" class="level3">
-<h3 class="anchored" data-anchor-id="examples-5">Examples</h3>
+<section id="examples-4" class="level3">
+<h3 class="anchored" data-anchor-id="examples-4">Examples</h3>
 <p class="text">
 Example: check if a point is within 15 km of Montpellier.
 </p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>is_within_radius(</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    lat<span class="op">=</span><span class="fl">43.6</span>, lon<span class="op">=</span><span class="fl">3.9</span>, </span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    center_lat<span class="op">=</span><span class="fl">43.6119</span>, center_lon<span class="op">=</span><span class="fl">3.8772</span>, </span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    radius_km<span class="op">=</span><span class="dv">15</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>is_within_radius(</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    lat<span class="op">=</span><span class="fl">43.6</span>, lon<span class="op">=</span><span class="fl">3.9</span>, </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    center_lat<span class="op">=</span><span class="fl">43.6119</span>, center_lon<span class="op">=</span><span class="fl">3.8772</span>, </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    radius_km<span class="op">=</span><span class="dv">15</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="precompute_route" class="level2">
-<h2 class="anchored" data-anchor-id="precompute_route"><code>precompute_route</code></h2>
+<section id="method-create_animation" class="level2">
+<h2 class="anchored" data-anchor-id="method-create_animation">Method: <code>create_animation</code></h2>
 <p class="text">
-Precompute the shortest route for a single trip.
+Generate a video animation of the bike trips.
+</p>
+<p class="text">
+This method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file. This function was used in the Code/Scripts/Animation_Bike.py file to make the video.
+</p>
+<section id="returns-5" class="level3">
+<h3 class="anchored" data-anchor-id="returns-5">Returns</h3>
+<ul class="text">
+<li>
+<strong>None</strong>: this method does not return any value.
+</li>
+</ul>
+</section>
+<section id="notes-1" class="level3">
+<h3 class="anchored" data-anchor-id="notes-1">Notes</h3>
+<ul class="text">
+<li>
+This method uses <strong>multiprocessing</strong> to parallelize frame generation, which can be resource-intensive.
+</li>
+<li>
+Ensure that you have sufficient disk space for temporary files generated during the process.
+</li>
+</ul>
+</section>
+<section id="examples-5" class="level3">
+<h3 class="anchored" data-anchor-id="examples-5">Examples</h3>
+<p class="text">
+Example: Generate the animation for the loaded dataset.
+</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>animation <span class="op">=</span> BikeAnimation(input_file<span class="op">=</span><span class="st">"data/trips.csv"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>animation.create_animation()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="method-precompute_route" class="level2">
+<h2 class="anchored" data-anchor-id="method-precompute_route">Method: <code>precompute_route</code></h2>
+<p class="text">
+Precompute the shortest route for a single trip. This function was used in the Code/Scripts/Animation_Bike.py file to generate the video.
 </p>
 <p class="text">
 Given a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph.
@@ -562,7 +562,7 @@ Example: Precompute the shortest route for a single trip.
 <section id="process_all_json_files" class="level2">
 <h2 class="anchored" data-anchor-id="process_all_json_files"><code>process_all_json_files</code></h2>
 <p class="text">
-Process all JSON files in a directory, converting each to a filtered CSV file in a target folder.
+Process all JSON files in a directory, converting each to a filtered CSV file in a target folder. This function was used in the Code/Scripts/data_treatment_EcoCompt.py and Code/Scripts/ecoCompt_Download_and_Combine.py files to clean the data.
 </p>
 <section id="parameters-6" class="level3">
 <h3 class="anchored" data-anchor-id="parameters-6">Parameters</h3>
@@ -605,7 +605,7 @@ Example: Process all JSON files in the input directory.
 <section id="safe_nearest_node" class="level2">
 <h2 class="anchored" data-anchor-id="safe_nearest_node"><code>safe_nearest_node</code></h2>
 <p class="text">
-Securely find the nearest node in a graph for a given geographic point, handling exceptions.
+Securely find the nearest node in a graph for a given geographic point, handling exceptions. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.
 </p>
 <section id="parameters-7" class="level3">
 <h3 class="anchored" data-anchor-id="parameters-7">Parameters</h3>

@@ -88,14 +88,14 @@
     "href": "documentation/functions.html#method-precompute_route",
     "title": "\nFunctions \n",
     "section": "Method: precompute_route",
-    "text": "Method: precompute_route\n\nPrecompute the shortest route for a single trip.\n\n\nGiven a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph.\n\n\nParameters\n\n\nrow (pandas.Series): a row from the input DataFrame containing trip information. The row must include the following columns:\n\n\n\n'Departure_latitude', 'Departure_longitude'\n\n\n'Return_latitude', 'Return_longitude'\n\n\n\n\n\nReturns\n\n\nlist of int or None: a list of node IDs representing the shortest path in the graph, or None if the route cannot be computed.\n\n\n\n\nExamples\n\nExample: Precompute the shortest route for a single trip.\n\nimport pandas as pd\n\nrow = pd.Series({\n    \"Departure_latitude\": 43.608,\n    \"Departure_longitude\": 3.879,\n    \"Return_latitude\": 43.610,\n    \"Return_longitude\": 3.881\n})\n\nanimation.precompute_route(row)\n# Output: [123456, 123457, 123458, ...]"
+    "text": "Method: precompute_route\n\nPrecompute the shortest route for a single trip. This function was used in the Code/Scripts/Animation_Bike.py file to generate the video.\n\n\nGiven a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph.\n\n\nParameters\n\n\nrow (pandas.Series): a row from the input DataFrame containing trip information. The row must include the following columns:\n\n\n\n'Departure_latitude', 'Departure_longitude'\n\n\n'Return_latitude', 'Return_longitude'\n\n\n\n\n\nReturns\n\n\nlist of int or None: a list of node IDs representing the shortest path in the graph, or None if the route cannot be computed.\n\n\n\n\nExamples\n\nExample: Precompute the shortest route for a single trip.\n\nimport pandas as pd\n\nrow = pd.Series({\n    \"Departure_latitude\": 43.608,\n    \"Departure_longitude\": 3.879,\n    \"Return_latitude\": 43.610,\n    \"Return_longitude\": 3.881\n})\n\nanimation.precompute_route(row)\n# Output: [123456, 123457, 123458, ...]"
   },
   {
     "objectID": "documentation/functions.html#method-create_animation",
     "href": "documentation/functions.html#method-create_animation",
     "title": "\nFunctions \n",
     "section": "Method: create_animation",
-    "text": "Method: create_animation\n\nGenerate a video animation of the bike trips.\n\n\nThis method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file.\n\n\nReturns\n\n\nNone: this method does not return any value.\n\n\n\n\nNotes\n\n\nThis method uses multiprocessing to parallelize frame generation, which can be resource-intensive.\n\n\nEnsure that you have sufficient disk space for temporary files generated during the process.\n\n\n\n\nExamples\n\nExample: Generate the animation for the loaded dataset.\n\nanimation = BikeAnimation(input_file=\"data/trips.csv\")\nanimation.create_animation()"
+    "text": "Method: create_animation\n\nGenerate a video animation of the bike trips.\n\n\nThis method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file. This function was used in the Code/Scripts/Animation_Bike.py file to make the video.\n\n\nReturns\n\n\nNone: this method does not return any value.\n\n\n\n\nNotes\n\n\nThis method uses multiprocessing to parallelize frame generation, which can be resource-intensive.\n\n\nEnsure that you have sufficient disk space for temporary files generated during the process.\n\n\n\n\nExamples\n\nExample: Generate the animation for the loaded dataset.\n\nanimation = BikeAnimation(input_file=\"data/trips.csv\")\nanimation.create_animation()"
   },
   {
     "objectID": "index.html#context",
@@ -263,35 +263,35 @@
     "href": "documentation/functions.html#is_within_radius",
     "title": "\nFunctions \n",
     "section": "is_within_radius",
-    "text": "is_within_radius\n\nCheck if a given point (latitude, longitude) is within a specified radius from a center point.\n\n\nParameters\n\n\nlat (float): latitude of the point to check.\n\n\nlon (float): Longitude of the point to check.\n\n\ncenter_lat (float): latitude of the center point.\n\n\ncenter_lon (float): Longitude of the center point.\n\n\nradius_km (float): the radius in kilometers.\n\n\n\n\nReturns\n\n\nbool: True if the point is within the radius, otherwise False.\n\n\n\n\nExamples\n\nExample: check if a point is within 15 km of Montpellier.\n\nis_within_radius(\n    lat=43.6, lon=3.9, \n    center_lat=43.6119, center_lon=3.8772, \n    radius_km=15\n)"
+    "text": "is_within_radius\n\nCheck if a given point (latitude, longitude) is within a specified radius from a center point. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.\n\n\nParameters\n\n\nlat (float): latitude of the point to check.\n\n\nlon (float): Longitude of the point to check.\n\n\ncenter_lat (float): latitude of the center point.\n\n\ncenter_lon (float): Longitude of the center point.\n\n\nradius_km (float): the radius in kilometers.\n\n\n\n\nReturns\n\n\nbool: True if the point is within the radius, otherwise False.\n\n\n\n\nExamples\n\nExample: check if a point is within 15 km of Montpellier.\n\nis_within_radius(\n    lat=43.6, lon=3.9, \n    center_lat=43.6119, center_lon=3.8772, \n    radius_km=15\n)"
   },
   {
     "objectID": "documentation/functions.html#find_station_name",
     "href": "documentation/functions.html#find_station_name",
     "title": "\nFunctions \n",
     "section": "find_station_name",
-    "text": "find_station_name\n\nFind the name of the nearest station for a given geographic point by calculating distances using Geopy.\n\n\nParameters\n\n\nlatitude (float): latitude of the target point.\n\n\nlongitude (float): longitude of the target point.\n\n\nstations_df (pandas.DataFrame): dataFrame containing station data with columns 'latitude', 'longitude', and 'station_name'.\n\n\n\n\nReturns\n\n\nstr: name of the nearest station.\n\n\n\n\nExamples\n\nExample: find the nearest station to a point.\n\nfind_station_name(\n    latitude=43.6, longitude=3.9, \n    stations_df=stations\n)"
+    "text": "find_station_name\n\nFind the name of the nearest station for a given geographic point by calculating distances using Geopy. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.\n\n\nParameters\n\n\nlatitude (float): latitude of the target point.\n\n\nlongitude (float): longitude of the target point.\n\n\nstations_df (pandas.DataFrame): dataFrame containing station data with columns 'latitude', 'longitude', and 'station_name'.\n\n\n\n\nReturns\n\n\nstr: name of the nearest station.\n\n\n\n\nExamples\n\nExample: find the nearest station to a point.\n\nfind_station_name(\n    latitude=43.6, longitude=3.9, \n    stations_df=stations\n)"
   },
   {
     "objectID": "documentation/functions.html#safe_nearest_node",
     "href": "documentation/functions.html#safe_nearest_node",
     "title": "\nFunctions \n",
     "section": "safe_nearest_node",
-    "text": "safe_nearest_node\n\nSecurely find the nearest node in a graph for a given geographic point, handling exceptions.\n\n\nParameters\n\n\ngraph (networkx.Graph): the road network graph.\n\n\nlatitude (float): Latitude of the target point.\n\n\nlongitude (float): longitude of the target point.\n\n\n\n\nReturns\n\n\nint: ID of the nearest node.\n\n\n\n\nExamples\n\nExample: find the nearest node in a road network.\n\nsafe_nearest_node(\n    graph=osm_graph, \n    latitude=43.6, longitude=3.9\n)"
+    "text": "safe_nearest_node\n\nSecurely find the nearest node in a graph for a given geographic point, handling exceptions. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.\n\n\nParameters\n\n\ngraph (networkx.Graph): the road network graph.\n\n\nlatitude (float): Latitude of the target point.\n\n\nlongitude (float): longitude of the target point.\n\n\n\n\nReturns\n\n\nint: ID of the nearest node.\n\n\n\n\nExamples\n\nExample: find the nearest node in a road network.\n\nsafe_nearest_node(\n    graph=osm_graph, \n    latitude=43.6, longitude=3.9\n)"
   },
   {
     "objectID": "documentation/functions.html#create_layer_for_date",
     "href": "documentation/functions.html#create_layer_for_date",
     "title": "\nFunctions \n",
     "section": "create_layer_for_date",
-    "text": "create_layer_for_date\n\nCreate a map layer for a given date, including paths and station markers.\n\n\nParameters\n\n\ndate (str): date in the format 'YYYY-MM-DD'.\n\n\nmap_obj (folium.Map): The map object to add the layer to.\n\n\ndata (pandas.DataFrame): dataFrame containing path and station information for the date.\n\n\n\n\nReturns\n\n\nNone: this function does not return a value but modifies the map object in place.\n\n\n\n\nExamples\n\nExample: create a map layer for July 10, 2023.\n\ncreate_layer_for_date(\n    date=\"2023-07-10\", \n    map_obj=folium_map, \n    data=traffic_data\n)"
+    "text": "create_layer_for_date\n\nCreate a map layer for a given date, including paths and station markers. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.\n\n\nParameters\n\n\ndate (str): date in the format 'YYYY-MM-DD'.\n\n\nmap_obj (folium.Map): The map object to add the layer to.\n\n\ndata (pandas.DataFrame): dataFrame containing path and station information for the date.\n\n\n\n\nReturns\n\n\nNone: this function does not return a value but modifies the map object in place.\n\n\n\n\nExamples\n\nExample: create a map layer for July 10, 2023.\n\ncreate_layer_for_date(\n    date=\"2023-07-10\", \n    map_obj=folium_map, \n    data=traffic_data\n)"
   },
   {
     "objectID": "documentation/functions.html#download_file",
     "href": "documentation/functions.html#download_file",
     "title": "\nFunctions \n",
     "section": "download_file",
-    "text": "download_file\n\nDownload a file from a URL, store it locally, and verify its integrity using a SHA256 hash.\n\n\nParameters\n\n\nurl (str): the URL of the file to download.\n\n\noutput_path (str): path where the downloaded file will be saved.\n\n\nexpected_hash (str): the expected SHA256 hash of the file to verify its integrity.\n\n\n\n\nReturns\n\n\nNone: this function does not return any value but raises an exception if the hash verification fails.\n\n\n\n\nExamples\n\nExample: download a file and verify its integrity.\n\ndownload_file(\n    url=\"https://example.com/data.csv\",\n    output_path=\"local_data/data.csv\",\n    expected_hash=\"abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890\"\n)"
+    "text": "download_file\n\nDownload a file from a URL, store it locally, and verify its integrity using a SHA256 hash. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.\n\n\nParameters\n\n\nurl (str): the URL of the file to download.\n\n\noutput_path (str): path where the downloaded file will be saved.\n\n\nexpected_hash (str): the expected SHA256 hash of the file to verify its integrity.\n\n\n\n\nReturns\n\n\nNone: this function does not return any value but raises an exception if the hash verification fails.\n\n\n\n\nExamples\n\nExample: download a file and verify its integrity.\n\ndownload_file(\n    url=\"https://example.com/data.csv\",\n    output_path=\"local_data/data.csv\",\n    expected_hash=\"abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890\"\n)"
   },
   {
     "objectID": "index.html",
@@ -305,13 +305,76 @@
     "href": "documentation/functions.html#convert_json_to_csv",
     "title": "\nFunctions \n",
     "section": "convert_json_to_csv",
-    "text": "convert_json_to_csv\n\nConvert a JSON file containing EcoCompt data to a CSV file and filter the data for a specific date range.\n\n\nParameters\n\n\ninput_file (str): the path to the JSON file to be converted.\n\n\noutput_dir (str): the directory where the resulting CSV file will be saved.\n\n\n\n\nReturns\n\n\nbool: True if the conversion is successful and results in valid data, False otherwise.\n\n\n\n\nNotes\n\n\nFilters data to include only dates between April 1, 2023, and October 31, 2023.\n\n\nRemoves rows with missing or invalid data, including null coordinates or essential fields.\n\n\nThe output CSV file is saved with the UTF-8-SIG encoding and uses a semicolon (;) as a delimiter.\n\n\n\n\nExamples\n\nExample: Convert a JSON file to CSV.\n\nconvert_json_to_csv(\n    input_file=\"Data/Data_EcoCompt/example.json\",\n    output_dir=\"Data/Data_EcoCompt_clean\"\n)"
+    "text": "convert_json_to_csv\n\nConvert a JSON file containing EcoCompt data to a CSV file and filter the data for a specific date range. This function was used in the Code/Scripts/data_treatment_EcoCompt.py and Code/Scripts/ecoCompt_Download_and_Combine.py files to clean the data.\n\n\nParameters\n\n\ninput_file (str): the path to the JSON file to be converted.\n\n\noutput_dir (str): the directory where the resulting CSV file will be saved.\n\n\n\n\nReturns\n\n\nbool: True if the conversion is successful and results in valid data, False otherwise.\n\n\n\n\nNotes\n\n\nFilters data to include only dates between April 1, 2023, and October 31, 2023.\n\n\nRemoves rows with missing or invalid data, including null coordinates or essential fields.\n\n\nThe output CSV file is saved with the UTF-8-SIG encoding and uses a semicolon (;) as a delimiter.\n\n\n\n\nExamples\n\nExample: Convert a JSON file to CSV.\n\nconvert_json_to_csv(\n    input_file=\"Data/Data_EcoCompt/example.json\",\n    output_dir=\"Data/Data_EcoCompt_clean\"\n)"
   },
   {
     "objectID": "documentation/functions.html#process_all_json_files",
     "href": "documentation/functions.html#process_all_json_files",
     "title": "\nFunctions \n",
     "section": "process_all_json_files",
-    "text": "process_all_json_files\n\nProcess all JSON files in a directory, converting each to a filtered CSV file in a target folder.\n\n\nParameters\n\nThis function does not take parameters directly. Instead, it relies on a predefined folder structure for input and output.\n\n\n\nNotes\n\n\nSearches for JSON files in the Data/Data_EcoCompt directory relative to the script’s location.\n\n\nCreates a directory Data/Data_EcoCompt_clean for saving the resulting CSV files if it does not already exist.\n\n\nDisplays a summary of successfully processed files and errors at the end.\n\n\n\n\nReturns\n\n\nNone: the function does not return a value but logs progress and results to the console.\n\n\n\n\nExamples\n\nExample: Process all JSON files in the input directory.\n\n# Running the function as part of the script\nif __name__ == \"__main__\":\n    process_all_json_files()"
+    "text": "process_all_json_files\n\nProcess all JSON files in a directory, converting each to a filtered CSV file in a target folder. This function was used in the Code/Scripts/data_treatment_EcoCompt.py and Code/Scripts/ecoCompt_Download_and_Combine.py files to clean the data.\n\n\nParameters\n\nThis function does not take parameters directly. Instead, it relies on a predefined folder structure for input and output.\n\n\n\nNotes\n\n\nSearches for JSON files in the Data/Data_EcoCompt directory relative to the script’s location.\n\n\nCreates a directory Data/Data_EcoCompt_clean for saving the resulting CSV files if it does not already exist.\n\n\nDisplays a summary of successfully processed files and errors at the end.\n\n\n\n\nReturns\n\n\nNone: the function does not return a value but logs progress and results to the console.\n\n\n\n\nExamples\n\nExample: Process all JSON files in the input directory.\n\n# Running the function as part of the script\nif __name__ == \"__main__\":\n    process_all_json_files()"
+  },
+  {
+    "objectID": "Readme.html",
+    "href": "Readme.html",
+    "title": "Website File Description:",
+    "section": "",
+    "text": "Website File Description:\nThe Website folder contains all the code that creates the website.\nBasically, to launch the website on your machine, simply go to the index.qmd file and click on the first icon in the top right-hand corner, or use the ‘quarto render’ command in your terminal.\n\n_quarto.yml\nThis file contains the basis for the creation of our site. Inside you can find the sections of our navigation bar and the pages they contain. This file is used overall to organise the different pages of the site and gives the links to these different pages.\n\n\nindex.qmd\nThis file corresponds to the home page of our site, where we present the context, analyses and data we have used.\n\n\nstyles.css\nThis file contains the personalisation parameters for the various parts of our site (titles, text, images, etc.). You can change the site’s appearance settings here.\n\n\nfooter.qmd\nIn this file, we can find what is in the footer, with the various associated pages.\n\n\nanalyses\n\nmap.qmd\nThis file contains the interactive maps we made using the Python codes in Code/Scripts, as well as the detailed analysis and interpretation of these maps.\n\n\nstatistics.qmd\nThis file contains the statistical analyses we carried out using the Python code in Code/Scripts, as well as the detailed analysis and interpretation of these results to answer our question.\n\n\nvideo.qmd\nThis file contains the video we made using the Python codes in Code/Scripts, as well as a detailed analysis and interpretation of the video.\n\n\n\ndocumentation\n\nclasses.qmd\nThis file contains the documentation for the classes we used in our Python code in Code/Scripts.\n\n\nfunctions.qmd\nThis file contains the documentation for the functions we used in our Python code in Code/Scripts.\n\n\npackages.qmd\nThis file contains the documentation for the packages we used in our Python code in Code/Scripts.\n\n\n\nsources\n\nsources.qmd\nThis file contains all the sources on which we have based this project. You can find articles, links and documentation that we have used ourselves.\n\n\n\nfooter\n\nabout_us.qmd\nThis file introduces the members of our team and gives a brief overview of our project.\n\n\nMIT_licenses.qmd\nThis file contains the licence we have used to publish this project in total security.\n\n\nprivacy_policy.qmd\nThis file contains our privacy policy as well as the terms and conditions for the use of personal data that we have for this site.\n\n\n\ndocs\nThis file is the output file for our website. In other words, when you run a script with Quarto, it will automatically transform the Quarto code into html code. The files converted into html are stored in the docs folder."
+  },
+  {
+    "objectID": "footer/privacy_policy.html",
+    "href": "footer/privacy_policy.html",
+    "title": "\nPrivacy policy \n",
+    "section": "",
+    "text": "EFFECTIVE DATE: 2024-01-22\nWelcome to the site made by BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information."
+  },
+  {
+    "objectID": "footer/MIT_license.html#copyright---2024---bikeprojectteam7",
+    "href": "footer/MIT_license.html#copyright---2024---bikeprojectteam7",
+    "title": "\nMIT License \n",
+    "section": "Copyright © - 2024 - BikeProjectTeam7",
+    "text": "Copyright © - 2024 - BikeProjectTeam7\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions.\n\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\n\nThe software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contractn tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software."
+  },
+  {
+    "objectID": "footer/MIT_license.html#contact-us",
+    "href": "footer/MIT_license.html#contact-us",
+    "title": "\nMIT License \n",
+    "section": "Contact Us",
+    "text": "Contact Us\n\nIf you have any questions about these Terms, please contact us at your email address."
+  },
+  {
+    "objectID": "footer/privacy_policy.html#information-we-collect",
+    "href": "footer/privacy_policy.html#information-we-collect",
+    "title": "\nPrivacy policy \n",
+    "section": "Information We Collect",
+    "text": "Information We Collect\n\nWe may collect the following types of information: Personal Information: name, email address. Usage Data: information on how you use our site (e.g., pages visited, time spent on the site).\n\n\nCookies and Tracking Technologies: we do not use cookies."
+  },
+  {
+    "objectID": "footer/privacy_policy.html#how-we-use-your-information",
+    "href": "footer/privacy_policy.html#how-we-use-your-information",
+    "title": "\nPrivacy policy \n",
+    "section": "How We Use Your Information",
+    "text": "How We Use Your Information\n\nWe use your information to:\n\n\n\nProvide and maintain our services.\n\n\nImprove the user experience on our site."
+  },
+  {
+    "objectID": "footer/privacy_policy.html#data-sharing-and-disclosure",
+    "href": "footer/privacy_policy.html#data-sharing-and-disclosure",
+    "title": "\nPrivacy policy \n",
+    "section": "Data Sharing and Disclosure",
+    "text": "Data Sharing and Disclosure\n\nWe do not sell your personal data."
+  },
+  {
+    "objectID": "footer/privacy_policy.html#your-rights",
+    "href": "footer/privacy_policy.html#your-rights",
+    "title": "\nPrivacy policy \n",
+    "section": "Your Rights",
+    "text": "Your Rights\n\nYou have the right to:\n\n\n\nAccess your personal data.\n\n\nRequest correction or deletion of your data.\n\n\nOpt out of data collection."
+  },
+  {
+    "objectID": "footer/privacy_policy.html#contact-us",
+    "href": "footer/privacy_policy.html#contact-us",
+    "title": "\nPrivacy policy \n",
+    "section": "Contact Us",
+    "text": "Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
   }
 ]

@@ -1,4 +1,7 @@
 # This Python script is designed to handle file retrieval, downloading, and data cleaning in a single file.
+
+# %% Import packages
+
 import os
 import pooch
 import requests # Retrieve the content of the web page
@@ -14,7 +17,6 @@ from IPython import get_ipython
 sns.set_palette("colorblind")
 palette = sns.color_palette("twilight", n_colors=12)
 pd.options.display.max_rows = 8
-
 
 
 # %% Data processing
@@ -54,8 +56,6 @@ for url in file_links:
     )
     
 print("All matching files have been successfully downloaded!")
-
-
 
 
 ## data treatment 
