@@ -22,7 +22,10 @@ format:
 
 <p class="text">Bike trafic of Monday 10 July 2023</p>
 
-<iframe src="https://www.youtube.com/embed/Gc6I6s13_JY " frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width="800" height="450"></iframe> 
+<video controls autoplay loop width="640" height="360">
+  <source src="https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Result/Bike_Animation_10-07-2023.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas les vidéos.
+</video> 
 
 ## Analyses
 

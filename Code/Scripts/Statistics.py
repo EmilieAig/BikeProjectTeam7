@@ -17,8 +17,8 @@ sns.set_theme(style="whitegrid")
 # 2. Path to the folder containing the CSV files
 
 current_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-output_path_svg1 = os.path.join(current_directory, 'SCRIPTS', 'Website', 'images', "intensity_graph.svg")
-output_path_svg2 = os.path.join(current_directory, 'SCRIPTS', 'Website', 'images', "boxplot.svg")
+output_path_svg1 = os.path.join(current_directory, 'Result', "intensity_graph.svg")
+output_path_svg2 = os.path.join(current_directory, 'Result', "boxplot.svg")
 path = os.path.join(current_directory, 'Data', 'Data_EcoCompt_clean')
 all_files = glob.glob(os.path.join(path, "*.csv"))
 

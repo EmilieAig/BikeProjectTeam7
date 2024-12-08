@@ -153,7 +153,25 @@ format:
 
 ## Vidéo {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### Création de la vidéo
+#### Objectif
+::: {.fragment}
+- Créér une vidéo animée des trajets des cyclistes à Montpellier lors d'une journée du Tour de France 2023.
+:::
+::: {.fragment}
+#### Choix de la date
+:::
+::: {.fragment}
+- Pourquoi cette date en particulier ?
+:::
+::: {.fragment}
+##### Etapes de la création de la vidéo
+:::
+::: {.fragment}
+- Nettoyage et Traitement des Données
+:::
+::: {.fragment}
+- Création de l'animation avec la classe **Bike_Animation**
+:::
 
 ![](/images/bike.png){.absolute top=650 left=800 width="20" height="20"}
 
@@ -162,25 +180,21 @@ format:
 
 ## Vidéo {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### ??
+#### Extrait de la vidéo
 
+<video controls autoplay loop width="640" height="360">
+  <source src="https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Result/Extrait_Bike_Animation.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas les vidéos.
+</video>
+ 
 ![](/images/bike.png){.absolute top=650 left=900 width="20" height="20"}
 
 
 <!-- slide 12 -->
 
-## Vidéo {background-color="white" background-image="/images/background.png" background-size=cover}
-
-#### ??
-
-![](/images/bike.png){.absolute top=650 left=1000 width="20" height="20"}
-
-
-<!-- slide 13 -->
-
 ## Conclusion {background-color="white" background-image="/images/background.png" background-size=cover}
 
-Merci pour votre écoute.
+Nous vous remercions de votre écoute.
 
 ![](/images/bike.png){.absolute top=650 left=1100 width="20" height="20"}
 

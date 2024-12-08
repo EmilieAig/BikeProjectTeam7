@@ -25,7 +25,7 @@
     "href": "analyses/map.html#map-context",
     "title": "\nInteractive map \n",
     "section": "Map context",
-    "text": "Map context\n\nOn this page, we can see two interactive maps of bicycle traffic in the city of Montpellier: one corresponds to the predictions that we made from the data from January 2023 to June 2023, and the other on the actual data we have for this period. We decided to represent the two cards so that we could make a compari\n\n\nThe interactive maps below show the forecast of cycling/ real cycling in the city of Montpellier from 10 July to 16 July 2023. These dates represent the intermediate week (2nd of 3 weeks) of the Tour de France."
+    "text": "Map context\n\nOn this page, we can see two interactive maps of bicycle traffic in the city of Montpellier: one corresponds to the predictions that we made from the data from January 2023 to June 2023, and the other on the actual data we have for this period. We decided to represent the two maps so that we could compare them and see if our prediction model is correct.\n\n\nThe interactive maps below show the forecast of cycling/ real cycling in the city of Montpellier from 10 July to 16 July 2023. These dates represent the intermediate week (2nd of 3 weeks) of the Tour de France."
   },
   {
     "objectID": "analyses/map.html#map-predictions",
@@ -79,37 +79,37 @@
   {
     "objectID": "footer/privacy_policy.html#introduction",
     "href": "footer/privacy_policy.html#introduction",
-    "title": "\nPrivacy polity \n",
+    "title": "\nPrivacy policy \n",
     "section": "Introduction",
-    "text": "Introduction\n\nEFFECTIVE DATE: 2024-01-22\n\n\nWelcome to BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information.\n\n\n1. Information We Collect\n\nWe may collect the following types of information: Personal Information: Name, email address, phone number (when you fill out a form or subscribe to our newsletter). Usage Data: Information on how you use our site (e.g., pages visited, time spent on the site).\n\n\nCookies and Tracking Technologies: We use cookies to enhance user experience and analyze site traffic.\n\n\n\n2. How We Use Your Information\n\nWe use your information to:\n\n\n\nProvide and maintain our services.\n\n\nImprove the user experience on our site.\n\n\nSend you promotional content if you’ve opted in.\n\n\n\n\n3. Data Sharing and Disclosure\n\nWe do not sell your personal data. We may share information with trusted third-party providers for analytics or marketing purposes (e.g., Google Analytics).\n\n\n\n4. Your Rights\n\nYou have the right to:\n\n\n\nAccess your personal data.\n\n\nRequest correction or deletion of your data.\n\n\nOpt out of data collection (e.g., disable cookies).\n\n\n\n\n5. Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
+    "text": "Introduction\n\nEFFECTIVE DATE: 2024-01-22\n\n\nWelcome to the site made by BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information.\n\n\n1. Information We Collect\n\nWe may collect the following types of information: Personal Information: name, email address. Usage Data: information on how you use our site (e.g., pages visited, time spent on the site).\n\n\nCookies and Tracking Technologies: we do not use cookies.\n\n\n\n2. How We Use Your Information\n\nWe use your information to:\n\n\n\nProvide and maintain our services.\n\n\nImprove the user experience on our site.\n\n\n\n\n3. Data Sharing and Disclosure\n\nWe do not sell your personal data.\n\n\n\n4. Your Rights\n\nYou have the right to:\n\n\n\nAccess your personal data.\n\n\nRequest correction or deletion of your data.\n\n\nOpt out of data collection.\n\n\n\n\n5. Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
   },
   {
     "objectID": "documentation/functions.html#method-precompute_route",
     "href": "documentation/functions.html#method-precompute_route",
     "title": "\nFunctions \n",
     "section": "Method: precompute_route",
-    "text": "Method: precompute_route\n\nPrecompute the shortest route for a single trip.\n\n\nGiven a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph.\n\n\nParameters\n\n\nrow (pandas.Series): a row from the input DataFrame containing trip information. The row must include the following columns:\n\n\n\n'Departure_latitude', 'Departure_longitude'\n\n\n'Return_latitude', 'Return_longitude'\n\n\n\n\n\nReturns\n\n\nlist of int or None: a list of node IDs representing the shortest path in the graph, or None if the route cannot be computed.\n\n\n\n\nExamples\n\nExample: Precompute the shortest route for a single trip.\n\nimport pandas as pd\n\nrow = pd.Series({\n    \"Departure_latitude\": 43.608,\n    \"Departure_longitude\": 3.879,\n    \"Return_latitude\": 43.610,\n    \"Return_longitude\": 3.881\n})\n\nanimation.precompute_route(row)\n# Output: [123456, 123457, 123458, ...]"
+    "text": "Method: precompute_route\n\nPrecompute the shortest route for a single trip. This function was used in the Code/Scripts/Animation_Bike.py file to generate the video.\n\n\nGiven a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph.\n\n\nParameters\n\n\nrow (pandas.Series): a row from the input DataFrame containing trip information. The row must include the following columns:\n\n\n\n'Departure_latitude', 'Departure_longitude'\n\n\n'Return_latitude', 'Return_longitude'\n\n\n\n\n\nReturns\n\n\nlist of int or None: a list of node IDs representing the shortest path in the graph, or None if the route cannot be computed.\n\n\n\n\nExamples\n\nExample: Precompute the shortest route for a single trip.\n\nimport pandas as pd\n\nrow = pd.Series({\n    \"Departure_latitude\": 43.608,\n    \"Departure_longitude\": 3.879,\n    \"Return_latitude\": 43.610,\n    \"Return_longitude\": 3.881\n})\n\nanimation.precompute_route(row)\n# Output: [123456, 123457, 123458, ...]"
   },
   {
     "objectID": "documentation/functions.html#method-create_animation",
     "href": "documentation/functions.html#method-create_animation",
     "title": "\nFunctions \n",
     "section": "Method: create_animation",
-    "text": "Method: create_animation\n\nGenerate a video animation of the bike trips.\n\n\nThis method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file.\n\n\nReturns\n\n\nNone: this method does not return any value.\n\n\n\n\nNotes\n\n\nThis method uses multiprocessing to parallelize frame generation, which can be resource-intensive.\n\n\nEnsure that you have sufficient disk space for temporary files generated during the process.\n\n\n\n\nExamples\n\nExample: Generate the animation for the loaded dataset.\n\nanimation = BikeAnimation(input_file=\"data/trips.csv\")\nanimation.create_animation()"
+    "text": "Method: create_animation\n\nGenerate a video animation of the bike trips.\n\n\nThis method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file. This function was used in the Code/Scripts/Animation_Bike.py file to make the video.\n\n\nReturns\n\n\nNone: this method does not return any value.\n\n\n\n\nNotes\n\n\nThis method uses multiprocessing to parallelize frame generation, which can be resource-intensive.\n\n\nEnsure that you have sufficient disk space for temporary files generated during the process.\n\n\n\n\nExamples\n\nExample: Generate the animation for the loaded dataset.\n\nanimation = BikeAnimation(input_file=\"data/trips.csv\")\nanimation.create_animation()"
   },
   {
     "objectID": "index.html#context",
     "href": "index.html#context",
-    "title": "\nWelcome to our project  Bike analyses in Montpellier during Tour de France\n",
+    "title": "\nWelcome to our project  Bike analyses in Montpellier during  Tour de France\n",
     "section": "Context",
-    "text": "Context\n\nInstructions\n\nThe brief for this project was to carry out a survey of cycle traffic in Montpellier, through the analysis of datasets such as Montpellier Méditerranée Métropole’s VéloMagg bike runs, cyclist and pedestrian counts and data from the open road map.\n\n\nThis project had to combine aspects of interactive visualisation and the creation of a website. We had a choice of temporal resolution and the data was available from 2020 to 2024.\n\n\n\nProblematic\n\nWe decided that our project would focus on the following question: ‘What is the impact of the Tour de France 2023 on the behaviour of cyclists in Montpellier before, during and after the event?’.\n\n\n\nGoal\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, has had an impact on the habits of cyclists in the city of Montpellier.\n\n\n\nHypothesis\n\nBased in part on the work of Charrier et al., 2019 and our personal reflections, we believe that a high-profile, high-profile event such as the Tour de France can encourage people to cycle, during or after the Tour de France period. We have therefore made the assumption that the number of cyclists will increase during the period of the Tour de France and the following weeks."
+    "text": "Context\n\nInstructions\n\nThe brief for this project was to carry out a survey of cycle traffic in Montpellier, through the analysis of datasets such as Montpellier Méditerranée Métropole’s VéloMagg bike runs, cyclist and pedestrian counts and data from the open road map.\n\n\nThis project had to combine aspects of interactive visualisation and the creation of a website. We had a choice of temporal resolution and the data was available from 2020 to 2024.\n\n\n\nProblematic\n\nWe decided that our project would focus on the following question: ‘What is the impact of the Tour de France 2023 on the behaviour of cyclists in Montpellier before, during and after the event?’.\n\n\n\nAim\n\nThe goal is to analyze whether this sporting event, which took place in July 2023, has had an impact on the habits of cyclists in the city of Montpellier.\n\n\n\nHypothesis\n\nBased in part on the work of Charrier et al., 2019 and our personal reflections, we believe that a high-profile event such as the Tour de France can encourage people to cycle, during or after the Tour de France period. We have therefore made the assumption that the number of cyclists will increase during the period of the Tour de France and the following weeks."
   },
   {
     "objectID": "index.html#data",
     "href": "index.html#data",
-    "title": "\nWelcome to our project  Bike analyses in Montpellier during Tour de France\n",
+    "title": "\nWelcome to our project  Bike analyses in Montpellier during  Tour de France\n",
     "section": "Data",
-    "text": "Data\n\nTo carry out this study, we selected several types of data.\n\n\nFirstly, we retrieved data on the journeys made by VéloMagg bikes between stations in the VéloMagg network in the Montpellier metropolitan area.\n\n\nSecondly, we have retrieved data for each of the bicycle counters (eco-counters) in production in the Montpellier Metropolitan Area, showing the number of bicycles (and piétions in some cases) counted. The daily data is the total of the previous day’s count. This information is divided into as many files as there are eco-counters. Each eco-counter is identified by a serial number, which we were able to find and associate with its latitude and longitude.\n\n\nAll the data we have selected was extracted between April 2023 and October 2023. This corresponds to 3 months before the Tour de France and 3 months after, which we thought was a good margin for observing changes and which is just over half a year (7 months).\n\n\nWe have processed and re-organised this data so that it can be used in various scripts (available in full on our Github page) to produce graphs, maps and a video."
+    "text": "Data\n\nTo carry out this study, we selected several types of data.\n\n\nFirstly, we retrieved data on the journeys made by VéloMagg bikes between stations in the VéloMagg network in the Montpellier metropolitan area.\n\n\nSecondly, we have retrieved data for each of the bicycle counters (eco-counters) in production in the Montpellier Metropolitan Area, showing the number of bicycles (and pietons in some cases) counted. The daily data is the total of the previous day’s count. This information is divided into as many files as there are eco-counters. Each eco-counter is identified by a serial number, which we were able to find and associate with its latitude and longitude.\n\n\nAll the data we have selected was extracted between April 2023 and October 2023. This corresponds to 3 months before the Tour de France and 3 months after, which we thought was a good margin for observing changes and which is just over half a year (7 months).\n\n\nWe have processed and re-organised this data so that it can be used in various scripts (fully available on our Github page) to produce graphs, maps and a video."
   },
   {
     "objectID": "analyses/statistics.html#introduction",
@@ -165,19 +165,19 @@
     "href": "sources/sources.html#slides",
     "title": "\nSources \n",
     "section": "Slides",
-    "text": "Slides\n\nTo create the slides, we mainly used the documentation for Quarto presentations and Quarto’s Revealjs theme to help us.\n\n\nThe various images we used are available via the following links:\n\n\n\nBike.\n\n\nLogo of Tour de France."
+    "text": "Slides\n\nTo create the slides, we mainly used the documentation for Quarto presentations and Quarto’s Revealjs theme to help us.\n\n\nThe various images we used are available via the following links:\n\n\n\nBike.\n\n\nLogo of Tour de France.\n\n\n Velomagg .\n\n\n EcoCompters .\n\n\nLogo of  Quarto .\n\n\nLogo of  Python .\n\n\n Arrow .\n\n\n Cross ."
   },
   {
     "objectID": "analyses/map.html#maps",
     "href": "analyses/map.html#maps",
     "title": "\nInteractive map \n",
     "section": "Maps",
-    "text": "Maps\n\nPredictions’ methods\n\nThe bicycle traffic predictions were made using the ‘Prophet’ model, a flexible tool for time series analysis. This model is well suited to data with temporal variations, making it an ideal choice for modelling cycle traffic. The prediction was influenced by factors such as days of the week, weather and local events (such as the Tour de France). The predictions generated by Prophet have been integrated into the interactive map, making it possible to visualise predicted traffic levels on the various routes between stations. To make this prediction, we decided to calculate only the shortest paths between each of the stations and not all the possible paths, for the sake of optimising journey times and also to make the map easier to read.\n\n\n\nGraphs\n\nIn this maps, several days can be selected at the same time, but we advise you to select the days one after the other for consistent predictions.\n\n\nMap of the cycling traffic forecast in Montpellier during the second week of the Tour de France:\n\n\n\n\nMap of the cycling traffic in Montpellier during the second week of the Tour de France:\n\n\n\n\n\nCycle stations (Eco-counters)\n\nThe stations are represented by blue markers distributed around the city.\n\n\n\nPaths between stations\n\nThe lines connecting the stations correspond to the paths between them. The colours of the lines vary according to the number of cycles predicted to pass along the route:\n\n\n\nRed: Very high intensity (&gt; 1500).\n\n\nOrange: High intensity (1201-1500).\n\n\nBrown: Moderate intensity (901-1200)\n\n\nYellow: Moderate intensity (6001-900).\n\n\nLight green: Low intensity (300-600).\n\n\nDark green: Very low intensity (&lt; 300).\n\n\n\n\nGeographical coverage\n\nPredictions cover a 15km radius around Montpellier, including areas such as Saint-Jean-de-Védas, Castelnau-le-Lez, and Villeneuve-lès-Maguelone. We decided not to extend this area because bike journeys were becoming rare and we weren’t sure whether a station further away would actually correspond to a journey between that station and Montpellier or just a journey within its city."
+    "text": "Maps\n\nPredictions’ methods\n\nThe bicycle traffic predictions were made using the ‘Prophet’ model, a flexible tool for time series analysis. This model is well suited to data with temporal variations, making it an ideal choice for modelling cycle traffic. The prediction was influenced by factors such as days of the week, weather and local events (such as the Tour de France).\n\n\nThe predictions generated by Prophet have been integrated into the interactive map, making it possible to visualise predicted traffic levels on the various routes between stations.\n\n\nTo make this prediction, we decided to calculate only the shortest paths between each of the stations and not all the possible paths, for the sake of optimising journey times and also to make the map easier to read.\n\n\n\nGraphs\n\nIn this maps, several days can be selected at the same time, but we advise you to select the days one after the other for consistent predictions.\n\n\nMap of the cycling traffic forecast in Montpellier during the second week of the Tour de France:\n\n\n\n\nMap of the cycling traffic in Montpellier during the second week of the Tour de France:\n\n\n\n\n\nCycle stations (Eco-counters)\n\nThe stations are represented by blue markers distributed around the city.\n\n\n\nPaths between stations\n\nThe lines connecting the stations correspond to the paths between them. The colours of the lines vary according to the number of cycles predicted to pass along the route:\n\n\n\nDark red: Very high intensity (&gt; 1500).\n\n\nLight red: High intensity (1201-1500).\n\n\nOrange: Moderate intensity (901-1200).\n\n\nYellow: Moderate intensity (601-900).\n\n\nLight green: Low intensity (301-600).\n\n\nDark green: Very low intensity (≤ 300).\n\n\n\n\nGeographical coverage\n\nPredictions cover a 15km radius around Montpellier, including areas such as Saint-Jean-de-Védas, Castelnau-le-Lez, and Villeneuve-lès-Maguelone. We decided not to extend this area because bike journeys were becoming rare and we weren’t sure whether a station further away would actually correspond to a journey between that station and Montpellier or just a journey within its city."
   },
   {
     "objectID": "index.html#analyses",
     "href": "index.html#analyses",
-    "title": "\nWelcome to our project  Bike analyses in Montpellier during Tour de France\n",
+    "title": "\nWelcome to our project  Bike analyses in Montpellier during  Tour de France\n",
     "section": "Analyses",
     "text": "Analyses\n\nWe decided to structure our analyses in order to compare several time periods, but always focusing on the dates of the Tour de France. That is, we compared the cycling traffic:\n\n\n\nStatistics: between periods of 3 months (before, during and after the Tour de France), and between weeks (see graph).\n\n\nInteractive map: between the different days of the week.\n\n\nVideo: between different times of the day."
   },
@@ -186,7 +186,7 @@
     "href": "analyses/map.html#comparisons",
     "title": "\nInteractive map \n",
     "section": "Comparisons",
-    "text": "Comparisons\n\nBetween maps\n\n\nBetween days"
+    "text": "Comparisons\n\nBetween days\n\nFor comparisons between days of the week, we can use the two graphs as a basis. Both seem to show that there are far fewer cyclists during the 15-16 July period. This corresponds to the weekend and could therefore justify a drop in the number of cyclists compared with the week.\n\n\n\nBetween maps\n\nIf we want to check whether our predictions seem to match reality, we can compare our two maps. If we look in more detail, we can see that our predictions seem to reflect reality depending on the day (fewer people at weekends in both cases). However, our predictions seem to have underestimated the number of cyclists who pass in front of the Montpellier eco-counters because, if we look at the intensities of the passages, even vaguely we can see that there are many more colours in shades of red in the map representing the actual data than in our prediction map."
   },
   {
     "objectID": "analyses/video.html#analyses",
@@ -208,5 +208,173 @@
     "title": "\nSources \n",
     "section": "Hypothesis",
     "text": "Hypothesis\n\nTo make an hypothesis from our problem, we based on the work of Charrier et al., 2019:\n\n\nCharrier, D., Jourdan, J., Bourbillères, H., Djaballah, M., & Parmantier, C. (2019). L’impact social des grands événements sportifs : Réflexions théoriques et méthodologiques à partir de l’Euro 2016. Movement and Sports Sciences - Science et Motricite. https://doi.org/10.1051/sm/2019029"
+  },
+  {
+    "objectID": "documentation/functions.html#method-download_file",
+    "href": "documentation/functions.html#method-download_file",
+    "title": "\nFunctions \n",
+    "section": "Method : download_file",
+    "text": "Method : download_file\n\nDownload a file from a URL, store it locally, and verify its integrity using a SHA256 hash.\n\n\nParameters\n\n\nurl (str): The URL of the file to download.\n\n\noutput_path (str): Path where the downloaded file will be saved.\n\n\nexpected_hash (str): The expected SHA256 hash of the file to verify its integrity.\n\n\n\n\nReturns\n\n\nNone: This function does not return any value but raises an exception if the hash verification fails.\n\n\n\n\nExamples\n\nExample: Download a file and verify its integrity.\n\ndownload_file(\n    url=\"https://example.com/data.csv\",\n    output_path=\"local_data/data.csv\",\n    expected_hash=\"abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890\"\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#method-is_within_radius",
+    "href": "documentation/functions.html#method-is_within_radius",
+    "title": "\nFunctions \n",
+    "section": "Method : is_within_radius",
+    "text": "Method : is_within_radius\n\nCheck if a given point (latitude, longitude) is within a specified radius from a center point.\n\n\nParameters\n\n\nlat (float): Latitude of the point to check.\n\n\nlon (float): Longitude of the point to check.\n\n\ncenter_lat (float): Latitude of the center point.\n\n\ncenter_lon (float): Longitude of the center point.\n\n\nradius_km (float): The radius in kilometers.\n\n\n\n\nReturns\n\n\nbool: True if the point is within the radius, otherwise False.\n\n\n\n\nExamples\n\nExample: Check if a point is within 15 km of Montpellier.\n\nis_within_radius(\n    lat=43.6, lon=3.9, \n    center_lat=43.6119, center_lon=3.8772, \n    radius_km=15\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#method-find_station_name",
+    "href": "documentation/functions.html#method-find_station_name",
+    "title": "\nFunctions \n",
+    "section": "Method : find_station_name",
+    "text": "Method : find_station_name\n\nFind the name of the nearest station for a given geographic point by calculating distances using Geopy.\n\n\nParameters\n\n\nlatitude (float): Latitude of the target point.\n\n\nlongitude (float): Longitude of the target point.\n\n\nstations_df (pandas.DataFrame): DataFrame containing station data with columns 'latitude', 'longitude', and 'station_name'.\n\n\n\n\nReturns\n\n\nstr: Name of the nearest station.\n\n\n\n\nExamples\n\nExample: Find the nearest station to a point.\n\nfind_station_name(\n    latitude=43.6, longitude=3.9, \n    stations_df=stations\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#method-safe_nearest_node",
+    "href": "documentation/functions.html#method-safe_nearest_node",
+    "title": "\nFunctions \n",
+    "section": "Method : safe_nearest_node",
+    "text": "Method : safe_nearest_node\n\nSecurely find the nearest node in a graph for a given geographic point, handling exceptions.\n\n\nParameters\n\n\ngraph (networkx.Graph): The road network graph.\n\n\nlatitude (float): Latitude of the target point.\n\n\nlongitude (float): Longitude of the target point.\n\n\n\n\nReturns\n\n\nint: ID of the nearest node.\n\n\n\n\nExamples\n\nExample: Find the nearest node in a road network.\n\nsafe_nearest_node(\n    graph=osm_graph, \n    latitude=43.6, longitude=3.9\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#method-create_layer_for_date",
+    "href": "documentation/functions.html#method-create_layer_for_date",
+    "title": "\nFunctions \n",
+    "section": "Method : create_layer_for_date",
+    "text": "Method : create_layer_for_date\n\nCreate a map layer for a given date, including paths and station markers.\n\n\nParameters\n\n\ndate (str): Date in the format 'YYYY-MM-DD'.\n\n\nmap_obj (folium.Map): The map object to add the layer to.\n\n\ndata (pandas.DataFrame): DataFrame containing path and station information for the date.\n\n\n\n\nReturns\n\n\nNone: This function does not return a value but modifies the map object in place.\n\n\n\n\nExamples\n\nExample: Create a map layer for July 10, 2023.\n\ncreate_layer_for_date(\n    date=\"2023-07-10\", \n    map_obj=folium_map, \n    data=traffic_data\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#precompute_route",
+    "href": "documentation/functions.html#precompute_route",
+    "title": "\nFunctions \n",
+    "section": "precompute_route",
+    "text": "precompute_route\n\nPrecompute the shortest route for a single trip.\n\n\nGiven a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph.\n\n\nParameters\n\n\nrow (pandas.Series): a row from the input DataFrame containing trip information. The row must include the following columns:\n\n\n\n'Departure_latitude', 'Departure_longitude'\n\n\n'Return_latitude', 'Return_longitude'\n\n\n\n\n\nReturns\n\n\nlist of int or None: a list of node IDs representing the shortest path in the graph, or None if the route cannot be computed.\n\n\n\n\nExamples\n\nExample: Precompute the shortest route for a single trip.\n\nimport pandas as pd\n\nrow = pd.Series({\n    \"Departure_latitude\": 43.608,\n    \"Departure_longitude\": 3.879,\n    \"Return_latitude\": 43.610,\n    \"Return_longitude\": 3.881\n})\n\nanimation.precompute_route(row)\n# Output: [123456, 123457, 123458, ...]"
+  },
+  {
+    "objectID": "documentation/functions.html#create_animation",
+    "href": "documentation/functions.html#create_animation",
+    "title": "\nFunctions \n",
+    "section": "create_animation",
+    "text": "create_animation\n\nGenerate a video animation of the bike trips.\n\n\nThis method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file.\n\n\nReturns\n\n\nNone: this method does not return any value.\n\n\n\n\nNotes\n\n\nThis method uses multiprocessing to parallelize frame generation, which can be resource-intensive.\n\n\nEnsure that you have sufficient disk space for temporary files generated during the process.\n\n\n\n\nExamples\n\nExample: Generate the animation for the loaded dataset.\n\nanimation = BikeAnimation(input_file=\"data/trips.csv\")\nanimation.create_animation()"
+  },
+  {
+    "objectID": "documentation/functions.html#is_within_radius",
+    "href": "documentation/functions.html#is_within_radius",
+    "title": "\nFunctions \n",
+    "section": "is_within_radius",
+    "text": "is_within_radius\n\nCheck if a given point (latitude, longitude) is within a specified radius from a center point. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.\n\n\nParameters\n\n\nlat (float): latitude of the point to check.\n\n\nlon (float): Longitude of the point to check.\n\n\ncenter_lat (float): latitude of the center point.\n\n\ncenter_lon (float): Longitude of the center point.\n\n\nradius_km (float): the radius in kilometers.\n\n\n\n\nReturns\n\n\nbool: True if the point is within the radius, otherwise False.\n\n\n\n\nExamples\n\nExample: check if a point is within 15 km of Montpellier.\n\nis_within_radius(\n    lat=43.6, lon=3.9, \n    center_lat=43.6119, center_lon=3.8772, \n    radius_km=15\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#find_station_name",
+    "href": "documentation/functions.html#find_station_name",
+    "title": "\nFunctions \n",
+    "section": "find_station_name",
+    "text": "find_station_name\n\nFind the name of the nearest station for a given geographic point by calculating distances using Geopy. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.\n\n\nParameters\n\n\nlatitude (float): latitude of the target point.\n\n\nlongitude (float): longitude of the target point.\n\n\nstations_df (pandas.DataFrame): dataFrame containing station data with columns 'latitude', 'longitude', and 'station_name'.\n\n\n\n\nReturns\n\n\nstr: name of the nearest station.\n\n\n\n\nExamples\n\nExample: find the nearest station to a point.\n\nfind_station_name(\n    latitude=43.6, longitude=3.9, \n    stations_df=stations\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#safe_nearest_node",
+    "href": "documentation/functions.html#safe_nearest_node",
+    "title": "\nFunctions \n",
+    "section": "safe_nearest_node",
+    "text": "safe_nearest_node\n\nSecurely find the nearest node in a graph for a given geographic point, handling exceptions. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.\n\n\nParameters\n\n\ngraph (networkx.Graph): the road network graph.\n\n\nlatitude (float): Latitude of the target point.\n\n\nlongitude (float): longitude of the target point.\n\n\n\n\nReturns\n\n\nint: ID of the nearest node.\n\n\n\n\nExamples\n\nExample: find the nearest node in a road network.\n\nsafe_nearest_node(\n    graph=osm_graph, \n    latitude=43.6, longitude=3.9\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#create_layer_for_date",
+    "href": "documentation/functions.html#create_layer_for_date",
+    "title": "\nFunctions \n",
+    "section": "create_layer_for_date",
+    "text": "create_layer_for_date\n\nCreate a map layer for a given date, including paths and station markers. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.\n\n\nParameters\n\n\ndate (str): date in the format 'YYYY-MM-DD'.\n\n\nmap_obj (folium.Map): The map object to add the layer to.\n\n\ndata (pandas.DataFrame): dataFrame containing path and station information for the date.\n\n\n\n\nReturns\n\n\nNone: this function does not return a value but modifies the map object in place.\n\n\n\n\nExamples\n\nExample: create a map layer for July 10, 2023.\n\ncreate_layer_for_date(\n    date=\"2023-07-10\", \n    map_obj=folium_map, \n    data=traffic_data\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#download_file",
+    "href": "documentation/functions.html#download_file",
+    "title": "\nFunctions \n",
+    "section": "download_file",
+    "text": "download_file\n\nDownload a file from a URL, store it locally, and verify its integrity using a SHA256 hash. This function was used in the Code/Scripts/Prediction/code_bike_traffic_prediction.py file to make the predictions.\n\n\nParameters\n\n\nurl (str): the URL of the file to download.\n\n\noutput_path (str): path where the downloaded file will be saved.\n\n\nexpected_hash (str): the expected SHA256 hash of the file to verify its integrity.\n\n\n\n\nReturns\n\n\nNone: this function does not return any value but raises an exception if the hash verification fails.\n\n\n\n\nExamples\n\nExample: download a file and verify its integrity.\n\ndownload_file(\n    url=\"https://example.com/data.csv\",\n    output_path=\"local_data/data.csv\",\n    expected_hash=\"abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890\"\n)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\nWelcome to our project  Bike analyses in Montpellier during Tour de France\n",
+    "section": "",
+    "text": "HTML Elements Reference"
+  },
+  {
+    "objectID": "documentation/functions.html#convert_json_to_csv",
+    "href": "documentation/functions.html#convert_json_to_csv",
+    "title": "\nFunctions \n",
+    "section": "convert_json_to_csv",
+    "text": "convert_json_to_csv\n\nConvert a JSON file containing EcoCompt data to a CSV file and filter the data for a specific date range. This function was used in the Code/Scripts/data_treatment_EcoCompt.py and Code/Scripts/ecoCompt_Download_and_Combine.py files to clean the data.\n\n\nParameters\n\n\ninput_file (str): the path to the JSON file to be converted.\n\n\noutput_dir (str): the directory where the resulting CSV file will be saved.\n\n\n\n\nReturns\n\n\nbool: True if the conversion is successful and results in valid data, False otherwise.\n\n\n\n\nNotes\n\n\nFilters data to include only dates between April 1, 2023, and October 31, 2023.\n\n\nRemoves rows with missing or invalid data, including null coordinates or essential fields.\n\n\nThe output CSV file is saved with the UTF-8-SIG encoding and uses a semicolon (;) as a delimiter.\n\n\n\n\nExamples\n\nExample: Convert a JSON file to CSV.\n\nconvert_json_to_csv(\n    input_file=\"Data/Data_EcoCompt/example.json\",\n    output_dir=\"Data/Data_EcoCompt_clean\"\n)"
+  },
+  {
+    "objectID": "documentation/functions.html#process_all_json_files",
+    "href": "documentation/functions.html#process_all_json_files",
+    "title": "\nFunctions \n",
+    "section": "process_all_json_files",
+    "text": "process_all_json_files\n\nProcess all JSON files in a directory, converting each to a filtered CSV file in a target folder. This function was used in the Code/Scripts/data_treatment_EcoCompt.py and Code/Scripts/ecoCompt_Download_and_Combine.py files to clean the data.\n\n\nParameters\n\nThis function does not take parameters directly. Instead, it relies on a predefined folder structure for input and output.\n\n\n\nNotes\n\n\nSearches for JSON files in the Data/Data_EcoCompt directory relative to the script’s location.\n\n\nCreates a directory Data/Data_EcoCompt_clean for saving the resulting CSV files if it does not already exist.\n\n\nDisplays a summary of successfully processed files and errors at the end.\n\n\n\n\nReturns\n\n\nNone: the function does not return a value but logs progress and results to the console.\n\n\n\n\nExamples\n\nExample: Process all JSON files in the input directory.\n\n# Running the function as part of the script\nif __name__ == \"__main__\":\n    process_all_json_files()"
+  },
+  {
+    "objectID": "Readme.html",
+    "href": "Readme.html",
+    "title": "Website File Description:",
+    "section": "",
+    "text": "Website File Description:\nThe Website folder contains all the code that creates the website.\nBasically, to launch the website on your machine, simply go to the index.qmd file and click on the first icon in the top right-hand corner, or use the ‘quarto render’ command in your terminal.\n\n_quarto.yml\nThis file contains the basis for the creation of our site. Inside you can find the sections of our navigation bar and the pages they contain. This file is used overall to organise the different pages of the site and gives the links to these different pages.\n\n\nindex.qmd\nThis file corresponds to the home page of our site, where we present the context, analyses and data we have used.\n\n\nstyles.css\nThis file contains the personalisation parameters for the various parts of our site (titles, text, images, etc.). You can change the site’s appearance settings here.\n\n\nfooter.qmd\nIn this file, we can find what is in the footer, with the various associated pages.\n\n\nanalyses\n\nmap.qmd\nThis file contains the interactive maps we made using the Python codes in Code/Scripts, as well as the detailed analysis and interpretation of these maps.\n\n\nstatistics.qmd\nThis file contains the statistical analyses we carried out using the Python code in Code/Scripts, as well as the detailed analysis and interpretation of these results to answer our question.\n\n\nvideo.qmd\nThis file contains the video we made using the Python codes in Code/Scripts, as well as a detailed analysis and interpretation of the video.\n\n\n\ndocumentation\n\nclasses.qmd\nThis file contains the documentation for the classes we used in our Python code in Code/Scripts.\n\n\nfunctions.qmd\nThis file contains the documentation for the functions we used in our Python code in Code/Scripts.\n\n\npackages.qmd\nThis file contains the documentation for the packages we used in our Python code in Code/Scripts.\n\n\n\nsources\n\nsources.qmd\nThis file contains all the sources on which we have based this project. You can find articles, links and documentation that we have used ourselves.\n\n\n\nfooter\n\nabout_us.qmd\nThis file introduces the members of our team and gives a brief overview of our project.\n\n\nMIT_licenses.qmd\nThis file contains the licence we have used to publish this project in total security.\n\n\nprivacy_policy.qmd\nThis file contains our privacy policy as well as the terms and conditions for the use of personal data that we have for this site.\n\n\n\ndocs\nThis file is the output file for our website. In other words, when you run a script with Quarto, it will automatically transform the Quarto code into html code. The files converted into html are stored in the docs folder."
+  },
+  {
+    "objectID": "footer/privacy_policy.html",
+    "href": "footer/privacy_policy.html",
+    "title": "\nPrivacy policy \n",
+    "section": "",
+    "text": "EFFECTIVE DATE: 2024-01-22\nWelcome to the site made by BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information."
+  },
+  {
+    "objectID": "footer/MIT_license.html#copyright---2024---bikeprojectteam7",
+    "href": "footer/MIT_license.html#copyright---2024---bikeprojectteam7",
+    "title": "\nMIT License \n",
+    "section": "Copyright © - 2024 - BikeProjectTeam7",
+    "text": "Copyright © - 2024 - BikeProjectTeam7\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions.\n\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\n\nThe software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contractn tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software."
+  },
+  {
+    "objectID": "footer/MIT_license.html#contact-us",
+    "href": "footer/MIT_license.html#contact-us",
+    "title": "\nMIT License \n",
+    "section": "Contact Us",
+    "text": "Contact Us\n\nIf you have any questions about these Terms, please contact us at your email address."
+  },
+  {
+    "objectID": "footer/privacy_policy.html#information-we-collect",
+    "href": "footer/privacy_policy.html#information-we-collect",
+    "title": "\nPrivacy policy \n",
+    "section": "Information We Collect",
+    "text": "Information We Collect\n\nWe may collect the following types of information: Personal Information: name, email address. Usage Data: information on how you use our site (e.g., pages visited, time spent on the site).\n\n\nCookies and Tracking Technologies: we do not use cookies."
+  },
+  {
+    "objectID": "footer/privacy_policy.html#how-we-use-your-information",
+    "href": "footer/privacy_policy.html#how-we-use-your-information",
+    "title": "\nPrivacy policy \n",
+    "section": "How We Use Your Information",
+    "text": "How We Use Your Information\n\nWe use your information to:\n\n\n\nProvide and maintain our services.\n\n\nImprove the user experience on our site."
+  },
+  {
+    "objectID": "footer/privacy_policy.html#data-sharing-and-disclosure",
+    "href": "footer/privacy_policy.html#data-sharing-and-disclosure",
+    "title": "\nPrivacy policy \n",
+    "section": "Data Sharing and Disclosure",
+    "text": "Data Sharing and Disclosure\n\nWe do not sell your personal data."
+  },
+  {
+    "objectID": "footer/privacy_policy.html#your-rights",
+    "href": "footer/privacy_policy.html#your-rights",
+    "title": "\nPrivacy policy \n",
+    "section": "Your Rights",
+    "text": "Your Rights\n\nYou have the right to:\n\n\n\nAccess your personal data.\n\n\nRequest correction or deletion of your data.\n\n\nOpt out of data collection."
+  },
+  {
+    "objectID": "footer/privacy_policy.html#contact-us",
+    "href": "footer/privacy_policy.html#contact-us",
+    "title": "\nPrivacy policy \n",
+    "section": "Contact Us",
+    "text": "Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
   }
 ]
