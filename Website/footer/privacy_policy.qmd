@@ -13,7 +13,7 @@ format:
 
 ## Introduction
 
-<p class = "text"> EFFECTIVE DATE: 2024-01-22 </p>
+<p class = "text"> EFFECTIVE DATE: 2024-12-10 </p>
 
 <p class = "text"> Welcome to BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information. </p>
 
