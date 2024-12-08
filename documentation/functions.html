@@ -165,6 +165,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../sources/sources.html"> 
+<span class="menu-text">Sources</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -193,19 +197,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#parameters" id="toc-parameters" class="nav-link" data-scroll-target="#parameters">Parameters</a></li>
   <li><a href="#returns" id="toc-returns" class="nav-link" data-scroll-target="#returns">Returns</a></li>
-  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a>
-  <ul class="collapse">
-  <li><a href="#example-1-precompute-the-shortest-route-for-a-single-trip" id="toc-example-1-precompute-the-shortest-route-for-a-single-trip" class="nav-link" data-scroll-target="#example-1-precompute-the-shortest-route-for-a-single-trip">Example 1: Precompute the shortest route for a single trip</a></li>
-  </ul></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
   </ul></li>
   <li><a href="#method-create_animation" id="toc-method-create_animation" class="nav-link" data-scroll-target="#method-create_animation">Method: <code>create_animation</code></a>
   <ul>
   <li><a href="#returns-1" id="toc-returns-1" class="nav-link" data-scroll-target="#returns-1">Returns</a></li>
   <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
-  <li><a href="#examples-1" id="toc-examples-1" class="nav-link" data-scroll-target="#examples-1">Examples</a>
-  <ul class="collapse">
-  <li><a href="#example-1-generate-the-animation-for-the-loaded-dataset" id="toc-example-1-generate-the-animation-for-the-loaded-dataset" class="nav-link" data-scroll-target="#example-1-generate-the-animation-for-the-loaded-dataset">Example 1: Generate the animation for the loaded dataset</a></li>
-  </ul></li>
+  <li><a href="#examples-1" id="toc-examples-1" class="nav-link" data-scroll-target="#examples-1">Examples</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -223,31 +221,41 @@ Functions <i class="fas fa-book-open"></i>
 </div>
 <section id="method-precompute_route" class="level2">
 <h2 class="anchored" data-anchor-id="method-precompute_route">Method: <code>precompute_route</code></h2>
-<p>Precompute the shortest route for a single trip.</p>
-<p>Given a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph.</p>
+<p class="text">
+Precompute the shortest route for a single trip.
+</p>
+<p class="text">
+Given a row containing the coordinates of departure and return points, this method calculates the shortest path using the OpenStreetMap graph.
+</p>
 <section id="parameters" class="level3">
 <h3 class="anchored" data-anchor-id="parameters">Parameters</h3>
-<ul>
-<li><strong><code>row</code></strong> (pandas.Series):<br>
-A row from the input DataFrame containing trip information.<br>
-The row must include the following columns:
-<ul>
-<li><code>'Departure_latitude'</code>, <code>'Departure_longitude'</code></li>
-<li><code>'Return_latitude'</code>, <code>'Return_longitude'</code></li>
-</ul></li>
+<ul class="text">
+<li>
+<strong><code>row</code></strong> (pandas.Series): a row from the input DataFrame containing trip information. The row must include the following columns:
+</li>
+<ul class="text">
+<li>
+<code>'Departure_latitude'</code>, <code>'Departure_longitude'</code>
+</li>
+<li>
+<code>'Return_latitude'</code>, <code>'Return_longitude'</code>
+</li>
+</ul>
 </ul>
 </section>
 <section id="returns" class="level3">
 <h3 class="anchored" data-anchor-id="returns">Returns</h3>
-<ul>
-<li><strong>list of int or None</strong>:<br>
-A list of node IDs representing the shortest path in the graph, or <code>None</code> if the route cannot be computed.</li>
+<ul class="text">
+<li>
+<strong>list of int or None</strong>: a list of node IDs representing the shortest path in the graph, or <code>None</code> if the route cannot be computed.
+</li>
 </ul>
 </section>
 <section id="examples" class="level3">
 <h3 class="anchored" data-anchor-id="examples">Examples</h3>
-<section id="example-1-precompute-the-shortest-route-for-a-single-trip" class="level4">
-<h4 class="anchored" data-anchor-id="example-1-precompute-the-shortest-route-for-a-single-trip">Example 1: Precompute the shortest route for a single trip</h4>
+<p class="text">
+Example: Precompute the shortest route for a single trip.
+</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>row <span class="op">=</span> pd.Series({</span>
@@ -261,34 +269,42 @@ A list of node IDs representing the shortest path in the graph, or <code>None</c
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Output: [123456, 123457, 123458, ...]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-</section>
 <section id="method-create_animation" class="level2">
 <h2 class="anchored" data-anchor-id="method-create_animation">Method: <code>create_animation</code></h2>
-<p>Generate a video animation of the bike trips.</p>
-<p>This method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file.</p>
+<p class="text">
+Generate a video animation of the bike trips.
+</p>
+<p class="text">
+This method processes all frames in parallel, saving intermediate images to the disk, and combines them into a video file.
+</p>
 <section id="returns-1" class="level3">
 <h3 class="anchored" data-anchor-id="returns-1">Returns</h3>
-<ul>
-<li><strong>None</strong>:<br>
-This method does not return any value.</li>
+<ul class="text">
+<li>
+<strong>None</strong>: this method does not return any value.
+</li>
 </ul>
 </section>
 <section id="notes" class="level3">
 <h3 class="anchored" data-anchor-id="notes">Notes</h3>
-<ul>
-<li>This method uses <strong>multiprocessing</strong> to parallelize frame generation, which can be resource-intensive.</li>
-<li>Ensure that you have sufficient disk space for temporary files generated during the process.</li>
+<ul class="text">
+<li>
+This method uses <strong>multiprocessing</strong> to parallelize frame generation, which can be resource-intensive.
+</li>
+<li>
+Ensure that you have sufficient disk space for temporary files generated during the process.
+</li>
 </ul>
 </section>
 <section id="examples-1" class="level3">
 <h3 class="anchored" data-anchor-id="examples-1">Examples</h3>
-<section id="example-1-generate-the-animation-for-the-loaded-dataset" class="level4">
-<h4 class="anchored" data-anchor-id="example-1-generate-the-animation-for-the-loaded-dataset">Example 1: Generate the animation for the loaded dataset</h4>
+<p class="text">
+Example: Generate the animation for the loaded dataset.
+</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>animation <span class="op">=</span> BikeAnimation(input_file<span class="op">=</span><span class="st">"data/trips.csv"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>animation.create_animation()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-</section>
 </section>
 </section>
 
