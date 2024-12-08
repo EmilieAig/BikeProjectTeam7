@@ -1,0 +1,46 @@
+---
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+---
+
+<div style="text-align: center;">
+<h1>Sources <i class="fas fa-book"></i></h1>
+</div>
+
+## General
+
+<p class = "text"> The guidelines for this project were provided by our teachers, and are available on this page. </p>
+
+<p class = "text"> In terms of content and form, it was our collective work that led to this result. However, we drew inspiration from several pages of documentation, help, templates, etc. to arrive at this final result. </p>
+
+<p class = "text"> Below is a list of the external elements that enabled us to bring this project to fruition. </p>
+
+## Hypothesis 
+
+<p class = "text"> To make an hypothesis from our problem, we based on the work of <a href="https://www.researchgate.net/publication/337445763_L'impact_social_des_grands_evenements_sportifs_reflexions_theoriques_et_methodologiques_a_partir_de_l'Euro_2016">Charrier et al., 2019</a>:</p>
+
+<p style="text-indent: -1.25em; margin-left: 1.25em;">
+Charrier, D., Jourdan, J., Bourbillères, H., Djaballah, M., & Parmantier, C. (2019). L’impact social des grands événements sportifs : Réflexions théoriques et méthodologiques à partir de l’Euro 2016. Movement and Sports Sciences - Science et Motricite. https://doi.org/10.1051/sm/2019029 </p>
+
+## Visuals
+
+<p class = "text"> For the graphic charter we used on the site, we took care to ensure that the contrasts respected the standards. To do this, we used the <a href="https://webaim.org/resources/contrastchecker/">WebAIM site </a>. </p>
+
+<p class = "text"> For the logos, we used the <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">Content Delivery Network for JavaScript</a> icon database. </p>
+
+<p class = "text"> Finally, the image of the bike is available at <a href="https://www.google.com/search?sca_esv=360d606574466e04&rlz=1C5CHFA_enFR1134FR1134&sxsrf=ADLYWIJhYTFJLd0NF5EToQkXKb7MY35KIg:1733495181608&q=v%C3%A9lo+logo&udm=2&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgTlosgQSuzBMlnAdio07UCJQtmEkU6i-_BMZgWHB0gXBsp1FOhasv23lx-35-QOCWgwy8Ub06ZphwlpTwKltvFFk4jK7vaMxDVszuY0JzJdQK4U73ddOZJPIt5I7j71nfikGYErW4w3LNAyjwyoUIJVWYbc7iGg1NtY_JBWjlPnrzjW5m&sa=X&ved=2ahUKEwi3zZPkrJOKAxV0_rsIHUbAOgcQtKgLegQIGRAB&biw=1920&bih=958&dpr=1#vhid=ZR3j4T-lFtaujM&vssid=mosaic">this link</a>. </p>
+
+## Slides
+
+<p class = "text"> To create the slides, we mainly used the documentation for Quarto presentations and Quarto's Revealjs theme to help us. </p>
+
+<p class = "text"> The various images we used are available via the following links: </p>
+
+<ul class = "text">
+  <li> <a href="https://www.google.com/search?sca_esv=360d606574466e04&rlz=1C5CHFA_enFR1134FR1134&sxsrf=ADLYWIJhYTFJLd0NF5EToQkXKb7MY35KIg:1733495181608&q=v%C3%A9lo+logo&udm=2&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgTlosgQSuzBMlnAdio07UCJQtmEkU6i-_BMZgWHB0gXBsp1FOhasv23lx-35-QOCWgwy8Ub06ZphwlpTwKltvFFk4jK7vaMxDVszuY0JzJdQK4U73ddOZJPIt5I7j71nfikGYErW4w3LNAyjwyoUIJVWYbc7iGg1NtY_JBWjlPnrzjW5m&sa=X&ved=2ahUKEwi3zZPkrJOKAxV0_rsIHUbAOgcQtKgLegQIGRAB&biw=1920&bih=958&dpr=1#vhid=ZR3j4T-lFtaujM&vssid=mosaic">Bike</a>. </li>
+  <li> <a href="https://www.google.com/search?sca_esv=360d606574466e04&rlz=1C5CHFA_enFR1134FR1134&sxsrf=ADLYWII5VWunyUuekumwZJeZ7Q0r0uOzqQ:1733496067922&q=logo+tour+de+france+2023&udm=2&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgTlosgQSuzBMlnAdio07UCFdb4kkCZQx4-ERIk5vUh0ggofzXKAnOWLfX3LfiEpOL2lI_mlPUigdiia8nmBZbO_yX9CN1MMw7UaHLgtmwzNgBw2uhdh4J9JOT94ha1qhst7mDZJr3ZGsR1mkn9ltQ3ayUUiRdkn9aalJBgv1A66x6ANB3&sa=X&sqi=2&ved=2ahUKEwi4iOSKsJOKAxWKUUEAHV1PNrMQtKgLegQIFBAB&biw=1920&bih=958&dpr=1#vhid=VX_ukA1-c_7EbM&vssid=mosaic">Logo</a> of Tour de France. </li>
+</ul>
+

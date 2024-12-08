@@ -10,87 +10,63 @@ format:
 <h1>Classes <i class="fas fa-book-open"></i></h1>
 </div>
 
-## Website classes
+## Class: `BikeAnimation`
 
-### 'Text'
+<p class = "text"> Generate an animation of bike trips using geospatial data and OpenStreetMap. </p>
 
-<p class = "text"> In the website, we have used the class named "text". </p>
+<p class = "text"> This class processes bike trip data, computes routes on a graph derived from OpenStreetMap, and generates a video animation visualizing the trips over time. </p>
 
-<p class ="text"> This class is used in all sections to organize and style all paragraphs, in the same way as personalising titles, in the website. It controls : </p> 
+### Parameters
 
-<ul class = "text"> 
-<li><strong>color :</strong> for the choice of the text color : <code>black</code>. </li>
-<li><strong>text-align :</strong> for the choice of the text alignement : <code>justify</code>. </li>
-<li><strong>font-family :</strong> for the choice of font : <code>Lato, sans serif</code>. </li>
-<li><strong>font-size :</strong> for the choice of text size : <code>15px</code>. </li>
-<li><strong>font-weight :</strong> for the choice of the text weight (level of bold) : <code>500</code>. </li>
-<li><strong>margin-bottom :</strong> for the choice of the spacing between paragraphs : <code>1em</code>. </li>
+<ul class = "text">
+  <li> **`input_file`** (str): path to the CSV file containing trip data. The file must include the following columns:  
+  `'Departure_Date'`, `'Departure_Time'`, `'Return_Date'`, `'Return_Time'`,  
+  `'Departure_latitude'`, `'Departure_longitude'`, `'Return_latitude'`, `'Return_longitude'`. </li>
+
+  <li> **`place_name`** (str, optional): name of the place to fetch the OpenStreetMap graph for, e.g., `"Montpellier, France"`. Default is `"Montpellier, France"`. </li>
+
+  <li> **`target_date`** (str or datetime-like, optional): filter trips for a specific date. If not specified, all dates in the input file are used. Default is `None`. </li>
+
+  <li> **`output_video`** (str, optional): path to the output video file. Default is `"bike_animation.mp4"`. </li>
+
+  <li> **`fps`** (int, optional): frames per second for the output video. Default is 30. </li>
+
+  <li> **`minutes_per_second`** (int, optional): the speed ratio of real-world minutes to animation seconds. Default is 120 minutes per animation second. </li>
+
+  <li> **`sample_size`** (int, optional): number of trips to process from the input file. If `None`, all trips are processed.  Default is `None`. </li>
 </ul>
 
-<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+### Attributes
 
-### 'Navbar'
+<ul class = "text">
+  <li> **`df`** (pandas.DataFrame): the processed DataFrame containing trip data with additional computed fields. </li>
 
-<p class = "text"> In the website, we have used the class named "navbar". </p>
+  <li> **`G`** (networkx.MultiDiGraph): the graph representation of the OpenStreetMap data for the specified place. </li>
 
-<p class = "text"> This class is used in all sections of the website to style the navigation bar on the right  </p>
- 
-<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+  <li> **`nodes`** (geopandas.GeoDataFrame): GeoDataFrame containing the nodes of the graph. </li>
 
-### 'Nav'
+  <li> **`total_frames`** (int): total number of frames to generate for the animation. </li>
 
-<p class = "text"> In the website, we have used the class named "nav". </p>
+  <li> **`background_file`** (str): path to the saved background graph image. </li>
+</ul>
 
-<p class = "text"> This class is used in the '' section to </p>
- 
-<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+### Methods
 
-### 'Content'
+<ul class = "text">
+  <li> **`precompute_route(row)`**: calculates the shortest route between two points. </li>
+  <li> `save_graph_background()`: generates and saves a background image of the graph. </li>
+  <li> `create_animation()`: creates a video animation from the trips. </li>
+</ul>
 
-<p class = "text"> In the website, we have used the class named "content". </p>
+<br>
 
-<p class = "text"> This class is used in the '' section to </p>
- 
-<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
+<p class = "text"> **Note:** for more details about the functions, visit the <a href="functions.html">Functions section</a>. </p>
 
-### 'Footer'
+### Examples
 
-<p class = "text"> In the website, we have used the class named "footer". </p>
+<p class = "text"> Create an animation for a dataset with the default settings. </p>
 
-<p class = "text"> This class is used in the '' section to </p>
- 
-<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
-
-### 'Pointilles-rectangle'
-
-<p class = "text"> In the website, we have used the class named "pointilles-rectangle". </p>
-
-<p class = "text"> This class is used in the '' section to </p>
- 
-<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
-
-### 'Bike'
-
-<p class = "text"> In the website, we have used the class named "bike". </p>
-
-<p class = "text"> This class is used in the '' section to </p>
- 
-<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
-
-### 'Trombinoscope'
-
-<p class = "text"> In the website, we have used the class named "trombinoscope". </p>
-
-<p class = "text"> This class is used in the '' section to </p>
- 
-<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
-
-### 'Member'
-
-<p class = "text"> In the website, we have used the class named "member". </p> 
-
-<p class = "text"> This class is used in the ‘about us’ section to define the elements linked to the trombinoscope, in order to display four blocks representing the four members of the group. It is used to display photos and place them next to each other. </p>
-
-<p class = "text"> This class is defined in the <code>styles.css</code> file. </p>
-
-## Python classes
+```python
+animation = BikeAnimation(input_file="data/trips.csv", place_name="Paris, France")
+animation.create_animation()
+```

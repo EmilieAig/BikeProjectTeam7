@@ -1,7 +1,7 @@
 # _quarto.yml
 project:
   type: website
-  output-dir: ../docs
+  output-dir: docs
 
 execute:
   freeze: auto
@@ -29,6 +29,8 @@ website:
             href: documentation/functions.qmd
           - text: "Classes"
             href: documentation/classes.qmd
+      - text: "Sources"
+        href: sources/sources.qmd
     right:
       - icon: github
         href: https://github.com/EmilieAig/BikeProjectTeam7

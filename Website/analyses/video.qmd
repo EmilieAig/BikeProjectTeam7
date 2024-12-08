@@ -12,22 +12,22 @@ format:
 
 ## Presentation
 
-<p class = "text"> On this page we can see a youtube video of the Velomagg bikes traffic in Montpellier. </p>
+<p class = "text"> On this page, we will present you a video of the routes of the bicycles Velomag in the city of Montpellier for the date of Monday, July 10, 2023. This date corresponds to the first day of the second week of the Tour de France. </p>
 
-<p class = "text"> You can choose the date and the video will be interactive. </p>
+<p class = "text"> This allows us to deepen the results we have obtained in the maps game and will allow us to look at what is happening in terms of traffic of cyclists during the different hours of a day. </p>
+
+<p class = "text"> We decided to choose a day of the week because we could notice on the maps that there was less traffic during the weekend.</p>
 
 ## Videos
 
-<div class="container"> <div class="video-container"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
+<p class="text">Bike trafic of Monday 10 July 2023</p>
 
-<div class="container-r"> <div class="video-container-r"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Tuesday 11 July 2023</p> </div> </div>
+<iframe src="https://www.youtube.com/embed/Gc6I6s13_JY " frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width="800" height="450"></iframe> 
 
-<div class="container"> <div class="video-container"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Wednesday 12 July 2023</p> </div> </div>
+## Analyses
 
-<div class="container-r"> <div class="video-container-r"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Tuesday 13 July 2023</p> </div> </div>
+<p class="text"> This video shows Velomagg bike journeys in Montpellier from midnight on Monday 10 July 2023 to 11.59pm on the same day. </p>
 
-<div class="container"> <div class="video-container"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Friday 14 July 2023</p> </div> </div>
+<p class="text"> The peak times are from 7.30am to 9am, around 1pm and from 5.30pm to around 9pm. </p>
 
-<div class="container-r"> <div class="video-container-r"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Saturday 15 July 2023</p> </div> </div>
-
-<div class="container"> <div class="video-container"> <video src="/images/video_1.mp4" controls></video> </div> <div class="text"> <p>Sunday 16 July 2023</p> </div> </div>
+<p class="text"> This seems to correspond to the start of work, the lunch break and the end of the working day. </p>
