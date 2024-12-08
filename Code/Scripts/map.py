@@ -1,33 +1,33 @@
-# %% Extraire les coordonnées des compteurs
+# %% Extract the coordinates of the counters
 import pandas as pd
 import os
-# 文件路径设置
-data_folder = os.path.join("..", "Data", "Data_EcoCompt_Combined")  # 数据文件夹路径
-file_path = os.path.join(data_folder, "fichier_combined.csv")  # 文件路径
+# File path settings
+data_folder = os.path.join("..", "Data", "Data_EcoCompt_Combined")  # Data folder path
+file_path = os.path.join(data_folder, "fichier_combined.csv")  # File path
 
-# 读取 CSV 文件
-df = pd.read_csv(file_path, delimiter=";")  # 使用分号作为分隔符
+# Read the CSV file
+df = pd.read_csv(file_path, delimiter=";")  # Use semicolon as the delimiter
 
-# 提取计数器基础 Id
-df['counter_id'] = df['id'].str.extract(r'(MMM_EcoCompt_\w+?)_')  # 提取基础 Id
+# Extract the base counter ID
+df['counter_id'] = df['id'].str.extract(r'(MMM_EcoCompt_\w+?)_')  # Extract the base ID
 
-# 提取唯一的计数器 Id 和坐标
+# Extract unique counter IDs and coordinates
 unique_counters = df[['counter_id', 'longitude', 'latitude']].drop_duplicates()
 
-# 输出提取结果的前几行查看
+# Print the first few rows of the extracted results
 print(unique_counters.head())
 
-# 保存结果到新的 CSV 文件
-output_folder = data_folder  # 保存到同一目录
+# Save the result to a new CSV file
+output_folder = data_folder  # Save to the same directory
 output_path = os.path.join(output_folder, "counter_coordinates.csv")
 unique_counters.to_csv(output_path, index=False)
 
-print(f"计数器数据已提取并保存到：{output_path}")
+print(f"Counter data has been extracted and saved to: {output_path}")
 
 
 
 
-# %% 提取网络图，选择合适的范围，并根据道路类型进行筛选，保留合适的道路密度
+# %% Extract network graph, choose the appropriate range, and filter based on road types, keeping the suitable road density
 import osmnx as ox
 ox.settings.use_cache=True
 ox.__version__
@@ -35,56 +35,56 @@ import osmnx as ox
 import networkx as nx
 from shapely.geometry import Point
 
-# 定义中心点和半径
+# Define center point and radius
 center_point = (43.606, 3.877)  # (latitude, longitude)
-radius = 9280  # 半径 9.28 公里，单位为米
+radius = 9280  # Radius of 9.28 kilometers, in meters
 
-# 1. 创建圆形多边形
-center = Point(center_point[1], center_point[0])  # shapely 的坐标格式为 (lon, lat)
-circle = center.buffer(radius / 111320)  # 使用大约 1° 纬度等于 111.32 公里转换
+# 1. Create a circular polygon
+center = Point(center_point[1], center_point[0])  # Shapely coordinate format is (lon, lat)
+circle = center.buffer(radius / 111320)  # Convert using approximately 1° latitude equals 111.32 km
 
-# 2. 提取圆形区域内的自行车网络
+# 2. Extract the bike network within the circular area
 G = ox.graph_from_polygon(circle, network_type='bike')
 
 
-# 定义要保留的道路类型
+# Define the road types to keep
 desired_highways = {'primary', 'trunk', 'secondary', 'tertiary', 'secondary_link', 'trunk_link', 'primary_link', 'tertiary_link', 'living_street',  'bridleway'}
 
-# 遍历图中的边并过滤筛选
+# Iterate over the edges in the graph and filter
 edges_to_remove = []
 for u, v, key, data in G.edges(keys=True, data=True):
     highway = data.get('highway', None)
     if isinstance(highway, list):
-        # 如果 highway 是列表，检查是否与 desired_highways 有交集
+        # If highway is a list, check if it intersects with desired_highways
         if not any(h in desired_highways for h in highway):
             edges_to_remove.append((u, v, key))
     elif highway not in desired_highways:
-        # 如果 highway 是单个值，直接检查是否在 desired_highways 中
+        # If highway is a single value, directly check if it's in desired_highways
         edges_to_remove.append((u, v, key))
 
-# 删除不需要的边
+# Remove unwanted edges
 G.remove_edges_from(edges_to_remove)
 
-# 删除孤立节点
-isolated_nodes = list(nx.isolates(G))  # 找到所有孤立节点
-G.remove_nodes_from(isolated_nodes)  # 删除孤立节点
+# Remove isolated nodes
+isolated_nodes = list(nx.isolates(G))  # Find all isolated nodes
+G.remove_nodes_from(isolated_nodes)  # Remove isolated nodes
 
-# 1. 找到网络的所有连通分量
+# 1. Find all connected components of the network
 connected_components = nx.connected_components(G.to_undirected())
 
-# 2. 确定最大的连通分量
+# 2. Identify the largest connected component
 largest_cc = max(connected_components, key=len)
 
-# 3. 创建包含最大连通分量的子图
+# 3. Create a subgraph containing the largest connected component
 G_largest = G.subgraph(largest_cc).copy()
 
-# 4. 输出清理后的节点和边数量
-print(f"清理后，网络包含 {G_largest.number_of_nodes()} 个节点和 {G_largest.number_of_edges()} 条边。")
+# 4. Print the number of nodes and edges in the cleaned network
+print(f"After cleaning, the network contains {G_largest.number_of_nodes()} nodes and {G_largest.number_of_edges()} edges.")
 
-# 更新原图
+# Update the original graph
 G = G_largest
 
-# 可视化网络
+# Visualize the network
 print(f"nb edges: {G.number_of_edges()}")
 print(f"nb nodes: {G.number_of_nodes()}")
 fig, ax = ox.plot_graph(G)
@@ -92,105 +92,105 @@ fig, ax = ox.plot_graph(G)
 
 
 
-# %% 将计数器的坐标和节点坐标进行匹配
+# %% Match the counter coordinates with the network nodes
 import osmnx as ox
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# 1. 读取计数器数据
+# 1. Read the counter data
 counter_file_path = "../Data/Data_EcoCompt_Combined/counter_coordinates.csv"
 counters = pd.read_csv(counter_file_path)
 
-# 2. 删除特定的计数器（counter_id 为 MMM_EcoCompt_X2H22104765）
+# 2. Remove specific counter (counter_id = MMM_EcoCompt_X2H22104765)
 counters = counters[counters['counter_id'] != 'MMM_EcoCompt_X2H22104765']
 
-# 3. 找到最近的网络节点
+# 3. Find the nearest network node
 counters['nearest_node'] = counters.apply(
     lambda row: ox.nearest_nodes(G, row['longitude'], row['latitude']), axis=1
 )
 
-# 4. 获取最近节点的坐标
+# 4. Get the coordinates of the nearest nodes
 nodes, edges = ox.graph_to_gdfs(G, nodes=True, edges=True)
 counters['node_longitude'] = counters['nearest_node'].map(nodes['x'])
 counters['node_latitude'] = counters['nearest_node'].map(nodes['y'])
 
-# 5. 可视化网络及标记节点
+# 5. Visualize the network and mark the nodes
 fig, ax = ox.plot_graph(G, show=False, close=False)
 
-# 6. 绘制最近节点的位置（以红色标记）
+# 6. Plot the location of the nearest nodes (marked in red)
 nearest_positions = counters[['node_longitude', 'node_latitude']].values
 ax.scatter(nearest_positions[:, 0], nearest_positions[:, 1], c='red', s=50, label='Nearest Nodes')
 
-# 添加图例并显示
+# Add a legend and show the plot
 ax.legend()
 plt.show()
 
 
 
 
-# %% 选择想要的日期，然后匹配每个计数器节点和intensity
+# %% Choose the desired dates, then match each counter node and intensity
 import pandas as pd
 import os
 
-# 文件路径设置
+# File path settings
 combined_file_path = "../Data/Data_EcoCompt_Combined/fichier_combined.csv"
 
 def load_daily_node_intensity(dates, counters, combined_file_path):
     """
-    加载多个日期的数据，并返回一个包含每日数据的字典。
+    Load data for multiple dates and return a dictionary containing daily data.
     
-    参数：
-    - dates: list，包含需要处理的日期（格式如 "2023-07-10"）。
-    - counters: DataFrame，包含计数器与最近节点的匹配数据。
-    - combined_file_path: str，计数器原始数据文件路径。
+    Parameters:
+    - dates: list, containing the dates to process (format like "2023-07-10").
+    - counters: DataFrame, containing the counter-to-node matching data.
+    - combined_file_path: str, the path to the original counter data file.
     
-    返回：
-    - daily_data: dict，每个日期对应一个 DataFrame，格式为 {date: DataFrame}
+    Returns:
+    - daily_data: dict, each date corresponds to a DataFrame in the format {date: DataFrame}
     """
-    # 1. 读取计数器原始数据
+    # 1. Read the original counter data
     combined_data = pd.read_csv(combined_file_path, delimiter=";")
 
-    # 存储每日数据的字典
+    # Dictionary to store daily data
     daily_data = {}
 
     for date in dates:
-        # 2. 筛选出当前日期的数据
+        # 2. Filter the data for the current date
         filtered_data = combined_data[combined_data['date'] == date].copy()
 
-        # 3. 提取计数器基础 ID
+        # 3. Extract the counter base ID
         filtered_data['counter_id'] = filtered_data['id'].str.extract(r'(MMM_EcoCompt_\w+?)_')
 
-        # 4. 将计数器与最近节点匹配
+        # 4. Merge counters with nearest nodes
         merged_data = pd.merge(counters, filtered_data, on='counter_id', how='inner')
 
-        # 5. 汇总每个节点的计数信息
+        # 5. Summarize the count information for each node
         node_intensity = merged_data[['nearest_node', 'intensity']]
 
-        # 6. 将 DataFrame 存入字典
+        # 6. Store the DataFrame in the dictionary
         daily_data[date] = node_intensity
-        print(f"{date} 的节点流量数据已加载完成")
-    
+        print(f"Node traffic data for {date} has been loaded")
+
     return daily_data
 
-# 定义日期范围
+# Define date range
 dates_to_load = [
     "2023-07-10", "2023-07-11", "2023-07-12",
     "2023-07-13", "2023-07-14", "2023-07-15", "2023-07-16"
 ]
 
-# 文件路径
+# File path
 combined_file_path = "../Data/Data_EcoCompt_Combined/fichier_combined.csv"
 
-# 调用函数加载数据
+# Call the function to load data
 daily_data = load_daily_node_intensity(dates_to_load, counters, combined_file_path)
 
-# 检查某一天的数据
+# Check data for a specific day
 print(daily_data["2023-07-10"].head())
 
 
 
 
-# %% 推算未知节点的intensity
+# %% Estimate intensity for unknown nodes
 import numpy as np
 import pandas as pd
 from scipy.spatial import KDTree
@@ -198,80 +198,80 @@ import os
 
 def estimate_unknown_intensity(daily_data, G):
     """
-    使用已知节点的流量数据推算未知节点的流量，并更新图 G。
+    Estimate the intensity of unknown nodes using the intensity data of known nodes and update the graph G.
     
-    参数：
-    - daily_data: dict，每天的已知节点流量数据，格式为 {date: DataFrame}。
-    - G: networkx 图对象，包含自行车网络结构。
+    Parameters:
+    - daily_data: dict, daily known node traffic data in the format {date: DataFrame}.
+    - G: networkx graph object, containing the bike network structure.
 
-    返回：
-    - estimated_data: dict，推算后的每日未知节点流量，格式为 {date: DataFrame}。
+    Returns:
+    - estimated_data: dict, estimated daily traffic intensity for unknown nodes, in the format {date: DataFrame}.
     """
     from scipy.spatial import KDTree
     import numpy as np
     import pandas as pd
 
-    # 存储推算结果的字典
+    # Dictionary to store the estimated results
     estimated_data = {}
 
     for date, node_data in daily_data.items():
-        print(f"正在处理日期：{date}")
+        print(f"Processing date: {date}")
 
-        # 提取已知节点信息
+        # Extract known node information
         known_nodes = node_data['nearest_node'].tolist()
         known_coords = np.array([[G.nodes[node]['x'], G.nodes[node]['y']] for node in known_nodes])
         known_intensities = node_data['intensity'].values
 
-        # 获取所有节点
+        # Get all nodes
         all_nodes = list(G.nodes())
         all_coords = np.array([[G.nodes[node]['x'], G.nodes[node]['y']] for node in all_nodes])
 
-        # 找到未知节点
+        # Find unknown nodes
         unknown_nodes = [node for node in all_nodes if node not in known_nodes]
         unknown_coords = np.array([[G.nodes[node]['x'], G.nodes[node]['y']] for node in unknown_nodes])
 
-        # 构建 KD-Tree
+        # Build KD-Tree
         kd_tree = KDTree(known_coords)
 
-        # 初始化未知节点的 intensity
+        # Initialize unknown node intensities
         unknown_intensity = []
 
-        # 遍历未知节点，计算与最近 3 个已知节点的加权平均值
+        # Iterate over unknown nodes and calculate the weighted average intensity from the nearest 3 known nodes
         for coord in unknown_coords:
-            distances, indices = kd_tree.query(coord, k=3)  # 最近 3 个已知节点
-            weights = 1 / distances  # 权重是距离的倒数
+            distances, indices = kd_tree.query(coord, k=3)  # Nearest 3 known nodes
+            weights = 1 / distances  # Weight is the inverse of distance
             weighted_intensity = np.sum(weights * known_intensities[indices]) / np.sum(weights)
             unknown_intensity.append(weighted_intensity)
 
-        # 保存推算结果到 DataFrame
+        # Store the estimated result in a DataFrame
         estimated_data[date] = pd.DataFrame({
             'node': unknown_nodes,
             'intensity': unknown_intensity
         })
 
-        # 更新图 G 中的未知节点 intensity
+        # Update the graph G with the unknown node intensities
         for i, node in enumerate(unknown_nodes):
             G.nodes[node]['intensity'] = unknown_intensity[i]
 
-        print(f"日期 {date} 的未知节点流量推算完成")
+        print(f"Unknown node intensity estimation for {date} is complete")
 
     return estimated_data
 
 estimated_daily_data = estimate_unknown_intensity(daily_data, G)
 
-# 检查某一天的结果
+# Check the result for a specific day
 print(estimated_daily_data["2023-07-10"])
 
 
 
 
 
-# %% 可视化多日期的流量强度
+# %% Visualize traffic intensity for multiple dates
 import folium
 import numpy as np
 
-# 创建 folium 地图
-center_coords = [43.607, 3.877]  # 地图中心
+# Create a folium map
+center_coords = [43.607, 3.877]  # Map center
 m = folium.Map(location=center_coords, zoom_start=13)
 
 legend_html = '''
@@ -289,7 +289,7 @@ legend_html = '''
 '''
 m.get_root().html.add_child(folium.Element(legend_html))
 
-# 定义颜色映射规则
+# Define color mapping rules
 def get_color(intensity):
     if intensity > 1500:
         return '#D12315'
@@ -304,27 +304,27 @@ def get_color(intensity):
     else:
         return '#23C326'
 
-# 为每一天的数据创建图层
+# Create layers for each day's data
 for date, known_data in daily_data.items():
-    print(f"正在处理日期：{date}")
+    print(f"Processing date: {date}")
     layer = folium.FeatureGroup(name=f"Data {date}")
 
-    # 从 estimated_daily_data 获取未知节点的流量强度
+    # Get the estimated data for unknown nodes
     estimated_data = estimated_daily_data[date]
 
-    # 1. 更新图 G 中的节点 intensity
+    # 1. Update node intensities in graph G
     for node in G.nodes:
         if node in known_data['nearest_node'].values:
-            # 使用 daily_data 中的已知节点流量
+            # Use the known node traffic from daily_data
             G.nodes[node]['intensity'] = known_data.set_index('nearest_node').loc[node, 'intensity']
         elif node in estimated_data['node'].values:
-            # 使用 estimated_daily_data 中的推算值
+            # Use the estimated traffic from estimated_daily_data
             G.nodes[node]['intensity'] = estimated_data.set_index('node').loc[node, 'intensity']
         else:
-            # 对于没有数据的节点，设置为 NaN
+            # For nodes with no data, set intensity to NaN
             G.nodes[node]['intensity'] = np.nan
 
-    # 2. 更新边的 intensity
+    # 2. Update edge intensities
     for u, v, data in G.edges(data=True):
         node_u_intensity = G.nodes[u].get('intensity', np.nan)
         node_v_intensity = G.nodes[v].get('intensity', np.nan)
@@ -332,79 +332,57 @@ for date, known_data in daily_data.items():
         if np.isscalar(node_u_intensity) and np.isscalar(node_v_intensity) and not (np.isnan(node_u_intensity) or np.isnan(node_v_intensity)):
             data['intensity'] = (node_u_intensity + node_v_intensity) / 2
         else:
-            data['intensity'] = np.nan  # 如果没有值则设为 NaN
+            data['intensity'] = np.nan  # Set to NaN if no value
 
-    # 3. 在图层中绘制边
+    # 3. Draw edges in the map with intensity color
     for u, v, data in G.edges(data=True):
-        intensity = data.get('intensity', None)
-        highway_type = data.get('highway', 'Unknown')  # 获取道路种类
+        intensity = data.get('intensity', np.nan)
+        color = get_color(intensity)
+        folium.PolyLine(
+            locations=[(G.nodes[u]['y'], G.nodes[u]['x']), (G.nodes[v]['y'], G.nodes[v]['x'])],
+            color=color, weight=2.5, opacity=0.7
+        ).add_to(layer)
 
-        if intensity is not None and not np.isnan(intensity):
-            # 根据 intensity 设置颜色
-            color = get_color(intensity)
-
-            # 检查是否有 geometry, 使路径更加平滑
-            if 'geometry' in data:
-                coords = [(point[1], point[0]) for point in data['geometry'].coords]
-            else:
-                coords = [
-                    (G.nodes[u]['y'], G.nodes[u]['x']),
-                    (G.nodes[v]['y'], G.nodes[v]['x'])
-                ]
-
-            # 绘制路径或线段
-            folium.PolyLine(
-                coords,
-                color=color,
-                weight=4,  # 固定宽度
-                opacity=0.9,
-                tooltip=folium.Tooltip(f"Road Type: {highway_type}")
+    # 4. Add marker for nodes
+    for node, data in G.nodes(data=True):
+        if 'intensity' in data and not np.isnan(data['intensity']):
+            folium.CircleMarker(
+                location=(data['y'], data['x']),
+                radius=5, color=get_color(data['intensity']),
+                fill=True, fill_opacity=0.7, weight=1,
+                popup=f"Node: {node} - Intensity: {data['intensity']}"
             ).add_to(layer)
 
-    # 4. 在图层中标记计数器节点
-    for _, row in known_data.iterrows():
-        node = row['nearest_node']
-        intensity = row['intensity']
-        lat, lon = G.nodes[node]['y'], G.nodes[node]['x']
-        folium.Marker(
-        location=(lat, lon),
-        icon=folium.Icon(color="blue"),  # 设置图标
-        popup=folium.Popup(f"Intensity: {intensity}", max_width=200)  # 设置弹出框
-    ).add_to(layer)
-
-    # 将图层添加到地图
+    # Add the layer to the map
     layer.add_to(m)
 
-# 添加图层控制
+# Add layer control to toggle visibility of different dates
 folium.LayerControl().add_to(m)
 
-# 保存地图
+# Save the map
 output_map_path = "../Result/real_data_map.html"
 m.save(output_map_path)
-print(f"多日期地图已保存到：{output_map_path}")
+print(f"The map with multiple dates has been saved to: {output_map_path}")
 
 
-
-
-# %% 检查每条edges的属性是什么，以便能够了解有什么样的种类
+# %% Check the attributes of each edge to understand the types of roads
 from collections import Counter
 
-# 提取所有边的 highway 属性
+# Extract all the 'highway' attributes of the edges
 highway_types = []
 
 for u, v, data in G.edges(data=True):
-    highway = data.get('highway', None)  # 获取 highway 属性
+    highway = data.get('highway', None)  # Get the 'highway' attribute
     if highway:
-        if isinstance(highway, list):  # 如果是列表，展开加入
+        if isinstance(highway, list):  # If it's a list, expand and add each one
             highway_types.extend(highway)
         else:
             highway_types.append(highway)
 
-# 统计每种道路的数量
+# Count the number of occurrences of each road type
 highway_counter = Counter(highway_types)
 
-# 输出所有道路种类和数量
-print("包含的道路种类及数量：")
+# Output all road types and their counts
+print("Road types and their counts:")
 for highway, count in highway_counter.items():
     print(f"{highway}: {count}")
-
