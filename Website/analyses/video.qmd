@@ -20,7 +20,8 @@ format:
 
 ## Videos
 
-<div class="container"> <div class="video-container"> 
-<iframe src="https://www.youtube.com/embed/Gc6I6s13_JY " frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width="800" height="450"></iframe></div> <div class="text"> <p>Monday 10 July 2023</p> </div> </div>
+<p class="text">Bike trafic of Monday 10 July 2023</p>
+
+<iframe src="https://www.youtube.com/embed/Gc6I6s13_JY " frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width="800" height="450"></iframe> 
 
 ## Analyses
