@@ -2,10 +2,10 @@
 title: |
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="images/Logo_SSD.png" alt="Logo gauche" style="width: 30%; margin-right: 22px;">
-    <h1 style="text-align: center; margin-bottom: 100px; flex-grow: 0; font-size: 0.8em;">Bike analyses in Montpellier during the Tour de France</h1>
+    <h1 style="text-align: center; margin-bottom: 100px; flex-grow: 0; font-size: 0.7em;">Analyse des cyclistes de Montpellier pendant le Tour de France 2023</h1>
     <img src="images/Logo_univMtp_sansfond.png" alt="Logo droite" style="width: 100%;">
   </div>
-author: "AIGOIN Emilie - MAMANE SIDI Samira - THOMAS Anne-Laure - ZHU Qingjian"
+author: "AIGOIN Emilie - MAMANE SIDI Samira - <br> THOMAS Anne-Laure - ZHU Qingjian"
 format: 
   revealjs:
     progress: true
@@ -36,7 +36,7 @@ format:
 <br>
 
 ::: {.fragment} 
-#### Hypothèses
+#### Hypothèse
 :::
 
 <br>
@@ -54,29 +54,33 @@ format:
 
 #### Comparaisons
 
-<br>
+:::: {.columns}
 
+::: {.column width="50%"}
 ::: {.fragment}
-<p class = "text"> Inter-mois : statistiques. </p>
+- <p class = "text"> Inter-mois : statistiques </p>
 :::
 
-<br>
-
 ::: {.fragment}
-<p class = "text"> Inter-semaines : graphiques. </p>
+- <p class = "text"> Inter-semaines : graphiques </p>
 :::
 
-<br>
-
 ::: {.fragment}
-<p class = "text"> Intra-semaines : cartes. </p>
+- <p class = "text"> Inter-jours : cartes </p>
 :::
 
-<br>
-
 ::: {.fragment}
-<p class = "text"> Intra-journée : vidéo. </p>
+- <p class = "text"> Inter-heures : vidéo </p>
 :::
+:::
+
+::: {.column width="50%"}
+![](/images/intensity_graph.svg){.fragment .absolute top="180" left="500" width="600" height="400"}
+![](/images/carte_prediction_capture.png){.fragment .absolute top="180" left="550" width="500" height="350"}
+![](/images/image_video.png){.fragment .absolute top="200" left="600" width="400" height="300"}
+:::
+
+::::
 
 ![](/images/bike.png){.absolute top=650 left=0 width="20" height="20"}
 
@@ -144,35 +148,29 @@ format:
 :::
 
 ::: {.fragment}
+- <p class = "text"> Graphique → </p>
+
 ![](/images/intensity_graph.svg){.absolute top=100 left=350 width="800" height="500"}
 :::
-
-<br>
 
 ::: {.fragment}
 #### Résultats
 :::
 
-<br>
-
 ::: {.fragment}
-<p class = "text"> Hypothèse </p>
+- <p class = "text"> Hypothèse </p>
 :::
 
 ::: {.fragment}
-![](/images/cross.png){.absolute top=318 left=-45 width="200" height="100"}
+![](/images/cross.png){.absolute top=294 left=0 width="200" height="100"}
 :::
-
-<br>
 
 ::: {.fragment}
 #### Discussion
 :::
 
-<br>
-
 ::: {.fragment}
-<p class = "text"> Vacances et rentrées ? </p>
+- <p class = "text"> Vacances et rentrées ? </p>
 :::
 
 ![](/images/bike.png){.absolute top=650 left=300 width="20" height="20"}
@@ -182,7 +180,32 @@ format:
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
 ::: {.fragment}
-- **Fonctionnalités de la carte**
+**Conception de la carte**
+:::
+
+::: {.fragment}
+- <p class = "text"> Cartes interactives </p>
+![](/images/timeline_tourdefrance.png){.absolute top=80 left=600 width="600" height="150"}
+:::
+
+::: {.fragment}
+- <p class = "text"> Prédictions VS Données réelles </p>
+:::
+
+::: {.fragment}
+- <p class = "text"> Dates de prédiction : 10 juillet - 16 juillet 2023</p>
+![](/images/timeline_prediction.png){.absolute top=270 left=600 width="600" height="150"}
+:::
+
+::: {.fragment}
+- <p class = "text"> Dates de support : 1er avril - 9 juillet 2023 </p>
+![](/images/timeline_support.png){.absolute top=460 left=600 width="600" height="150"}
+:::
+
+## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
+
+::: {.fragment}
+**Fonctionnalités de la carte**
 :::
 
 :::: {.columns}
@@ -210,10 +233,16 @@ format:
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
 ::: {.fragment}
-**Choix de Prophet comme modèle de prévision**
+**Pourquoi Prophet comme modèle de prévision ?**
 :::
 
-<br>
+::: {.fragment}
+- <p class ="text"> Prise en compte des facteurs clés </p>
+:::
+
+::: {.fragment}
+- <p class ="text"> Prévisions précises et rapides </p>
+:::
 
 ::: {.fragment}
 **Réflexions et décisions clés**
@@ -226,8 +255,6 @@ format:
 ::: {.fragment}
 - <p class ="text"> Superposition des données </p>
 :::
-
-<br>
 
 ::: {.fragment}
 **Ouverture**
@@ -259,7 +286,7 @@ format:
 
 #### Objectif
 ::: {.fragment}
-- <p class ="text"> Créér une vidéo animée des trajets des cyclistes à Montpellier lors d'une journée du Tour de France 2023. </p>
+- <p class ="text"> Créér une vidéo animée des trajets des cyclistes à Montpellier lors d'une journée du Tour de France 2023 </p>
 :::
 ::: {.fragment}
 #### Choix de la date
