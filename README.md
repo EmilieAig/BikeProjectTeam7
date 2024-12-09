@@ -72,15 +72,15 @@ Here is a diagram of the architecture of our project, detailing the location of 
     |           └── map.py
     ├── Organization/
     │     ├── Gantt diagram/
-    │     │     ├── Gantt_Diagram_files/libs
+    │     │     ├── Gantt_Diagram_files/libs/...
     │     │     ├── Gantt Diagram.html
     │     │     └── Gantt Diagram.qmd
     │     └──── Models/
     │           ├── Mapmodel.png
     │           └── Websitemodel.png
     ├── Restitution/
-    │     ├── images/
-    │     │── slides_files/libs
+    │     ├── images/...
+    │     │── slides_files/libs/...
     │     │── Slides.html
     │     │── Slides.qmd   
     │     └── styles.css        
@@ -91,7 +91,7 @@ Here is a diagram of the architecture of our project, detailing the location of 
     │      |    ├── map.qmd
     │      |    ├── statistics.qmd
     │      │    └── video.qmd
-    |      ├── docs/    
+    |      ├── docs/...    
     |      ├── documentation/
     │      |    ├── classes.qmd
     │      |    ├── functions.qmd
@@ -100,18 +100,11 @@ Here is a diagram of the architecture of our project, detailing the location of 
     │      |    ├── MIT_license.qmd
     │      |    ├── about_us.qmd
     │      │    └── privacy_policy.qmd
-    |      ├── images/
-    |      |    ├── bike.png
-    |      |    ├── boxplot.svg
-    |      |    ├── intensity_graph.svg
-    |      |    ├── map_prediction_multiple_days_with_layers_and_legend.html
-    |      |    ├── member1.png
-    |      |    ├── member2.png
-    |      |    ├── member3.png
-    |      |    ├── member4.png  
-    |      |    └── video_1.mp4
-    |      ├── sources/    
-    |      ├── .gitignore
+    |      ├── images/...
+    |      ├── sources/   
+    │      │    └── sources.qmd 
+    |      ├── .gitignore 
+    |      ├── Readme.md
     |      ├── _quarto.yml
     |      ├── footer.qmd
     |      ├── index.qmd
