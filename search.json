@@ -46,7 +46,7 @@
     "href": "sources/sources.html#slides",
     "title": "\nSources \n",
     "section": "Slides",
-    "text": "Slides\n\nTo create the slides, we mainly used the documentation for Quarto presentations and Quarto’s Revealjs theme to help us.\n\n\nThe various images we used are available via the following links:\n\n\n\nBike.\n\n\nLogo of Tour de France.\n\n\n Velomagg .\n\n\n EcoCompters .\n\n\nLogo of  Quarto .\n\n\nLogo of  Python .\n\n\n Arrow .\n\n\n Cross ."
+    "text": "Slides\n\nTo create the slides, we mainly used the documentation for  Quarto presentations  and Quarto’s Revealjs theme  to help us.\n\n\nThe various images we used are available via the following links:\n\n\n\nBike.\n\n\nLogo of Tour de France.\n\n\n Velomagg .\n\n\n EcoCompters .\n\n\nLogo of  Quarto .\n\n\nLogo of  Python .\n\n\n Arrow .\n\n\n Cross .\n\n\n Child .\n\n\n Worker ."
   },
   {
     "objectID": "analyses/statistics.html#introduction",
