@@ -2,10 +2,9 @@
 title: |
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="images/Logo_SSD.png" alt="Logo gauche" style="width: 30%; margin-right: 22px;">
-    <h1 style="text-align: center; flex-grow: 0; font-size: 0.8em;">Bike analyses in Montpellier during the Tour de France</h1>
+    <h1 style="text-align: center; margin-bottom: 100px; flex-grow: 0; font-size: 0.8em;">Bike analyses in Montpellier during the Tour de France</h1>
     <img src="images/Logo_univMtp_sansfond.png" alt="Logo droite" style="width: 100%;">
   </div>
-subtitle: "BikeProjectTeam7"
 author: "AIGOIN Emilie - MAMANE SIDI Samira - THOMAS Anne-Laure - ZHU Qingjian"
 format: 
   revealjs:
@@ -24,6 +23,7 @@ format:
 
 ::: {.fragment} 
 #### Problématique 
+![](/images/logo_tourdefrance.png){.absolute top=320 left=450}
 :::
 
 <br>
@@ -42,13 +42,45 @@ format:
 <br>
 
 ::: {.fragment} 
-<p class="text"> ↗ nombre de cycliste pendant cette période </p>
+<p class="text"> ↗ nombre de cycliste pendant et après cette période </p>
 :::
 
-![](/images/bike.png){.absolute top=650 left=-100 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=-100 width="20" height="20"}
 
 
 <!-- slide 2 -->
+
+## Introduction {background-color="white" background-image="/images/background.png" background-size=cover}
+
+#### Comparaisons
+
+<br>
+
+::: {.fragment}
+<p class = "text"> Inter-mois : statistiques. </p>
+:::
+
+<br>
+
+::: {.fragment}
+<p class = "text"> Inter-semaines : graphiques. </p>
+:::
+
+<br>
+
+::: {.fragment}
+<p class = "text"> Intra-semaines : cartes. </p>
+:::
+
+<br>
+
+::: {.fragment}
+<p class = "text"> Intra-journée : vidéo. </p>
+:::
+
+![](/images/bike.png){.absolute top=800 left=0 width="20" height="20"}
+
+<!-- slide 3 -->
 
 ## Introduction {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -56,79 +88,154 @@ format:
 
 :::: {.columns}
 
-::: {.column width="40%"}
-<p class = "text"> Données brutes </p>
+::: {.column width="50%" .fragment}
+<p class="text">Compteurs de vélos</p>
+![](/images/ecocompt.png){.absolute top=250 left=0 width="350" height="250"}
+<div style="margin-top: 300px;">
+  <p class="text">→ nombre de cyclistes</p>
+</div>
 :::
 
-::: {.column width="60%"}
-<p class = "text"> Données nettoyées </p>
+::: {.column width="50%" .fragment}
+<p class="text">Trajets de Vélomagg</p>
+![](/images/velomagg.png){.absolute top=250 left=550 width="350" height="250"}
+<div style="margin-top: 300px;">
+  <p class="text">→ trajets des cyclistes en Vélomagg</p>
+</div>
 :::
 
 ::::
 
-![](/images/bike.png){.absolute top=650 left=0 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=100 width="20" height="20"}
 
 
-<!-- slide 3 -->
+<!-- slide 4 -->
 
 ## Introduction {background-color="white" background-image="/images/background.png" background-size=cover}
 
 #### Site web
 
-![](/images/bike.png){.absolute top=650 left=100 width="20" height="20"}
+<br>
+
+::: {.fragment}
+![](/images/quarto.png){.absolute top=250 left=0 width="150" height="40"}
+![](/images/arrow.png){.absolute top=250 left=300 width="200" height="50"}
+![](/images/site.png){.absolute top=120 left=600 width="450" height="280"}
+:::
+
+<br>
+
+::: {.fragment}
+![](/images/python.png){.absolute top=500 left=0 width="150" height="40"}
+![](/images/arrow.png){.absolute top=500 left=300 width="200" height="50"}
+![](/images/github.png){.absolute top=450 left=600 width="450" height="200"}
+:::
 
 
-<!-- slide 4 -->
-
-## Statistiques {background-color="white" background-image="/images/background.png" background-size=cover}
-
-#### Descriptives
-
-#### Résultats
-
-#### Discussion
-
-![](/images/bike.png){.absolute top=650 left=200 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=200 width="20" height="20"}
 
 
-<<<<<<< HEAD:Restitution/Slides.qmd
 <!-- slide 5 -->
 
 ## Statistiques {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### Comparaisons
+::: {.fragment}
+#### Descriptives
+:::
 
-![](/images/bike.png){.absolute top=650 left=300 width="20" height="20"}
+::: {.fragment}
+![](/images/intensity_graph.svg){.absolute top=100 left=350 width="800" height="500"}
+:::
 
-=======
-- **Fonctionnalités de la carte**
+<br>
 
-- **Choix de Prophet comme modèle**
+::: {.fragment}
+#### Résultats
+:::
 
-- **Réflexions et défis**
+<br>
 
-- **Points positifs et apprentissages**
+::: {.fragment}
+<p class = "text"> Hypothèse </p>
+:::
 
-### Données réelles {background-color="white" background-image="/images/background.png" background-size=cover}
->>>>>>> 8038b395d872978dd72b5f20e1456fae05e305c2:slide/slides.qmd
+::: {.fragment}
+![](/images/cross.png){.absolute top=318 left=-45 width="200" height="100"}
+:::
+
+<br>
+
+::: {.fragment}
+#### Discussion
+:::
+
+<br>
+
+::: {.fragment}
+<p class = "text"> Vacances et rentrées ? </p>
+:::
+
+![](/images/bike.png){.absolute top=800 left=300 width="20" height="20"}
 
 <!-- slide 6 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### Explications des prévisions
+::: {.fragment}
+- **Fonctionnalités de la carte**
+:::
 
-![](/images/bike.png){.absolute top=650 left=400 width="20" height="20"}
+:::: {.columns}
 
+::: {.column width="50%" .fragment}
+<p class="text">Carte prédiction 10/07/2023 </p>
+![](/images/carte_prediction_capture.png){.absolute top=250 left=0 width="500" height="350"}
+<div style="margin-top: 300px;"> </div>
+:::
+
+::: {.column width="50%" .fragment}
+<p class="text">Carte prédiction 15/07/2023</p>
+![](/images/capture_prediction_week.PNG){.absolute top=250 left=550 width="500" height="350"}
+<div style="margin-top: 300px;"> </div>
+:::
+
+::::
+
+<!-- Image légende après la première carte avec un fragment -->
+::: {.fragment}
+<div style="position: relative; text-align: center; margin-top: 80px;">
+  <img src="/images/Legend.PNG" alt="Legend" width="200" height="150" />
+</div>
+:::
+
+![](/images/bike.png){.absolute top=800 left=400 width="20" height="20"}
 
 <!-- slide 7 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### Carte des prévisions
+::: {.fragment}
+- **Choix de Prophet comme modèle de prévision**
+:::
 
-![](/images/bike.png){.absolute top=650 left=500 width="20" height="20"}
+::: {.fragment}
+- **Réflexions et décisions clés**
+:::
 
+::: {.fragment}
+  - Réduction des chemins
+:::
+
+::: {.fragment}
+  - Superposition des données
+:::
+
+
+::: {.fragment}
+- **Ouverture**
+:::
+
+![](/images/bike.png){.absolute top=800 left=500 width="20" height="20"}
 
 <!-- slide 8 -->
 
@@ -136,8 +243,7 @@ format:
 
 #### Carte des données réelles
 
-![](/images/bike.png){.absolute top=650 left=600 width="20" height="20"}
-
+![](/images/bike.png){.absolute top=800 left=600 width="20" height="20"}
 
 
 <!-- slide 9 -->
@@ -146,7 +252,7 @@ format:
 
 #### Comparaisons des cartes
 
-![](/images/bike.png){.absolute top=650 left=700 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=700 width="20" height="20"}
 
 
 <!-- slide 10 -->
@@ -173,7 +279,7 @@ format:
 - Création de l'animation avec la classe **Bike_Animation**
 :::
 
-![](/images/bike.png){.absolute top=650 left=800 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=800 width="20" height="20"}
 
 
 <!-- slide 11 -->
@@ -181,6 +287,7 @@ format:
 ## Vidéo {background-color="white" background-image="/images/background.png" background-size=cover}
 
 #### Extrait de la vidéo
+
 
 <video controls autoplay loop width="640" height="360">
   <source src="https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Result/Extrait_Bike_Animation.mp4" type="video/mp4">
@@ -196,7 +303,7 @@ format:
 
 Nous vous remercions de votre écoute.
 
-![](/images/bike.png){.absolute top=650 left=1100 width="20" height="20"}
+![](/images/bike.png){.absolute top=800 left=1100 width="20" height="20"}
 
 
 <!-- slide bonus 1 -->
