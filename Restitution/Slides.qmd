@@ -78,7 +78,7 @@ format:
 <p class = "text"> Intra-journée : vidéo. </p>
 :::
 
-![](/images/bike.png){.absolute top=800 left=0 width="20" height="20"}
+![](/images/bike.png){.absolute top=650 left=0 width="20" height="20"}
 
 <!-- slide 3 -->
 
@@ -106,7 +106,7 @@ format:
 
 ::::
 
-![](/images/bike.png){.absolute top=800 left=100 width="20" height="20"}
+![](/images/bike.png){.absolute top=650 left=100 width="20" height="20"}
 
 
 <!-- slide 4 -->
@@ -132,7 +132,7 @@ format:
 :::
 
 
-![](/images/bike.png){.absolute top=800 left=200 width="20" height="20"}
+![](/images/bike.png){.absolute top=650 left=200 width="20" height="20"}
 
 
 <!-- slide 5 -->
@@ -175,7 +175,7 @@ format:
 <p class = "text"> Vacances et rentrées ? </p>
 :::
 
-![](/images/bike.png){.absolute top=800 left=300 width="20" height="20"}
+![](/images/bike.png){.absolute top=650 left=300 width="20" height="20"}
 
 <!-- slide 6 -->
 
@@ -187,13 +187,13 @@ format:
 
 :::: {.columns}
 
-::: {.column width="50%" .fragment}
+::: {.column width="53%" .fragment}
 <p class="text">Carte prédiction 10/07/2023 </p>
 ![](/images/carte_prediction_capture.png){.absolute top=250 left=0 width="500" height="350"}
 <div style="margin-top: 300px;"> </div>
 :::
 
-::: {.column width="50%" .fragment}
+::: {.column width="47%" .fragment}
 <p class="text">Carte prédiction 15/07/2023</p>
 ![](/images/capture_prediction_week.PNG){.absolute top=250 left=550 width="500" height="350"}
 <div style="margin-top: 300px;"> </div>
@@ -201,41 +201,39 @@ format:
 
 ::::
 
-<!-- Image légende après la première carte avec un fragment -->
-::: {.fragment}
-<div style="position: relative; text-align: center; margin-top: 80px;">
-  <img src="/images/Legend.PNG" alt="Legend" width="200" height="150" />
-</div>
-:::
 
-![](/images/bike.png){.absolute top=800 left=400 width="20" height="20"}
+
+![](/images/bike.png){.absolute top=650 left=400 width="20" height="20"}
 
 <!-- slide 7 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
 ::: {.fragment}
-- **Choix de Prophet comme modèle de prévision**
+**Choix de Prophet comme modèle de prévision**
+:::
+
+<br>
+
+::: {.fragment}
+**Réflexions et décisions clés**
 :::
 
 ::: {.fragment}
-- **Réflexions et décisions clés**
+- <p class ="text"> Réduction des chemins </p>
 :::
 
 ::: {.fragment}
-  - Réduction des chemins
+- <p class ="text"> Superposition des données </p>
 :::
+
+<br>
 
 ::: {.fragment}
-  - Superposition des données
+**Ouverture**
 :::
 
-
-::: {.fragment}
-- **Ouverture**
-:::
-
-![](/images/bike.png){.absolute top=800 left=500 width="20" height="20"}
+![](/images/bike.png){.absolute top=650 left=500 width="20" height="20"}
 
 <!-- slide 8 -->
 
@@ -243,7 +241,7 @@ format:
 
 #### Carte des données réelles
 
-![](/images/bike.png){.absolute top=800 left=600 width="20" height="20"}
+![](/images/bike.png){.absolute top=650 left=600 width="20" height="20"}
 
 
 <!-- slide 9 -->
@@ -252,7 +250,7 @@ format:
 
 #### Comparaisons des cartes
 
-![](/images/bike.png){.absolute top=800 left=700 width="20" height="20"}
+![](/images/bike.png){.absolute top=650 left=700 width="20" height="20"}
 
 
 <!-- slide 10 -->
@@ -261,25 +259,25 @@ format:
 
 #### Objectif
 ::: {.fragment}
-- Créér une vidéo animée des trajets des cyclistes à Montpellier lors d'une journée du Tour de France 2023.
+- <p class ="text"> Créér une vidéo animée des trajets des cyclistes à Montpellier lors d'une journée du Tour de France 2023. </p>
 :::
 ::: {.fragment}
 #### Choix de la date
 :::
 ::: {.fragment}
-- Pourquoi cette date en particulier ?
+- <p class ="text"> Pourquoi cette date en particulier ? </p>
 :::
 ::: {.fragment}
 ##### Etapes de la création de la vidéo
 :::
 ::: {.fragment}
-- Nettoyage et Traitement des Données
+- <p class ="text"> Nettoyage et Traitement des Données </p>
 :::
 ::: {.fragment}
-- Création de l'animation avec la classe **Bike_Animation**
+- <p class ="text"> Création de l'animation avec la classe **Bike_Animation** </p>
 :::
 
-![](/images/bike.png){.absolute top=800 left=800 width="20" height="20"}
+![](/images/bike.png){.absolute top=650 left=800 width="20" height="20"}
 
 
 <!-- slide 11 -->
@@ -287,7 +285,6 @@ format:
 ## Vidéo {background-color="white" background-image="/images/background.png" background-size=cover}
 
 #### Extrait de la vidéo
-
 
 <video controls autoplay loop width="640" height="360">
   <source src="https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Result/Extrait_Bike_Animation.mp4" type="video/mp4">
@@ -303,7 +300,7 @@ format:
 
 Nous vous remercions de votre écoute.
 
-![](/images/bike.png){.absolute top=800 left=1100 width="20" height="20"}
+![](/images/bike.png){.absolute top=650 left=1100 width="20" height="20"}
 
 
 <!-- slide bonus 1 -->
