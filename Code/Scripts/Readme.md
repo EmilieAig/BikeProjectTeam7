@@ -7,7 +7,7 @@ This file contains all the code scripts we created to successfully complete our 
 
  ⚠️ **Execution Time Notice**
 
-⏳ **This script requires at least 2 hours to execute.**
+⏳ **This script requires at least 2 hours to execute.You must execute the code in the terminal for it to run properly**
 
 ### DataProcessing.py
    This file includes the code for cleaning and processing the initial data, ensuring it was ready for analysis and further use in the project.
