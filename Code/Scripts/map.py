@@ -19,7 +19,7 @@ unique_counters = df[['counter_id', 'longitude', 'latitude']].drop_duplicates()
 print(unique_counters.head())
 
 # Save the results to a new CSV file
-output_folder = data_folder  # 保存到同一目录
+output_folder = data_folder  # Save to the same directory
 output_path = os.path.join(output_folder, "counter_coordinates.csv")
 unique_counters.to_csv(output_path, index=False)
 
@@ -39,7 +39,7 @@ from shapely.geometry import Point
 
 # Define the center point and radius
 center_point = (43.606, 3.877)  # (latitude, longitude)
-radius = 9280  # 半径 9.28 公里，单位为米
+radius = 9280  # Radius: 9.28 kilometers, unit in meters
 
 # 1. Create a circular polygon
 center = Point(center_point[1], center_point[0])  # Coordinates are in the format (lon, lat)
