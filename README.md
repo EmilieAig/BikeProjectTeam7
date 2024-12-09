@@ -63,7 +63,6 @@ Here is a diagram of the architecture of our project, detailing the location of 
     |           ├── cache/...   
     |           ├── .Rhistory
     |           ├── Animation_Bike.py
-    |           ├── DataProcessing.py
     |           ├── Readme.md    
     |           ├── Statistics.py    
     |           ├── data_treatment_EcoCompt.py
