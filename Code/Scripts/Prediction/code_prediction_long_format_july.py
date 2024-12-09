@@ -15,7 +15,7 @@ pooch_data = pooch.create(
 )
 
 # Define the output directory for the saved files
-output_dir = Path("Code/Data/Prediction_Data")  # Define the folder where you want to save the file
+output_dir = Path(__file__).resolve().parents[2] / 'Data' / 'Prediction_Data'  # Going 2 levels up from the script location to reach the root 'Code'
 output_dir.mkdir(parents=True, exist_ok=True)  # Create the directory if it doesn't exist
 
 # Download and load the predictions file
