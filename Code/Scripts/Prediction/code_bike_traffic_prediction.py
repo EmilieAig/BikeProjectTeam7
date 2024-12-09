@@ -10,6 +10,17 @@ from pathlib import Path #To work with paths
 import pooch # For downloading and caching files
 import os # For interacting with the file system
 
+# Folder where to save downloaded files
+root_folder = Path(__file__).resolve().parents[3]  # Go up to the project root folder
+
+# Define folders for saving files
+prediction_data_folder = root_folder / "Code/Data/Prediction_Data"
+video_data_folder = root_folder / "Code/Data/Video_Data"
+
+# Ensure folders exist
+prediction_data_folder.mkdir(parents=True, exist_ok=True)
+video_data_folder.mkdir(parents=True, exist_ok=True)
+
 # Function to download files using Pooch
 def download_file(url, target_path, known_hash):
     """
@@ -30,17 +41,17 @@ def download_file(url, target_path, known_hash):
 files_info = {
     "ecocompteur_file": {
         "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Prediction_Data/ecocompteurs_coords.csv",
-        "target_path": "./ecocompteurs_coords.csv",
+        "target_path": prediction_data_folder / "ecocompteurs_coords.csv",
         "known_hash": "08c71a1718b279efe1ebb60f6446e19c8b786d93a2a16bcb8504ab1a888dc3f8"  # SHA256 hash of ecocompteurs_coords.csv
     },
     "predictions_file": {
         "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Prediction_Data/predictions_long_format_july.csv",
-        "target_path": "./predictions_long_format_july.csv",
+        "target_path": prediction_data_folder / "predictions_long_format_july.csv",
         "known_hash": "eea6dc71213cf36a6ce9ea768cc01c3c08595a6e01513b6248c64ba117626035"
     },
     "stations_file": {
         "url": "https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Data/Video_Data/GeolocalisationStation.csv",
-        "target_path": "./GeolocalisationStation.csv",
+        "target_path": video_data_folder / "GeolocalisationStation.csv",
         "known_hash": "9638579e4d6e416196bd2ed7c7c0b9f9bc1d5a39e7a9ca6e5d45336c02ad3ab6"
     },
 }

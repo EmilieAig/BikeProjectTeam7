@@ -7,49 +7,56 @@ format:
 ---
 
 <div style="text-align: center;">
-<h1>Privacy polity <i class="fas fa-lock"></i></h1>
+<h1>Privacy policy <i class="fas fa-lock"></i></h1>
 </div>
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Introduction
 
+<p class = "text"> EFFECTIVE DATE: 2024-12-10 </p>
+=======
 <p class = "text"> EFFECTIVE DATE: 2024-01-22 </p>
+>>>>>>> 01a1e4304accaf61e8662360d3dd549e048bf0e7
+=======
+<p class = "text"> EFFECTIVE DATE: 2024-12-10 </p>
+>>>>>>> 93adb5eb4520b5dce27c392c7355bee17a932acc
 
-<p class = "text"> Welcome to BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information. </p>
+<p class = "text"> Welcome to the site made by BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information. </p>
 
-### 1. Information We Collect
+## Information We Collect
 
 <p class = "text"> We may collect the following types of information:
-Personal Information: Name, email address, phone number (when you fill out a form or subscribe to our newsletter).
-Usage Data: Information on how you use our site (e.g., pages visited, time spent on the site). </p>
+Personal Information: name, email address.
+Usage Data: information on how you use our site (e.g., pages visited, time spent on the site). </p>
 
-<p class = "text">  Cookies and Tracking Technologies: We use cookies to enhance user experience and analyze site traffic. </p>
+<p class = "text">  Cookies and Tracking Technologies: we do not use cookies. </p>
 
-### 2. How We Use Your Information
+## How We Use Your Information
 
 <p class = "text">  We use your information to: </p>
 
 <ul class = "text">
     <li>Provide and maintain our services.</li>
     <li>Improve the user experience on our site.</li>
-    <li>Send you promotional content if you’ve opted in.</li>
 </ul>
 
-### 3. Data Sharing and Disclosure
+## Data Sharing and Disclosure
 
-<p class = "text">  We do not sell your personal data. We may share information with trusted third-party providers for analytics or marketing purposes (e.g., Google Analytics). </p>
+<p class = "text">  We do not sell your personal data. </p>
 
-### 4. Your Rights
+## Your Rights
 
 <p class = "text"> You have the right to: </p>
 
 <ul class = "text"> 
     <li>Access your personal data.</li>
     <li>Request correction or deletion of your data.</li>
-    <li>Opt out of data collection (e.g., disable cookies). </li>
+    <li>Opt out of data collection. </li>
 </ul>
 
-### 5. Contact Us
+## Contact Us
 
 <p class = "text"> If you have any questions or concerns about this Privacy Policy, please contact us at <a href="about_us.html#mail">your email address</a>. </p>
 

@@ -1,9 +1,10 @@
-# This file may be used to create an environment using:
-# conda create --name HAX712X python=3.11.10
+# This file can be used to create an environment using the following command lines in the terminal (remember to remove the # to uncomment):
+#
+# conda create --name Team7_HAX712X python=3.11.10
 # conda init 
-# conda activate HAX712X
-# pip install -r requirements.txt
-# platform: osx-arm64
+# conda activate Team7_HAX712X
+# conda install requirements.txt
+
 cycler
 ffmpeg-python
 folium
@@ -15,12 +16,11 @@ ipykernel
 ipython
 jupyter_client
 jupyter_core
-matplotlib
+matplotlib >=3.7.2
 nest-asyncio
-numpy
 opencv-python
 osmnx
-pandas
+pandas>=1.5.0
 peep
 pillow
 plotly
@@ -30,11 +30,11 @@ python-dateutil
 pytz
 pyzmq
 requests
-seaborn
+seaborn==0.12.2
+numpy==1.24.4
+scipy==1.11.2
 tqdm
 tornado
 Moviepy
-
-
-
-
+beautifulsoup4
+scikit-learn
