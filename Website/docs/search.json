@@ -39,7 +39,7 @@
     "href": "documentation/packages.html",
     "title": "\nPackages \n",
     "section": "",
-    "text": "Packages \n\n\n\nFor the necessary codes for our project, we have used some packages to make our analysis.\n\n\n‘Numpy’\n\nThis package was used to perform efficient numerical computations, by manipulating multidimensional arrays and carrying out mathematical, statistical, and algebraic operations on these arrays.\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pandas’\n\nThis package was used to manipulate and analyze data, primarily by structuring data into DataFrames and performing operations like cleaning, filtering, aggregation, and statistical analysis.\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Matplotlib’\n\nThis package was used to create graphical visualizations, such as line plots, histograms, bar charts, etc., to better understand and analyze the data.\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Pooch’\n\nThis package was used to download and manage files reliably, especially for projects that require downloading external files (such as datasets) while ensuring version control and file integrity.\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Geopy’\n\nThis package was used to calculate the distance between two geographical coordinates to determine the optimal route between multiple points in a logistics application.\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Osmnx’\n\nThis package was used to download and analyze the bike-friendly road network of Montpellier from OpenStreetMap data. It enabled the visualization of the network, calculation of optimal routes for cycling, and analysis of the connectivity and structure of the cycling paths.\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Seaborn’\n\nThis package was used to create elegant and informative statistical visualizations, such as distribution plots and scatterplots, to explore and understand the relationships between variables in the analyzed data\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Tqdm’\n\nThis package was used to add progress bars to loops, allowing users to visually track the progress of a process, especially during long or repetitive tasks.\n\n\nFor more details we can consult the documentation of this packages.\n\n\n\n‘Moviepy’\n\nThis package was used to create a video from images, by assembling them in a specific order to form a smooth video sequence.\n\n\nFor more details we can consult the documentation of this packages."
+    "text": "For the necessary codes for our project, we have used some packages to make our analysis."
   },
   {
     "objectID": "documentation/classes.html#class-bikeanimation",
@@ -81,7 +81,7 @@
     "href": "footer/privacy_policy.html#introduction",
     "title": "\nPrivacy policy \n",
     "section": "Introduction",
-    "text": "Introduction\n\nEFFECTIVE DATE: 2024-01-22\n\n\nWelcome to the site made by BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information.\n\n\n1. Information We Collect\n\nWe may collect the following types of information: Personal Information: name, email address. Usage Data: information on how you use our site (e.g., pages visited, time spent on the site).\n\n\nCookies and Tracking Technologies: we do not use cookies.\n\n\n\n2. How We Use Your Information\n\nWe use your information to:\n\n\n\nProvide and maintain our services.\n\n\nImprove the user experience on our site.\n\n\n\n\n3. Data Sharing and Disclosure\n\nWe do not sell your personal data.\n\n\n\n4. Your Rights\n\nYou have the right to:\n\n\n\nAccess your personal data.\n\n\nRequest correction or deletion of your data.\n\n\nOpt out of data collection.\n\n\n\n\n5. Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
+    "text": "Introduction\n\nEFFECTIVE DATE: 2024-12-10\n\n=======\n\nEFFECTIVE DATE: 2024-01-22"
   },
   {
     "objectID": "documentation/functions.html#method-precompute_route",
@@ -165,7 +165,7 @@
     "href": "sources/sources.html#slides",
     "title": "\nSources \n",
     "section": "Slides",
-    "text": "Slides\n\nTo create the slides, we mainly used the documentation for Quarto presentations and Quarto’s Revealjs theme to help us.\n\n\nThe various images we used are available via the following links:\n\n\n\nBike.\n\n\nLogo of Tour de France.\n\n\n Velomagg .\n\n\n EcoCompters .\n\n\nLogo of  Quarto .\n\n\nLogo of  Python .\n\n\n Arrow .\n\n\n Cross ."
+    "text": "Slides\n\nTo create the slides, we mainly used the documentation for  Quarto presentations  and Quarto’s Revealjs theme  to help us.\n\n\nThe various images we used are available via the following links:\n\n\n\nBike.\n\n\nLogo of Tour de France.\n\n\n Velomagg .\n\n\n EcoCompters .\n\n\nLogo of  Quarto .\n\n\nLogo of  Python .\n\n\n Arrow .\n\n\n Cross .\n\n\n Child .\n\n\n Worker ."
   },
   {
     "objectID": "analyses/map.html#maps",
@@ -326,7 +326,7 @@
     "href": "footer/privacy_policy.html",
     "title": "\nPrivacy policy \n",
     "section": "",
-    "text": "EFFECTIVE DATE: 2024-01-22\nWelcome to the site made by BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information."
+    "text": "&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD"
   },
   {
     "objectID": "footer/MIT_license.html#copyright---2024---bikeprojectteam7",
@@ -376,5 +376,82 @@
     "title": "\nPrivacy policy \n",
     "section": "Contact Us",
     "text": "Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at your email address."
+  },
+  {
+    "objectID": "documentation/packages.html#numpy",
+    "href": "documentation/packages.html#numpy",
+    "title": "\nPackages \n",
+    "section": "‘Numpy’",
+    "text": "‘Numpy’\n\nThis package was used to perform efficient numerical computations, by manipulating multidimensional arrays and carrying out mathematical, statistical, and algebraic operations on these arrays.\n\n\nFor more details we can consult the documentation of this packages."
+  },
+  {
+    "objectID": "documentation/packages.html#pandas",
+    "href": "documentation/packages.html#pandas",
+    "title": "\nPackages \n",
+    "section": "‘Pandas’",
+    "text": "‘Pandas’\n\nThis package was used to manipulate and analyze data, primarily by structuring data into DataFrames and performing operations like cleaning, filtering, aggregation, and statistical analysis.\n\n\nFor more details we can consult the documentation of this packages."
+  },
+  {
+    "objectID": "documentation/packages.html#matplotlib",
+    "href": "documentation/packages.html#matplotlib",
+    "title": "\nPackages \n",
+    "section": "‘Matplotlib’",
+    "text": "‘Matplotlib’\n\nThis package was used to create graphical visualizations, such as line plots, histograms, bar charts, etc., to better understand and analyze the data.\n\n\nFor more details we can consult the documentation of this packages."
+  },
+  {
+    "objectID": "documentation/packages.html#pooch",
+    "href": "documentation/packages.html#pooch",
+    "title": "\nPackages \n",
+    "section": "‘Pooch’",
+    "text": "‘Pooch’\n\nThis package was used to download and manage files reliably, especially for projects that require downloading external files (such as datasets) while ensuring version control and file integrity.\n\n\nFor more details we can consult the documentation of this packages."
+  },
+  {
+    "objectID": "documentation/packages.html#geopy",
+    "href": "documentation/packages.html#geopy",
+    "title": "\nPackages \n",
+    "section": "‘Geopy’",
+    "text": "‘Geopy’\n\nThis package was used to calculate the distance between two geographical coordinates to determine the optimal route between multiple points in a logistics application.\n\n\nFor more details we can consult the documentation of this packages."
+  },
+  {
+    "objectID": "documentation/packages.html#osmnx",
+    "href": "documentation/packages.html#osmnx",
+    "title": "\nPackages \n",
+    "section": "‘Osmnx’",
+    "text": "‘Osmnx’\n\nThis package was used to download and analyze the bike-friendly road network of Montpellier from OpenStreetMap data. It enabled the visualization of the network, calculation of optimal routes for cycling, and analysis of the connectivity and structure of the cycling paths.\n\n\nFor more details we can consult the documentation of this packages."
+  },
+  {
+    "objectID": "documentation/packages.html#seaborn",
+    "href": "documentation/packages.html#seaborn",
+    "title": "\nPackages \n",
+    "section": "‘Seaborn’",
+    "text": "‘Seaborn’\n\nThis package was used to create elegant and informative statistical visualizations, such as distribution plots and scatterplots, to explore and understand the relationships between variables in the analyzed data\n\n\nFor more details we can consult the documentation of this packages."
+  },
+  {
+    "objectID": "documentation/packages.html#tqdm",
+    "href": "documentation/packages.html#tqdm",
+    "title": "\nPackages \n",
+    "section": "‘Tqdm’",
+    "text": "‘Tqdm’\n\nThis package was used to add progress bars to loops, allowing users to visually track the progress of a process, especially during long or repetitive tasks.\n\n\nFor more details we can consult the documentation of this packages."
+  },
+  {
+    "objectID": "documentation/packages.html#moviepy",
+    "href": "documentation/packages.html#moviepy",
+    "title": "\nPackages \n",
+    "section": "‘Moviepy’",
+    "text": "‘Moviepy’\n\nThis package was used to create a video from images, by assembling them in a specific order to form a smooth video sequence.\n\n\nFor more details we can consult the documentation of this packages."
+  },
+  {
+    "objectID": "documentation/functions.html#estimate_unknown_intensity",
+    "href": "documentation/functions.html#estimate_unknown_intensity",
+    "title": "\nFunctions \n",
+    "section": "estimate_unknown_intensity",
+    "text": "estimate_unknown_intensity\n\nDescription:\nThis function estimates the traffic intensity of unknown nodes using the intensity data from known nodes. It then updates the graph G with the estimated intensities for the unknown nodes.\n\n\nParameters:\n\ndaily_data (dict): A dictionary containing daily traffic intensity data for known nodes, in the format {date: DataFrame}. Each DataFrame includes information about the known nodes and their intensities for each date.\nG (networkx.Graph): A networkx graph object representing the bike network structure. The graph must contain nodes for which traffic intensity is known, as well as nodes for which intensity is unknown.\n\n\n\nReturns:\n\nestimated_data (dict): A dictionary containing the estimated intensities for unknown nodes, in the format {date: DataFrame}. Each DataFrame includes the estimated intensities for unknown nodes on the corresponding date.\n\n\n\nExample:\n# Define known daily traffic intensity data\ndaily_data_known = {\n    \"2023-07-10\": pd.DataFrame({\"nearest_node\": [1, 2, 3], \"intensity\": [100, 150, 200]}),\n    \"2023-07-11\": pd.DataFrame({\"nearest_node\": [1, 2, 3], \"intensity\": [110, 160, 210]})\n}\n\n# Load the graph representing the network\nG = nx.Graph()\n\n# Estimate intensity for unknown nodes\nestimated_data = estimate_unknown_intensity(daily_data_known, G)\n\n# Display the estimated data for July 10, 2023\nprint(estimated_data[\"2023-07-10\"])"
+  },
+  {
+    "objectID": "documentation/functions.html#load_daily_node_intensity",
+    "href": "documentation/functions.html#load_daily_node_intensity",
+    "title": "\nFunctions \n",
+    "section": "load_daily_node_intensity",
+    "text": "load_daily_node_intensity\n\nDescription:\nThis function loads traffic intensity data for multiple dates and returns a dictionary where each key is a date, and each value is a DataFrame containing the traffic intensity data for the corresponding date.\n\n\nParameters:\n\ndates (list): A list of dates to process, formatted as strings (e.g., “2023-07-10”).\ncounters (DataFrame): A DataFrame that maps counters to their corresponding network nodes.\ncombined_file_path (str): The path to the original counter data file that contains the traffic data for all dates.\n\n\n\nReturns:\n\ndaily_data (dict): A dictionary where each key is a date, and each value is a DataFrame containing the traffic intensity data for that date, formatted as {date: DataFrame}.\n\n\n\nExample:\n# Example list of dates to process\ndates = [\"2023-07-10\", \"2023-07-11\"]\n\n# Example counter-to-node mapping DataFrame\ncounters = pd.DataFrame({\"counter_id\": [1, 2], \"node_id\": [1001, 1002]})\n\n# Example path to the original counter data file\ncombined_file_path = \"path/to/data.csv\"\n\n# Load the daily node intensity data\ndaily_data = load_daily_node_intensity(dates, counters, combined_file_path)\n\n# Display the loaded data for July 10, 2023\nprint(daily_data[\"2023-07-10\"])"
   }
 ]

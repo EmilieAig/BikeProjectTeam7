@@ -12,7 +12,7 @@ format:
 
 ## General
 
-<p class = "text"> The guidelines for this project were provided by our teachers, and are available on this page. </p>
+<p class = "text"> The guidelines for this project were provided by our teachers, and are available on <a href="https://josephsalmon.github.io/HAX712X/Projects/2024-2025/README.html">this page</a>. </p>
 
 <p class = "text"> In terms of content and form, it was our collective work that led to this result. However, we drew inspiration from several pages of documentation, help, templates, etc. to arrive at this final result. </p>
 
@@ -35,7 +35,7 @@ Charrier, D., Jourdan, J., Bourbillères, H., Djaballah, M., & Parmantier, C. (2
 
 ## Slides
 
-<p class = "text"> To create the slides, we mainly used the documentation for Quarto presentations and Quarto's Revealjs theme to help us. </p>
+<p class = "text"> To create the slides, we mainly used the documentation for <a href="https://quarto.org/docs/presentations/"> Quarto presentations </a> and <a href="https://quarto.org/docs/presentations/revealjs/">Quarto's Revealjs theme </a> to help us. </p>
 
 <p class = "text"> The various images we used are available via the following links: </p>
 
@@ -48,5 +48,7 @@ Charrier, D., Jourdan, J., Bourbillères, H., Djaballah, M., & Parmantier, C. (2
   <li> Logo of <a href= "https://www.google.com/search?q=python+logo&sca_esv=72f134593c210a2c&rlz=1C5CHFA_enFR1134FR1134&udm=2&biw=1920&bih=958&sxsrf=ADLYWIJvlIY3k0wbxEvhb9p4J9R-QpB7_w%3A1733669440780&ei=QLJVZ9WVL6Dj7_UPvp7n-Ag&ved=0ahUKEwjVtbP5tZiKAxWg8bsIHT7PGY8Q4dUDCBA&uact=5&oq=python+logo&gs_lp=EgNpbWciC3B5dGhvbiBsb2dvMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBBAAGB4yBBAAGB5I4AhQ4gJYtQdwAXgAkAEAmAFRoAHuAqoBATW4AQPIAQD4AQGYAgagAoEDwgINEAAYgAQYsQMYQxiKBcICBhAAGAcYHsICChAAGIAEGEMYigXCAggQABiABBixA8ICDhAAGIAEGLEDGIMBGIoFwgIEEAAYA5gDAIgGAZIHATagB_cX&sclient=img#vhid=xOBC4kliSKCGwM&vssid=mosaic" > Python </a>. </li>
   <li> <a href= "https://www.google.com/search?sca_esv=72f134593c210a2c&rlz=1C5CHFA_enFR1134FR1134&sxsrf=ADLYWIIV6cVga5ECrfkBSFhfBc6wIdo3jQ:1733669738135&q=fl%C3%A8che&udm=2&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgTlosgQSuzBMlnAdio07UCJQtmEkU6i-_BMZgWHB0gXBsp1FOhasv23lx-35-QOCW29mlVRlid8Kf_yHZgErmroOAl6jUc9HHkkkH6_CBc7hpIE9QiogFYvQMVDNW7jvnPwf6uiYKzNvoSv--odQuqnMaEU-xOujezx-GrXEN7RvQ9Zuv&sa=X&sqi=2&ved=2ahUKEwi00JiHt5iKAxUIVUEAHSlqDgoQtKgLegQIFRAB&biw=1920&bih=958&dpr=1#vhid=snECqKTOIc002M&vssid=mosaic" > Arrow </a>. </li>
   <li> <a href= "https://www.google.com/search?q=croix+annulation+noire+sans+fond&sca_esv=8f55730a6f25802f&rlz=1C5CHFA_enFR1134FR1134&udm=2&biw=1920&bih=958&sxsrf=ADLYWILG-9jbT0pwyfaxSPPLXmO9uQe8XA%3A1733670852009&ei=xLdVZ7kFqv_v9Q_3t--xDQ&ved=0ahUKEwi596mau5iKAxWq_7sIHffbO9YQ4dUDCBA&uact=5&oq=croix+annulation+noire+sans+fond&gs_lp=EgNpbWciIGNyb2l4IGFubnVsYXRpb24gbm9pcmUgc2FucyBmb25kSIYKUOgBWKEJcAF4AJABAJgBSKABrAWqAQIxMLgBA8gBAPgBAZgCAKACAJgDAIgGAZIHAKAHwgM&sclient=img#vhid=kvrT1AdiPDd7eM&vssid=mosaic" > Cross </a>. </li>
+  <li> <a href= "https://www.google.com/search?q=logo+enfants&sca_esv=076c6e27218f3cb7&rlz=1C5CHFA_enFR1134FR1134&udm=2&biw=1920&bih=958&sxsrf=ADLYWII2jZa5PGUnTEQk7R-uHd0lrxKMwA%3A1733761011749&ei=8xdXZ_SuLduE9u8PrYW6-As&ved=0ahUKEwi09OuJi5uKAxVbgv0HHa2CDr8Q4dUDCBA&uact=5&oq=logo+enfants&gs_lp=EgNpbWciDGxvZ28gZW5mYW50czIEECMYJzIEECMYJzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBBAAGB4yBBAAGB4yBhAAGAgYHjIGEAAYCBgeSMUFUMkBWO0CcAF4AJABAJgBV6ABlQGqAQEyuAEDyAEA-AEBmAICoAKdAZgDAIgGAZIHATKgB5wO&sclient=img#vhid=nBx1grItrAL2sM&vssid=mosaic" > Child </a>. </li>
+  <li> <a href= "https://www.google.com/search?sca_esv=076c6e27218f3cb7&rlz=1C5CHFA_enFR1134FR1134&sxsrf=ADLYWIK41Licr40Xgtd6IwTyDPBLSoFKFA:1733761062186&q=logo+travailleurs&udm=2&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgTlosgQSuzBMlnAdio07UCDLCEFD_usRx1ypeyG12vsLgrgE1EkM5B5upM8RCk3yTlEJu4dgcI0TMzUDmbxwU52CfDRRycGToS9mLm6HS3zUr0ZWIAZZZ_WeflgZIznWZ9RyJTZnuRcVFIUbfnUmlA-Vjm7ToO1SJegibi3lJB1jtyzHu4OaB00nJLmW7i-QM5M5wSg&sa=X&ved=2ahUKEwiqmPKhi5uKAxVBgP0HHUb1HAEQtKgLegQIFxAB&biw=1920&bih=958&dpr=1#vhid=fSV7wGp0WFw1zM&vssid=mosaic" > Worker </a>. </li>
 </ul>
 
