@@ -3,7 +3,7 @@ title: |
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="images/Logo_SSD.png" alt="Logo gauche" style="width: 30%; margin-right: 22px;">
     <h1 style="text-align: center; margin-bottom: 100px; flex-grow: 0; font-size: 0.7em;">Analyse des cyclistes de Montpellier pendant le Tour de France 2023</h1>
-    <img src="images/Logo_univMtp_sansfond.png" alt="Logo droite" style="width: 100%;">
+    <img src="images/logo_univMtp.png" alt="Logo droite" style="width: 100%;">
   </div>
 author: "AIGOIN Emilie - MAMANE SIDI Samira - <br> THOMAS Anne-Laure - ZHU Qingjian"
 format: 
@@ -23,14 +23,11 @@ format:
 
 ::: {.fragment} 
 #### Problématique 
-![](/images/logo_tourdefrance.png){.absolute top=320 left=450}
+![](/images/logo_tourdefrance.png){.absolute top=280 left=550}
 :::
 
-<br>
-
 ::: {.fragment} 
-<p class="text"> Quel a été l'impact du Tour de France 2023 sur les comportements des cyclistes à Montpellier avant, pendant et après cet événement ? </p>
-![](/images/logo_tourdefrance.png){.absolute top=320 left=450}
+- <p class="text"> Quel a été l'impact du Tour de France 2023 sur les comportements des cyclistes à Montpellier avant, pendant et après cet événement ? </p>
 :::
 
 <br>
@@ -39,13 +36,11 @@ format:
 #### Hypothèse
 :::
 
-<br>
-
 ::: {.fragment} 
-<p class="text"> ↗ nombre de cycliste pendant et après cette période </p>
+- <p class="text"> ↗ nombre de cycliste pendant et après cette période </p>
 :::
 
-![](/images/bike.png){.absolute top=800 left=-100 width="20" height="20"}
+![](/images/bike.png){.absolute bottom=0 left=-100 width="20" height="20"}
 
 
 <!-- slide 2 -->
@@ -82,7 +77,7 @@ format:
 
 ::::
 
-![](/images/bike.png){.absolute top=650 left=0 width="20" height="20"}
+![](/images/bike.png){.absolute bottom=0 left=0 width="20" height="20"}
 
 <!-- slide 3 -->
 
@@ -102,7 +97,7 @@ format:
 
 ::: {.column width="50%" .fragment}
 <p class="text">Trajets de Vélomagg</p>
-![](/images/velomagg.png){.absolute top=250 left=550 width="350" height="250"}
+![](/images/velomagg.png){.absolute top=250 left=520 width="350" height="250"}
 <div style="margin-top: 300px;">
   <p class="text">→ trajets des cyclistes en Vélomagg</p>
 </div>
@@ -110,7 +105,7 @@ format:
 
 ::::
 
-![](/images/bike.png){.absolute top=650 left=100 width="20" height="20"}
+![](/images/bike.png){.absolute bottom=0 left=100 width="20" height="20"}
 
 
 <!-- slide 4 -->
@@ -136,7 +131,7 @@ format:
 :::
 
 
-![](/images/bike.png){.absolute top=650 left=200 width="20" height="20"}
+![](/images/bike.png){.absolute bottom=0 left=200 width="20" height="20"}
 
 
 <!-- slide 5 -->
@@ -173,7 +168,7 @@ format:
 - <p class = "text"> Vacances et rentrées ? </p>
 :::
 
-![](/images/bike.png){.absolute top=650 left=300 width="20" height="20"}
+![](/images/bike.png){.absolute bottom=0 left=300 width="20" height="20"}
 
 <!-- slide 6 -->
 
@@ -202,6 +197,10 @@ format:
 ![](/images/timeline_support.png){.absolute top=460 left=600 width="600" height="150"}
 :::
 
+![](/images/bike.png){.absolute bottom=0 left=400 width="20" height="20"}
+
+<!-- slide 7 -->
+
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
 ::: {.fragment}
@@ -211,29 +210,30 @@ format:
 :::: {.columns}
 
 ::: {.column width="53%" .fragment}
-<p class="text">Carte prédiction 10/07/2023 </p>
-![](/images/carte_prediction_capture.png){.absolute top=250 left=0 width="500" height="350"}
+<p class="text">Carte prédiction lundi 10/07/2023 </p>
+![](/images/carte_prediction_capture.png){.absolute top=250 left=0 width="550" height="350"}
 <div style="margin-top: 300px;"> </div>
 :::
 
 ::: {.column width="47%" .fragment}
-<p class="text">Carte prédiction 15/07/2023</p>
-![](/images/capture_prediction_week.PNG){.absolute top=250 left=550 width="500" height="350"}
+<p class="text">Carte prédiction samedi 15/07/2023</p>
+![](/images/capture_prediction_week.PNG){.absolute top=250 left=550 width="550" height="350"}
 <div style="margin-top: 300px;"> </div>
 :::
 
 ::::
 
+![](/images/bike.png){.absolute bottom=0 left=500 width="20" height="20"}
 
-
-![](/images/bike.png){.absolute top=650 left=400 width="20" height="20"}
-
-<!-- slide 7 -->
+<!-- slide 8 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
+:::: {.columns}
+
+::: {.column width="53%"}
 ::: {.fragment}
-**Pourquoi Prophet comme modèle de prévision ?**
+**Pourquoi Prophet ?**
 :::
 
 ::: {.fragment}
@@ -243,7 +243,9 @@ format:
 ::: {.fragment}
 - <p class ="text"> Prévisions précises et rapides </p>
 :::
+:::
 
+::: {.column width="47%"}
 ::: {.fragment}
 **Réflexions et décisions clés**
 :::
@@ -255,32 +257,37 @@ format:
 ::: {.fragment}
 - <p class ="text"> Superposition des données </p>
 :::
+:::
+
+::::
+
+<br>
 
 ::: {.fragment}
 **Ouverture**
 :::
 
-![](/images/bike.png){.absolute top=650 left=500 width="20" height="20"}
-
-<!-- slide 8 -->
-
-## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
-
-#### Carte des données réelles
-
-![](/images/bike.png){.absolute top=650 left=600 width="20" height="20"}
-
+![](/images/bike.png){.absolute bottom=0 left=600 width="20" height="20"}
 
 <!-- slide 9 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### Comparaisons des cartes
+#### Carte des données réelles
 
-![](/images/bike.png){.absolute top=650 left=700 width="20" height="20"}
+![](/images/bike.png){.absolute bottom=0 left=700 width="20" height="20"}
 
 
 <!-- slide 10 -->
+
+## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
+
+#### Comparaisons des cartes
+
+![](/images/bike.png){.absolute bottom=0 left=800 width="20" height="20"}
+
+
+<!-- slide 11 -->
 
 ## Vidéo {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -298,36 +305,62 @@ format:
 ##### Etapes de la création de la vidéo
 :::
 ::: {.fragment}
-- <p class ="text"> Nettoyage et Traitement des Données </p>
+- <p class ="text"> Nettoyage et traitement des Données </p>
 :::
 ::: {.fragment}
 - <p class ="text"> Création de l'animation avec la classe **Bike_Animation** </p>
 :::
 
-![](/images/bike.png){.absolute top=650 left=800 width="20" height="20"}
+![](/images/bike.png){.absolute bottom=0 left=900 width="20" height="20"}
 
 
-<!-- slide 11 -->
+<!-- slide 12 -->
 
 ## Vidéo {background-color="white" background-image="/images/background.png" background-size=cover}
 
 #### Extrait de la vidéo
 
-<video controls autoplay loop width="640" height="360">
+<video controls autoplay loop width="800" height="500">
   <source src="https://raw.githubusercontent.com/EmilieAig/BikeProjectTeam7/main/Code/Result/Extrait_Bike_Animation.mp4" type="video/mp4">
   Votre navigateur ne supporte pas les vidéos.
 </video>
+
  
-![](/images/bike.png){.absolute top=650 left=900 width="20" height="20"}
+![](/images/bike.png){.absolute bottom=0 left=1000 width="20" height="20"}
 
 
-<!-- slide 12 -->
+<!-- slide 13 -->
 
 ## Conclusion {background-color="white" background-image="/images/background.png" background-size=cover}
 
-Nous vous remercions de votre écoute.
+<br>
+<br>
 
-![](/images/bike.png){.absolute top=650 left=1100 width="20" height="20"}
+::: {.fragment}
+Hypothèse
+![](/images/cross.png){.absolute top=175 left=-20 width="220" height="130"}
+![](/images/arrow.png){.absolute top=220 left=300 width="200" height="50"}
+![](/images/logo_tourdefrance.png){.absolute top=80 left=600 width="450" height="280"}
+:::
+
+<br>
+<br>
+
+::: {.fragment}
+Discussion
+![](/images/arrow.png){.absolute top=400 left=300 width="200" height="50"}
+![](/images/logo_child.png){.absolute top=380 left=740 width="150" height="120"}
+![](/images/logo_work.png){.absolute top=350 left=840 width="150" height="120"}
+:::
+
+<br>
+<br>
+
+::: {.fragment}
+Nous vous remercions pour votre écoute !
+:::
+
+![](/images/bike.png){.absolute bottom=0 left=1100 width="20" height="20"}
 
 
 <!-- slide bonus 1 -->
