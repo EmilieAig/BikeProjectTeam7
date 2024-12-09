@@ -37,7 +37,9 @@ format:
 :::
 
 ::: {.fragment} 
-- <p class="text"> ↗ nombre de cycliste pendant et après cette période </p>
+- <p class="text"> ↗ nombre de cycliste pendant et après cette période 
+<br>
+(Charrier et al., 2019) </p>
 :::
 
 ![](/images/bike.png){.absolute bottom=0 left=-100 width="20" height="20"}
