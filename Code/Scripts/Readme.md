@@ -36,6 +36,6 @@ This file contains all the code scripts we created to successfully complete our 
    This file contains the code to handle traffic predictions in a specific data format (long format), in order to make the data compatible with those in other files for display on the map.
 
 ### code_bike_traffic_prediction.py
-   This file contains the code responsible for creating an interactive map that visualizes the paths between data points and bike stations, coloring the paths according to traffic intensity from July 10 to 16, 2023.
+   This file contains the code that is responsible for creating an interactive map that visualizes the paths between data points and bike stations, coloring the paths based on traffic intensity from July 10 to 16, 2023.
 
 Go to the [Readme of the Prediction folder](Code/Scripts/Prediction/Readme.md) to know the steps to generate the prediction map.
