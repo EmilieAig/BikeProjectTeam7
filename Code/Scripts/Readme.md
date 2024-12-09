@@ -9,9 +9,6 @@ This file contains all the code scripts we created to successfully complete our 
 
 ⏳ **This script requires at least 2 hours to execute.You must execute the code in the terminal for it to run properly.**
 
-### DataProcessing.py
-   This file includes the code for cleaning and processing the initial data, ensuring it was ready for analysis and further use in the project.
-
 ### Statistics.py
    In this file, you’ll find the code used to perform statistical analysis on our data to address our research question, helping us derive insights and conclusions.
 
