@@ -308,11 +308,29 @@ format:
 ![](/images/bike.png){.absolute bottom=0 left=400 width="20"}
 
 
+
 <!-- slide 10 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
 #### Comparaisons des cartes
+
+
+::: {.fragment}
+![](/images/z5.png){.absolute bottom=70 right=635 width="400"}
+:::
+
+::: {.fragment}
+![](/images/z6.png){.absolute bottom=70 right=132 width="400"}
+:::
+
+::: {.fragment style="position: absolute; bottom: 28px; right: 770px;"}
+<span style="font-size: 0.47em;">Lundi 10/07/2023</span>
+:::
+
+::: {.fragment style="position: absolute; bottom: 28px; right: 246px;"}
+<span style="font-size: 0.47em;">Samedi 15/07/2023</span>
+:::
 
 ![](/images/bike.png){.absolute bottom=0 left=800 width="20" height="20"}
 
