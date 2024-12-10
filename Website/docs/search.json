@@ -81,7 +81,7 @@
     "href": "footer/privacy_policy.html#introduction",
     "title": "\nPrivacy policy \n",
     "section": "Introduction",
-    "text": "Introduction\n\nEFFECTIVE DATE: 2024-12-10\n\n=======\n\nEFFECTIVE DATE: 2024-01-22"
+    "text": "Introduction\n\nEFFECTIVE DATE: 2024-12-10\n\n\nWelcome to the site made by BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information."
   },
   {
     "objectID": "documentation/functions.html#method-precompute_route",
@@ -453,5 +453,12 @@
     "title": "\nFunctions \n",
     "section": "load_daily_node_intensity",
     "text": "load_daily_node_intensity\n\nDescription:\nThis function loads traffic intensity data for multiple dates and returns a dictionary where each key is a date, and each value is a DataFrame containing the traffic intensity data for the corresponding date.\n\n\nParameters:\n\ndates (list): A list of dates to process, formatted as strings (e.g., “2023-07-10”).\ncounters (DataFrame): A DataFrame that maps counters to their corresponding network nodes.\ncombined_file_path (str): The path to the original counter data file that contains the traffic data for all dates.\n\n\n\nReturns:\n\ndaily_data (dict): A dictionary where each key is a date, and each value is a DataFrame containing the traffic intensity data for that date, formatted as {date: DataFrame}.\n\n\n\nExample:\n# Example list of dates to process\ndates = [\"2023-07-10\", \"2023-07-11\"]\n\n# Example counter-to-node mapping DataFrame\ncounters = pd.DataFrame({\"counter_id\": [1, 2], \"node_id\": [1001, 1002]})\n\n# Example path to the original counter data file\ncombined_file_path = \"path/to/data.csv\"\n\n# Load the daily node intensity data\ndaily_data = load_daily_node_intensity(dates, counters, combined_file_path)\n\n# Display the loaded data for July 10, 2023\nprint(daily_data[\"2023-07-10\"])"
+  },
+  {
+    "objectID": "sources/sources.html#data",
+    "href": "sources/sources.html#data",
+    "title": "\nSources \n",
+    "section": "Data",
+    "text": "Data\n\nThe data we used for all our analyses were retrieved from the following sites:\n\n\n\nFor ecocounters data  OpenData.\n\n\nFor Velomagg data  OpenData."
   }
 ]

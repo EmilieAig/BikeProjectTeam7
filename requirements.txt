@@ -3,7 +3,7 @@
 # conda create --name Team7_HAX712X python=3.11.10
 # conda init 
 # conda activate Team7_HAX712X
-# conda install requirements.txt
+# pip install -r requirements.txt
 
 cycler
 ffmpeg-python
