@@ -82,8 +82,9 @@ Here is a diagram of the architecture of our project, detailing the location of 
     │     ├── images/...
     │     │── slides_files/libs/...
     │     │── Slides.html
-    │     │── Slides.qmd   
-    │     └── styles.css        
+    │     │── Slides.qmd
+    │     │── styles.css
+    │     └── Readme.md       
     ├── RoadMap/
     │     └── README.md
     ├── Website/
