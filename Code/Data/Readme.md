@@ -11,6 +11,8 @@ This folder contains all the databases used to successfully carry out our projec
 ### Data_EcoCompt_clean 
    This file is the final result of combining and cleaning the data. It contains all the data from the bicycle counters in CSV format, ready to be used for statistical analyses or further processing.
 
+### DataBike2023 
+This folder contains all the Velomagg data from the year 2023.
 ### Video_Data
 This file includes two CSV files: 
 
