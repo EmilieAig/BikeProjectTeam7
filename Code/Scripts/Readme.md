@@ -17,9 +17,6 @@ Before running the scripts we will describe below, the first step is to run the 
 ### data_treatment_EcoCompt.py
    This file contains the code responsible for converting the bicycle counters' data from JSON to CSV format, making it easier to work with and analyze.
 
-### data_treatment_Velomag.py 
-   This file includes the code used to clean the data from Velomagg stations, ensuring the dataset was accurate and ready for further processing.
-
 ### ecoCompt_Download_and_Combine.py  
    This file is designed to streamline the process of downloading, cleaning, filtering, and merging counter data from the website in one step, allowing users to directly download the latest data from the site.
 

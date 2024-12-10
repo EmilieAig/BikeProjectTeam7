@@ -40,6 +40,7 @@ Here is a diagram of the architecture of our project, detailing the location of 
     |     |     |       |── node_intensity_20230710.csv
     |     |     |       └── unknown_nodes_intensity.csv   
     |     |     |── Data_EcoCompt_clean/...
+    |     |     |── DataBike2023.csv
     │     │     |── Prediction_Data/
     |     |     |        ├── ecocompteurs_coords.csv
     |     |     |        ├── predictions_bike_intensity_july_week.csv   
@@ -66,7 +67,6 @@ Here is a diagram of the architecture of our project, detailing the location of 
     |           ├── Readme.md    
     |           ├── Statistics.py    
     |           ├── data_treatment_EcoCompt.py
-    |           ├── data_treatment_Velomag.py 
     |           ├── ecoCompt_Download_and_Combine.py      
     |           └── map.py
     ├── Organization/
