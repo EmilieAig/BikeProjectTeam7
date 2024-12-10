@@ -18,11 +18,13 @@ By following this link, you will have access to our website, which showcases the
 
 ### Project Documentation
 You can view the full documentation for this project on our website.
+
 Here is our current Gantt diagram:  
 [Gantt Diagram](https://emilieaig.github.io/BikeProjectTeam7/Organization/Gantt_Diagram/Gantt_Diagram.html)  
 Please follow the link below to access the details of our project:  
 [README.md](https://github.com/EmilieAig/BikeProjectTeam7/blob/main/RoadMap/README.md)  
- 
+
+In each folder,you can find a Readme.md that explains all the contents of files and how to use them.
 Here is a diagram of the architecture of our project, detailing the location of each folder and file:
 
 ```BikeProjectTeam7/
