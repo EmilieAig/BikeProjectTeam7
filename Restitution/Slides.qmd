@@ -430,6 +430,8 @@ Nous vous remercions pour votre écoute !
 
 ::::
 
+<!-- slide bonus 2 -->
+
 ## Questions-Réponses {visibility="uncounted" background-color="white" background-image="/images/background.png" background-size=cover}
 
 Répartition des tâches :
@@ -439,5 +441,5 @@ Répartition des tâches :
 - <p class ="text"> Anne-Laure : maquette du site, prédictions </p>
 - <p class ="text"> Qingjian : maquette des cartes, carte des données réelles </p>
 
-<!-- slide bonus 2 -->
+
 
