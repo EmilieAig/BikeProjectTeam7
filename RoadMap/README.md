@@ -34,7 +34,7 @@ The development pipeline will be divided into several stages:
 3. The Gantt Diagram\
 We will also create a Gantt Diagram to illustrate the project's timeline and track its progress over time. This diagram will help visualize each phase of the project, from data collection to website development, allowing us to monitor deadlines, dependencies, and milestones clearly.
 4. Creation of branch:\
-We have created three additional branches:Data,Visualization and Website, aside from the main branch. Gradually, we will merge our respective work into the main branch.
+We have created five additional branches:Data,Visualization,FinalWebsite,Readme and Slides, aside from the main branch. Gradually, we will merge our respective work into the main branch.You will also find th gh-pages branch for everything related to updating and managing GitHub Pages.
 5. Task Distribution for the project \
 To organize our work efficiently, we have established the following task distribution plan,with a weekly meeting every Wednesday from 10 a.m. to 12 p.m:
 
@@ -52,11 +52,12 @@ To organize our work efficiently, we have established the following task distrib
 
     **Multimedia Creation:**
     - The video representing a cycling race forecast for a specific date will be made by Samira and helping by one or two other team member.
-    - The creation of the website will be carried out by Emilie and Anne-Laure.
+    - The creation of the website will be carried out by Emilie .
 
     **Verification and Testing:**
-    - Qingjian will perform an initial test to ensure that the project is on the right track.
+    - Emilie will perform an initial test to ensure that the project is on the right track.
     - Anne-Laure will be responsible for the documentation, assisted by another team member depending on the workload and task complexity.
+    - All checks and reviews to ensure everything is correct have been completed by the entire group.
 
     **Final Presentation Preparation:**\
         The presentation slides, as well as the oral preparation, will be created by the entire team. This collaborative work will be done progressively as the project advances.\
