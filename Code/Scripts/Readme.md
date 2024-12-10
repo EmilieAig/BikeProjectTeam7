@@ -1,6 +1,8 @@
 #  Scripts File Description:
 
-This file contains all the code scripts we created to successfully complete our project:
+This file contains all the code scripts we created to successfully complete our project.
+
+Before running the scripts we will describe below, the first step is to run the requirements.txt file (detailed explanations in the file) present at the root of the project to create the associated virtual environment and install the packages you will need to run the code.
 
 ### Animation_Bike.py 
    This file contains a Python class that allowed us to create the video of cyclists' trips, visualizing their movements over time.
@@ -26,6 +28,8 @@ This file contains all the code scripts we created to successfully complete our 
 
 ## Prediction
 
+Go to the [Readme of the Prediction folder](Prediction/Readme.md) to know the steps to generate the prediction map.
+
 ### code_eco_coord.py
    This file processes the data related to the eco-counters, which contain information about bike paths (path ID, GPS coordinates). It renames the columns and prepares the data to merge with the traffic predictions in the other files.
 
@@ -37,5 +41,3 @@ This file contains all the code scripts we created to successfully complete our 
 
 ### code_bike_traffic_prediction.py
    This file contains the code that is responsible for creating an interactive map that visualizes the paths between data points and bike stations, coloring the paths based on traffic intensity from July 10 to 16, 2023.
-
-Go to the [Readme of the Prediction folder](Prediction/Readme.md) to know the steps to generate the prediction map.

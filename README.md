@@ -8,7 +8,7 @@ The team members are :
 - ZHU Qingjian
 
 ## Introduction:  
-Our project will focus on the following question: "What is the impact of the 2023 Tour de France on bicycle usage in Montpellier, and how have cyclists' behaviors evolved before and after this major event?". The goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.
+Our project will focus on the following question: "What is the impact of the Tour de France 2023 on the behavior of cyclists in Montpellier before, during and after the event?". The goal is to analyze whether this sporting event, which took place in July 2023, had a significant effect on cycling in the city and if there were notable changes in cycling habits.
 
 To conduct this study, we have chosen to analyze data on bicycle usage spanning from April to October 2023. This time frame allows us to examine bike traffic before, during, and after the Tour de France, providing a comprehensive view of usage patterns around this event. The selection of this period is crucial for capturing short-term trends related to the Tour and distinguishing them from seasonal or contextual factors that might also influence cycling behavior.
 
@@ -61,7 +61,6 @@ Here is a diagram of the architecture of our project, detailing the location of 
     │           |       ├── code_prediction_july.py
     │           |       └── code_prediction_long_format_july.py
     |           ├── cache/...   
-    |           ├── .Rhistory
     |           ├── Animation_Bike.py
     |           ├── Readme.md    
     |           ├── Statistics.py    
@@ -102,7 +101,6 @@ Here is a diagram of the architecture of our project, detailing the location of 
     |      ├── images/...
     |      ├── sources/   
     │      │    └── sources.qmd 
-    |      ├── .gitignore 
     |      ├── Readme.md
     |      ├── _quarto.yml
     |      ├── footer.qmd
