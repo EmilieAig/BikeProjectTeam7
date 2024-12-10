@@ -53,14 +53,12 @@ Here is a diagram of the architecture of our project, detailing the location of 
     │     │     │── intensity_graph.svg   
     │     │     └── real_data_map.html       
     │     └── Scripts/
-    │           ├── Prediction/
-    │           |       ├── cache/...    
+    │           ├── Prediction/ 
     │           |       ├── Readme.md
     │           |       ├── code_bike_traffic_prediction.py
     │           |       ├── code_eco_coord.py
     │           |       ├── code_prediction_july.py
-    │           |       └── code_prediction_long_format_july.py
-    |           ├── cache/...   
+    │           |       └── code_prediction_long_format_july.py  
     |           ├── Animation_Bike.py
     |           ├── Readme.md    
     |           ├── Statistics.py    
