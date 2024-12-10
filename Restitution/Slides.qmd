@@ -16,9 +16,6 @@ format:
     margin: 0
 ---
 
-
-<!-- slide 1 -->
-
 ## Introduction {background-color="white" background-image="/images/background.png" background-size=cover}
 
 ::: {.fragment} 
@@ -34,9 +31,6 @@ format:
 
 ::: {.fragment} 
 #### Hypothèse
-:::
-
-::: {.fragment} 
 - <p class="text"> ↗ nombre de cycliste pendant et après cette période 
 <br>
 (Charrier et al., 2019) </p>
@@ -45,7 +39,7 @@ format:
 ![](/images/bike.png){.absolute bottom=0 left=-100 width="20" height="20"}
 
 
-<!-- slide 2 -->
+<!-- slide 3 -->
 
 ## Introduction {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -81,7 +75,7 @@ format:
 
 ![](/images/bike.png){.absolute bottom=0 left=0 width="20" height="20"}
 
-<!-- slide 3 -->
+<!-- slide 4 -->
 
 ## Introduction {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -110,7 +104,7 @@ format:
 ![](/images/bike.png){.absolute bottom=0 left=100 width="20" height="20"}
 
 
-<!-- slide 4 -->
+<!-- slide 5 -->
 
 ## Introduction {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -136,7 +130,7 @@ format:
 ![](/images/bike.png){.absolute bottom=0 left=200 width="20" height="20"}
 
 
-<!-- slide 5 -->
+<!-- slide 6 -->
 
 ## Statistiques {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -150,20 +144,22 @@ format:
 ![](/images/intensity_graph.svg){.absolute top=100 left=350 width="800" height="500"}
 :::
 
-::: {.fragment}
-#### Résultats
+::: {.fragment .fade-in-then-out}
+![](/images/round.png){.absolute top=180 left=840 width="140" height="290"}
 :::
 
 ::: {.fragment}
+#### Résultats
 - <p class = "text"> Hypothèse </p>
 :::
 
 ::: {.fragment}
-![](/images/cross.png){.absolute top=294 left=0 width="200" height="100"}
+![](/images/cross.png){.absolute top=308 left=0 width="200" height="100"}
 :::
 
 ::: {.fragment}
 #### Discussion
+![](/images/round.png){.absolute top=180 left=840 width="140" height="290"}
 :::
 
 ::: {.fragment}
@@ -172,7 +168,7 @@ format:
 
 ![](/images/bike.png){.absolute bottom=0 left=300 width="20" height="20"}
 
-<!-- slide 6 -->
+<!-- slide 7 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -182,7 +178,7 @@ format:
 
 ::: {.fragment}
 - <p class = "text"> Cartes interactives </p>
-![](/images/timeline_tourdefrance.png){.absolute top=110 left=600 width="600" height="150"}
+![](/images/timeline_tourdefrance.png){.absolute top=110 left=580 width="600" height="150"}
 :::
 
 ::: {.fragment}
@@ -191,17 +187,17 @@ format:
 
 ::: {.fragment}
 - <p class = "text"> Dates de prédiction : 10 juillet - 16 juillet 2023</p>
-![](/images/timeline_prediction.png){.absolute top=300 left=600 width="600" height="150"}
+![](/images/timeline_prediction.png){.absolute top=300 left=580 width="600" height="150"}
 :::
 
 ::: {.fragment}
 - <p class = "text"> Dates de support : 1er avril - 9 juillet 2023 </p>
-![](/images/timeline_support.png){.absolute top=490 left=600 width="600" height="150"}
+![](/images/timeline_support.png){.absolute top=490 left=580 width="600" height="150"}
 :::
 
 ![](/images/bike.png){.absolute bottom=0 left=400 width="20" height="20"}
 
-<!-- slide 7 -->
+<!-- slide 8 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -227,7 +223,7 @@ format:
 
 ![](/images/bike.png){.absolute bottom=0 left=500 width="20" height="20"}
 
-<!-- slide 8 -->
+<!-- slide 9 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -271,7 +267,7 @@ format:
 
 ![](/images/bike.png){.absolute bottom=0 left=600 width="20" height="20"}
 
-<!-- slide 9 -->
+<!-- slide 10 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -280,7 +276,7 @@ format:
 :::
 
 ::: {.fragment}
-![](/images/z1.png){.absolute top=100 left=250 width="104"}
+![](/images/calendar.png){.absolute top=120 left=250 width="104"}
 :::
 
 ::: {.fragment style="margin-top: 110px;"}
@@ -288,28 +284,26 @@ format:
 :::
 
 ::: {.fragment}
-- <span style="font-size: 0.9em;">**Étendue de la carte**</span>
-- <span style="font-size: 0.9em;">**Types de routes**</span>
-- <span style="font-size: 0.9em;">**Parties isolées**</span>
+- <p class ="text"> Étendue de la carte </p>
+- <p class ="text"> Types de routes </p>
+- <p class ="text"> Parties isolées </p>
 :::
 
 ::: {.fragment}
-![](/images/z2.png){.absolute bottom=40 right=400 width="260"}
+![](/images/blacks_roads.png){.absolute bottom=40 right=400 width="260"}
 :::
 
 ::: {.fragment}
-![](/images/z3.png){.absolute bottom=40 right=80 width="260"}
+![](/images/blacks_roads_points.png){.absolute bottom=40 right=80 width="260"}
 :::
 
 ::: {.fragment}
-![](/images/z4.png){.absolute bottom=40 right=2 width="700"}
+![](/images/real_map_14.png){.absolute bottom=40 right=2 width="700"}
 :::
 
-![](/images/bike.png){.absolute bottom=0 left=400 width="20"}
+![](/images/bike.png){.absolute bottom=0 left=700 width="20"}
 
-
-
-<!-- slide 10 -->
+<!-- slide 11 -->
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -317,25 +311,32 @@ format:
 
 
 ::: {.fragment}
-![](/images/z5.png){.absolute bottom=70 right=635 width="400"}
+<br>
+<br>
+<p class ="text"> Prédictions : </p>
+<br>
+<br>
+<br>
+<p class ="text"> Données réelles : </p>
+![](/images/monday_comparisons.png){.absolute bottom=70 left=220 width="400"}
+:::
+
+::: {.fragment style="position: absolute; bottom: 28px; left: 320px;"}
+<p class ="text">Lundi 10/07/2023</p>
 :::
 
 ::: {.fragment}
-![](/images/z6.png){.absolute bottom=70 right=132 width="400"}
+![](/images/saturday_comparisons.png){.absolute bottom=70 left=670 width="400"}
 :::
 
-::: {.fragment style="position: absolute; bottom: 28px; right: 770px;"}
-<span style="font-size: 0.47em;">Lundi 10/07/2023</span>
-:::
-
-::: {.fragment style="position: absolute; bottom: 28px; right: 246px;"}
-<span style="font-size: 0.47em;">Samedi 15/07/2023</span>
+::: {.fragment style="position: absolute; bottom: 28px; left: 770px;"}
+<p class ="text">Samedi 15/07/2023</p>
 :::
 
 ![](/images/bike.png){.absolute bottom=0 left=800 width="20" height="20"}
 
 
-<!-- slide 11 -->
+<!-- slide 12 -->
 
 ## Vidéo {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -353,7 +354,7 @@ format:
 ##### Etapes de la création de la vidéo
 :::
 ::: {.fragment}
-- <p class ="text"> Nettoyage et traitement des Données </p>
+- <p class ="text"> Nettoyage et traitement des données </p>
 :::
 ::: {.fragment}
 - <p class ="text"> Création de l'animation avec la classe **Bike_Animation** </p>
@@ -362,7 +363,7 @@ format:
 ![](/images/bike.png){.absolute bottom=0 left=900 width="20" height="20"}
 
 
-<!-- slide 12 -->
+<!-- slide 13 -->
 
 ## Vidéo {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -377,7 +378,7 @@ format:
 ![](/images/bike.png){.absolute bottom=0 left=1000 width="20" height="20"}
 
 
-<!-- slide 13 -->
+<!-- slide 14 -->
 
 ## Conclusion {background-color="white" background-image="/images/background.png" background-size=cover}
 
@@ -397,8 +398,8 @@ Hypothèse
 ::: {.fragment}
 Discussion
 ![](/images/arrow.png){.absolute top=400 left=300 width="200" height="50"}
-![](/images/logo_child.png){.absolute top=380 left=740 width="150" height="120"}
-![](/images/logo_work.png){.absolute top=350 left=840 width="150" height="120"}
+![](/images/logo_child.png){.absolute top=380 left=740 width="150" height="140"}
+![](/images/logo_work.png){.absolute top=350 left=840 width="150" height="140"}
 :::
 
 <br>
@@ -413,4 +414,30 @@ Nous vous remercions pour votre écoute !
 
 <!-- slide bonus 1 -->
 
-## Slides bonus {visibility="uncounted" background-color="white" background-image="/images/background.png" background-size=cover}
+## Liens {visibility="uncounted" background-color="white" background-image="/images/background.png" background-size=cover}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- <a href="https://github.com/EmilieAig/BikeProjectTeam7">GitHub</a> :
+![](/images/qrcode_git.png){.absolute top=250 left=50 width="300" height="340"}
+:::
+
+::: {.column width="50%"}
+- <a href="https://emilieaig.github.io/BikeProjectTeam7/">Site internet</a> :
+![](/images/qrcode_website.png){.absolute top=250 left=600 width="300" height="340"}
+:::
+
+::::
+
+## Questions-Réponses {visibility="uncounted" background-color="white" background-image="/images/background.png" background-size=cover}
+
+Répartition des tâches :
+
+- <p class ="text"> Emilie : diagramme de Gantt, site internet </p>
+- <p class ="text"> Samira : readme, vidéo </p>
+- <p class ="text"> Anne-Laure : maquette du site, prédictions </p>
+- <p class ="text"> Qingjian : maquette des cartes, carte des données réelles </p>
+
+<!-- slide bonus 2 -->
+
