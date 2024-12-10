@@ -275,9 +275,37 @@ format:
 
 ## Cartes {background-color="white" background-image="/images/background.png" background-size=cover}
 
-#### Carte des données réelles
+::: {.fragment style="margin-top: 22px;"}
+**Objectif**
+:::
 
-![](/images/bike.png){.absolute bottom=0 left=700 width="20" height="20"}
+::: {.fragment}
+![](/images/z1.png){.absolute top=100 left=250 width="104"}
+:::
+
+::: {.fragment style="margin-top: 110px;"}
+**Simplifier**
+:::
+
+::: {.fragment}
+- <span style="font-size: 0.9em;">**Étendue de la carte**</span>
+- <span style="font-size: 0.9em;">**Types de routes**</span>
+- <span style="font-size: 0.9em;">**Parties isolées**</span>
+:::
+
+::: {.fragment}
+![](/images/z2.png){.absolute bottom=40 right=400 width="260"}
+:::
+
+::: {.fragment}
+![](/images/z3.png){.absolute bottom=40 right=80 width="260"}
+:::
+
+::: {.fragment}
+![](/images/z4.png){.absolute bottom=40 right=2 width="700"}
+:::
+
+![](/images/bike.png){.absolute bottom=0 left=400 width="20"}
 
 
 <!-- slide 10 -->
