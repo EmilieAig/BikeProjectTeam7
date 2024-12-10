@@ -20,7 +20,7 @@ By following this link, you will have access to our website, which showcases the
 You can view the full documentation for this project on our website.
 
 Here is our current Gantt diagram:  
-[Gantt Diagram](https://github.com/EmilieAig/BikeProjectTeam7/blob/main/Organization/Gantt_Diagram/Gantt_Diagram.html)  
+[Gantt Diagram](https://emilieaig.github.io/BikeProjectTeam7/Organization/Gantt_Diagram/Gantt_Diagram.html)  
 Please follow the link below to access the details of our project:  
 [README.md](https://github.com/EmilieAig/BikeProjectTeam7/blob/main/RoadMap/README.md)  
 
