@@ -35,6 +35,13 @@
     "text": "Hypothesis\n\nTo make an hypothesis from our problem, we based on the work of Charrier et al., 2019:\n\n\nCharrier, D., Jourdan, J., Bourbillères, H., Djaballah, M., & Parmantier, C. (2019). L’impact social des grands événements sportifs : Réflexions théoriques et méthodologiques à partir de l’Euro 2016. Movement and Sports Sciences - Science et Motricite. https://doi.org/10.1051/sm/2019029"
   },
   {
+    "objectID": "sources/sources.html#data",
+    "href": "sources/sources.html#data",
+    "title": "\nSources \n",
+    "section": "Data",
+    "text": "Data\n\nThe data we used for all our analyses were retrieved from the following sites:\n\n\n\nFor ecocounters data  OpenData.\n\n\nFor Velomagg data  OpenData."
+  },
+  {
     "objectID": "sources/sources.html#visuals",
     "href": "sources/sources.html#visuals",
     "title": "\nSources \n",
@@ -91,18 +98,11 @@
     "text": "Website File Description:\nThe Website folder contains all the code that creates the website.\nBasically, to launch the website on your machine, simply go to the index.qmd file and click on the first icon in the top right-hand corner, or use the ‘quarto render’ command in your terminal.\n\n_quarto.yml\nThis file contains the basis for the creation of our site. Inside you can find the sections of our navigation bar and the pages they contain. This file is used overall to organise the different pages of the site and gives the links to these different pages.\n\n\nindex.qmd\nThis file corresponds to the home page of our site, where we present the context, analyses and data we have used.\n\n\nstyles.css\nThis file contains the personalisation parameters for the various parts of our site (titles, text, images, etc.). You can change the site’s appearance settings here.\n\n\nfooter.qmd\nIn this file, we can find what is in the footer, with the various associated pages.\n\n\nanalyses\n\nmap.qmd\nThis file contains the interactive maps we made using the Python codes in Code/Scripts, as well as the detailed analysis and interpretation of these maps.\n\n\nstatistics.qmd\nThis file contains the statistical analyses we carried out using the Python code in Code/Scripts, as well as the detailed analysis and interpretation of these results to answer our question.\n\n\nvideo.qmd\nThis file contains the video we made using the Python codes in Code/Scripts, as well as a detailed analysis and interpretation of the video.\n\n\n\ndocumentation\n\nclasses.qmd\nThis file contains the documentation for the classes we used in our Python code in Code/Scripts.\n\n\nfunctions.qmd\nThis file contains the documentation for the functions we used in our Python code in Code/Scripts.\n\n\npackages.qmd\nThis file contains the documentation for the packages we used in our Python code in Code/Scripts.\n\n\n\nsources\n\nsources.qmd\nThis file contains all the sources on which we have based this project. You can find articles, links and documentation that we have used ourselves.\n\n\n\nfooter\n\nabout_us.qmd\nThis file introduces the members of our team and gives a brief overview of our project.\n\n\nMIT_licenses.qmd\nThis file contains the licence we have used to publish this project in total security.\n\n\nprivacy_policy.qmd\nThis file contains our privacy policy as well as the terms and conditions for the use of personal data that we have for this site.\n\n\n\ndocs\nThis file is the output file for our website. In other words, when you run a script with Quarto, it will automatically transform the Quarto code into html code. The files converted into html are stored in the docs folder."
   },
   {
-    "objectID": "footer/privacy_policy.html",
-    "href": "footer/privacy_policy.html",
-    "title": "\nPrivacy policy \n",
-    "section": "",
-    "text": "&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD"
-  },
-  {
     "objectID": "footer/privacy_policy.html#introduction",
     "href": "footer/privacy_policy.html#introduction",
     "title": "\nPrivacy policy \n",
     "section": "Introduction",
-    "text": "Introduction\n\nEFFECTIVE DATE: 2024-12-10\n\n=======\n\nEFFECTIVE DATE: 2024-01-22"
+    "text": "Introduction\n\nEFFECTIVE DATE: 2024-12-10\n\n\nWelcome to the site made by BikeProjectTeam7. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information."
   },
   {
     "objectID": "footer/privacy_policy.html#information-we-collect",
