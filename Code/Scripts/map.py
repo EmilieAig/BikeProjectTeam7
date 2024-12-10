@@ -1,7 +1,20 @@
-# %% Extract coordinates of counters
-
+# %% Import packages
 import pandas as pd
 import os
+import osmnx as ox
+ox.settings.use_cache=True
+ox.__version__
+import osmnx as ox
+import networkx as nx
+from shapely.geometry import Point
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.spatial import KDTree
+import folium
+
+
+# %% Extract coordinates of counters
+
 # File path setup
 data_folder = os.path.join("..", "Data", "Data_EcoCompt_Combined")  # Path to the data folder
 file_path = os.path.join(data_folder, "fichier_combined.csv")  # File path
@@ -29,13 +42,6 @@ print(f"Counter data has been extracted and saved to:{output_path}")
 
 
 # %% Extract the network graph, select the appropriate range, and filter based on road types to retain suitable road density
-
-import osmnx as ox
-ox.settings.use_cache=True
-ox.__version__
-import osmnx as ox
-import networkx as nx
-from shapely.geometry import Point
 
 # Define the center point and radius
 center_point = (43.606, 3.877)  # (latitude, longitude)
@@ -97,10 +103,6 @@ fig, ax = ox.plot_graph(G)
 
 # %% Match the counter coordinates with the network node coordinates
 
-import osmnx as ox
-import pandas as pd
-import matplotlib.pyplot as plt
-
 # 1. Read the counter data
 counter_file_path = "../Data/Data_EcoCompt_Combined/counter_coordinates.csv"
 counters = pd.read_csv(counter_file_path)
@@ -133,9 +135,6 @@ plt.show()
 
 
 # %% Select the desired dates and match each counter node with intensity
-
-import pandas as pd
-import os
 
 # File path setup
 combined_file_path = "../Data/Data_EcoCompt_Combined/fichier_combined.csv"
@@ -196,11 +195,6 @@ print(daily_data["2023-07-10"].head())
 
 
 # %% Estimate the intensity of unknown nodes
-
-import numpy as np
-import pandas as pd
-from scipy.spatial import KDTree
-import os
 
 def estimate_unknown_intensity(daily_data, G):
     """
@@ -273,8 +267,6 @@ print(estimated_daily_data["2023-07-10"])
 
 
 # %% Visualize traffic intensity across multiple dates
-import folium
-import numpy as np
 
 # Create a folium map
 center_coords = [43.607, 3.877]  # Map center
@@ -398,26 +390,3 @@ print(f"The multi-date map has been saved to: {output_map_path}")
 
 
 
-# %% Check the attributes of each edge to understand the types available
-'''
-from collections import Counter
-
-# Extract the 'highway' attribute of all edges
-highway_types = []
-
-for u, v, data in G.edges(data=True):
-    highway = data.get('highway', None)  # Retrieve the 'highway' attribute
-    if highway:
-        if isinstance(highway, list):  # If it's a list, expand and add
-            highway_types.extend(highway)
-        else:
-            highway_types.append(highway)
-
-# Count the number of each road type
-highway_counter = Counter(highway_types)
-
-# Output all road types and their counts
-print("Included road types and their counts:")
-for highway, count in highway_counter.items():
-    print(f"{highway}: {count}")
-'''
