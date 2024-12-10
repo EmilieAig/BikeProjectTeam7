@@ -40,7 +40,6 @@ Here is a diagram of the architecture of our project, detailing the location of 
     |     |     |       |── node_intensity_20230710.csv
     |     |     |       └── unknown_nodes_intensity.csv   
     |     |     |── Data_EcoCompt_clean/...
-    |     |     |── DataBike2023.csv
     │     │     |── Prediction_Data/
     |     |     |        ├── ecocompteurs_coords.csv
     |     |     |        ├── predictions_bike_intensity_july_week.csv   
