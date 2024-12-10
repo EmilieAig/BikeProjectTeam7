@@ -18,10 +18,10 @@ Through this analysis, we aim to provide a clear and detailed understanding of h
 The project will have the following structure:\
 **Front-end (website)**:\
 A website where users can browse and interact with various visualizations.
-The site will feature charts and an interactive map displaying bike traffic predictions for Montpellier.\
+The site will feature charts and  interactive maps displaying bike traffic predictions for Montpellier.\
 **Back-end (data processing)**:\
 Data analysis from April to October 2023, based on bike counting data, public bike-sharing trip data, and OpenStreetMap data.
-A prediction model based on time series analysis (using tools like Prophet, ARIMA, or Machine Learning methods) to forecast bike traffic for the coming days. 
+A prediction model based on time series analysis using Prophet to forecast bike traffic for the coming days. 
 
 2. Development Pipeline
 
