@@ -1,4 +1,4 @@
-#  Scripts File Description:
+#  Scripts folder description:
 
 This file contains all the code scripts we created to successfully complete our project.
 
